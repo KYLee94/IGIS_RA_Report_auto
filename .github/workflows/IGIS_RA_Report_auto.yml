@@ -1,0 +1,46 @@
+# 워크플로우 이름
+name: Notion DB Sync
+
+# 언제 실행할지 결정하는 부분
+on:
+  # 수동으로 실행할 수 있는 버튼을 Actions 탭에 생성
+  workflow_dispatch:
+  
+  # 예약 실행 설정
+  schedule:
+    # cron 표현식: "분 시 일 월 요일" (UTC 기준)
+    # 한국 시간(KST) 매일 오전 8시는 UTC 기준으로는 전날 23시입니다.
+    - cron: '0 23 * * *'
+
+# 어떤 작업을 수행할지 정의하는 부분
+jobs:
+  sync:
+    # 실행 환경 설정 (최신 우분투)
+    runs-on: ubuntu-latest
+
+    # 작업 단계들
+    steps:
+    # 1. 저장소에 있는 코드 가져오기
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. 파이썬 환경 설정
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10' # 사용할 파이썬 버전
+
+    # 3. 필요한 라이브러리 설치하기
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # 4. 파이썬 스크립트 실행하기
+    - name: Run Notion Sync Script
+      # env: GitHub Secrets에 저장된 값들을 환경 변수로 스크립트에 전달
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        MASTER_DB_ID: ${{ secrets.MASTER_DB_ID }}
+        SOURCE_DB_IDS: ${{ secrets.SOURCE_DB_IDS }}
+      run: python sync_notion.py
