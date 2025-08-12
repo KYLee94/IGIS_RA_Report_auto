@@ -22,8 +22,8 @@ from notion_client import Client
 # GitHub Actions의 Secrets에서 정보 가져오기
 NOTION_API_KEY = os.environ.get('NOTION_API_KEY')
 MASTER_DB_ID = os.environ.get('MASTER_DB_ID')
-# 쉼표로 구분된 문자열을 리스트로 변환
-SOURCE_DB_IDS = os.environ.get('SOURCE_DB_IDS', '').split(',')
+# 쉼표로 구분된 문자열을 리스트로 변환하고, 각 ID의 앞뒤 공백을 제거합니다.
+SOURCE_DB_IDS = [db_id.strip() for db_id in os.environ.get('SOURCE_DB_IDS', '').split(',') if db_id.strip()]
 
 # 4. Notion 클라이언트 초기화
 notion = Client(auth=NOTION_API_KEY)
