@@ -43,4 +43,4 @@ jobs:
         NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
         MASTER_DB_ID: ${{ secrets.MASTER_DB_ID }}
         SOURCE_DB_IDS: ${{ secrets.SOURCE_DB_IDS }}
-      run: python sync_notion.py
+      run: python IGIS_RA_Report_auto.py
