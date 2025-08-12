@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # 1. 노션 클라이언트 라이브러리 설치
-!pip install notion-client
+# !pip install notion-client (삭제)
 
 # 2. 필요한 라이브러리 불러오기
 import os
