@@ -13,26 +13,17 @@ Original file is located at
 # 2. 필요한 라이브러리 불러오기
 import os
 from notion_client import Client
-from google.colab import userdata # Colab의 시크릿 관리 기능
 
 # 3. Notion API 키 및 데이터베이스 ID 설정
 # ---------------------------------------------------------------
 # ⚠️ 중요: 아래 값들을 자신의 정보로 수정해주세요.
 # ---------------------------------------------------------------
 
-# Colab의 '비밀' 기능에 API 키를 저장하고 사용하는 것을 권장합니다.
-# 왼쪽 🔑 아이콘을 눌러 'NOTION_API_KEY'라는 이름으로 키를 추가하세요.
-NOTION_API_KEY = userdata.get('NOTION_API_KEY')
-
-# 합쳐질 최종 목적지 데이터베이스 ID
-MASTER_DB_ID = "24d8ced43c478048891de2a16af9741d"
-
-# 데이터를 가져올 소스 데이터베이스 ID 목록 (여러 개 추가 가능)
-SOURCE_DB_IDS = [
-    "24c8ced43c4780698b8ed1017eabb4b7",
-    "24c8ced43c4780408219de7878f28728",
-    "24c8ced43c4780638558e17315056fdc"
-]
+# GitHub Actions의 Secrets에서 정보 가져오기
+NOTION_API_KEY = os.environ.get('NOTION_API_KEY')
+MASTER_DB_ID = os.environ.get('MASTER_DB_ID')
+# 쉼표로 구분된 문자열을 리스트로 변환
+SOURCE_DB_IDS = os.environ.get('SOURCE_DB_IDS', '').split(',')
 
 # 4. Notion 클라이언트 초기화
 notion = Client(auth=NOTION_API_KEY)
