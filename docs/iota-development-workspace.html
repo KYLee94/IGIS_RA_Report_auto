@@ -1,0 +1,3040 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IOTA Seoul 개발관리</title>
+  <style>
+    :root {
+      --bg: #1f1f1e;
+      --sidebar: #1b1b1a;
+      --panel: #242423;
+      --panel-2: #20201f;
+      --line: #373737;
+      --line-soft: #30302f;
+      --text: #f5f5f5;
+      --muted: #9a9a9a;
+      --muted-2: #b8b8b8;
+      --accent: #d7de4a;
+      --sub: #9fb3ff;
+      --good: #39c18b;
+      --bad: #ff5a70;
+      --radius: 18px;
+      --sidebar-open: 273px;
+      --sidebar-closed: 72px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      min-height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    body {
+      overflow-x: hidden;
+      letter-spacing: 0;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: var(--sidebar-open) minmax(0, 1fr);
+      transition: grid-template-columns 180ms ease;
+    }
+
+    .app.sidebar-collapsed {
+      grid-template-columns: var(--sidebar-closed) minmax(0, 1fr);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      border-right: 1px solid var(--line);
+      background: var(--sidebar);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 20;
+    }
+
+    .brand {
+      height: 58px;
+      padding: 17px 17px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .brand-title {
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .collapse-btn {
+      width: 31px;
+      height: 31px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      background: transparent;
+      color: var(--muted-2);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .collapse-btn:hover,
+    .collapse-btn:focus-visible {
+      border-color: var(--line);
+      background: var(--panel);
+      outline: none;
+    }
+
+    .nav {
+      padding: 2px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow-y: auto;
+    }
+
+    .nav-group {
+      margin: 22px 0 7px;
+      padding: 0 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      height: 36px;
+      padding: 0 9px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .nav-item:hover,
+    .nav-item:focus-visible,
+    .nav-item.active {
+      background: #111110;
+      outline: none;
+    }
+
+    .nav-icon {
+      width: 19px;
+      min-width: 19px;
+      height: 19px;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+    }
+
+    .nav-icon svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+      stroke-width: 1.9;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+      min-height: 72px;
+      border-top: 1px solid var(--line);
+      padding: 13px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #d9d7cd;
+      color: #111;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .footer-name {
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .footer-sub {
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .sidebar-collapsed .brand-title,
+    .sidebar-collapsed .nav-label,
+    .sidebar-collapsed .nav-group span,
+    .sidebar-collapsed .nav-group .chev,
+    .sidebar-collapsed .footer-text {
+      display: none;
+    }
+
+    .sidebar-collapsed .brand {
+      justify-content: center;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .sidebar-collapsed .nav {
+      padding-left: 8px;
+      padding-right: 8px;
+      align-items: center;
+    }
+
+    .sidebar-collapsed .nav-group {
+      height: 1px;
+      margin: 15px 0 3px;
+      padding: 0;
+      width: 34px;
+      border-top: 1px solid var(--line);
+    }
+
+    .sidebar-collapsed .nav-item {
+      justify-content: center;
+      width: 42px;
+      padding: 0;
+    }
+
+    .sidebar-collapsed .sidebar-footer {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .main {
+      min-width: 0;
+      padding: 72px 24px 96px;
+    }
+
+    .content {
+      width: min(1240px, calc(100vw - var(--sidebar-open) - 48px));
+      margin: 0 auto;
+    }
+
+    .sidebar-collapsed + .main .content {
+      width: min(1240px, calc(100vw - var(--sidebar-closed) - 48px));
+    }
+
+    .page-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 40px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 13px 0 0;
+      max-width: 780px;
+      color: var(--muted-2);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .top-meta {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .top-meta div {
+      min-width: 112px;
+      padding: 11px 19px;
+      border-left: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .top-meta div:first-child {
+      border-left: 0;
+    }
+
+    .top-meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+
+    .top-meta strong {
+      display: block;
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .workspace-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 168px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .workspace-main {
+      grid-column: 1;
+      grid-row: 1;
+      min-width: 0;
+    }
+
+    .project-rail {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 10px;
+      z-index: 15;
+    }
+
+    .rail-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 7px 9px 9px;
+    }
+
+    .rail-btn,
+    .view-btn {
+      width: 100%;
+      min-height: 42px;
+      border: 0;
+      border-radius: 11px;
+      background: transparent;
+      color: var(--muted-2);
+      padding: 0 12px;
+      font-size: 13px;
+      font-weight: 900;
+      text-align: left;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .rail-btn:hover,
+    .rail-btn:focus-visible,
+    .view-btn:hover,
+    .view-btn:focus-visible {
+      color: var(--text);
+      outline: none;
+    }
+
+    .rail-btn.active,
+    .view-btn.active {
+      background: var(--accent);
+      color: #111;
+    }
+
+    .rail-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 9px 0;
+    }
+
+    .date-chip {
+      margin-top: 8px;
+      color: var(--muted-2);
+      font-size: 12px;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 10px;
+      background: rgba(255, 255, 255, 0.02);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .view-panel[hidden] {
+      display: none;
+    }
+
+    .section {
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      overflow: hidden;
+    }
+
+    .section:first-child {
+      margin-top: 0;
+    }
+
+    .section.open {
+      overflow: visible;
+    }
+
+    .section-head {
+      padding: 20px 25px 16px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section-kicker {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .section-body {
+      padding: 22px 25px 24px;
+    }
+
+    .lane-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .lane {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.015);
+      padding: 18px;
+      min-width: 0;
+    }
+
+    .lane.dimmed {
+      opacity: 0.52;
+    }
+
+    .lane-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .lane-title {
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .lane-sub {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .milestones {
+      display: grid;
+      gap: 9px;
+    }
+
+    .milestone,
+    .milestone-head {
+      display: grid;
+      grid-template-columns: minmax(86px, 1fr) 58px 58px 52px 58px;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .milestone-head {
+      padding: 0 8px 2px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .milestone {
+      min-height: 50px;
+      padding: 10px 8px;
+      border: 1px solid var(--line-soft);
+      border-radius: 12px;
+      background: var(--panel-2);
+    }
+
+    .milestone-name {
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1.35;
+      min-width: 0;
+    }
+
+    .milestone-date,
+    .milestone-delta {
+      color: var(--muted-2);
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .milestone-delta.delay {
+      color: var(--sub);
+    }
+
+    .milestone-delta.need {
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 24px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      padding: 0 9px;
+      color: var(--muted-2);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .badge.done {
+      color: var(--good);
+      border-color: rgba(57, 193, 139, 0.45);
+      background: rgba(57, 193, 139, 0.08);
+    }
+
+    .badge.waiting {
+      color: var(--muted-2);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .badge.attention {
+      color: var(--text);
+      border-color: rgba(159, 179, 255, 0.55);
+      background: rgba(159, 179, 255, 0.1);
+    }
+
+    .segmented {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+
+    .segment-btn {
+      min-height: 34px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--muted-2);
+      padding: 0 15px;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .segment-btn:hover,
+    .segment-btn:focus-visible {
+      color: var(--text);
+      outline: none;
+    }
+
+    .segment-btn.active {
+      background: var(--accent);
+      color: #111;
+    }
+
+    .task-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .add-form {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 138px 120px 96px 132px auto;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .input,
+    .select,
+    .textarea {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #1d1d1c;
+      color: var(--text);
+      padding: 0 11px;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .input,
+    .select {
+      height: 38px;
+    }
+
+    .textarea {
+      width: 100%;
+      min-height: 120px;
+      resize: vertical;
+      padding: 11px;
+      line-height: 1.55;
+    }
+
+    .input::placeholder,
+    .textarea::placeholder {
+      color: #6f6f6f;
+    }
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+      border-color: var(--sub);
+    }
+
+    .action-btn {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #1d1d1c;
+      color: var(--text);
+      padding: 0 12px;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .action-btn:hover,
+    .action-btn:focus-visible {
+      border-color: var(--sub);
+      outline: none;
+    }
+
+    .action-btn.primary {
+      background: rgba(159, 179, 255, 0.14);
+      color: var(--text);
+      border-color: rgba(159, 179, 255, 0.65);
+    }
+
+    .action-btn.danger {
+      border-color: rgba(255, 90, 112, 0.6);
+      color: var(--text);
+    }
+
+    .task-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .task-row {
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) minmax(180px, 1.25fr) 92px 92px 58px minmax(94px, 0.8fr) 34px;
+      gap: 8px;
+      align-items: center;
+      min-height: 58px;
+      padding: 10px 12px;
+      border: 1px solid var(--line-soft);
+      border-radius: 13px;
+      background: var(--panel-2);
+    }
+
+    .task-row > * {
+      min-width: 0;
+    }
+
+    .task-title {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .task-desc,
+    .task-meta {
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .priority {
+      justify-self: start;
+      min-width: 44px;
+      min-height: 24px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      color: var(--muted-2);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .priority.high {
+      color: var(--text);
+      border-color: rgba(255, 90, 112, 0.6);
+      background: rgba(255, 90, 112, 0.08);
+    }
+
+    .priority.medium {
+      color: var(--text);
+      border-color: rgba(159, 179, 255, 0.5);
+      background: rgba(159, 179, 255, 0.08);
+    }
+
+    .delete-btn,
+    .icon-btn {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: transparent;
+      color: var(--muted-2);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    }
+
+    .delete-btn:hover,
+    .delete-btn:focus-visible,
+    .icon-btn:hover,
+    .icon-btn:focus-visible {
+      color: var(--text);
+      border-color: var(--sub);
+      outline: none;
+    }
+
+    .empty {
+      padding: 18px;
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      border: 1px solid var(--line-soft);
+      border-radius: 13px;
+      padding: 14px;
+      background: var(--panel-2);
+      min-height: 86px;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .kpi-value {
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .kpi-note {
+      margin-top: 7px;
+      color: var(--muted-2);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .table-wrap {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel-2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line-soft);
+      padding: 12px 14px;
+      vertical-align: middle;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      text-align: left;
+      background: var(--panel);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .tree-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .tree-toggle {
+      width: 24px;
+      height: 24px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: transparent;
+      color: var(--muted-2);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .tree-indent {
+      width: 20px;
+      flex: 0 0 auto;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--panel-2);
+    }
+
+    .spec-item {
+      min-height: 74px;
+      padding: 13px 14px;
+      border-right: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .spec-item:nth-child(3n) {
+      border-right: 0;
+    }
+
+    .spec-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 7px;
+    }
+
+    .spec-value {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.45;
+      word-break: keep-all;
+    }
+
+    .rr-filters,
+    .counterparty-filters {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .person-card,
+    .manage-card,
+    .control-card {
+      min-height: 126px;
+      border: 1px solid var(--line-soft);
+      border-radius: 13px;
+      background: var(--panel-2);
+      padding: 14px;
+      cursor: default;
+    }
+
+    .person-card.clickable,
+    .manage-card.clickable,
+    .control-card {
+      cursor: pointer;
+    }
+
+    .person-card.clickable:hover,
+    .person-card.clickable:focus-visible,
+    .manage-card.clickable:hover,
+    .manage-card.clickable:focus-visible,
+    .control-card:hover,
+    .control-card:focus-visible {
+      border-color: var(--sub);
+      outline: none;
+    }
+
+    .card-topline {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .card-sub {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .card-line {
+      margin-top: 8px;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .control-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .control-metric {
+      border: 1px solid var(--line-soft);
+      border-radius: 10px;
+      padding: 8px;
+    }
+
+    .control-metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .control-metric strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .report-box {
+      border: 1px solid var(--line-soft);
+      border-radius: 13px;
+      background: var(--panel-2);
+      padding: 15px;
+    }
+
+    .report-box h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .plain-list {
+      margin: 0;
+      padding-left: 17px;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .modal-backdrop,
+    .page-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.62);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      z-index: 80;
+    }
+
+    .modal-backdrop.open,
+    .page-backdrop.open {
+      display: flex;
+    }
+
+    .modal,
+    .page-modal {
+      width: min(900px, 100%);
+      max-height: min(760px, 88vh);
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .page-modal {
+      width: min(1120px, 100%);
+      height: min(760px, 88vh);
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      overflow: hidden;
+    }
+
+    .modal-head,
+    .page-modal-head {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 20px;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: 900;
+      margin: 0 0 6px;
+    }
+
+    .modal-desc {
+      margin: 0;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .modal-body {
+      padding: 18px 20px 22px;
+    }
+
+    .control-page-body {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+    }
+
+    .entry-list {
+      min-height: 0;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      padding: 14px;
+    }
+
+    .entry-editor {
+      min-height: 0;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .entry-item {
+      width: 100%;
+      border: 1px solid var(--line-soft);
+      border-radius: 11px;
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+
+    .entry-item.active {
+      border-color: var(--accent);
+    }
+
+    .entry-item strong {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .entry-item span {
+      color: var(--muted-2);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .editor-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr 180px;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .editor-block {
+      margin-top: 14px;
+    }
+
+    .editor-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 7px;
+    }
+
+    .saved-state {
+      color: var(--muted-2);
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 6px;
+    }
+
+    .close-btn {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus-visible {
+      border-color: var(--sub);
+      outline: none;
+    }
+
+    .molit-head-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .molit-section-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .molit-section-btn {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text);
+      padding: 12px;
+      text-align: left;
+      cursor: pointer;
+      min-height: 74px;
+    }
+
+    .molit-section-btn:hover,
+    .molit-section-btn:focus-visible {
+      border-color: var(--muted);
+      outline: none;
+    }
+
+    .molit-section-btn.active {
+      border-color: var(--accent);
+      background: rgba(245, 211, 96, 0.08);
+    }
+
+    .molit-section-btn strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .molit-section-btn span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .molit-current {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .molit-current h3 {
+      margin: 0 0 5px;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .molit-current p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .molit-current-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .molit-summary {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin: 0 0 12px;
+    }
+
+    .summary-chip {
+      border: 1px solid var(--line-soft);
+      border-radius: 11px;
+      background: var(--panel-2);
+      padding: 10px;
+      min-height: 58px;
+    }
+
+    .summary-chip span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .summary-chip strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.15;
+    }
+
+    @media (max-width: 1320px) {
+      .content {
+        width: calc(100vw - var(--sidebar-open) - 48px);
+      }
+
+      .sidebar-collapsed + .main .content {
+        width: calc(100vw - var(--sidebar-closed) - 48px);
+      }
+
+      .kpi-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .add-form {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .task-row {
+        grid-template-columns: minmax(130px, 1fr) minmax(150px, 1.15fr) 82px 78px 54px 82px 34px;
+        gap: 6px;
+      }
+    }
+
+    @media (max-width: 1120px) {
+      .main {
+        padding: 46px 18px 72px;
+      }
+
+      .content,
+      .sidebar-collapsed + .main .content {
+        width: calc(100vw - var(--sidebar-closed) - 36px);
+      }
+
+      .app {
+        grid-template-columns: var(--sidebar-closed) minmax(0, 1fr);
+      }
+
+      .sidebar:not(.force-open) .brand-title,
+      .sidebar:not(.force-open) .nav-label,
+      .sidebar:not(.force-open) .nav-group span,
+      .sidebar:not(.force-open) .nav-group .chev,
+      .sidebar:not(.force-open) .footer-text {
+        display: none;
+      }
+
+      .page-head {
+        grid-template-columns: 1fr;
+      }
+
+      .top-meta {
+        justify-self: start;
+      }
+
+      .workspace-layout {
+        grid-template-columns: minmax(0, 1fr) 168px;
+      }
+
+      .workspace-main,
+      .project-rail {
+        grid-row: 1;
+      }
+
+      .workspace-main {
+        grid-column: 1;
+      }
+
+      .project-rail {
+        grid-column: 2;
+        top: 16px;
+      }
+
+      .rail-label,
+      .rail-divider {
+        display: block;
+      }
+
+      .rail-btn,
+      .view-btn {
+        text-align: left;
+      }
+
+      .date-chip {
+        margin-top: 8px;
+      }
+
+      .lane-grid,
+      .report-grid,
+      .control-page-body {
+        grid-template-columns: 1fr;
+      }
+
+      .entry-list {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 210px;
+      }
+
+      .spec-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .spec-item:nth-child(3n) {
+        border-right: 1px solid var(--line-soft);
+      }
+
+      .spec-item:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .card-grid,
+      .control-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .molit-section-grid,
+      .molit-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 860px) {
+      .task-tools,
+      .rr-filters,
+      .counterparty-filters {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .segmented {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      .segment-btn {
+        flex: 1 0 auto;
+      }
+
+      .workspace-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .workspace-main,
+      .project-rail {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .project-rail {
+        top: 0;
+        display: grid;
+        grid-template-columns: auto repeat(3, minmax(0, 1fr)) auto auto;
+        gap: 4px;
+        align-items: center;
+        overflow-x: auto;
+      }
+
+      .rail-label,
+      .rail-divider {
+        display: none;
+      }
+
+      .rail-btn,
+      .view-btn {
+        text-align: center;
+      }
+
+      .date-chip {
+        margin-top: 0;
+      }
+
+      .add-form,
+      .task-row,
+      .kpi-grid,
+      .card-grid,
+      .control-grid,
+      .molit-section-grid,
+      .molit-summary,
+      .spec-grid,
+      .report-grid,
+      .editor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .task-row {
+        align-items: start;
+      }
+
+      .delete-btn {
+        justify-self: end;
+      }
+
+      .milestone,
+      .milestone-head {
+        grid-template-columns: 1fr;
+      }
+
+      .milestone-head {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="IOTA Seoul navigation">
+      <div class="brand">
+        <div class="brand-title">IOTA Seoul</div>
+        <button class="collapse-btn" id="sidebarToggle" type="button" aria-label="사이드바 접기">
+          <span aria-hidden="true">◧</span>
+        </button>
+      </div>
+      <nav class="nav">
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path></svg></span><span class="nav-label">전체 현황</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"></path><path d="M12 12 4.4 7.7"></path><path d="M12 12v9"></path><path d="m12 12 7.6-4.3"></path></svg></span><span class="nav-label">Vehicle 통합</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21V4h9v17"></path><path d="M13 9h7v12"></path><path d="M7 8h3"></path><path d="M7 12h3"></path><path d="M16 13h2"></path><path d="M16 17h2"></path></svg></span><span class="nav-label">IOTA One 427</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V3h14v18"></path><path d="M9 7h6"></path><path d="M9 11h6"></path><path d="M9 15h6"></path></svg></span><span class="nav-label">IOTA Two 816</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20h14"></path><path d="M7 20V6h10v14"></path><path d="M9 10h6"></path><path d="M9 14h6"></path></svg></span><span class="nav-label">421 Fund</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 8-8v8Z"></path><path d="M12 4a8 8 0 0 1 8 8h-8Z"></path></svg></span><span class="nav-label">Project REITs</span></a>
+
+        <div class="nav-group"><span>워크스페이스</span><span class="chev">⌄</span></div>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><path d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M20 8v6"></path><path d="M23 11h-6"></path></svg></span><span class="nav-label">사업 PM</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="M12 6v12"></path><path d="M8 10h6a2 2 0 0 1 0 4H9"></path></svg></span><span class="nav-label">파이낸싱</span></a>
+        <a class="nav-item active" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1H4a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 7.03 3.8l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6V4a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.4.22.6.6.6 1H20a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-.51 1Z"></path></svg></span><span class="nav-label">개발관리</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18"></path><path d="M7 7h10"></path><path d="M6 15h12"></path><path d="M10 19h4"></path></svg></span><span class="nav-label">기업마케팅</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H4Z"></path><path d="M8 19h8"></path><path d="M12 15v4"></path></svg></span><span class="nav-label">상품·디지털</span></a>
+
+        <div class="nav-group"><span>이해관계자</span><span class="chev">⌄</span></div>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"></path><path d="M6 20V8h5v12"></path><path d="M13 20V4h5v16"></path></svg></span><span class="nav-label">IGIS 내부인력</span></a>
+        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M17 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M11 14h2"></path></svg></span><span class="nav-label">LP / 대주 / SI</span></a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="avatar">JK</div>
+        <div class="footer-text">
+          <div class="footer-name">Jeon Kiyoung</div>
+          <div class="footer-sub">설정하기</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="content">
+        <header class="page-head">
+          <div>
+            <h1>개발관리</h1>
+            <p class="lead">IOTA Seoul One 427과 Two 816의 개발 일정, 공사비, 물리 제원, 업무, 이해관계자 대응을 함께 보는 내부 업무판입니다.</p>
+          </div>
+          <div class="top-meta" aria-label="개발관리 요약">
+            <div><span>Lead</span><strong>홍장군</strong></div>
+            <div><span>Members</span><strong>7명</strong></div>
+            <div><span>Key Partner</span><strong>현대건설 / 삼성물산</strong></div>
+          </div>
+        </header>
+
+        <div class="workspace-layout">
+          <aside class="project-rail" aria-label="프로젝트 및 화면 선택">
+            <div class="rail-label">Project</div>
+            <button class="rail-btn project-btn active" type="button" data-project="total">통합</button>
+            <button class="rail-btn project-btn" type="button" data-project="427">IOTA One 427</button>
+            <button class="rail-btn project-btn" type="button" data-project="816">IOTA Two 816</button>
+            <div class="rail-divider"></div>
+            <button class="view-btn active" type="button" data-view="workspace">개발관리</button>
+            <button class="view-btn" type="button" data-view="molit">국토부 보고</button>
+            <div class="date-chip">2026-04-30</div>
+          </aside>
+
+          <div class="workspace-main">
+            <div id="workspaceView" class="view-panel">
+              <section class="section open" id="taskSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Work Board</div>
+                    <h2>주요 진행 업무</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="task-tools">
+                    <div class="segmented" role="tablist" aria-label="업무 기간 선택">
+                      <button class="segment-btn period-btn active" type="button" data-period="today">오늘</button>
+                      <button class="segment-btn period-btn" type="button" data-period="week">이번 주</button>
+                      <button class="segment-btn period-btn" type="button" data-period="month">이번 달</button>
+                    </div>
+                  </div>
+                  <form class="add-form" id="taskForm">
+                    <input class="input" name="title" type="text" placeholder="제목" autocomplete="off" required>
+                    <input class="input" name="description" type="text" placeholder="설명" autocomplete="off">
+                    <input class="input" name="due" type="date" aria-label="due date">
+                    <input class="input" name="owner" type="text" placeholder="담당자" autocomplete="off">
+                    <select class="select" name="priority" aria-label="중요도">
+                      <option value="상">상</option>
+                      <option value="중" selected>중</option>
+                      <option value="하">하</option>
+                    </select>
+                    <input class="input" name="counterparty" type="text" placeholder="counterparty" autocomplete="off">
+                    <button class="action-btn primary" type="submit">추가</button>
+                  </form>
+                  <div class="task-list" id="taskList"></div>
+                </div>
+              </section>
+
+              <section class="section" id="changeSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Development Control</div>
+                    <h2>Meeting Board</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="control-grid" id="controlGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="milestoneSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Development Milestones</div>
+                    <h2>개발 일정 / 마일스톤</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="lane-grid" id="milestoneLanes"></div>
+                </div>
+              </section>
+
+              <section class="section" id="kpiSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Physical KPIs</div>
+                    <h2>물리 제원 핵심 지표</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="kpi-grid" id="kpiGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="costSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Construction Cost</div>
+                    <h2>공사비 break down</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="table-wrap">
+                    <table>
+                      <colgroup>
+                        <col style="width: 46%">
+                        <col style="width: 18%">
+                        <col style="width: 14%">
+                        <col style="width: 22%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>항목</th>
+                          <th class="num">금액(억원)</th>
+                          <th class="num">비율</th>
+                          <th>메모</th>
+                        </tr>
+                      </thead>
+                      <tbody id="costTable"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section" id="archSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Architecture</div>
+                    <h2>건축개요</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="spec-grid" id="specGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="rrSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Responsibility</div>
+                    <h2>이해관계자 / R&amp;R</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="rr-filters">
+                    <div class="segmented" role="tablist" aria-label="내부 외부 선택">
+                      <button class="segment-btn rr-type-btn active" type="button" data-type="internal">내부</button>
+                      <button class="segment-btn rr-type-btn" type="button" data-type="external">외부</button>
+                    </div>
+                    <div class="segmented" role="tablist" aria-label="R&R 프로젝트 선택">
+                      <button class="segment-btn rr-project-btn active" type="button" data-project="total">통합</button>
+                      <button class="segment-btn rr-project-btn" type="button" data-project="427">427</button>
+                      <button class="segment-btn rr-project-btn" type="button" data-project="816">816</button>
+                    </div>
+                  </div>
+                  <div class="card-grid" id="rrGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="counterpartySection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Counterparty</div>
+                    <h2>개발 카운터파티 관리 포인트</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="counterparty-filters">
+                    <div class="segmented" role="tablist" aria-label="카운터파티 프로젝트 선택">
+                      <button class="segment-btn cp-project-btn active" type="button" data-project="total">통합</button>
+                      <button class="segment-btn cp-project-btn" type="button" data-project="427">427</button>
+                      <button class="segment-btn cp-project-btn" type="button" data-project="816">816</button>
+                    </div>
+                  </div>
+                  <div class="card-grid" id="counterpartyGrid"></div>
+                </div>
+              </section>
+            </div>
+
+            <div id="molitView" class="view-panel" hidden>
+              <section class="section">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">MOLIT Reporting</div>
+                    <h2>국토부 보고</h2>
+                  </div>
+                  <div class="molit-head-actions">
+                    <button class="action-btn" type="button" data-view="workspace">개발관리로 돌아가기</button>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="molit-section-grid" id="molitSectionGrid"></div>
+                  <div class="molit-current">
+                    <div>
+                      <h3 id="molitCurrentTitle">프로젝트 및 자산 정보</h3>
+                      <p id="molitCurrentGate">Gate 0-6 공통</p>
+                    </div>
+                    <div class="molit-current-actions">
+                      <button class="action-btn primary" type="button" data-download-molit="active">현재 카테고리 다운로드</button>
+                      <button class="action-btn" type="button" data-download-molit="all">전체 다운로드</button>
+                      <button class="action-btn" type="button" data-download-molit="gate">Gate별 다운로드</button>
+                      <button class="action-btn" type="button" data-download-molit="open">확인 필요 다운로드</button>
+                    </div>
+                  </div>
+                  <div class="molit-summary" id="molitSummary"></div>
+                  <div class="table-wrap">
+                    <table>
+                      <colgroup>
+                        <col style="width: 22%">
+                        <col style="width: 24%">
+                        <col style="width: 42%">
+                        <col style="width: 12%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>구분</th>
+                          <th>항목</th>
+                          <th>값</th>
+                          <th>상태</th>
+                        </tr>
+                      </thead>
+                      <tbody id="molitTable"></tbody>
+                    </table>
+                  </div>
+                  <div class="report-grid" style="margin-top:14px">
+                    <div class="report-box">
+                      <h3>마스킹/제외 대상</h3>
+                      <ul class="plain-list" id="molitMasked"></ul>
+                    </div>
+                    <div class="report-box">
+                      <h3>제출 전 확인</h3>
+                      <ul class="plain-list">
+                        <li>확정 전 수치와 내부 협상 정보는 다운로드 본문에서 제외</li>
+                        <li>공사비 변경계약, 기성 집행, 지연 사유는 증빙 확보 후 반영</li>
+                        <li>담당자 연락 체계는 외부 제출 범위에 맞춰 조직/직책 중심으로 정리</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="lenderBackdrop" role="dialog" aria-modal="true" aria-labelledby="lenderTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 class="modal-title" id="lenderTitle">대주단 세부 목록</h2>
+          <p class="modal-desc">개발 이벤트와 연동이 필요할 때만 확인하는 금융 연계 정보입니다.</p>
+        </div>
+        <button class="close-btn" id="lenderClose" type="button" aria-label="팝업 닫기">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col style="width: 18%">
+              <col style="width: 44%">
+              <col style="width: 18%">
+              <col style="width: 20%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>트랜치</th>
+                <th>기관 / SPC</th>
+                <th class="num">금액(억원)</th>
+                <th>구분</th>
+              </tr>
+            </thead>
+            <tbody id="lenderTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-backdrop" id="controlBackdrop" role="dialog" aria-modal="true" aria-labelledby="controlTitle">
+    <div class="page-modal">
+      <div class="page-modal-head">
+        <div>
+          <h2 class="modal-title" id="controlTitle">인허가·대관</h2>
+          <p class="modal-desc" id="controlMeta">저장됨</p>
+        </div>
+        <button class="close-btn" id="controlClose" type="button" aria-label="팝업 닫기">×</button>
+      </div>
+      <div class="control-page-body">
+        <aside class="entry-list">
+          <button class="action-btn primary" type="button" id="addControlEntry" style="width:100%;margin-bottom:12px">새 기록 추가</button>
+          <div id="entryList"></div>
+        </aside>
+        <section class="entry-editor" id="entryEditor"></section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // @iota-data-v09:start
+    const iotaData = {
+      "version": "v0.9",
+      "workbook": "IOTA_Seoul_DB_for_UI_v0.9.xlsx",
+      "generatedAt": "2026-04-30",
+      "sourceDate": "2026-04-30",
+      "extraExtractRows": 61,
+      "promotionStatus": {
+            "반영": 9,
+            "보류-검토안": 49,
+            "보류-충돌": 3
+      },
+      "financeValues": {
+            "Bridge Loan": "기존 B/L 7,170억원 / 리파이낸싱 후 Tr.A 5,600억원 / Tr.B 1,400억원 / Tr.C 970억원 / 합계 7,970억원",
+            "본 PF": "통합 PF 2027.02, IOTA1 착공 2027.05, IOTA2 착공 2028.05, 통합준공 2032.07 / Equity 1.3조원, Loan 5.7조원, 신규 FI 1조원, IGIS+SI 3,000억원"
+      },
+      "syncNotes": [
+            "HTML 표시값은 v0.9 UI workbook 기준으로 동기화합니다.",
+            "계획안/검토안/시나리오 값은 확정값으로 승격하지 않습니다."
+      ]
+};
+        // @iota-data-v09:end
+
+    const DATA = {
+      meta: { sourceDate: "2026-04-30", dbVersion: iotaData.version, workbook: iotaData.workbook },
+      projects: {
+        "427": {
+          name: "IOTA One 427",
+          short: "427",
+          asset: "IOTA Seoul One",
+          completion: "2032.08",
+          kpis: [
+            ["연면적", "338,982.69㎡", "102,542.26평"],
+            ["대지면적", "18,953.50㎡", "5,733.43평"],
+            ["건축면적", "8,911.77㎡", "2,695.81평"],
+            ["건폐율", "47.02%", ""],
+            ["용적률", "1,056.62%", ""],
+            ["규모", "B10 / 지상 34층 업무시설", "지상 39층 숙박시설"],
+            ["높이", "141.80m", ""],
+            ["주차", "2,232대", ""]
+          ],
+          specs: [
+            ["자산명", "IOTA Seoul One ((구)밀레니엄 힐튼호텔)"],
+            ["소재지", "서울시 중구 남대문로5가 395번지 일원"],
+            ["용도", "업무시설, 근린생활시설"],
+            ["대지면적", "18,953.50㎡ / 5,733.43평"],
+            ["건축면적", "8,911.77㎡ / 2,695.81평"],
+            ["연면적", "338,982.69㎡ / 102,542.26평"],
+            ["건폐율", "47.02%"],
+            ["용적률", "1,056.62%"],
+            ["규모", "지하 10층 / 지상 34층 업무시설, 지상 39층 숙박시설"],
+            ["높이", "141.80m"],
+            ["주차대수", "2,232대"],
+            ["준공", "2032.08"]
+          ],
+          milestones: [
+            { title: "사업시행인가", uwDate: "2024.12", actualDate: "2024.12", status: "완료" },
+            { title: "관리처분인가", uwDate: "2025.03", actualDate: "2025.03", status: "완료" },
+            { title: "철거 착공", uwDate: "2025.05", actualDate: "2025.05", status: "진행" },
+            { title: "철거공사 완료", uwDate: "2026.07", actualDate: "2027.01", status: "예정" },
+            { title: "착공계 제출", uwDate: "2026.09", actualDate: "2027.03", status: "예정" },
+            { title: "본공사 착공", uwDate: "2026.11", actualDate: "2027.05", status: "예정" },
+            { title: "준공", uwDate: "2032.02", actualDate: "2032.08", status: "예정" }
+          ],
+          source: "IOTA_Seoul_PF_Teaser_v2.0 / 사업일정 자료"
+        },
+        "816": {
+          name: "IOTA Two 816",
+          short: "816",
+          asset: "IOTA Seoul Two",
+          completion: "2032.06",
+          kpis: [
+            ["연면적", "120,783.00㎡", "36,536.86평"],
+            ["대지면적", "7,199.90㎡", "2,177.97평"],
+            ["건축면적", "2,929.14㎡", "886.06평"],
+            ["건폐율", "42.86%", ""],
+            ["용적률", "1,159.94%", ""],
+            ["규모", "B9 / F34", ""],
+            ["높이", "162.98m", ""],
+            ["주차", "519대", ""]
+          ],
+          specs: [
+            ["자산명", "IOTA Seoul Two ((구)서울로타워&메트로타워)"],
+            ["소재지", "서울시 중구 남대문로5가 526번지 일원"],
+            ["용도", "업무시설, 근린생활시설"],
+            ["대지면적", "7,199.90㎡ / 2,177.97평"],
+            ["건축면적", "2,929.14㎡ / 886.06평"],
+            ["연면적", "120,783.00㎡ / 36,536.86평"],
+            ["건폐율", "42.86%"],
+            ["용적률", "1,159.94%"],
+            ["규모", "지하 9층 / 지상 34층"],
+            ["높이", "162.98m"],
+            ["주차대수", "519대"],
+            ["준공", "2032.06"]
+          ],
+          milestones: [
+            { title: "통합심의 완료", uwDate: "2024.12", actualDate: "2024.12", status: "완료" },
+            { title: "사업시행인가", uwDate: "2025.04", actualDate: "2025.04", status: "완료" },
+            { title: "관리처분인가", uwDate: "2025.10", actualDate: "2025.10", status: "완료" },
+            { title: "철거 개시", uwDate: "2026.09", actualDate: "2027.03", status: "예정" },
+            { title: "본공사 착공", uwDate: "2027.12", actualDate: "2028.06", status: "예정" },
+            { title: "준공", uwDate: "2031.12", actualDate: "2032.06", status: "예정" }
+          ],
+          source: "IOTA_Seoul_PF_Teaser_v2.0 / Financial Model / 사업일정 자료"
+        },
+        total: {
+          name: "IOTA Seoul 통합",
+          short: "통합",
+          asset: "IOTA Seoul",
+          completion: "2032.08",
+          kpis: [
+            ["연면적 합산", "459,765.69㎡", "139,079.12평"],
+            ["대지면적 합산", "26,153.40㎡", "7,911.40평"],
+            ["건축면적 합산", "11,840.91㎡", "3,581.87평"],
+            ["계획 규모", "약 14만평", "문서상 계획값"],
+            ["주차 합산", "2,751대", ""],
+            ["427 준공", "2032.08", ""],
+            ["816 준공", "2032.06", ""],
+            ["주요 시공", "현대건설 / 삼성물산", ""]
+          ],
+          specs: [
+            ["프로젝트", "IOTA Seoul 통합 개발"],
+            ["구성", "IOTA One 427 + IOTA Two 816"],
+            ["연면적 합산", "459,765.69㎡ / 139,079.12평"],
+            ["문서상 계획 규모", "약 14만평"],
+            ["대지면적 합산", "26,153.40㎡ / 7,911.40평"],
+            ["건축면적 합산", "11,840.91㎡ / 3,581.87평"],
+            ["용도", "업무시설, 근린생활시설 중심"],
+            ["주차대수", "2,751대"],
+            ["주요 시공사", "현대건설 / 삼성물산"],
+            ["427 준공", "2032.08"],
+            ["816 준공", "2032.06"],
+            ["관리 방식", "자산별 일정·공사비·카운터파티 분리 관리"]
+          ],
+          source: "IOTA_Seoul_PF_Teaser_v2.0 / 사업일정 자료"
+        }
+      },
+      cost: {
+        "427": [
+          {
+            id: "one-cost-root",
+            label: "공사비 합계",
+            amount: 12320.5,
+            memo: "직접공사비 + 간접공사비",
+            source: "Financial Model",
+            children: [
+              {
+                id: "one-direct",
+                label: "직접공사비",
+                amount: 10130.0,
+                memo: "Financial Model 기준",
+                source: "Financial Model",
+                children: [
+                  { id: "one-contract", label: "도급공사비", amount: 11279.6, memo: "PF Teaser 평당 11.0백만원 기준", source: "IOTA_Seoul_PF_Teaser_v2.0" },
+                  { id: "one-direct-detail", label: "직접공사비 세부", amount: null, memo: "하위 항목 원천 확인 필요", source: "Financial Model" }
+                ]
+              },
+              {
+                id: "one-indirect",
+                label: "간접공사비",
+                amount: 2190.5,
+                memo: "Financial Model 기준",
+                source: "Financial Model",
+                children: [
+                  { id: "one-design", label: "설계·CM·인허가", amount: null, memo: "세부 금액 원천 확인 필요", source: "Financial Model" },
+                  { id: "one-burden", label: "부담금·인입·인증", amount: null, memo: "세부 금액 원천 확인 필요", source: "Financial Model" }
+                ]
+              },
+              { id: "one-tax", label: "제세공과금", amount: 214.0, memo: "공사비 외 개발비 항목", source: "Financial Model" }
+            ]
+          }
+        ],
+        "816": [
+          {
+            id: "two-cost-root",
+            label: "공사비 합계",
+            amount: 6436.1,
+            memo: "직접공사비 + 간접공사비",
+            source: "Financial Model",
+            children: [
+              {
+                id: "two-direct",
+                label: "직접공사비",
+                amount: 5408.0,
+                memo: "",
+                source: "Financial Model",
+                children: [
+                  { id: "two-contract", label: "도급공사비", amount: 4679.0, memo: "삼성물산", source: "Financial Model" },
+                  { id: "two-demo", label: "철거비", amount: 300.0, memo: "", source: "Financial Model" },
+                  { id: "two-underground", label: "지하연결통로공사", amount: 200.0, memo: "", source: "Financial Model" },
+                  { id: "two-walk", label: "양동숲길보행로", amount: 29.0, memo: "", source: "Financial Model" },
+                  { id: "two-contingency", label: "Hard Cost Contingency", amount: 200.0, memo: "", source: "Financial Model" }
+                ]
+              },
+              {
+                id: "two-indirect",
+                label: "간접공사비",
+                amount: 1028.1,
+                memo: "",
+                source: "Financial Model",
+                children: [
+                  { id: "two-design-domestic", label: "Architectural Design 국내", amount: 67.0, memo: "", source: "Financial Model" },
+                  { id: "two-design-overseas", label: "Architectural Design 해외", amount: 60.0, memo: "", source: "Financial Model" },
+                  { id: "two-pcs", label: "PCS", amount: 200.0, memo: "", source: "Financial Model" },
+                  { id: "two-interior", label: "인테리어설계", amount: 14.6, memo: "", source: "Financial Model" },
+                  { id: "two-permit", label: "인허가용역", amount: 17.0, memo: "", source: "Financial Model" },
+                  { id: "two-cm", label: "CM/감리비", amount: 36.5, memo: "", source: "Financial Model" },
+                  { id: "two-pm-design", label: "PM 설계·공사", amount: 55.0, memo: "", source: "Financial Model" },
+                  { id: "two-pm-permit", label: "PM 인허가", amount: 30.0, memo: "", source: "Financial Model" },
+                  { id: "two-burden", label: "부담금", amount: 465.4, memo: "", source: "Financial Model" },
+                  { id: "two-etc", label: "기타 조사·인입·인증", amount: 82.6, memo: "", source: "Financial Model" }
+                ]
+              }
+            ]
+          }
+        ],
+        total: [
+          {
+            id: "total-cost-root",
+            label: "통합 공사비용",
+            amount: 18662.8,
+            memo: "문서상 통합 계획값",
+            source: "IOTA_Seoul_PF_Teaser_v2.0",
+            children: [
+              { id: "total-one", label: "IOTA One 427", amount: 11279.6, memo: "PF Teaser 평당 11.0백만원 기준", source: "IOTA_Seoul_PF_Teaser_v2.0" },
+              { id: "total-two", label: "IOTA Two 816", amount: 4676.7, memo: "PF Teaser 평당 12.8백만원 기준", source: "IOTA_Seoul_PF_Teaser_v2.0" },
+              { id: "total-etc", label: "통합·공통·반올림 차이", amount: 2706.5, memo: "세부 분해 필요", source: "IOTA_Seoul_PF_Teaser_v2.0" }
+            ]
+          }
+        ]
+      },
+      defaultTasks: {
+        today: [
+          { id: "d-today-1", title: "427 / 816 개발 일정 재정리", description: "UW 일정과 실제 일정을 분리하고 지연 개월 수를 표시", due: "2026-04-30", owner: "PM", priority: "상", counterparty: "개발솔루션", linkedMilestoneId: "MS-427-START", linkedCostItemId: "", linkedPermitId: "PERMIT-START", linkedMolitSectionId: "construction" },
+          { id: "d-today-2", title: "427 공사비 하위 항목 확인", description: "Financial Model 기준 직접공사비와 간접공사비를 반영", due: "2026-04-30", owner: "Development Cell", priority: "중", counterparty: "현대건설", linkedMilestoneId: "", linkedCostItemId: "one-cost-root", linkedPermitId: "", linkedMolitSectionId: "finance" }
+        ],
+        week: [
+          { id: "d-week-1", title: "인허가·대관 기록 정리", description: "일별 핵심 이슈와 회의록을 팝업 보드에 누적", due: "2026-05-08", owner: "PM", priority: "상", counterparty: "지자체 / 인허가 기관", linkedMilestoneId: "MS-816-PERMIT", linkedCostItemId: "", linkedPermitId: "PERMIT-816-MGMT", linkedMolitSectionId: "permits" },
+          { id: "d-week-2", title: "공정관리 이슈 보드 운영", description: "철거, 착공, 공정 지연 관련 액션을 날짜별로 정리", due: "2026-05-08", owner: "홍장군", priority: "중", counterparty: "현대건설 / 삼성물산", linkedMilestoneId: "MS-816-START", linkedCostItemId: "", linkedPermitId: "PERMIT-START", linkedMolitSectionId: "construction" }
+        ],
+        month: [
+          { id: "d-month-1", title: "국토부 보고 가능 항목 정리", description: "제출 가능 항목과 마스킹 대상을 분리", due: "2026-05-29", owner: "Data Owner", priority: "중", counterparty: "내부 검토", linkedMilestoneId: "", linkedCostItemId: "", linkedPermitId: "", linkedMolitSectionId: "project-asset" }
+        ]
+      },
+      rr: [
+        { type: "internal", project: "total", name: "이철승", role: "CFT 총괄", issue: "통합 의사결정 총괄", next: "자산별 개발·금융·상품 쟁점 취합" },
+        { type: "internal", project: "total", name: "권순일 / 강순용", role: "사업 PM", issue: "IOTA Seoul 통합 PM", next: "일정·대관·회의 안건 정리" },
+        { type: "internal", project: "total", name: "홍장군", role: "개발관리 Lead", issue: "시공·CM·인허가 관리", next: "개발 변경관리 운영" },
+        { type: "internal", project: "427", name: "개발솔루션 427 담당", role: "IOTA One 개발관리", issue: "현대건설 및 설계·CM 대응", next: "철거·착공계 일정 점검" },
+        { type: "internal", project: "816", name: "개발솔루션 816 담당", role: "IOTA Two 개발관리", issue: "삼성물산 및 인허가 일정 관리", next: "본공사 착공 전 선행조건 확인" },
+        { type: "internal", project: "total", name: "박준호 / LFC", role: "파이낸싱 창구", issue: "대주단·증권사 커뮤니케이션", next: "개발 이벤트와 금융 일정 간 충돌 확인" },
+        { type: "external", project: "427", name: "현대건설", role: "IOTA One 시공", issue: "도급·철거·본공사 일정", next: "철거 완료 및 본공사 준비 일정 확인" },
+        { type: "external", project: "816", name: "삼성물산", role: "IOTA Two 시공", issue: "도급공사비 및 본공사 준비", next: "공사비 하위 항목과 변경관리 체계 확인" },
+        { type: "external", project: "total", name: "CM / 감리", role: "공정·품질·안전 관리", issue: "공정률·품질·안전 지표 원천 확보", next: "회의 액션과 감리보고 연결" },
+        { type: "external", project: "total", name: "인허가 기관 / 지자체", role: "대관·인허가", issue: "남은 인허가와 제출 일정 관리", next: "다음 제출 예정일과 보완사항 업데이트" }
+      ],
+      counterparties: [
+        { project: "427", name: "현대건설", category: "시공", point: "IOTA One 철거·착공계·본공사 전환 일정 관리", action: "철거 완료 및 본공사 준비 일정 확인", lastContact: "자료 필요", contractStatus: "도급/변경관리 확인 필요", openIssue: "427 공사비 하위 항목 및 착공계 선행조건", nextMeeting: "미정" },
+        { project: "816", name: "삼성물산", category: "시공", point: "IOTA Two 도급공사비, 본공사 착공 전 선행 업무 관리", action: "도급 변경·정산 항목과 공사비 하위 항목 확인", lastContact: "자료 필요", contractStatus: "도급 변경·정산 검토", openIssue: "본공사 착공 전 선행 업무와 공사비 변경 영향", nextMeeting: "미정" },
+        { project: "total", name: "설계사", category: "설계", point: "설계 변경이 상품 스펙, 인허가, 공사비에 미치는 영향 관리", action: "변경관리 로그에 설계 변경 항목 연결", lastContact: "자료 필요", contractStatus: "설계 변경 영향 검토", openIssue: "BIPV, 개방형녹지, 상품 스펙 영향", nextMeeting: "미정" },
+        { project: "total", name: "CM / 감리", category: "공정·품질·안전", point: "공정률, 품질, 안전, 감리보고 원천 확보", action: "회의 액션과 문서 체크리스트 연결", lastContact: "자료 필요", contractStatus: "용역/보고 체계 확인 필요", openIssue: "공정률·안전 지표 원천 확보", nextMeeting: "미정" },
+        { project: "total", name: "인허가 기관 / 지자체", category: "대관", point: "완료·진행·잔여 인허가와 다음 제출일 관리", action: "인허가/대관 보드에 담당자와 제출일 입력", lastContact: "자료 필요", contractStatus: "해당 없음", openIssue: "착공계와 남은 인허가 보완자료", nextMeeting: "미정" },
+        { project: "total", name: "대주단", category: "금융 연계", point: "개발 이벤트 영향이 필요한 경우에만 확인", action: "세부 대주단 목록 팝업 확인", popup: "lenders", lastContact: "자료 필요", contractStatus: "B/L 리파이낸싱·본 PF 검토", openIssue: "개발 마일스톤과 자금조달 일정 충돌 여부", nextMeeting: "미정" }
+      ],
+      controlRooms: [
+        { id: "permit", title: "인허가·대관", seedIssue: "잔여 인허가와 다음 제출 일정 점검", owner: "PM" },
+        { id: "schedule", title: "공정관리", seedIssue: "철거·착공·본공사 일정 지연 영향 점검", owner: "Development Cell" },
+        { id: "general", title: "기타 개발관리", seedIssue: "설계 변경, 도급 변경, 문서 체크리스트 관리", owner: "Data Owner" }
+      ],
+      molitReport: {
+        sections: [
+          {
+            id: "project-asset",
+            title: "프로젝트 및 자산 정보",
+            gate: "Gate 0-6 공통",
+            rows: [
+              ["사업명", "IOTA Seoul 통합 개발", "확정"],
+              ["구성 자산", "IOTA One 427 / IOTA Two 816", "확정"],
+              ["427 위치", "서울시 중구 남대문로5가 395번지 일원", "확정"],
+              ["816 위치", "서울시 중구 남대문로5가 526번지 일원", "확정"],
+              ["427 연면적", "338,982.69㎡ / 102,542.26평", "확정"],
+              ["816 연면적", "120,783.00㎡ / 36,536.86평", "확정"],
+              ["통합 연면적", "459,765.69㎡ / 139,079.12평", "확정"],
+              ["용도", "업무시설, 근린생활시설 중심", "확정"]
+            ]
+          },
+          {
+            id: "participants",
+            title: "사업 주체 및 이해관계자",
+            gate: "Gate 1-6 책임 체계",
+            rows: [
+              ["시행자", "YD427PFV / YD816PFV", "확인 필요"],
+              ["시공사", "현대건설 / 삼성물산", "확정"],
+              ["설계·CM·감리", "설계사, CM, 감리 세부 명단 자료 필요", "자료 필요"],
+              ["내부 개발관리", "Lead 홍장군 / PM / Development Cell", "확인 필요"],
+              ["인허가 대응", "지자체 및 관련 심의 기관 대응 체계", "확인 필요"],
+              ["주요 외부 카운터파티", "시공, 설계, CM/감리, 인허가 기관, 대주단", "확인 필요"]
+            ]
+          },
+          {
+            id: "finance",
+            title: "금융 및 자금 조달",
+            gate: "Gate 1 / Gate 3",
+            rows: [
+              ["통합 공사비", "18,662.8억원", "확인 필요"],
+              ["427 직접공사비", "10,130.0억원", "확인 필요"],
+              ["816 직접공사비", "5,408.0억원", "확정"],
+              ["Bridge Loan", "기존 B/L 7,170억원 / 리파이낸싱 후 7,970억원", "확인 필요"],
+              ["본 PF", "통합 PF 2027.02 목표, Loan 5.7조원 / Equity 1.3조원 계획", "확인 필요"],
+              ["자금 인출 계획/실적", "자료 필요", "자료 필요"],
+              ["변경계약 금액", "자료 필요", "자료 필요"]
+            ]
+          },
+          {
+            id: "permits",
+            title: "법규, 인허가 및 승인",
+            gate: "Gate 2",
+            rows: [
+              ["427 사업시행인가", "2024.12", "확정"],
+              ["427 관리처분인가", "2025.03", "확정"],
+              ["816 통합심의 완료", "2024.12", "확정"],
+              ["816 사업시행인가", "2025.04", "확정"],
+              ["816 관리처분인가", "2025.10", "확정"],
+              ["착공계", "427 2027.03 / 816 자료 필요", "확인 필요"],
+              ["소송·분쟁", "자료 필요", "자료 필요"]
+            ]
+          },
+          {
+            id: "construction",
+            title: "공사 및 안전 관리",
+            gate: "Gate 4-5",
+            rows: [
+              ["427 철거공사 완료", "2027.01", "예정"],
+              ["427 본공사 착공", "2027.05", "예정"],
+              ["816 철거 개시", "2027.03", "예정"],
+              ["816 본공사 착공", "2028.06", "예정"],
+              ["427 준공", "2032.08", "예정"],
+              ["816 준공", "2032.06", "예정"],
+              ["공정률/기성 집행", "자료 필요", "자료 필요"],
+              ["안전사고 및 조치", "자료 필요", "자료 필요"]
+            ]
+          },
+          {
+            id: "leasing-operation",
+            title: "임대/매각 및 운영",
+            gate: "Gate 6",
+            rows: [
+              ["임대 전략", "자료 필요", "자료 필요"],
+              ["임대율", "자료 필요", "자료 필요"],
+              ["목표 임대료", "자료 필요", "자료 필요"],
+              ["매각 전략", "자료 필요", "자료 필요"],
+              ["운영 전환 계획", "자료 필요", "자료 필요"],
+              ["마케팅 예산", "자료 필요", "자료 필요"]
+            ]
+          },
+          {
+            id: "risk-issue",
+            title: "리스크 및 이슈 관리",
+            gate: "전 Gate 공통",
+            rows: [
+              ["인허가 지연", "일정 영향 점검 필요", "확인 필요"],
+              ["공사비 변경", "427/816 공사비 하위 항목 확인 필요", "확인 필요"],
+              ["설계 변경", "상품 스펙·인허가·공사비 영향 관리", "확인 필요"],
+              ["카운터파티 이슈", "시공/설계/CM/인허가 기관별 관리", "확인 필요"],
+              ["조정협의회 관련 로그", "자료 필요", "자료 필요"],
+              ["완화 조치", "자료 필요", "자료 필요"]
+            ]
+          }
+        ],
+        masked: [
+          "개인명/연락처",
+          "LP·투자자 실명",
+          "내부 협상 전략",
+          "민감 금융 조건",
+          "금리·수수료·특약",
+          "임차사별 조건",
+          "미공개 입찰/매각 전략",
+          "미확정 사업성 가정",
+          "내부 반대 의견 및 회의 민감정보"
+        ]
+      },
+      lenders: [
+        ["Tr.A-1", "KHL21 / 메리츠 SPC", 1800, "선순위"],
+        ["Tr.A-1", "메리츠화재", 1800, "선순위"],
+        ["Tr.A-2", "Galaxy EO / NH SPC", 1300, "선순위"],
+        ["Tr.B", "816공간제일차", 50, "중순위"],
+        ["Tr.B", "한화실버아이언제일차", 50, "중순위"],
+        ["Tr.B", "한국투자 Debt Strategy", 600, "중순위"],
+        ["Tr.B", "한국투자 메자닌", 350, "중순위"],
+        ["Tr.B", "스틱", 100, "중순위"],
+        ["Tr.B", "대신저축은행", 80, "중순위"],
+        ["Tr.B", "비씨카드", 150, "중순위"],
+        ["Tr.B", "흥국저축은행", 20, "중순위"],
+        ["Tr.C", "816공간제일차", 200, "후순위"],
+        ["Tr.C", "키움 가치추구형", 90, "후순위"],
+        ["Tr.C", "이터널하이브", 480, "후순위"],
+        ["Tr.C", "코람코 국내개발", 200, "후순위"],
+        ["Tr.D", "KHL22 / Sono International SPC", 700, "후순위"]
+      ]
+    };
+
+    const app = document.getElementById("app");
+    const sidebarToggle = document.getElementById("sidebarToggle");
+    const taskStorageKey = "iotaDevTasks.v2";
+    const legacyTaskStorageKeys = ["iotaDevTasks.v1"];
+    const sidebarStorageKey = "iotaDevSidebarCollapsed";
+    const controlStorageKey = "iotaDevControlRooms.v1";
+    let currentProject = "total";
+    let currentPeriod = "today";
+    let currentView = "workspace";
+    let currentMolitSection = "project-asset";
+    let rrType = "internal";
+    let rrProject = "total";
+    let cpProject = "total";
+    let activeControlRoom = "permit";
+    let activeEntryId = "";
+    let lastControlCard = null;
+    let expandedCost = new Set(["total-cost-root", "one-cost-root", "one-direct", "one-indirect", "two-cost-root", "two-direct", "two-indirect"]);
+    let tasks = loadTasks();
+    let controlRooms = loadControlRooms();
+
+    function money(value) {
+      if (value === null || value === undefined || value === "") return "-";
+      return Number(value).toLocaleString("ko-KR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    }
+
+    function ratio(value, total) {
+      if (!value || !total) return "-";
+      return `${((value / total) * 100).toFixed(1)}%`;
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function monthsBetween(start, end) {
+      if (!start || !end || start === "자료 확인 필요" || end === "자료 확인 필요") return null;
+      const [sy, sm] = start.split(".").map(Number);
+      const [ey, em] = end.split(".").map(Number);
+      if (!sy || !sm || !ey || !em) return null;
+      return (ey - sy) * 12 + (em - sm);
+    }
+
+    function delayText(item) {
+      const diff = monthsBetween(item.uwDate, item.actualDate);
+      if (diff === null) return "자료 확인";
+      if (diff > 0) return `D+${diff}月`;
+      if (diff < 0) return `D${diff}月`;
+      return "D+0月";
+    }
+
+    function delayClass(item) {
+      const diff = monthsBetween(item.uwDate, item.actualDate);
+      if (diff === null) return "need";
+      return diff > 0 ? "delay" : "";
+    }
+
+    function statusClass(status) {
+      if (status === "완료") return "done";
+      if (status === "진행") return "attention";
+      return "waiting";
+    }
+
+    function today() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function normalizeTask(task) {
+      return {
+        id: task.id || `task-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        title: task.title || "",
+        description: task.description || "",
+        due: task.due || "",
+        owner: task.owner || "",
+        priority: task.priority || "중",
+        counterparty: task.counterparty || "",
+        linkedMilestoneId: task.linkedMilestoneId || "",
+        linkedCostItemId: task.linkedCostItemId || "",
+        linkedPermitId: task.linkedPermitId || "",
+        linkedMolitSectionId: task.linkedMolitSectionId || ""
+      };
+    }
+
+    function normalizeTaskBucket(parsed) {
+      return {
+        today: Array.isArray(parsed.today) ? parsed.today.map(normalizeTask) : DATA.defaultTasks.today.map(normalizeTask),
+        week: Array.isArray(parsed.week) ? parsed.week.map(normalizeTask) : DATA.defaultTasks.week.map(normalizeTask),
+        month: Array.isArray(parsed.month) ? parsed.month.map(normalizeTask) : DATA.defaultTasks.month.map(normalizeTask)
+      };
+    }
+
+    function loadTasks() {
+      try {
+        const raw = localStorage.getItem(taskStorageKey);
+        if (raw) {
+          return normalizeTaskBucket(JSON.parse(raw));
+        }
+        for (const legacyKey of legacyTaskStorageKeys) {
+          const legacyRaw = localStorage.getItem(legacyKey);
+          if (!legacyRaw) continue;
+          const migrated = normalizeTaskBucket(JSON.parse(legacyRaw));
+          localStorage.setItem(taskStorageKey, JSON.stringify(migrated));
+          return migrated;
+        }
+      } catch (error) {
+        console.warn("Task storage reset", error);
+      }
+      return normalizeTaskBucket(DATA.defaultTasks);
+    }
+
+    function saveTasks() {
+      localStorage.setItem(taskStorageKey, JSON.stringify(tasks));
+    }
+
+    function seedControlRooms() {
+      const now = new Date().toISOString();
+      const rooms = {};
+      DATA.controlRooms.forEach((room) => {
+        rooms[room.id] = {
+          ...room,
+          updatedAt: now,
+          selectedEntryId: `${room.id}-seed`,
+          entries: [{
+            id: `${room.id}-seed`,
+            date: DATA.meta.sourceDate,
+            title: room.seedIssue,
+            issue: room.seedIssue,
+            minutes: "",
+            actions: [{ text: room.seedIssue, owner: room.owner, due: "" }],
+            owner: room.owner,
+            due: "",
+            createdAt: now,
+            updatedAt: now
+          }]
+        };
+      });
+      return rooms;
+    }
+
+    function loadControlRooms() {
+      try {
+        const raw = localStorage.getItem(controlStorageKey);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && parsed.permit && parsed.schedule && parsed.general) return parsed;
+        }
+      } catch (error) {
+        console.warn("Control room storage reset", error);
+      }
+      return seedControlRooms();
+    }
+
+    function saveControlRooms() {
+      localStorage.setItem(controlStorageKey, JSON.stringify(controlRooms));
+    }
+
+    function setActive(buttons, activeValue, attr) {
+      buttons.forEach((button) => {
+        button.classList.toggle("active", button.dataset[attr] === activeValue);
+      });
+    }
+
+    function setView(view) {
+      currentView = view;
+      document.getElementById("workspaceView").hidden = view !== "workspace";
+      document.getElementById("molitView").hidden = view !== "molit";
+      setActive(document.querySelectorAll(".view-btn"), view, "view");
+      renderMolit();
+    }
+
+    function renderMilestones() {
+      const lanes = document.getElementById("milestoneLanes");
+      lanes.innerHTML = ["427", "816"].map((id) => {
+        const project = DATA.projects[id];
+        const dimmed = currentProject !== "total" && currentProject !== id ? " dimmed" : "";
+        return `
+          <article class="lane${dimmed}">
+            <div class="lane-top">
+              <div>
+                <div class="lane-title">${project.name}</div>
+                <div class="lane-sub">${project.asset}</div>
+              </div>
+              <span class="badge waiting">준공 ${project.completion}</span>
+            </div>
+            <div class="milestones">
+              <div class="milestone-head">
+                <div>마일스톤</div><div>UW</div><div>실제</div><div>지연</div><div>상태</div>
+              </div>
+              ${project.milestones.map((item) => `
+                <div class="milestone">
+                  <div class="milestone-name">${escapeHtml(item.title)}</div>
+                  <div class="milestone-date">${escapeHtml(item.uwDate)}</div>
+                  <div class="milestone-date">${escapeHtml(item.actualDate)}</div>
+                  <div class="milestone-delta ${delayClass(item)}">${delayText(item)}</div>
+                  <span class="badge ${statusClass(item.status)}">${escapeHtml(item.status)}</span>
+                </div>
+              `).join("")}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderTasks() {
+      const list = document.getElementById("taskList");
+      const rows = tasks[currentPeriod] || [];
+      if (!rows.length) {
+        list.innerHTML = `<div class="empty">등록된 업무가 없습니다. 위 입력줄에서 새 업무를 추가하세요.</div>`;
+        return;
+      }
+      list.innerHTML = rows.map((task) => {
+        const priorityClass = task.priority === "상" ? "high" : task.priority === "중" ? "medium" : "low";
+        return `
+          <div class="task-row" data-task-id="${escapeHtml(task.id)}">
+            <div class="task-title">${escapeHtml(task.title)}</div>
+            <div class="task-desc">${escapeHtml(task.description)}</div>
+            <div class="task-meta">${escapeHtml(task.due || "날짜 미정")}</div>
+            <div class="task-meta">${escapeHtml(task.owner || "담당 미정")}</div>
+            <span class="priority ${priorityClass}">${escapeHtml(task.priority)}</span>
+            <div class="task-meta">${escapeHtml(task.counterparty || "미정")}</div>
+            <button class="delete-btn" type="button" data-delete-task="${escapeHtml(task.id)}" aria-label="업무 삭제">×</button>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderKpis() {
+      const grid = document.getElementById("kpiGrid");
+      const project = DATA.projects[currentProject];
+      grid.innerHTML = project.kpis.map(([label, value, note]) => `
+        <div class="kpi">
+          <div class="kpi-label">${label}</div>
+          <div class="kpi-value">${value}</div>
+          ${note ? `<div class="kpi-note">${note}</div>` : ""}
+        </div>
+      `).join("");
+    }
+
+    function flattenCost(rows, depth = 0, total = null) {
+      const rootTotal = total || rows.reduce((sum, row) => sum + (row.amount || 0), 0);
+      const result = [];
+      rows.forEach((row) => {
+        result.push({ ...row, depth, rootTotal });
+        if (row.children && expandedCost.has(row.id)) {
+          result.push(...flattenCost(row.children, depth + 1, rootTotal));
+        }
+      });
+      return result;
+    }
+
+    function renderCost() {
+      const tbody = document.getElementById("costTable");
+      const rows = DATA.cost[currentProject] || DATA.cost.total;
+      const flattened = flattenCost(rows);
+      tbody.innerHTML = flattened.map((row) => {
+        const hasChildren = Array.isArray(row.children) && row.children.length > 0;
+        const icon = expandedCost.has(row.id) ? "−" : "+";
+        return `
+          <tr>
+            <td>
+              <div class="tree-name" style="padding-left:${row.depth * 18}px">
+                ${hasChildren ? `<button class="tree-toggle" type="button" data-cost-toggle="${row.id}" aria-label="${escapeHtml(row.label)} 접기 펼치기">${icon}</button>` : `<span class="tree-indent"></span>`}
+                <strong>${escapeHtml(row.label)}</strong>
+              </div>
+            </td>
+            <td class="num">${money(row.amount)}</td>
+            <td class="num">${ratio(row.amount, row.rootTotal)}</td>
+            <td>${escapeHtml(row.memo || "")}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function renderSpecs() {
+      const grid = document.getElementById("specGrid");
+      const specs = DATA.projects[currentProject].specs;
+      grid.innerHTML = specs.map(([label, value]) => `
+        <div class="spec-item">
+          <div class="spec-label">${escapeHtml(label)}</div>
+          <div class="spec-value">${escapeHtml(value)}</div>
+        </div>
+      `).join("");
+    }
+
+    function projectMatches(itemProject, selected) {
+      return selected === "total" ? true : itemProject === selected || itemProject === "total";
+    }
+
+    function renderControls() {
+      const grid = document.getElementById("controlGrid");
+      grid.innerHTML = DATA.controlRooms.map((base) => {
+        const room = controlRooms[base.id];
+        const entries = room.entries || [];
+        const recent = entries.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)))[0];
+        const openActions = entries.reduce((sum, entry) => sum + (entry.actions || []).filter((a) => a.text).length, 0);
+        return `
+          <article class="control-card" tabindex="0" role="button" data-control-room="${base.id}">
+            <div class="card-topline">
+              <div class="card-title">${escapeHtml(room.title)}</div>
+              <div class="card-sub">일별 기록</div>
+            </div>
+            <div class="card-line">${escapeHtml(recent ? recent.issue : "기록 없음")}</div>
+            <div class="control-metrics">
+              <div class="control-metric"><span>기록</span><strong>${entries.length}</strong></div>
+              <div class="control-metric"><span>액션</span><strong>${openActions}</strong></div>
+              <div class="control-metric"><span>최근</span><strong>${recent ? recent.date : "-"}</strong></div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderRR() {
+      const grid = document.getElementById("rrGrid");
+      const rows = DATA.rr.filter((item) => item.type === rrType && projectMatches(item.project, rrProject));
+      if (!rows.length) {
+        grid.innerHTML = `<div class="empty">선택 조건에 해당하는 담당자가 없습니다.</div>`;
+        return;
+      }
+      grid.innerHTML = rows.map((item) => `
+        <article class="person-card">
+          <div class="card-topline">
+          <div class="card-title">${escapeHtml(item.name)}</div>
+          <div class="card-sub">${escapeHtml(item.project === "total" ? "통합" : item.project)}</div>
+        </div>
+        <div class="card-line"><strong>${escapeHtml(item.role)}</strong></div>
+        <div class="card-line">${escapeHtml(item.issue)}</div>
+        <div class="card-line">${escapeHtml(item.next)}</div>
+      </article>
+    `).join("");
+    }
+
+    function renderCounterparties() {
+      const grid = document.getElementById("counterpartyGrid");
+      const rows = DATA.counterparties.filter((item) => projectMatches(item.project, cpProject));
+      grid.innerHTML = rows.map((item) => `
+        <article class="manage-card${item.popup ? " clickable" : ""}" ${item.popup ? `tabindex="0" role="button" data-popup="${item.popup}"` : ""}>
+          <div class="card-topline">
+            <div class="card-title">${escapeHtml(item.name)}</div>
+            <div class="card-sub">${escapeHtml(item.category)}</div>
+          </div>
+          <div class="card-line">${escapeHtml(item.point)}</div>
+          <div class="card-line">${escapeHtml(item.action)}</div>
+        </article>
+      `).join("");
+    }
+
+    function getMolitSection(sectionId) {
+      return DATA.molitReport.sections.find((section) => section.id === sectionId) || DATA.molitReport.sections[0];
+    }
+
+    function normalizeMolitRow(row) {
+      if (!Array.isArray(row)) return row;
+      const syncedValue = iotaData.financeValues?.[row[0]] || row[1];
+      return {
+        item: row[0],
+        value: syncedValue,
+        unit: "",
+        basisDate: DATA.meta.sourceDate,
+        status: row[2],
+        externalStatus: row[2] === "확정" ? "제출 가능" : "확인 필요",
+        gate: "",
+        evidence: "",
+        owner: ""
+      };
+    }
+
+    function molitRows(section) {
+      return section.rows.map(normalizeMolitRow).map((row) => ({ ...row, gate: row.gate || section.gate }));
+    }
+
+    function collectMolitSections(mode) {
+      if (mode === "all") return DATA.molitReport.sections;
+      if (mode === "gate") {
+        const active = getMolitSection(currentMolitSection);
+        return DATA.molitReport.sections
+          .map((section) => ({ ...section, rows: molitRows(section).filter((row) => row.gate === active.gate) }))
+          .filter((section) => section.rows.length);
+      }
+      if (mode === "open") {
+        return DATA.molitReport.sections
+          .map((section) => ({
+            ...section,
+            rows: molitRows(section).filter((row) => row.status !== "확정" || row.externalStatus === "확인 필요")
+          }))
+          .filter((section) => section.rows.length);
+      }
+      return [getMolitSection(mode === "active" ? currentMolitSection : mode)];
+    }
+
+    function molitSummary(rows) {
+      const counts = {
+        fixed: rows.filter((row) => row.status === "확정").length,
+        check: rows.filter((row) => row.status === "확인 필요").length,
+        need: rows.filter((row) => row.status === "자료 필요").length,
+        external: rows.filter((row) => row.externalStatus !== "제외").length,
+        excluded: rows.filter((row) => row.externalStatus === "제외").length
+      };
+      return counts;
+    }
+
+    function renderMolit() {
+      const sections = DATA.molitReport.sections;
+      const activeSection = getMolitSection(currentMolitSection);
+      const rows = molitRows(activeSection);
+      const summary = molitSummary(rows);
+      document.getElementById("molitSectionGrid").innerHTML = sections.map((section) => `
+        <button class="molit-section-btn${section.id === activeSection.id ? " active" : ""}" type="button" data-molit-section="${escapeHtml(section.id)}">
+          <strong>${escapeHtml(section.title)}</strong>
+          <span>${escapeHtml(section.gate)}</span>
+        </button>
+      `).join("");
+      document.getElementById("molitCurrentTitle").textContent = activeSection.title;
+      document.getElementById("molitCurrentGate").textContent = activeSection.gate;
+      document.getElementById("molitSummary").innerHTML = [
+        ["기준일", DATA.meta.sourceDate],
+        ["확정", `${summary.fixed}건`],
+        ["확인 필요", `${summary.check}건`],
+        ["자료 필요", `${summary.need}건`],
+        ["외부제출 가능", `${summary.external}건`],
+        ["제외", `${summary.excluded}건`]
+      ].map(([label, value]) => `<div class="summary-chip"><span>${label}</span><strong>${value}</strong></div>`).join("");
+      document.getElementById("molitTable").innerHTML = rows.map((row) => `
+        <tr>
+          <td>${escapeHtml(activeSection.title)}</td>
+          <td>${escapeHtml(row.item)}</td>
+          <td>${escapeHtml(row.unit ? `${row.value} ${row.unit}` : row.value)}</td>
+          <td>${escapeHtml(row.status)}</td>
+        </tr>
+      `).join("");
+      document.getElementById("molitMasked").innerHTML = DATA.molitReport.masked.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    }
+
+    function renderLenders() {
+      document.getElementById("lenderTable").innerHTML = DATA.lenders.map(([tranche, name, amount, type]) => `
+        <tr>
+          <td>${escapeHtml(tranche)}</td>
+          <td>${escapeHtml(name)}</td>
+          <td class="num">${Number(amount).toLocaleString("ko-KR")}</td>
+          <td>${escapeHtml(type)}</td>
+        </tr>
+      `).join("");
+    }
+
+    function openLenderModal() {
+      renderLenders();
+      document.getElementById("lenderBackdrop").classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.getElementById("lenderClose").focus();
+    }
+
+    function closeLenderModal() {
+      document.getElementById("lenderBackdrop").classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    function roomEntries() {
+      return controlRooms[activeControlRoom].entries || [];
+    }
+
+    function renderControlPage() {
+      const room = controlRooms[activeControlRoom];
+      document.getElementById("controlTitle").textContent = room.title;
+      document.getElementById("controlMeta").textContent = `저장됨 · ${room.updatedAt ? room.updatedAt.slice(0, 16).replace("T", " ") : ""}`;
+      const entries = roomEntries().slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      if (!activeEntryId && entries[0]) activeEntryId = entries[0].id;
+      document.getElementById("entryList").innerHTML = entries.map((entry) => `
+        <button class="entry-item ${entry.id === activeEntryId ? "active" : ""}" type="button" data-entry-id="${escapeHtml(entry.id)}">
+          <strong>${escapeHtml(entry.date)} · ${escapeHtml(entry.title || "기록")}</strong>
+          <span>${escapeHtml(entry.issue || "")}</span>
+        </button>
+      `).join("");
+      const entry = room.entries.find((item) => item.id === activeEntryId);
+      if (!entry) {
+        document.getElementById("entryEditor").innerHTML = `<div class="empty">선택된 기록이 없습니다.</div>`;
+        return;
+      }
+      document.getElementById("entryEditor").innerHTML = `
+        <div class="editor-grid">
+          <div><div class="editor-label">일자</div><input class="input control-field" data-field="date" type="date" value="${escapeHtml(entry.date)}"></div>
+          <div><div class="editor-label">제목</div><input class="input control-field" data-field="title" type="text" value="${escapeHtml(entry.title || "")}"></div>
+          <div><div class="editor-label">담당</div><input class="input control-field" data-field="owner" type="text" value="${escapeHtml(entry.owner || "")}"></div>
+        </div>
+        <div class="editor-block">
+          <div class="editor-label">핵심 이슈</div>
+          <textarea class="textarea control-field" data-field="issue">${escapeHtml(entry.issue || "")}</textarea>
+        </div>
+        <div class="editor-block">
+          <div class="editor-label">회의록</div>
+          <textarea class="textarea control-field" data-field="minutes">${escapeHtml(entry.minutes || "")}</textarea>
+        </div>
+        <div class="editor-block">
+          <div class="editor-label">액션</div>
+          <textarea class="textarea control-field" data-field="actionsText">${escapeHtml((entry.actions || []).map((a) => `${a.text || ""} / ${a.owner || ""} / ${a.due || ""}`).join("\n"))}</textarea>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
+          <button class="action-btn danger" type="button" id="deleteControlEntry">기록 삭제</button>
+        </div>
+        <div class="saved-state">입력 내용은 자동 저장됩니다.</div>
+      `;
+    }
+
+    function openControlRoom(roomId, sourceCard) {
+      activeControlRoom = roomId;
+      activeEntryId = controlRooms[roomId].selectedEntryId || (controlRooms[roomId].entries[0] && controlRooms[roomId].entries[0].id) || "";
+      lastControlCard = sourceCard || null;
+      renderControlPage();
+      document.getElementById("controlBackdrop").classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.getElementById("controlClose").focus();
+    }
+
+    function closeControlRoom() {
+      document.getElementById("controlBackdrop").classList.remove("open");
+      document.body.style.overflow = "";
+      renderControls();
+      if (lastControlCard) lastControlCard.focus();
+    }
+
+    function updateActiveEntry(field, value) {
+      const room = controlRooms[activeControlRoom];
+      const entry = room.entries.find((item) => item.id === activeEntryId);
+      if (!entry) return;
+      if (field === "actionsText") {
+        entry.actions = value.split("\n").filter(Boolean).map((line) => {
+          const [text = "", owner = "", due = ""] = line.split("/").map((part) => part.trim());
+          return { text, owner, due };
+        });
+      } else {
+        entry[field] = value;
+      }
+      entry.updatedAt = new Date().toISOString();
+      room.updatedAt = entry.updatedAt;
+      room.selectedEntryId = entry.id;
+      saveControlRooms();
+      renderControls();
+      document.getElementById("controlMeta").textContent = `저장됨 · ${room.updatedAt.slice(0, 16).replace("T", " ")}`;
+    }
+
+    function addControlEntry() {
+      const room = controlRooms[activeControlRoom];
+      const now = new Date().toISOString();
+      const entry = {
+        id: `${activeControlRoom}-${Date.now()}`,
+        date: today(),
+        title: "새 기록",
+        issue: "",
+        minutes: "",
+        actions: [],
+        owner: room.owner || "",
+        due: "",
+        createdAt: now,
+        updatedAt: now
+      };
+      room.entries.unshift(entry);
+      room.selectedEntryId = entry.id;
+      room.updatedAt = now;
+      activeEntryId = entry.id;
+      saveControlRooms();
+      renderControlPage();
+      renderControls();
+    }
+
+    function deleteControlEntry() {
+      const room = controlRooms[activeControlRoom];
+      if (!confirm("이 기록을 삭제할까요?")) return;
+      room.entries = room.entries.filter((entry) => entry.id !== activeEntryId);
+      activeEntryId = room.entries[0] ? room.entries[0].id : "";
+      room.selectedEntryId = activeEntryId;
+      room.updatedAt = new Date().toISOString();
+      saveControlRooms();
+      renderControlPage();
+      renderControls();
+    }
+
+    function buildMolitDownloadHtml(sectionId = "active") {
+      const sections = collectMolitSections(sectionId);
+      const body = sections.map((section) => {
+        const rows = molitRows(section).map((row) => `
+          <tr><td>${escapeHtml(section.title)}</td><td>${escapeHtml(row.item)}</td><td>${escapeHtml(row.unit ? `${row.value} ${row.unit}` : row.value)}</td><td>${escapeHtml(row.status)}</td></tr>
+        `).join("");
+        return `<h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.gate)}</p><table><thead><tr><th>구분</th><th>항목</th><th>값</th><th>상태</th></tr></thead><tbody>${rows}</tbody></table>`;
+      }).join("");
+      const titleMap = { all: "전체", gate: "Gate별", open: "확인 필요 항목", active: sections[0]?.title || "현재 카테고리" };
+      const title = `IOTA Seoul 국토부 보고 - ${titleMap[sectionId] || sections[0]?.title || sectionId}`;
+      const criteria = DATA.molitReport.masked.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+      return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>${escapeHtml(title)}</title><style>body{font-family:Arial,'Noto Sans KR',sans-serif;margin:32px;color:#111}h1{font-size:24px}h2{font-size:18px;margin-top:28px}p,li{color:#555;font-size:13px;line-height:1.55}table{border-collapse:collapse;width:100%;margin-top:12px}th,td{border:1px solid #bbb;padding:8px;font-size:13px;text-align:left;vertical-align:top}th{background:#1f2a44;color:white}.notice{border:1px solid #bbb;background:#f7f7f7;padding:14px;margin:14px 0 22px}</style></head><body><h1>${escapeHtml(title)}</h1><p>기준일: ${DATA.meta.sourceDate}</p><div class="notice"><strong>마스킹/제외 기준</strong><ul>${criteria}</ul></div>${body}</body></html>`;
+    }
+
+    function downloadMolitReport(sectionId = "active") {
+      const sections = collectMolitSections(sectionId);
+      const targetSection = sections[0] || getMolitSection(currentMolitSection);
+      const blob = new Blob([buildMolitDownloadHtml(sectionId)], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      const now = new Date();
+      const stamp = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}${String(now.getDate()).padStart(2, "0")}_${String(now.getHours()).padStart(2, "0")}${String(now.getMinutes()).padStart(2, "0")}`;
+      const category = sectionId === "all" ? "전체" : sectionId === "gate" ? `Gate_${targetSection.gate.replace(/[^0-9A-Za-z가-힣]+/g, "_")}` : sectionId === "open" ? "확인필요" : targetSection.id;
+      link.href = url;
+      link.download = `IOTA_Seoul_국토부보고_${category}_${DATA.meta.sourceDate.replaceAll("-", "")}_${stamp}_draft.html`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function renderAll() {
+      renderMilestones();
+      renderTasks();
+      renderKpis();
+      renderCost();
+      renderSpecs();
+      renderControls();
+      renderRR();
+      renderCounterparties();
+      renderMolit();
+    }
+
+    function applySidebarState() {
+      const collapsed = localStorage.getItem(sidebarStorageKey) === "true";
+      app.classList.toggle("sidebar-collapsed", collapsed);
+      sidebarToggle.setAttribute("aria-label", collapsed ? "사이드바 펼치기" : "사이드바 접기");
+    }
+
+    document.querySelectorAll(".project-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        currentProject = button.dataset.project;
+        cpProject = currentProject;
+        rrProject = currentProject;
+        setActive(document.querySelectorAll(".project-btn"), currentProject, "project");
+        setActive(document.querySelectorAll(".cp-project-btn"), cpProject, "project");
+        setActive(document.querySelectorAll(".rr-project-btn"), rrProject, "project");
+        renderAll();
+      });
+    });
+
+    document.querySelectorAll("[data-view]").forEach((button) => {
+      button.addEventListener("click", () => setView(button.dataset.view));
+    });
+
+    document.querySelectorAll(".period-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        currentPeriod = button.dataset.period;
+        setActive(document.querySelectorAll(".period-btn"), currentPeriod, "period");
+        renderTasks();
+      });
+    });
+
+    document.querySelectorAll(".rr-type-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        rrType = button.dataset.type;
+        setActive(document.querySelectorAll(".rr-type-btn"), rrType, "type");
+        renderRR();
+      });
+    });
+
+    document.querySelectorAll(".rr-project-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        rrProject = button.dataset.project;
+        setActive(document.querySelectorAll(".rr-project-btn"), rrProject, "project");
+        renderRR();
+      });
+    });
+
+    document.querySelectorAll(".cp-project-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        cpProject = button.dataset.project;
+        setActive(document.querySelectorAll(".cp-project-btn"), cpProject, "project");
+        renderCounterparties();
+      });
+    });
+
+    document.getElementById("taskForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const data = new FormData(form);
+      const title = String(data.get("title") || "").trim();
+      if (!title) return;
+      const nextTask = {
+        id: `task-${Date.now()}`,
+        title,
+        description: String(data.get("description") || "").trim(),
+        due: String(data.get("due") || "").trim(),
+        owner: String(data.get("owner") || "").trim(),
+        priority: String(data.get("priority") || "중"),
+        counterparty: String(data.get("counterparty") || "").trim()
+      };
+      tasks[currentPeriod].unshift(nextTask);
+      saveTasks();
+      form.reset();
+      form.elements.priority.value = "중";
+      renderTasks();
+    });
+
+    document.getElementById("taskList").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-delete-task]");
+      if (!button) return;
+      const id = button.dataset.deleteTask;
+      tasks[currentPeriod] = tasks[currentPeriod].filter((task) => task.id !== id);
+      saveTasks();
+      renderTasks();
+    });
+
+    document.getElementById("costTable").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-cost-toggle]");
+      if (!button) return;
+      const id = button.dataset.costToggle;
+      if (expandedCost.has(id)) expandedCost.delete(id);
+      else expandedCost.add(id);
+      renderCost();
+    });
+
+    document.getElementById("controlGrid").addEventListener("click", (event) => {
+      const card = event.target.closest("[data-control-room]");
+      if (card) openControlRoom(card.dataset.controlRoom, card);
+    });
+
+    document.getElementById("controlGrid").addEventListener("keydown", (event) => {
+      const card = event.target.closest("[data-control-room]");
+      if ((event.key === "Enter" || event.key === " ") && card) {
+        event.preventDefault();
+        openControlRoom(card.dataset.controlRoom, card);
+      }
+    });
+
+    document.getElementById("entryList").addEventListener("click", (event) => {
+      const item = event.target.closest("[data-entry-id]");
+      if (!item) return;
+      activeEntryId = item.dataset.entryId;
+      controlRooms[activeControlRoom].selectedEntryId = activeEntryId;
+      saveControlRooms();
+      renderControlPage();
+    });
+
+    document.getElementById("entryEditor").addEventListener("input", (event) => {
+      const field = event.target.closest(".control-field");
+      if (!field) return;
+      updateActiveEntry(field.dataset.field, field.value);
+    });
+
+    document.getElementById("entryEditor").addEventListener("click", (event) => {
+      if (event.target.id === "deleteControlEntry") deleteControlEntry();
+    });
+
+    document.getElementById("addControlEntry").addEventListener("click", addControlEntry);
+
+    document.getElementById("counterpartyGrid").addEventListener("click", (event) => {
+      const card = event.target.closest("[data-popup='lenders']");
+      if (card) openLenderModal();
+    });
+
+    document.getElementById("counterpartyGrid").addEventListener("keydown", (event) => {
+      if ((event.key === "Enter" || event.key === " ") && event.target.closest("[data-popup='lenders']")) {
+        event.preventDefault();
+        openLenderModal();
+      }
+    });
+
+    document.getElementById("lenderClose").addEventListener("click", closeLenderModal);
+    document.getElementById("lenderBackdrop").addEventListener("click", (event) => {
+      if (event.target.id === "lenderBackdrop") closeLenderModal();
+    });
+    document.getElementById("controlClose").addEventListener("click", closeControlRoom);
+    document.getElementById("controlBackdrop").addEventListener("click", (event) => {
+      if (event.target.id === "controlBackdrop") closeControlRoom();
+    });
+
+    document.getElementById("molitView").addEventListener("click", (event) => {
+      const sectionButton = event.target.closest("[data-molit-section]");
+      if (sectionButton) {
+        currentMolitSection = sectionButton.dataset.molitSection;
+        renderMolit();
+        return;
+      }
+      const downloadButton = event.target.closest("[data-download-molit]");
+      if (downloadButton) {
+        downloadMolitReport(downloadButton.dataset.downloadMolit);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeLenderModal();
+        closeControlRoom();
+      }
+    });
+
+    sidebarToggle.addEventListener("click", () => {
+      const collapsed = !app.classList.contains("sidebar-collapsed");
+      localStorage.setItem(sidebarStorageKey, String(collapsed));
+      applySidebarState();
+    });
+
+    applySidebarState();
+    renderAll();
+  </script>
+</body>
+</html>
