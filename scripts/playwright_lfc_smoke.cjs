@@ -70,6 +70,10 @@ async function main() {
   });
   await page.keyboard.press("Escape");
   await page.waitForTimeout(100);
+  const drawerClosedByEscape = await page.evaluate(() => {
+    const drawer = document.querySelector("#financeDrawerBackdrop");
+    return !drawer?.classList.contains("open");
+  });
 
   const result = await page.evaluate(() => {
     const cards = [...document.querySelectorAll(".lfc-cell-card")];
@@ -103,7 +107,7 @@ async function main() {
     listsDiffer: JSON.stringify(oneMarket.options) !== JSON.stringify(twoMarket.options),
   };
 
-  const interactions = { logSubmitOk, loanDrawerOpen };
+  const interactions = { logSubmitOk, loanDrawerOpen, drawerClosedByEscape };
   const payload = { ...result, marketFilter, interactions, consoleErrors, screenshotPath };
   console.log(JSON.stringify(payload, null, 2));
 
@@ -118,6 +122,7 @@ async function main() {
   if (!marketFilter.listsDiffer) process.exitCode = 1;
   if (!interactions.logSubmitOk) process.exitCode = 1;
   if (!interactions.loanDrawerOpen) process.exitCode = 1;
+  if (!interactions.drawerClosedByEscape) process.exitCode = 1;
   if (consoleErrors.length) process.exitCode = 1;
 }
 

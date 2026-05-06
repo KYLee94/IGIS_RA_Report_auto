@@ -1872,7 +1872,7 @@
     .modal-close { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--text); font-size: 20px; cursor: pointer; }
     .capital-stack { grid-template-rows: auto 280px; }
     .capital-stack-foot { display: none; }
-    .capital-segment span { color: #101010; }
+    .capital-segment span { color: var(--text); }
     .market-row { grid-template-columns: 170px minmax(0, 1fr); }
     .market-row .article-list a { display: block; }
     .lfc-extra-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
@@ -2147,11 +2147,12 @@
     .capital-stack-title { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; color: var(--muted-2); font-size: 13px; font-weight: 900; }
     .capital-stack-title strong { color: var(--text); font-size: 15px; }
     .capital-stack-body { height: 240px; border: 1px solid var(--line); border-radius: 15px; background: #171716; padding: 10px; display: flex; flex-direction: column-reverse; overflow: hidden; }
-    .capital-segment { min-height: 18px; border-top: 1px solid rgba(0,0,0,.35); display: grid; align-items: center; padding: 0 10px; color: #111; font-size: 11px; font-weight: 900; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .capital-segment { min-height: 18px; border-top: 1px solid rgba(255,255,255,.08); display: grid; align-items: center; padding: 0 10px; color: var(--text); font-size: 11px; font-weight: 900; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .capital-segment:first-child { border-top: 0; }
-    .capital-segment.equity { background: #88a9b2; }
-    .capital-segment.loan { background: #9fb3ff; }
-    .capital-segment.shareholder { background: #b8b8b8; }
+    .capital-segment span { color: var(--text); }
+    .capital-segment.equity { background: #4f747a; }
+    .capital-segment.loan { background: #53627c; }
+    .capital-segment.shareholder { background: #686a66; }
     .capital-segment.plan { background: #6c6c6c; color: #f5f5f5; }
     .capital-segment.past { background: repeating-linear-gradient(135deg, #343434 0 8px, #444 8px 16px); color: #d7d7d7; }
     .capital-stack-foot { color: var(--muted-2); font-size: 12px; line-height: 1.5; min-height: 54px; }
@@ -2172,7 +2173,7 @@
     .interest-stack { height: 210px; display: flex; flex-direction: column-reverse; justify-content: flex-start; border-bottom: 1px solid #555; }
     .interest-axis { position: absolute; left: 16px; top: 18px; bottom: 52px; display: grid; align-content: space-between; color: var(--muted); font-size: 10px; pointer-events: none; }
     .interest-segment { min-height: 3px; border-radius: 4px 4px 0 0; position: relative; cursor: help; }
-    .interest-segment.tr-a { background: #88a9b2; } .interest-segment.tr-b { background: #9fb3ff; } .interest-segment.tr-c { background: #b8b8b8; } .interest-segment.tr-d { background: #6f7f88; } .interest-segment.other { background: #777; }
+    .interest-segment.tr-a { background: #4f747a; } .interest-segment.tr-b { background: #53627c; } .interest-segment.tr-c { background: #686a66; } .interest-segment.tr-d { background: #52666f; } .interest-segment.other { background: #555; }
     .interest-segment .chart-tooltip { display: none; position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); width: 220px; z-index: 30; border: 1px solid #4a4a4a; border-radius: 10px; background: #111; color: var(--text); padding: 10px 11px; font-size: 12px; line-height: 1.45; box-shadow: 0 16px 40px rgba(0,0,0,.45); pointer-events: none; }
     .interest-segment:hover .chart-tooltip,
     .interest-segment:focus-visible .chart-tooltip { display: block; }
@@ -2181,6 +2182,9 @@
     .interest-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; color: var(--muted-2); font-size: 12px; }
     .interest-legend span { display: inline-flex; align-items: center; gap: 6px; }
     .interest-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+    .interest-empty { min-height: 250px; display: grid; place-content: center; gap: 8px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted-2); text-align: center; padding: 24px; }
+    .interest-empty strong { color: var(--text); font-size: 15px; }
+    .interest-empty p { margin: 0; max-width: 520px; font-size: 13px; line-height: 1.55; }
     .covenant-list, .lender-issue-list, .market-watch-list { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--panel-2); }
     .covenant-row, .lender-issue-row, .market-row { display: grid; grid-template-columns: 140px minmax(0, 1fr) 140px 120px; gap: 14px; align-items: center; padding: 15px 18px; border-top: 1px solid var(--line-soft); }
     .covenant-row:first-child, .lender-issue-row:first-child, .market-row:first-child { border-top: 0; }
@@ -2211,12 +2215,12 @@
     .app.finance-active #equitySection table { min-width: 760px; }
     .app.finance-active .compact-table th,
     .app.finance-active .compact-table td { padding-top: 8px; padding-bottom: 8px; }
-    .loan-detail-btn { min-width: 44px; height: 28px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
+    .loan-detail-btn { min-width: 50px; height: 34px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
     .loan-detail-btn:hover,
     .loan-detail-btn:focus-visible { border-color: #88a9b2; outline: none; }
     @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 1180px) { .lfc-cell-cards { grid-template-columns: repeat(4, minmax(118px, 1fr)); gap: 8px; } .lfc-cell-card { min-height: 82px; padding: 10px 11px; } .lfc-cell-card strong { font-size: 17px; margin-top: 7px; } .lfc-cell-card .card-caption { font-size: 10px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .capital-stack-chart { grid-template-columns: 1fr; } .capital-stack { grid-template-rows: auto 220px auto; } .capital-stack-body { height: 220px; } }
-    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: auto; right: 0; transform: none; } }
+    @media (max-width: 1180px) { .lfc-cell-cards { grid-template-columns: repeat(4, minmax(118px, 1fr)); gap: 8px; } .lfc-cell-card { min-height: 82px; padding: 10px 11px; } .lfc-cell-card strong { font-size: 17px; margin-top: 7px; } .lfc-cell-card .card-caption { font-size: 10px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .capital-stack-chart { grid-template-columns: repeat(3, minmax(180px, 1fr)); overflow-x: auto; } .capital-stack { grid-template-rows: auto 220px auto; } .capital-stack-body { height: 220px; } }
+    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: 0; right: auto; transform: none; width: min(200px, 72vw); } }
 
   </style>
 </head>
@@ -2480,18 +2484,18 @@
                 <div class="section-head"><div><div class="section-kicker">Capital Stack</div><h2>자금 조달 현황 및 Financing Structure</h2></div></div>
                 <div class="section-body">
                   <div class="capital-stack-chart" id="capitalStackChart"></div>
-                  <div class="capital-legend"><span><i style="background:#88a9b2"></i>Equity</span><span><i style="background:#b8b8b8"></i>주주대여금</span><span><i style="background:#9fb3ff"></i>Loan</span></div>
+                  <div class="capital-legend"><span><i style="background:#4f747a"></i>Equity</span><span><i style="background:#686a66"></i>주주대여금</span><span><i style="background:#53627c"></i>Loan</span></div>
                 </div>
               </section>
 
-              <section class="section" id="equitySection">
-                <div class="section-head"><div><div class="section-kicker">Equity Investors</div><h2>Equity 투자자 현황</h2></div></div>
-                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
+              <section class="section" id="loanSection">
+                <div class="section-head"><div><div class="section-kicker">Loan Lenders</div><h2>대주별 Loan 현황</h2></div></div>
+                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>대출 종류</th><th>Tranche</th><th>대주</th><th class="num">약정액</th><th class="num">비율</th><th>실행일</th><th>만기</th><th>금리</th><th>수수료</th><th>상세</th></tr></thead><tbody id="loanTable"></tbody></table></div></div>
               </section>
 
-              <section class="section" id="loanSection">
-                <div class="section-head"><div><div class="section-kicker">Loan Lenders</div><h2>Loan 대주 현황</h2></div></div>
-                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>대출 종류</th><th>Tranche</th><th>대주</th><th class="num">약정액</th><th class="num">비율</th><th>실행일</th><th>만기</th><th>금리</th><th>수수료</th><th>상세</th></tr></thead><tbody id="loanTable"></tbody></table></div></div>
+              <section class="section" id="equitySection">
+                <div class="section-head"><div><div class="section-kicker">Equity Investors</div><h2>자본구조 참고 - Equity 투자자 현황</h2></div></div>
+                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
               </section>
 
               <section class="section" id="interestSection">
@@ -5177,6 +5181,12 @@
           }
         });
       });
+      const hasInterestRows = buckets.some((bucket) => bucket.rows.length);
+      if (!hasInterestRows) {
+        document.getElementById("interestChart").innerHTML = `<div class="interest-empty"><strong>월별 이자 계산 대기</strong><p>금리 확정값이 입력된 Loan만 차트로 표시합니다. 현재는 Loan 표에서 금리·수수료 확인 필요 항목을 우선 관리하세요.</p></div>`;
+        document.getElementById("interestNote").textContent = "계산 제외: 금리 미확정 또는 실행일/만기 확인 필요 항목";
+        return;
+      }
       const max = Math.max(...buckets.map((bucket) => bucket.total), 1);
       document.getElementById("interestChart").innerHTML = `<div class="interest-axis"><span>${lfcAmount(max)}</span><span>${lfcAmount(max / 2)}</span><span>0</span></div><div class="interest-month-grid">${buckets.map((bucket) => `
         <div class="interest-month">
@@ -5188,7 +5198,7 @@
           <div class="interest-label">${escapeHtml(bucket.month.slice(2))}<br><strong>${bucket.total ? lfcAmount(bucket.total) : ""}</strong></div>
         </div>
       `).join("")}</div>`;
-      document.getElementById("interestNote").innerHTML = `<div class="interest-legend"><span><i style="background:#88a9b2"></i>Tr.A</span><span><i style="background:#9fb3ff"></i>Tr.B</span><span><i style="background:#b8b8b8"></i>Tr.C</span><span><i style="background:#6f7f88"></i>Tr.D</span><span><i style="background:#777"></i>기타/입력 대기</span></div>`;
+      document.getElementById("interestNote").innerHTML = `<div class="interest-legend"><span><i style="background:#4f747a"></i>Tr.A</span><span><i style="background:#53627c"></i>Tr.B</span><span><i style="background:#686a66"></i>Tr.C</span><span><i style="background:#52666f"></i>Tr.D</span><span><i style="background:#555"></i>기타</span></div>`;
     }
 
     let lfcMarketNews = null;
@@ -5350,10 +5360,11 @@
       document.getElementById("financeDrawerClose").focus();
     }
 
-    function closeFinanceDrawer() {
+    function closeFinanceDrawer(options = {}) {
+      const restoreFocus = options.restoreFocus !== false;
       document.getElementById("financeDrawerBackdrop").classList.remove("open");
       document.body.style.overflow = "";
-      if (lastFinanceDrawerFocus && document.contains(lastFinanceDrawerFocus)) lastFinanceDrawerFocus.focus();
+      if (restoreFocus && lastFinanceDrawerFocus && document.contains(lastFinanceDrawerFocus)) lastFinanceDrawerFocus.focus();
     }
 
     function getMolitSection(sectionId) {
@@ -5636,6 +5647,9 @@
 
     document.querySelectorAll(".project-btn").forEach((button) => {
       button.addEventListener("click", () => {
+        if (document.getElementById("financeDrawerBackdrop").classList.contains("open")) {
+          closeFinanceDrawer({ restoreFocus: false });
+        }
         currentProject = button.dataset.project;
         cpProject = currentProject;
         rrProject = currentProject;
