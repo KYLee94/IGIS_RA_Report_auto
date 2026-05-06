@@ -1,0 +1,36 @@
+name: Update LFC Market News
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-lfc-market-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect recent lender news
+        run: python scripts/update_lfc_market_news.py
+
+      - name: Commit updated news JSON
+        run: |
+          if git diff --quiet -- docs/data/lfc-market-news.json; then
+            echo "No news changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/lfc-market-news.json
+          git commit -m "Update LFC market news"
+          git push
