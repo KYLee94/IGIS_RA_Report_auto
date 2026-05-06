@@ -19,6 +19,11 @@ OUT = ROOT / "docs" / "data" / "lfc-market-news.json"
 
 KEYWORDS = ["부동산 PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"]
 RELEVANCE_TERMS = ["부동산", "PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"]
+GLOBAL_FALLBACK_QUERIES = [
+    "부동산 PF 대출 건전성",
+    "부동산 PF 금융당국",
+    "부동산금융 신용등급",
+]
 
 
 @dataclass(frozen=True)
@@ -95,39 +100,111 @@ def related(article: dict, group: LenderGroup) -> bool:
     return any(term.replace(" ", "") in compact for term in RELEVANCE_TERMS)
 
 
+def market_related(article: dict) -> bool:
+    compact = article["title"].replace(" ", "")
+    return any(term.replace(" ", "") in compact for term in RELEVANCE_TERMS)
+
+
+def sector_queries(group: LenderGroup) -> list[str]:
+    text = " ".join((group.lender, group.relation, *group.search_names))
+    queries = []
+    if "저축은행" in text:
+        queries += ["저축은행 부동산 PF 건전성", "저축은행 부동산 PF 신용등급"]
+    if "증권" in text or "투자증권" in text:
+        queries += ["증권사 부동산 PF 대출", "증권사 부동산 PF 건전성"]
+    if "자산운용" in text or "운용" in text or "사모부동산투자신탁" in text:
+        queries += ["자산운용 부동산 PF", "부동산펀드 PF 대출"]
+    if "화재" in text or "보험" in text:
+        queries += ["보험사 부동산 PF 대출", "보험사 대체투자 건전성"]
+    if "카드" in text:
+        queries += ["카드사 부동산 PF 대출", "여전사 부동산 PF"]
+    if "은행" in text and "저축은행" not in text:
+        queries += ["은행 부동산 PF 대출", "은행 부동산PF 건전성"]
+    if "소노" in text:
+        queries += ["호텔 개발 부동산 PF", "부동산 PF 대출"]
+    queries += GLOBAL_FALLBACK_QUERIES
+    deduped = []
+    for query in queries:
+        if query not in deduped:
+            deduped.append(query)
+    return deduped
+
+
+def append_articles(
+    articles: list[dict],
+    seen: set[str],
+    candidates: list[dict],
+    cutoff: str,
+    accept,
+    match_mode: str,
+    limit: int = 3,
+) -> None:
+    for article in candidates:
+        if article["date"] < cutoff:
+            continue
+        if not accept(article):
+            continue
+        key = article["title"]
+        if key in seen:
+            continue
+        seen.add(key)
+        copied = dict(article)
+        copied["title"] = f"[{copied['date']}] {copied['title']}"
+        copied["matchMode"] = match_mode
+        articles.append(copied)
+        if len(articles) >= limit:
+            break
+
+
+def collect_group_articles(group: LenderGroup, cutoff: str, limit: int = 3) -> list[dict]:
+    seen: set[str] = set()
+    articles: list[dict] = []
+
+    for name in group.search_names:
+        for keyword in KEYWORDS:
+            query = f"{name} {keyword}"
+            try:
+                candidates = fetch_rss(query)
+            except Exception as exc:
+                print(f"warn: {query}: {exc}", file=sys.stderr)
+                continue
+            append_articles(articles, seen, candidates, cutoff, lambda a, g=group: related(a, g), "대주명+PF키워드", limit)
+            if len(articles) >= limit:
+                return articles[:limit]
+            time.sleep(0.2)
+
+    for name in group.search_names:
+        query = name
+        try:
+            candidates = fetch_rss(query)
+        except Exception as exc:
+            print(f"warn: {query}: {exc}", file=sys.stderr)
+            continue
+        append_articles(articles, seen, candidates, cutoff, lambda a, g=group: any(n.replace(" ", "") in a["title"].replace(" ", "") for n in g.search_names), "대주명", limit)
+        if len(articles) >= limit:
+            return articles[:limit]
+        time.sleep(0.2)
+
+    for query in sector_queries(group):
+        try:
+            candidates = fetch_rss(query)
+        except Exception as exc:
+            print(f"warn: {query}: {exc}", file=sys.stderr)
+            continue
+        append_articles(articles, seen, candidates, cutoff, market_related, "업권/시장", limit)
+        if len(articles) >= max(1, limit):
+            return articles[:limit]
+        time.sleep(0.2)
+
+    return articles[:limit]
+
+
 def collect() -> dict:
     now = datetime.now(KST)
-    cutoff = (now - timedelta(days=3)).date()
+    cutoff = (now - timedelta(days=3)).date().isoformat()
     items = []
     for group in load_lenders():
-        seen = set()
-        articles = []
-        for name in group.search_names:
-            for keyword in KEYWORDS:
-                query = f"{name} {keyword}"
-                try:
-                    candidates = fetch_rss(query)
-                except Exception as exc:
-                    print(f"warn: {query}: {exc}", file=sys.stderr)
-                    continue
-                for article in candidates:
-                    if article["date"] < cutoff.isoformat():
-                        continue
-                    if not related(article, group):
-                        continue
-                    key = article["title"]
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                    article["title"] = f"[{article['date']}] {article['title']}"
-                    articles.append(article)
-                    if len(articles) >= 3:
-                        break
-                if len(articles) >= 3:
-                    break
-                time.sleep(0.2)
-            if len(articles) >= 3:
-                break
+        articles = collect_group_articles(group, cutoff, 3)
         items.append({"lender": group.lender, "relation": group.relation, "articles": articles[:3]})
     return {"generatedAt": now.isoformat(timespec="seconds"), "windowDays": 3, "items": items}
 
