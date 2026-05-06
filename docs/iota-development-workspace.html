@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IOTA Seoul 개발관리</title>
+  <link rel="icon" href="data:,">
   <style>
     :root {
       --bg: #1f1f1e;
@@ -1294,6 +1295,553 @@
       line-height: 1.15;
     }
 
+    .lfc-head {
+      margin-bottom: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .lfc-head h2 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .lfc-head p {
+      margin: 10px 0 0;
+      color: var(--muted-2);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .lfc-meta {
+      min-width: 310px;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      background: var(--panel);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: hidden;
+    }
+
+    .lfc-meta div {
+      padding: 14px 16px;
+      border-left: 1px solid var(--line-soft);
+    }
+
+    .lfc-meta div:first-child {
+      border-left: 0;
+    }
+
+    .lfc-meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .lfc-meta strong {
+      display: block;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .pm-log-box {
+      border: 1px solid #88a9b2;
+      border-radius: 26px;
+      background: var(--panel);
+      overflow: hidden;
+    }
+
+    .pm-log-toolbar {
+      min-height: 62px;
+      padding: 14px 25px 0;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .pm-log-toolbar .avatar {
+      width: 48px;
+      height: 48px;
+      font-size: 14px;
+    }
+
+    .pm-select-wrap {
+      min-width: 136px;
+    }
+
+    .pm-select-wrap label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+
+    .pm-select-wrap select,
+    .pm-date {
+      border: 0;
+      border-left: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      padding: 6px 22px 6px 14px;
+      font-weight: 900;
+      outline: none;
+      min-height: 34px;
+    }
+
+    .pm-log-textarea {
+      width: 100%;
+      min-height: 170px;
+      margin-top: 10px;
+      padding: 22px 25px;
+      border: 0;
+      border-top: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+      background: transparent;
+      color: var(--text);
+      resize: vertical;
+      outline: none;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .pm-log-bottom {
+      padding: 14px 16px 12px 25px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .pm-log-bottom label {
+      color: var(--muted-2);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .pm-log-inputs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pm-log-inputs input,
+    .lfc-search {
+      height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: #202020;
+      color: var(--text);
+      padding: 0 13px;
+      outline: none;
+      min-width: 160px;
+    }
+
+    .finance-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .finance-kpi {
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--panel-2);
+      padding: 16px;
+      min-height: 110px;
+    }
+
+    .finance-kpi span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .finance-kpi strong {
+      display: block;
+      margin-top: 12px;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .finance-kpi em {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted-2);
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .funding-bars {
+      margin-top: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .funding-row {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr) 120px;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .funding-label {
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .funding-track {
+      height: 18px;
+      border-radius: 999px;
+      background: #171716;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      display: flex;
+    }
+
+    .funding-segment {
+      height: 100%;
+      min-width: 2px;
+    }
+
+    .funding-equity { background: #88a9b2; }
+    .funding-loan { background: #6f86c8; }
+    .funding-refi { background: #a1a1aa; }
+    .funding-plan { background: #575757; }
+
+    .funding-value {
+      color: var(--muted-2);
+      font-size: 12px;
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .finance-flow {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .flow-step {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px;
+      background: #202020;
+      min-height: 92px;
+    }
+
+    .flow-step span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .flow-step strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .flow-step em {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted-2);
+      font-size: 12px;
+      font-style: normal;
+      line-height: 1.4;
+    }
+
+    .table-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .finance-table tbody tr {
+      cursor: pointer;
+    }
+
+    .finance-table tbody tr:hover {
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .status-dot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 24px;
+      border-radius: 999px;
+      padding: 0 9px;
+      border: 1px solid var(--line);
+      color: var(--muted-2);
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .status-dot.confirmed {
+      border-color: rgba(57, 193, 139, 0.45);
+      color: var(--good);
+    }
+
+    .status-dot.plan {
+      border-color: rgba(159, 179, 255, 0.45);
+      color: var(--sub);
+    }
+
+    .status-dot.need {
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--muted);
+    }
+
+    .status-dot.conflict {
+      border-color: rgba(255, 90, 112, 0.45);
+      color: var(--bad);
+    }
+
+    .interest-chart {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 18px;
+    }
+
+    .bar-chart {
+      display: flex;
+      align-items: end;
+      gap: 10px;
+      min-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--panel-2);
+      padding: 18px 16px 14px;
+    }
+
+    .bar-item {
+      flex: 1;
+      min-width: 0;
+      display: grid;
+      gap: 8px;
+      align-items: end;
+      height: 188px;
+    }
+
+    .bar {
+      align-self: end;
+      border-radius: 8px 8px 3px 3px;
+      background: #88a9b2;
+      min-height: 4px;
+    }
+
+    .bar-label {
+      color: var(--muted-2);
+      font-size: 11px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .interest-side {
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--panel-2);
+      padding: 16px;
+    }
+
+    .interest-side h3 {
+      margin: 0 0 12px;
+      font-size: 15px;
+    }
+
+    .interest-side div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-top: 1px solid var(--line-soft);
+      padding: 10px 0;
+      color: var(--muted-2);
+      font-size: 12px;
+    }
+
+    .monitor-grid,
+    .issue-grid,
+    .market-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .monitor-card,
+    .issue-card,
+    .market-card {
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--panel-2);
+      padding: 16px;
+      min-height: 140px;
+    }
+
+    .monitor-card h3,
+    .issue-card h3,
+    .market-card h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .monitor-card p,
+    .issue-card p,
+    .market-card p {
+      margin: 0;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .issue-meta {
+      margin-top: 13px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .lfc-log-tools {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .lfc-log-list {
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .lfc-log-row {
+      display: grid;
+      grid-template-columns: 110px 120px minmax(0, 1fr) 110px 88px;
+      gap: 12px;
+      padding: 14px 16px;
+      border-top: 1px solid var(--line-soft);
+      align-items: center;
+      background: var(--panel-2);
+    }
+
+    .lfc-log-row:first-child {
+      border-top: 0;
+    }
+
+    .lfc-log-row strong {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .lfc-log-row p {
+      margin: 5px 0 0;
+      color: var(--muted-2);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .lfc-log-row .mini {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.58);
+      z-index: 80;
+      display: none;
+      align-items: stretch;
+      justify-content: flex-end;
+    }
+
+    .drawer-backdrop.open {
+      display: flex;
+    }
+
+    .finance-drawer {
+      width: min(540px, calc(100vw - 40px));
+      height: 100%;
+      background: #20201f;
+      border-left: 1px solid var(--line);
+      padding: 24px;
+      overflow-y: auto;
+      box-shadow: -18px 0 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .drawer-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+
+    .drawer-head h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .drawer-section {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 15px;
+      background: var(--panel);
+    }
+
+    .drawer-section h3 {
+      margin: 0 0 12px;
+      font-size: 14px;
+    }
+
+    .drawer-section dl {
+      margin: 0;
+      display: grid;
+      gap: 9px;
+    }
+
+    .drawer-section div {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 12px;
+      color: var(--muted-2);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .drawer-section dt {
+      color: var(--muted);
+      font-weight: 900;
+    }
+
+    .drawer-section dd {
+      margin: 0;
+      color: var(--text);
+    }
+
     @media (max-width: 1320px) {
       .content {
         width: calc(100vw - var(--sidebar-open) - 48px);
@@ -1412,6 +1960,22 @@
       .molit-summary {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .lfc-head,
+      .interest-chart {
+        grid-template-columns: 1fr;
+      }
+
+      .finance-summary-grid,
+      .monitor-grid,
+      .issue-grid,
+      .market-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .finance-flow {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 860px) {
@@ -1469,11 +2033,25 @@
       .kpi-grid,
       .card-grid,
       .control-grid,
+      .finance-summary-grid,
+      .monitor-grid,
+      .issue-grid,
+      .market-grid,
+      .finance-flow,
+      .lfc-log-row,
       .molit-section-grid,
       .molit-summary,
       .spec-grid,
       .report-grid,
       .editor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pm-log-bottom {
+        grid-template-columns: 1fr;
+      }
+
+      .funding-row {
         grid-template-columns: 1fr;
       }
 
@@ -1515,8 +2093,8 @@
 
         <div class="nav-group"><span>워크스페이스</span><span class="chev">⌄</span></div>
         <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><path d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path d="M20 8v6"></path><path d="M23 11h-6"></path></svg></span><span class="nav-label">사업 PM</span></a>
-        <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="M12 6v12"></path><path d="M8 10h6a2 2 0 0 1 0 4H9"></path></svg></span><span class="nav-label">파이낸싱</span></a>
-        <a class="nav-item active" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1H4a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 7.03 3.8l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6V4a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.4.22.6.6.6 1H20a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-.51 1Z"></path></svg></span><span class="nav-label">개발관리</span></a>
+        <a class="nav-item" href="#lfc" data-view="finance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="M12 6v12"></path><path d="M8 10h6a2 2 0 0 1 0 4H9"></path></svg></span><span class="nav-label">LFC</span></a>
+        <a class="nav-item active" href="#" data-view="workspace"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1H4a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 7.03 3.8l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6V4a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.4.22.6.6.6 1H20a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-.51 1Z"></path></svg></span><span class="nav-label">개발관리</span></a>
         <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18"></path><path d="M7 7h10"></path><path d="M6 15h12"></path><path d="M10 19h4"></path></svg></span><span class="nav-label">기업마케팅</span></a>
         <a class="nav-item" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H4Z"></path><path d="M8 19h8"></path><path d="M12 15v4"></path></svg></span><span class="nav-label">상품·디지털</span></a>
 
@@ -1714,6 +2292,255 @@
               </section>
             </div>
 
+            <div id="financeView" class="view-panel" hidden>
+              <div class="lfc-head">
+                <div>
+                  <h2>Loan Finance Center</h2>
+                  <p>대출 조달, 대주단 관리, 만기·이자·Covenant와 Lender Issue를 한 화면에서 관리하는 LFC 업무 플랫폼입니다.</p>
+                </div>
+                <div class="lfc-meta" aria-label="LFC 요약">
+                  <div><span>기준일</span><strong>2026-05-06</strong></div>
+                  <div><span>Lead</span><strong>박준호</strong></div>
+                  <div><span>Data</span><strong>일부 확인필요</strong></div>
+                </div>
+              </div>
+
+              <section class="section open" id="lfcWorkLogSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">LFC Work Log</div>
+                    <h2>LFC 업무 작성</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <form id="lfcLogForm" class="pm-log-box">
+                    <div class="pm-log-toolbar">
+                      <div class="avatar">JK</div>
+                      <div class="pm-select-wrap">
+                        <select name="project" aria-label="프로젝트 선택">
+                          <option value="total" selected>IOTA 공통</option>
+                          <option value="427">IOTA 427</option>
+                          <option value="816">IOTA 816</option>
+                        </select>
+                      </div>
+                      <div class="pm-select-wrap">
+                        <label>활용목적</label>
+                        <select name="purpose" aria-label="활용목적">
+                          <option selected>공유</option>
+                          <option>협업</option>
+                          <option>리스크 판단</option>
+                          <option>의사결정</option>
+                        </select>
+                      </div>
+                      <div class="pm-select-wrap">
+                        <label>진행상태</label>
+                        <select name="status" aria-label="진행상태">
+                          <option>신규</option>
+                          <option selected>검토중</option>
+                          <option>진행중</option>
+                          <option>보류</option>
+                          <option>완료</option>
+                        </select>
+                      </div>
+                      <div class="pm-select-wrap">
+                        <label>중요도</label>
+                        <select name="priority" aria-label="중요도">
+                          <option>높음</option>
+                          <option selected>중간</option>
+                          <option>낮음</option>
+                        </select>
+                      </div>
+                      <div class="pm-select-wrap">
+                        <label>이해관계자 분류</label>
+                        <select name="stakeholderType" aria-label="이해관계자 분류">
+                          <option>선택 안 함</option>
+                          <option>투자자</option>
+                          <option selected>대주</option>
+                          <option>SI</option>
+                          <option>IGIS 내부인력</option>
+                        </select>
+                      </div>
+                      <input class="pm-date" name="date" type="date" value="2026-05-06" aria-label="업무 일자">
+                    </div>
+                    <textarea class="pm-log-textarea" name="text" id="lfcTextarea" placeholder="진행 이력, 대주 협의, 조달 리스크, 의사결정 필요항목을 입력하세요. (@를 입력하여 담당자를 멘션할 수 있습니다)" required></textarea>
+                    <div class="pm-log-bottom">
+                      <label>이해관계자</label>
+                      <div class="pm-log-inputs">
+                        <input name="company" type="text" placeholder="회사명 검색/입력" autocomplete="off">
+                        <input name="contact" type="text" placeholder="담당자명 검색/입력" autocomplete="off">
+                      </div>
+                      <button class="action-btn primary" type="submit">작성하기</button>
+                    </div>
+                  </form>
+                </div>
+              </section>
+
+              <section class="section" id="lfcLogListSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Recent Logs</div>
+                    <h2>최근 등록된 LFC 업무</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="lfc-log-tools">
+                    <input class="lfc-search" id="lfcLogSearch" type="search" placeholder="검색어 입력...">
+                    <button class="action-btn" id="lfcSeedButton" type="button">예시 업무 복원</button>
+                  </div>
+                  <div class="lfc-log-list" id="lfcLogList"></div>
+                </div>
+              </section>
+
+              <section class="section" id="financeStructureSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Funding Status &amp; Structure</div>
+                    <h2>자금 조달 현황 및 Financing Structure</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="finance-summary-grid" id="financeKpiGrid"></div>
+                  <div class="funding-bars" id="fundingBars"></div>
+                  <div class="finance-flow" id="financeFlow"></div>
+                </div>
+              </section>
+
+              <section class="section" id="equitySection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Equity</div>
+                    <h2>Equity 투자자 현황</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="table-wrap">
+                    <table>
+                      <colgroup>
+                        <col style="width: 16%">
+                        <col style="width: 24%">
+                        <col style="width: 14%">
+                        <col style="width: 12%">
+                        <col style="width: 16%">
+                        <col style="width: 18%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>Tranche</th>
+                          <th>투자자</th>
+                          <th class="num">금액(억원)</th>
+                          <th class="num">비율</th>
+                          <th>투입시점</th>
+                          <th>상태</th>
+                        </tr>
+                      </thead>
+                      <tbody id="equityTable"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section" id="loanSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Loan</div>
+                    <h2>Loan 대주 현황</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="table-actions">
+                    <div class="segmented" role="tablist" aria-label="대출 종류 안내">
+                      <button class="segment-btn active" type="button">Bridge / Refi / 본PF</button>
+                    </div>
+                    <span class="status-dot need">행 클릭 시 상세 관리 패널</span>
+                  </div>
+                  <div class="table-wrap">
+                    <table class="finance-table">
+                      <colgroup>
+                        <col style="width: 13%">
+                        <col style="width: 12%">
+                        <col style="width: 20%">
+                        <col style="width: 11%">
+                        <col style="width: 9%">
+                        <col style="width: 10%">
+                        <col style="width: 8%">
+                        <col style="width: 8%">
+                        <col style="width: 9%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>대출종류</th>
+                          <th>Tranche</th>
+                          <th>대주</th>
+                          <th class="num">금액</th>
+                          <th class="num">비율</th>
+                          <th>실행 / 만기</th>
+                          <th>금리</th>
+                          <th>수수료</th>
+                          <th>상태</th>
+                        </tr>
+                      </thead>
+                      <tbody id="loanTable"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section" id="interestSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Interest Accrual</div>
+                    <h2>월별/연도별 이자 발생</h2>
+                  </div>
+                  <div class="segmented" role="tablist" aria-label="이자 차트 기간 선택">
+                    <button class="segment-btn interest-mode-btn active" type="button" data-mode="monthly">월별</button>
+                    <button class="segment-btn interest-mode-btn" type="button" data-mode="yearly">연도별</button>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="interest-chart">
+                    <div class="bar-chart" id="interestChart"></div>
+                    <aside class="interest-side" id="interestSide"></aside>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section" id="covenantSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Covenant &amp; Maturity</div>
+                    <h2>Covenant &amp; Maturity Monitor</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="monitor-grid" id="covenantGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="lenderIssueSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Lender Issue Center</div>
+                    <h2>대주별 관리 및 이슈</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="issue-grid" id="lenderIssueGrid"></div>
+                </div>
+              </section>
+
+              <section class="section" id="marketWatchSection">
+                <div class="section-head">
+                  <div>
+                    <div class="section-kicker">Market Watch</div>
+                    <h2>시장 이슈 모니터링</h2>
+                  </div>
+                </div>
+                <div class="section-body">
+                  <div class="market-grid" id="marketWatchGrid"></div>
+                </div>
+              </section>
+            </div>
+
             <div id="molitView" class="view-panel" hidden>
               <section class="section">
                 <div class="section-head">
@@ -1780,6 +2607,19 @@
         </div>
       </div>
     </main>
+  </div>
+
+  <div class="drawer-backdrop" id="financeDrawerBackdrop" role="dialog" aria-modal="true" aria-labelledby="financeDrawerTitle">
+    <aside class="finance-drawer">
+      <div class="drawer-head">
+        <div>
+          <h2 id="financeDrawerTitle">Loan 상세</h2>
+          <p class="modal-desc" id="financeDrawerSubtitle">대주, 만기, 금리, 이슈를 확인합니다.</p>
+        </div>
+        <button class="close-btn" id="financeDrawerClose" type="button" aria-label="상세 패널 닫기">×</button>
+      </div>
+      <div id="financeDrawerBody"></div>
+    </aside>
   </div>
 
   <div class="modal-backdrop" id="lenderBackdrop" role="dialog" aria-modal="true" aria-labelledby="lenderTitle">
@@ -2216,6 +3056,163 @@
           "내부 반대 의견 및 회의 민감정보"
         ]
       },
+      finance: {
+        total: {
+          title: "IOTA Seoul 통합",
+          kpis: [
+            ["Loan 관리대상", "65,500억원", "통합 PF Loan 총액 후보"],
+            ["Bridge / Refi", "23,570억원", "통합 Capital Stacking 예시안"],
+            ["Equity", "13,413.95억원", "Re-Cap 이후 Equity 예시안"],
+            ["Data Status", "확인필요", "계획안·검토안 혼재"]
+          ],
+          fundingMix: [
+            { label: "Equity", amount: 13413.95, type: "equity", status: "계획안" },
+            { label: "Bridge Loan", amount: 23570, type: "loan", status: "계획안" },
+            { label: "PF Loan", amount: 65500, type: "loan", status: "확인필요" },
+            { label: "Senior Loan", amount: 57100, type: "plan", status: "계획안" }
+          ],
+          flow: [
+            ["기존건물 매입", "Equity 863.95억원", "초기 Equity 투입"],
+            ["기존건물 잔금", "Bridge Loan 23,570억원", "잔금 단계 조달 예시"],
+            ["착공", "PF Loan 65,500~67,100억원", "원천 간 수치 확인 필요"],
+            ["Re-Cap", "Equity 13,413.95억원", "신규 FI/SI 포함 구조"],
+            ["준공", "Senior Loan 57,100억원", "Exit/리파이낸싱 구조"]
+          ],
+          equity: [
+            { tranche: "Re-Cap Equity", investor: "신규 FI / SI / 기존 투자자", amount: 13413.95, timing: "Re-Cap", status: "계획안" },
+            { tranche: "신규 FI", investor: "신규 FI 후보", amount: 10000, timing: "통합 PF 전후", status: "계획안" },
+            { tranche: "IGIS + SI", investor: "이지스 / 전략 파트너", amount: 3000, timing: "통합 재구조화", status: "계획안" }
+          ],
+          loans: [
+            { id: "total-bridge", loanType: "Bridge Loan", tranche: "통합", lender: "대출기관", amount: 23570, rate: "7.7%", fee: "확인필요", execution: "2026.10", maturity: "확인필요", status: "계획안", valueStatus: "plan", note: "통합 Capital Stacking 예시안 기준" },
+            { id: "total-pf", loanType: "본 PF", tranche: "PF Loan", lender: "대주단", amount: 65500, rate: "5.4%", fee: "확인필요", execution: "2027.04", maturity: "확인필요", status: "확인필요", valueStatus: "need", note: "v0.9 재무지표와 KB 추진계획안 수치 대조 필요" },
+            { id: "total-senior", loanType: "Senior Loan", tranche: "준공 후", lender: "Senior 대주단", amount: 57100, rate: "확인필요", fee: "확인필요", execution: "준공", maturity: "확인필요", status: "계획안", valueStatus: "plan", note: "통합 가정 시점별 Capital Stacking 예시" },
+            { id: "total-prepf", loanType: "Pre-PF", tranche: "통합", lender: "자료 필요", amount: null, rate: "자료 필요", fee: "자료 필요", execution: "자료 필요", maturity: "자료 필요", status: "자료 필요", valueStatus: "need", note: "Pre-PF 세부 약정서 또는 내부 조달표 필요" }
+          ],
+          covenants: [
+            ["PF Loan LTV", "75%", "Amber", "통합 PF Loan 총액 후보 기준"],
+            ["DSCR", "자료 필요", "확인필요", "임대 가정 및 이자 조건 확정 후 산출"],
+            ["본PF 전환", "2027.02~2027.04", "계획안", "원천별 일정 차이 확인 필요"]
+          ],
+          issues: [
+            ["통합 본PF 수치 대조", "PF Loan 65,500억원 vs 67,100억원 후보 확인", "LFC", "의사결정"],
+            ["대주단 커뮤니케이션", "427/816 개발 일정 변경이 본PF 조건에 미치는 영향 공유", "대주단", "진행중"],
+            ["Equity 재구조화", "신규 FI/SI 참여 조건표와 내부 심의자료 연결", "투자자", "검토중"]
+          ],
+          market: [
+            ["부동산 PF 시장", "증권사 공동인수 가능성과 셀다운 수요를 주간 단위로 업데이트", "수동 업데이트"],
+            ["금리 환경", "All-in 기준 민감도는 loan별 확정 금리만 계산", "확인필요"],
+            ["대주 이슈", "저축은행·캐피탈·증권사 익스포저 뉴스 슬롯", "뉴스 크롤링 후속"]
+          ]
+        },
+        "427": {
+          title: "IOTA One 427",
+          kpis: [
+            ["Loan 관리대상", "48,000억원", "Senior Loan 기표완료 후보"],
+            ["Equity", "900억원", "자본구조 시트 합산"],
+            ["주주대여금", "2,000억원", "현대건설 주주대여"],
+            ["Data Status", "확인필요", "대주 세부명단 필요"]
+          ],
+          fundingMix: [
+            { label: "Equity", amount: 900, type: "equity", status: "확정" },
+            { label: "Shareholder Loan", amount: 2000, type: "refi", status: "확정" },
+            { label: "Senior Loan", amount: 48000, type: "loan", status: "확인필요" }
+          ],
+          flow: [
+            ["PFV Equity", "900억원", "보통주/종류주 합산"],
+            ["주주대여", "2,000억원", "현대건설 주주대여 만기 변경 관리"],
+            ["Senior Loan", "48,000억원", "기표완료 후보, 대주별 약정서 필요"],
+            ["본PF 후속", "자료 필요", "개발 일정과 금융 일정 연결"],
+            ["Exit", "통합 PF / Re-Cap", "통합 구조 전환 대상"]
+          ],
+          equity: [
+            { tranche: "보통주+1종 종류주", investor: "421호 펀드", amount: 591, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "이지스자산운용", amount: 10, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "신한GIB", amount: 100, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "신한투자증권", amount: 30, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "신한은행", amount: 50, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "신한캐피탈", amount: 20, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "현대건설", amount: 99, timing: "2026-02-18", status: "확정" }
+          ],
+          loans: [
+            { id: "427-senior", loanType: "Senior Loan", tranche: "본PF", lender: "대주단", amount: 48000, rate: "확인필요", fee: "확인필요", execution: "2025-05-26", maturity: "확인필요", status: "기표완료", valueStatus: "need", note: "대주별 약정서 및 금리/수수료 세부자료 필요" },
+            { id: "427-shareholder", loanType: "Shareholder Loan", tranche: "주주대여", lender: "현대건설", amount: 2000, rate: "확인필요", fee: "-", execution: "2025-05-09", maturity: "2025-08-13 / 합의시 2025-08-25", status: "체결", valueStatus: "confirmed", note: "주주대출 만기 변경 관리 대상" }
+          ],
+          covenants: [
+            ["LTV / DSCR", "자료 필요", "확인필요", "427 본PF 약정서 원문 필요"],
+            ["Senior Loan 만기", "자료 필요", "확인필요", "대출약정서 확인 필요"],
+            ["개발 일정 영향", "철거·착공 일정", "관리중", "대주단 공유 안건으로 연결"]
+          ],
+          issues: [
+            ["대주 세부명단 확보", "Senior Loan 48,000억원의 기관별 분담표 필요", "대주단", "자료필요"],
+            ["주주대여 만기", "현대건설 주주대여 만기 변경 조건 확인", "현대건설", "진행중"],
+            ["통합 PF 전환", "427 개발 일정과 통합 본PF 조건 충돌 여부 점검", "LFC", "검토중"]
+          ],
+          market: [
+            ["대형 PF 셀다운", "대형 증권사·은행권 인수 여력 확인 슬롯", "수동 업데이트"],
+            ["시공사 신용", "현대건설 관련 시장 이슈 모니터링", "뉴스 크롤링 후속"],
+            ["금리 민감도", "금리 미확정으로 차트 계산 제외", "자료 필요"]
+          ]
+        },
+        "816": {
+          title: "IOTA Two 816",
+          kpis: [
+            ["Refi 총액", "7,970억원", "2026-04-24 기표완료"],
+            ["기존 B/L", "7,170억원", "Tr.A/B/C 기존 대출"],
+            ["Equity", "63.95억원", "자본구조 시트 합산"],
+            ["만기", "2027-05-26", "12개월 모니터링"]
+          ],
+          fundingMix: [
+            { label: "Equity", amount: 63.95, type: "equity", status: "확정" },
+            { label: "Shareholder Loan", amount: 2535, type: "refi", status: "확정" },
+            { label: "Existing B/L", amount: 7170, type: "loan", status: "확정" },
+            { label: "Refi", amount: 7970, type: "loan", status: "기표완료" }
+          ],
+          flow: [
+            ["기존 B/L", "7,170억원", "Tr.A 4,800 / Tr.B 1,400 / Tr.C 970"],
+            ["Refi 기표", "7,970억원", "2026-04-24 기표완료"],
+            ["Tr.D 신규", "700억원", "소노인터내셔널 등 최후순위"],
+            ["12개월 관리", "만기 2027-05-26", "Covenant 및 본PF 전환 관리"],
+            ["통합 본PF", "57,000~65,500억원", "통합 구조 편입"]
+          ],
+          equity: [
+            { tranche: "보통주+2종 종류주", investor: "421호 펀드", amount: 19.55, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "이지스자산운용", amount: 1, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "신한투자증권", amount: 12.95, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "에셀유한회사", amount: 16.5, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "NH투자증권", amount: 7.95, timing: "2026-02-18", status: "확정" },
+            { tranche: "Equity", investor: "삼성물산", amount: 6, timing: "2026-02-18", status: "확정" }
+          ],
+          loans: [
+            { id: "816-existing-a", loanType: "Existing B/L", tranche: "Tr.A", lender: "기존 Tr.A 대주단", amount: 4800, rate: "6.50%", fee: "확인필요", execution: "2026-01-19", maturity: "EOD 발생 이력", status: "기존", valueStatus: "confirmed", note: "KB국민은행 등 기존 Tr.A 구성" },
+            { id: "816-existing-b", loanType: "Existing B/L", tranche: "Tr.B", lender: "기존 Tr.B 대주단", amount: 1400, rate: "8.50%", fee: "확인필요", execution: "2026-01-19", maturity: "EOD 발생 이력", status: "기존", valueStatus: "confirmed", note: "후순위 대주 재참여 관리 대상" },
+            { id: "816-existing-c", loanType: "Existing B/L", tranche: "Tr.C", lender: "기존 Tr.C 대주단", amount: 970, rate: "9.50%", fee: "확인필요", execution: "2026-01-19", maturity: "EOD 발생 이력", status: "기존", valueStatus: "confirmed", note: "후순위 대주 재참여 관리 대상" },
+            { id: "816-refi-a1-1", loanType: "Refi", tranche: "Tr.A-1", lender: "KHL21 / 메리츠 SPC", amount: 1800, rate: "6.00%", fee: "확인필요", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "신규 선순위" },
+            { id: "816-refi-a1-2", loanType: "Refi", tranche: "Tr.A-1", lender: "메리츠화재", amount: 1800, rate: "6.00%", fee: "확인필요", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "신규 선순위" },
+            { id: "816-refi-a2", loanType: "Refi", tranche: "Tr.A-2", lender: "Galaxy EO / NH SPC", amount: 1300, rate: "7.30%", fee: "확인필요", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "신규 선순위" },
+            { id: "816-refi-b", loanType: "Refi", tranche: "Tr.B", lender: "816공간제일차 외", amount: 1400, rate: "6.50%", fee: "확인필요", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "기존 대주 재참여" },
+            { id: "816-refi-c", loanType: "Refi", tranche: "Tr.C", lender: "대신증권 / 코람코 / 키움 등", amount: 970, rate: "6.50%", fee: "확인필요", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "기존 대주 재참여" },
+            { id: "816-refi-d", loanType: "Refi", tranche: "Tr.D", lender: "KHL22 / Sono International SPC", amount: 700, rate: "10.00%", fee: "-", execution: "2026-04-24", maturity: "2027-05-26", status: "기표완료", valueStatus: "confirmed", note: "소노인터내셔널 관련 최후순위" },
+            { id: "816-pf-plan", loanType: "본 PF", tranche: "모집계획", lender: "NH투자증권 등 주관사", amount: 19500, rate: "확인필요", fee: "확인필요", execution: "2026.03 목표", maturity: "확인필요", status: "계획안", valueStatus: "plan", note: "Tr.A 14,500 / Tr.B 2,920 / Tr.C 1,400 / Tr.D 680 모집계획" }
+          ],
+          covenants: [
+            ["Existing BL LTV Tr.A", "46.6%", "High", "EOD 발생 이력"],
+            ["Existing BL LTV Tr.B", "60.2%", "High", "EOD 발생 이력"],
+            ["Existing BL LTV Tr.C", "69.6%", "High", "EOD 발생 이력"],
+            ["Refi 만기", "2027-05-26", "관리중", "12개월 Covenant 모니터링"]
+          ],
+          issues: [
+            ["Covenant 원천 확인", "리파이낸싱 약정서의 LTV/DSCR 조항 원문 확보", "대주단", "자료필요"],
+            ["Tr.B/C 재참여 관리", "기존 후순위 대주의 재참여 및 회수 가능성 설명", "기존 대주", "진행중"],
+            ["소노 Tr.D", "관계사 포함 최대 1,000억원 참여 여부 확인", "소노인터내셔널", "검토중"]
+          ],
+          market: [
+            ["후순위 대주 리스크", "저축은행·캐피탈 익스포저와 충당금 이슈 모니터링", "뉴스 크롤링 후속"],
+            ["증권사 총액인수", "메리츠/NH/대형증권사 인수 여력 및 셀다운 가능성", "수동 업데이트"],
+            ["공매 시나리오", "공매 절차, 회수율, 미수이자 확대 리스크 관리", "검토안"]
+          ]
+        }
+      },
       lenders: [
         ["Tr.A-1", "KHL21 / 메리츠 SPC", 1800, "선순위"],
         ["Tr.A-1", "메리츠화재", 1800, "선순위"],
@@ -2255,6 +3252,10 @@
     let expandedCost = new Set(["total-cost-root", "one-cost-root", "one-direct", "one-indirect", "two-cost-root", "two-direct", "two-indirect"]);
     let tasks = loadTasks();
     let controlRooms = loadControlRooms();
+    const lfcLogStorageKey = "iotaLfcLogs.v1";
+    let lfcLogs = loadLfcLogs();
+    let lfcLogSearch = "";
+    let financeInterestMode = "monthly";
 
     function money(value) {
       if (value === null || value === undefined || value === "") return "-";
@@ -2405,9 +3406,16 @@
     function setView(view) {
       currentView = view;
       document.getElementById("workspaceView").hidden = view !== "workspace";
+      document.getElementById("financeView").hidden = view !== "finance";
       document.getElementById("molitView").hidden = view !== "molit";
       setActive(document.querySelectorAll(".view-btn"), view, "view");
-      renderMolit();
+      document.querySelectorAll(".nav-item[data-view]").forEach((item) => {
+        item.classList.toggle("active", item.dataset.view === view || (view === "molit" && item.dataset.view === "workspace"));
+      });
+      if (view === "finance" && location.hash !== "#lfc") history.replaceState(null, "", "#lfc");
+      if (view !== "finance" && location.hash === "#lfc") history.replaceState(null, "", location.pathname);
+      if (view === "finance") renderFinance();
+      if (view === "molit") renderMolit();
     }
 
     function renderMilestones() {
@@ -2585,6 +3593,234 @@
           <div class="card-line">${escapeHtml(item.action)}</div>
         </article>
       `).join("");
+    }
+
+    function currentFinance() {
+      return DATA.finance[currentProject] || DATA.finance.total;
+    }
+
+    function amountText(value) {
+      if (value === null || value === undefined || value === "") return "자료 필요";
+      return `${Number(value).toLocaleString("ko-KR", { maximumFractionDigits: 2 })}억원`;
+    }
+
+    function financeStatusClass(value) {
+      if (value === "confirmed" || value === "확정" || value === "기표완료" || value === "체결" || value === "관리중") return "confirmed";
+      if (value === "plan" || value === "계획안" || value === "검토안") return "plan";
+      if (value === "conflict" || value === "충돌") return "conflict";
+      return "need";
+    }
+
+    function financeRowsTotal(rows) {
+      return rows.reduce((sum, row) => sum + (Number(row.amount) || 0), 0);
+    }
+
+    function parseRate(rate) {
+      const match = String(rate || "").match(/([0-9]+(?:\.[0-9]+)?)%/);
+      return match ? Number(match[1]) : null;
+    }
+
+    function loadLfcLogs() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(lfcLogStorageKey) || "null");
+        if (Array.isArray(saved)) return saved;
+      } catch (error) {
+        console.warn("Failed to load LFC logs", error);
+      }
+      return [
+        { id: "lfc-seed-1", project: "816", purpose: "공유", status: "진행중", priority: "중간", stakeholderType: "대주", date: "2026-04-27", text: "[YD816PFV BL Refinancing] Refi 기표 완료 후 12개월 만기와 Covenant 원천 확인 필요. 대주단 공유자료와 약정 조항을 연결해 관리.", company: "대주단", contact: "박준호" },
+        { id: "lfc-seed-2", project: "total", purpose: "의사결정", status: "검토중", priority: "높음", stakeholderType: "대주", date: "2026-04-30", text: "통합 본PF Loan 후보 수치가 57,000 / 65,500 / 67,100억원으로 나뉘어 있어 최종 조달 구조 기준값 확정 필요.", company: "LFC", contact: "PM" }
+      ];
+    }
+
+    function saveLfcLogs() {
+      localStorage.setItem(lfcLogStorageKey, JSON.stringify(lfcLogs));
+    }
+
+    function renderFinanceKpis(data) {
+      document.getElementById("financeKpiGrid").innerHTML = data.kpis.map((item) => `
+        <article class="finance-kpi">
+          <span>${escapeHtml(item[0])}</span>
+          <strong>${escapeHtml(item[1])}</strong>
+          <em>${escapeHtml(item[2])}</em>
+        </article>
+      `).join("");
+    }
+
+    function renderFundingBars(data) {
+      const max = Math.max(...data.fundingMix.map((item) => item.amount || 0), 1);
+      document.getElementById("fundingBars").innerHTML = data.fundingMix.map((item) => `
+        <div class="funding-row">
+          <div class="funding-label">${escapeHtml(item.label)}</div>
+          <div class="funding-track" aria-label="${escapeHtml(item.label)}">
+            <div class="funding-segment funding-${escapeHtml(item.type)}" style="width:${Math.max(((item.amount || 0) / max) * 100, 2)}%"></div>
+          </div>
+          <div class="funding-value">${amountText(item.amount)} · ${escapeHtml(item.status)}</div>
+        </div>
+      `).join("");
+      document.getElementById("financeFlow").innerHTML = data.flow.map((item) => `
+        <article class="flow-step">
+          <span>${escapeHtml(item[0])}</span>
+          <strong>${escapeHtml(item[1])}</strong>
+          <em>${escapeHtml(item[2])}</em>
+        </article>
+      `).join("");
+    }
+
+    function renderEquityTable(data) {
+      const total = financeRowsTotal(data.equity);
+      document.getElementById("equityTable").innerHTML = data.equity.map((item) => `
+        <tr>
+          <td>${escapeHtml(item.tranche)}</td>
+          <td>${escapeHtml(item.investor)}</td>
+          <td class="num">${money(item.amount)}</td>
+          <td class="num">${ratio(item.amount, total)}</td>
+          <td>${escapeHtml(item.timing)}</td>
+          <td><span class="status-dot ${financeStatusClass(item.status)}">${escapeHtml(item.status)}</span></td>
+        </tr>
+      `).join("");
+    }
+
+    function renderLoanTable(data) {
+      const total = financeRowsTotal(data.loans);
+      document.getElementById("loanTable").innerHTML = data.loans.map((item) => `
+        <tr data-loan-id="${escapeHtml(item.id)}">
+          <td>${escapeHtml(item.loanType)}</td>
+          <td>${escapeHtml(item.tranche)}</td>
+          <td>${escapeHtml(item.lender)}</td>
+          <td class="num">${money(item.amount)}</td>
+          <td class="num">${ratio(item.amount, total)}</td>
+          <td>${escapeHtml(item.execution)}<br><span class="mini">${escapeHtml(item.maturity)}</span></td>
+          <td>${escapeHtml(item.rate)}</td>
+          <td>${escapeHtml(item.fee)}</td>
+          <td><span class="status-dot ${financeStatusClass(item.valueStatus)}">${escapeHtml(item.status)}</span></td>
+        </tr>
+      `).join("");
+    }
+
+    function renderInterest(data) {
+      const loans = data.loans.map((loan) => ({ ...loan, parsedRate: parseRate(loan.rate) })).filter((loan) => loan.amount && loan.parsedRate !== null);
+      const items = loans.map((loan) => ({ label: `${loan.tranche}`, value: financeInterestMode === "monthly" ? loan.amount * loan.parsedRate / 100 / 12 : loan.amount * loan.parsedRate / 100, loan }));
+      const max = Math.max(...items.map((item) => item.value), 1);
+      document.getElementById("interestChart").innerHTML = items.length ? items.map((item) => `
+        <div class="bar-item" title="${escapeHtml(item.loan.lender)} ${money(item.value)}">
+          <div class="bar" style="height:${Math.max((item.value / max) * 160, 4)}px"></div>
+          <div class="bar-label">${escapeHtml(item.label)}</div>
+        </div>
+      `).join("") : `<div class="empty">금리 확정값이 있는 Loan이 없습니다.</div>`;
+      const total = items.reduce((sum, item) => sum + item.value, 0);
+      document.getElementById("interestSide").innerHTML = `
+        <h3>${financeInterestMode === "monthly" ? "월 이자 추정" : "연 이자 추정"}</h3>
+        <div><span>계산 대상</span><strong>${items.length}건</strong></div>
+        <div><span>합계</span><strong>${money(total)}</strong></div>
+        <div><span>제외</span><strong>금리 확인필요 Loan</strong></div>
+      `;
+      setActive(document.querySelectorAll(".interest-mode-btn"), financeInterestMode, "mode");
+    }
+
+    function renderCovenants(data) {
+      document.getElementById("covenantGrid").innerHTML = data.covenants.map((item) => `
+        <article class="monitor-card">
+          <h3>${escapeHtml(item[0])}</h3>
+          <p>${escapeHtml(item[1])}</p>
+          <div class="issue-meta">
+            <span class="status-dot ${financeStatusClass(item[2])}">${escapeHtml(item[2])}</span>
+            <span class="status-dot need">${escapeHtml(item[3])}</span>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderLenderIssues(data) {
+      document.getElementById("lenderIssueGrid").innerHTML = data.issues.map((item) => `
+        <article class="issue-card">
+          <h3>${escapeHtml(item[0])}</h3>
+          <p>${escapeHtml(item[1])}</p>
+          <div class="issue-meta">
+            <span class="status-dot need">${escapeHtml(item[2])}</span>
+            <span class="status-dot ${financeStatusClass(item[3])}">${escapeHtml(item[3])}</span>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderMarketWatch(data) {
+      document.getElementById("marketWatchGrid").innerHTML = data.market.map((item) => `
+        <article class="market-card">
+          <h3>${escapeHtml(item[0])}</h3>
+          <p>${escapeHtml(item[1])}</p>
+          <div class="issue-meta"><span class="status-dot plan">${escapeHtml(item[2])}</span></div>
+        </article>
+      `).join("");
+    }
+
+    function renderLfcLogs() {
+      const query = lfcLogSearch.trim().toLowerCase();
+      const rows = lfcLogs.filter((item) => {
+        if (currentProject !== "total" && item.project !== currentProject && item.project !== "total") return false;
+        if (!query) return true;
+        return [item.project, item.purpose, item.status, item.priority, item.text, item.company, item.contact].join(" ").toLowerCase().includes(query);
+      });
+      document.getElementById("lfcLogList").innerHTML = rows.length ? rows.map((item) => `
+        <div class="lfc-log-row">
+          <div class="mini">${item.project === "total" ? "IOTA 공통" : `IOTA ${item.project}`}</div>
+          <div><span class="status-dot ${financeStatusClass(item.status)}">${escapeHtml(item.status)}</span></div>
+          <div>
+            <strong>${escapeHtml(item.text.slice(0, 72))}${item.text.length > 72 ? "..." : ""}</strong>
+            <p>${escapeHtml(item.company || "이해관계자 미기재")} · ${escapeHtml(item.contact || "담당자 미기재")} · ${escapeHtml(item.purpose)}</p>
+          </div>
+          <div class="mini">${escapeHtml(item.date)}</div>
+          <button class="delete-btn" type="button" data-delete-lfc="${escapeHtml(item.id)}">삭제</button>
+        </div>
+      `).join("") : `<div class="empty">등록된 LFC 업무가 없습니다.</div>`;
+    }
+
+    function renderFinance() {
+      const data = currentFinance();
+      renderFinanceKpis(data);
+      renderFundingBars(data);
+      renderEquityTable(data);
+      renderLoanTable(data);
+      renderInterest(data);
+      renderCovenants(data);
+      renderLenderIssues(data);
+      renderMarketWatch(data);
+      renderLfcLogs();
+    }
+
+    function openFinanceDrawer(loanId) {
+      const data = currentFinance();
+      const loan = data.loans.find((item) => item.id === loanId);
+      if (!loan) return;
+      document.getElementById("financeDrawerTitle").textContent = `${loan.loanType} · ${loan.tranche}`;
+      document.getElementById("financeDrawerSubtitle").textContent = `${loan.lender} / ${amountText(loan.amount)} / ${loan.status}`;
+      document.getElementById("financeDrawerBody").innerHTML = `
+        <section class="drawer-section">
+          <h3>Loan 조건</h3>
+          <dl>
+            <div><dt>대주</dt><dd>${escapeHtml(loan.lender)}</dd></div>
+            <div><dt>금액</dt><dd>${amountText(loan.amount)}</dd></div>
+            <div><dt>실행일</dt><dd>${escapeHtml(loan.execution)}</dd></div>
+            <div><dt>만기</dt><dd>${escapeHtml(loan.maturity)}</dd></div>
+            <div><dt>금리</dt><dd>${escapeHtml(loan.rate)}</dd></div>
+            <div><dt>수수료</dt><dd>${escapeHtml(loan.fee)}</dd></div>
+            <div><dt>상태</dt><dd>${escapeHtml(loan.status)}</dd></div>
+          </dl>
+        </section>
+        <section class="drawer-section">
+          <h3>관리 메모</h3>
+          <p>${escapeHtml(loan.note || "관리 메모가 없습니다.")}</p>
+        </section>
+        <section class="drawer-section">
+          <h3>다음 액션</h3>
+          <p>${loan.valueStatus === "need" ? "약정서, 수수료 조건, 만기 조건 원천 확인이 필요합니다." : "대주단 공유자료와 Covenant 산출표를 주기적으로 갱신합니다."}</p>
+        </section>
+      `;
+      document.getElementById("financeDrawerBackdrop").classList.add("open");
+    }
+
+    function closeFinanceDrawer() {
+      document.getElementById("financeDrawerBackdrop").classList.remove("open");
     }
 
     function getMolitSection(sectionId) {
@@ -2855,6 +4091,7 @@
       renderControls();
       renderRR();
       renderCounterparties();
+      renderFinance();
       renderMolit();
     }
 
@@ -2877,7 +4114,10 @@
     });
 
     document.querySelectorAll("[data-view]").forEach((button) => {
-      button.addEventListener("click", () => setView(button.dataset.view));
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        setView(button.dataset.view);
+      });
     });
 
     document.querySelectorAll(".period-btn").forEach((button) => {
@@ -2943,6 +4183,66 @@
       renderTasks();
     });
 
+    document.getElementById("lfcLogForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const data = new FormData(form);
+      const text = String(data.get("text") || "").trim();
+      if (!text) return;
+      lfcLogs.unshift({
+        id: `lfc-${Date.now()}`,
+        project: String(data.get("project") || "total"),
+        purpose: String(data.get("purpose") || "공유"),
+        status: String(data.get("status") || "검토중"),
+        priority: String(data.get("priority") || "중간"),
+        stakeholderType: String(data.get("stakeholderType") || "대주"),
+        date: String(data.get("date") || DATA.meta.sourceDate),
+        text,
+        company: String(data.get("company") || "").trim(),
+        contact: String(data.get("contact") || "").trim()
+      });
+      saveLfcLogs();
+      form.reset();
+      form.elements.project.value = currentProject === "total" ? "total" : currentProject;
+      form.elements.purpose.value = "공유";
+      form.elements.status.value = "검토중";
+      form.elements.priority.value = "중간";
+      form.elements.stakeholderType.value = "대주";
+      form.elements.date.value = "2026-05-06";
+      renderLfcLogs();
+    });
+
+    document.getElementById("lfcLogSearch").addEventListener("input", (event) => {
+      lfcLogSearch = event.target.value;
+      renderLfcLogs();
+    });
+
+    document.getElementById("lfcSeedButton").addEventListener("click", () => {
+      lfcLogs = loadLfcLogs();
+      saveLfcLogs();
+      renderLfcLogs();
+    });
+
+    document.getElementById("lfcLogList").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-delete-lfc]");
+      if (!button) return;
+      lfcLogs = lfcLogs.filter((item) => item.id !== button.dataset.deleteLfc);
+      saveLfcLogs();
+      renderLfcLogs();
+    });
+
+    document.querySelectorAll(".interest-mode-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        financeInterestMode = button.dataset.mode;
+        renderFinance();
+      });
+    });
+
+    document.getElementById("loanTable").addEventListener("click", (event) => {
+      const row = event.target.closest("[data-loan-id]");
+      if (row) openFinanceDrawer(row.dataset.loanId);
+    });
+
     document.getElementById("costTable").addEventListener("click", (event) => {
       const button = event.target.closest("[data-cost-toggle]");
       if (!button) return;
@@ -3002,6 +4302,10 @@
     document.getElementById("lenderBackdrop").addEventListener("click", (event) => {
       if (event.target.id === "lenderBackdrop") closeLenderModal();
     });
+    document.getElementById("financeDrawerClose").addEventListener("click", closeFinanceDrawer);
+    document.getElementById("financeDrawerBackdrop").addEventListener("click", (event) => {
+      if (event.target.id === "financeDrawerBackdrop") closeFinanceDrawer();
+    });
     document.getElementById("controlClose").addEventListener("click", closeControlRoom);
     document.getElementById("controlBackdrop").addEventListener("click", (event) => {
       if (event.target.id === "controlBackdrop") closeControlRoom();
@@ -3024,6 +4328,7 @@
       if (event.key === "Escape") {
         closeLenderModal();
         closeControlRoom();
+        closeFinanceDrawer();
       }
     });
 
@@ -3035,6 +4340,7 @@
 
     applySidebarState();
     renderAll();
+    if (location.hash === "#lfc") setView("finance");
   </script>
 </body>
 </html>
