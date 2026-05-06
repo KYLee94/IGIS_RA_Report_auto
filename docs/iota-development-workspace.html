@@ -1879,6 +1879,39 @@
     .lfc-extra-card { border: 1px solid var(--line); border-radius: 15px; background: var(--panel-2); padding: 15px; min-height: 104px; }
     .lfc-extra-card strong { display: block; font-size: 15px; line-height: 1.35; }
     .lfc-extra-card p { margin: 10px 0 0; color: var(--muted-2); font-size: 13px; line-height: 1.5; }
+    .lfc-followup-stack { display: grid; gap: 14px; }
+    .lfc-followup-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 14px; align-items: start; }
+    .lfc-followup-card { border: 1px solid var(--line); border-radius: 16px; background: var(--panel-2); padding: 16px; min-width: 0; }
+    .lfc-followup-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+    .lfc-followup-head strong { font-size: 16px; line-height: 1.3; }
+    .lfc-followup-head span { color: var(--muted-2); font-size: 12px; font-weight: 900; white-space: nowrap; }
+    .maturity-calendar { border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; overflow-x: auto; }
+    .maturity-axis, .maturity-row { min-width: 820px; display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+    .maturity-axis { position: sticky; top: 0; z-index: 1; border-bottom: 1px solid var(--line-soft); background: #1f1f1e; color: var(--muted); font-size: 11px; font-weight: 900; }
+    .maturity-axis-label { padding: 10px 12px; border-right: 1px solid var(--line-soft); }
+    .maturity-months, .maturity-track { display: grid; gap: 0; min-width: 0; }
+    .maturity-months span { padding: 10px 6px; text-align: center; border-left: 1px solid rgba(255,255,255,.05); }
+    .maturity-row { border-top: 1px solid var(--line-soft); }
+    .maturity-row:first-of-type { border-top: 0; }
+    .maturity-meta { padding: 11px 12px; border-right: 1px solid var(--line-soft); min-width: 0; }
+    .maturity-meta strong { display: block; font-size: 13px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .maturity-meta span { display: block; margin-top: 5px; color: var(--muted-2); font-size: 11px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .maturity-track { position: relative; align-items: center; padding: 10px 0; }
+    .maturity-track::before { content: ""; grid-column: 1 / -1; height: 1px; background: #3a3a38; align-self: center; }
+    .maturity-span { min-height: 24px; border: 1px solid rgba(136,169,178,.46); border-radius: 999px; background: rgba(136,169,178,.26); color: var(--text); align-self: center; z-index: 1; display: flex; align-items: center; justify-content: flex-end; padding: 0 7px; font-size: 10px; font-weight: 900; cursor: pointer; white-space: nowrap; overflow: hidden; }
+    .maturity-span:hover, .maturity-span:focus-visible { outline: none; border-color: #88a9b2; box-shadow: 0 0 0 3px rgba(136,169,178,.16); }
+    .maturity-point { width: 18px; height: 18px; border: 2px solid #88a9b2; border-radius: 999px; background: #171716; align-self: center; justify-self: center; z-index: 2; cursor: pointer; font-size: 0; }
+    .maturity-point:hover, .maturity-point:focus-visible { outline: none; border-color: var(--text); box-shadow: 0 0 0 4px rgba(136,169,178,.18); }
+    .maturity-missing { margin-top: 12px; display: grid; gap: 8px; }
+    .maturity-missing-row { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 10px; border: 1px solid var(--line-soft); border-radius: 12px; background: #1c1c1b; padding: 10px 12px; color: var(--muted-2); font-size: 12px; }
+    .pf-plan-rail { display: grid; grid-template-columns: repeat(7, minmax(94px, 1fr)); gap: 8px; margin-bottom: 12px; overflow-x: auto; padding-bottom: 2px; }
+    .pf-step { min-height: 70px; border: 1px solid var(--line-soft); border-radius: 12px; background: #1c1c1b; color: var(--text); text-align: left; padding: 10px; cursor: pointer; }
+    .pf-step span { display: block; color: var(--muted); font-size: 11px; font-weight: 900; margin-bottom: 7px; }
+    .pf-step strong { display: block; font-size: 12px; line-height: 1.35; }
+    .pf-step:hover, .pf-step:focus-visible { border-color: #88a9b2; outline: none; }
+    #pfPlanSection table { min-width: 920px; }
+    .pf-detail-btn { min-width: 50px; height: 32px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
+    .pf-detail-btn:hover, .pf-detail-btn:focus-visible { border-color: #88a9b2; outline: none; }
 
     @media (max-width: 1320px) {
       .content {
@@ -2218,9 +2251,9 @@
     .loan-detail-btn { min-width: 50px; height: 34px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
     .loan-detail-btn:hover,
     .loan-detail-btn:focus-visible { border-color: #88a9b2; outline: none; }
-    @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards, .lfc-followup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 1180px) { .lfc-cell-cards { grid-template-columns: repeat(4, minmax(118px, 1fr)); gap: 8px; } .lfc-cell-card { min-height: 82px; padding: 10px 11px; } .lfc-cell-card strong { font-size: 17px; margin-top: 7px; } .lfc-cell-card .card-caption { font-size: 10px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .capital-stack-chart { grid-template-columns: repeat(3, minmax(180px, 1fr)); overflow-x: auto; } .capital-stack { grid-template-rows: auto 220px auto; } .capital-stack-body { height: 220px; } }
-    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: 0; right: auto; transform: none; width: min(200px, 72vw); } }
+    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .lfc-followup-grid, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: 0; right: auto; transform: none; width: min(200px, 72vw); } }
 
   </style>
 </head>
@@ -2518,8 +2551,23 @@
               </section>
 
               <section class="section" id="lfcExtraSection">
-                <div class="section-head"><div><div class="section-kicker">Additional Controls</div><h2>추가 관리 항목</h2></div></div>
-                <div class="section-body"><div class="lfc-extra-grid" id="lfcExtraGrid"></div></div>
+                <div class="section-head"><div><div class="section-kicker">Follow-up Controls</div><h2>LFC 후속 관리 항목</h2></div></div>
+                <div class="section-body">
+                  <div class="lfc-followup-stack">
+                    <div class="lfc-followup-grid">
+                      <article class="lfc-followup-card" id="maturityCalendarSection">
+                        <div class="lfc-followup-head"><strong>만기 캘린더</strong><span id="maturityCalendarMeta"></span></div>
+                        <div id="lfcMaturityCalendar"></div>
+                      </article>
+                      <article class="lfc-followup-card" id="pfPlanSection">
+                        <div class="lfc-followup-head"><strong>본 PF 계획(통합 PF)</strong><span>통합 기준</span></div>
+                        <div class="pf-plan-rail" id="pfPlanRail"></div>
+                        <div class="table-card compact-table"><table><thead><tr><th>단계</th><th>업무</th><th>필요 자료</th><th>카운터파티</th><th>목표 일정</th><th>상세</th></tr></thead><tbody id="pfPlanTable"></tbody></table></div>
+                      </article>
+                    </div>
+                    <div class="lfc-extra-grid" id="lfcExtraGrid"></div>
+                  </div>
+                </div>
               </section>
 
               <div class="lfc-card-modal-backdrop" id="lfcCardModalBackdrop" hidden>
@@ -3910,21 +3958,81 @@
                         "대출금액, 금리, 수수료, 선후순위, 인출조건, 후행조건을 조건별로 체크합니다."
                   ],
                   [
-                        "만기 캘린더",
-                        "Vehicle별 만기, 연장 가능일, 본PF 전환 목표일을 캘린더형으로 관리합니다."
-                  ],
-                  [
                         "자료 요청 리스트",
                         "대주별 약정서, term sheet, 수수료 산출표, 신용보강 자료 요청 상태를 관리합니다."
-                  ],
-                  [
-                        "대주 커뮤니케이션 로그",
-                        "대주별 회신, 요청사항, 다음 미팅일, 내부 담당자를 누적 관리합니다."
-                  ],
-                  [
-                        "본PF 전환 준비사항",
-                        "Refi 이후 본PF 전환을 위한 조건, 모집 주관사, 대체 상환재원을 별도 추적합니다."
                   ]
+            ],
+            "pfPlan": [
+                  {
+                        "id": "pf-plan-01",
+                        "step": "01",
+                        "name": "통합 PF 구조 확정",
+                        "work": "427 본PF와 816 후속 PF를 통합 관점에서 연결",
+                        "materials": "통합 자금구조표, 상환재원 표",
+                        "counterparty": "주관기관 후보",
+                        "target": "",
+                        "next": "최종 엑셀 수령 후 구조표와 tranche sizing 연결"
+                  },
+                  {
+                        "id": "pf-plan-02",
+                        "step": "02",
+                        "name": "Tranche sizing",
+                        "work": "Senior, 중순위, 후순위, 주주대여금의 역할 구분",
+                        "materials": "Capital stack, 대주별 조건표",
+                        "counterparty": "대주단 / 증권사",
+                        "target": "",
+                        "next": "금액은 최종 엑셀 수령 후 반영"
+                  },
+                  {
+                        "id": "pf-plan-03",
+                        "step": "03",
+                        "name": "주관·참여기관 협의",
+                        "work": "주관기관 역할, 참여기관 조건, syndication 범위 정리",
+                        "materials": "협의 메모, term sheet",
+                        "counterparty": "KB, NH, 신한 등",
+                        "target": "",
+                        "next": "협의 내용은 상단 LFC 업무 로그에 누적"
+                  },
+                  {
+                        "id": "pf-plan-04",
+                        "step": "04",
+                        "name": "Term sheet 정리",
+                        "work": "금리, 수수료, 인출조건, 후행조건, 담보조건 정리",
+                        "materials": "대출 조건표, 약정 주요 조건",
+                        "counterparty": "대주단",
+                        "target": "",
+                        "next": "조건별 미기재 항목을 자료 요청 리스트로 연결"
+                  },
+                  {
+                        "id": "pf-plan-05",
+                        "step": "05",
+                        "name": "심의·승인 패키지",
+                        "work": "내부 심의와 대주 심사에 필요한 패키지 구성",
+                        "materials": "IM, 리스크심의, 사업계획, 모델",
+                        "counterparty": "내부 심의 / 대주 심사",
+                        "target": "",
+                        "next": "누락 자료와 책임 셀을 분리"
+                  },
+                  {
+                        "id": "pf-plan-06",
+                        "step": "06",
+                        "name": "약정서·담보 패키지",
+                        "work": "대출약정서, 담보, 책임준공, 후행조건 문서화",
+                        "materials": "약정서, 담보계약, 책임준공 관련 문서",
+                        "counterparty": "법무 / 대주단 / 시공사",
+                        "target": "",
+                        "next": "약정서 원문 확보 후 체크리스트 갱신"
+                  },
+                  {
+                        "id": "pf-plan-07",
+                        "step": "07",
+                        "name": "기표 및 기존 대출 상환",
+                        "work": "본PF 기표, 기존 Loan 상환, 후행조건 관리",
+                        "materials": "기표 일정, 상환계획, 자금집행표",
+                        "counterparty": "대리금융기관 / 대주단",
+                        "target": "",
+                        "next": "만기 캘린더와 기표 일정 연결"
+                  }
             ]
       }
 };
@@ -5191,9 +5299,9 @@
       document.getElementById("interestChart").innerHTML = `<div class="interest-axis"><span>${lfcAmount(max)}</span><span>${lfcAmount(max / 2)}</span><span>0</span></div><div class="interest-month-grid">${buckets.map((bucket) => `
         <div class="interest-month">
           <div class="interest-stack" style="height:${Math.max((bucket.total / max) * 220, 12)}px">
-            ${bucket.rows.length ? bucket.rows.map((row) => `<div class="interest-segment ${trancheClass(row.tranche)}" tabindex="0" style="height:${Math.max((Number(row.interestAmount) / Math.max(bucket.total, 1)) * 100, 5)}%">
+            ${bucket.rows.length ? bucket.rows.map((row) => `<div class="interest-segment ${trancheClass(row.tranche)}" tabindex="0" aria-label="${escapeHtml(`${bucket.month} ${row.tranche} ${row.lender} 원금 ${lfcAmount(row.principal)} 금리 ${row.rate}% 월 이자 ${lfcAmount(row.interestAmount)}`)}" style="height:${Math.max((Number(row.interestAmount) / Math.max(bucket.total, 1)) * 100, 5)}%">
               <span class="chart-tooltip">${escapeHtml(bucket.month)}<br>${escapeHtml(row.tranche)} · ${escapeHtml(row.lender)}<br>원금 ${lfcAmount(row.principal)} / 금리 ${escapeHtml(row.rate)}%<br>월 이자 ${lfcAmount(row.interestAmount)}</span>
-            </div>`).join("") : `<div class="interest-segment other" tabindex="0" style="height:100%"><span class="chart-tooltip">${escapeHtml(bucket.month)}<br>월별 이자 데이터 입력 대기</span></div>`}
+            </div>`).join("") : `<div class="interest-segment other" tabindex="0" aria-label="${escapeHtml(`${bucket.month} 월별 이자 데이터 입력 대기`)}" style="height:100%"><span class="chart-tooltip">${escapeHtml(bucket.month)}<br>월별 이자 데이터 입력 대기</span></div>`}
           </div>
           <div class="interest-label">${escapeHtml(bucket.month.slice(2))}<br><strong>${bucket.total ? lfcAmount(bucket.total) : ""}</strong></div>
         </div>
@@ -5280,7 +5388,110 @@
       </div>`).join("") : `<div class="empty">선택한 프로젝트에 매핑된 대주 뉴스가 없습니다.</div>`;
     }
 
+    function monthDate(value) {
+      if (!value) return null;
+      const match = String(value).match(/(20\d{2})[-.](\d{1,2})/);
+      if (!match) return null;
+      return new Date(Number(match[1]), Number(match[2]) - 1, 1);
+    }
+
+    function addMonths(date, count) {
+      return new Date(date.getFullYear(), date.getMonth() + count, 1);
+    }
+
+    function monthDiff(start, end) {
+      return (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+    }
+
+    function monthLabel(date) {
+      return `${String(date.getFullYear()).slice(2)}.${String(date.getMonth() + 1).padStart(2, "0")}`;
+    }
+
+    function lfcProjectLabel(project) {
+      if (project === "427") return "IOTA One 427";
+      if (project === "816") return "IOTA Two 816";
+      return "통합";
+    }
+
+    function maturityRowsForProject() {
+      return lfcRowsForProject(LFC_V2.loanLenders || []).filter((loan) => loan.loanType !== "주주대여금");
+    }
+
+    function renderMaturityCalendar() {
+      const rows = maturityRowsForProject();
+      const dated = rows
+        .map((loan) => ({ loan, start: monthDate(loan.execution), end: monthDate(loan.maturity) }))
+        .filter((row) => row.end)
+        .sort((a, b) => a.end - b.end || String(a.loan.tranche || "").localeCompare(String(b.loan.tranche || "")));
+      const missing = rows.filter((loan) => !monthDate(loan.maturity));
+      const meta = document.getElementById("maturityCalendarMeta");
+      const calendar = document.getElementById("lfcMaturityCalendar");
+      if (meta) meta.textContent = `${lfcProjectLabel(currentLfcKey())} · 만기 ${dated.length}건`;
+
+      if (!dated.length) {
+        calendar.innerHTML = `<div class="maturity-missing">
+          <div class="maturity-missing-row"><strong>만기 데이터 입력 대기</strong><span>대출 실행일과 만기일이 들어오면 이 영역에 월별 캘린더가 자동으로 생성됩니다.</span></div>
+          ${missing.map((loan) => `<div class="maturity-missing-row"><strong>${escapeHtml(loan.loanType)} ${escapeHtml(loan.tranche || "")}</strong><span>${escapeHtml(loan.lender || "")}</span></div>`).join("")}
+        </div>`;
+        return;
+      }
+
+      const earliest = new Date(Math.min(...dated.map((row) => (row.start || row.end).getTime())));
+      const latest = new Date(Math.max(...dated.map((row) => row.end.getTime())));
+      const monthCount = Math.max(1, Math.min(36, monthDiff(earliest, latest) + 1));
+      const months = Array.from({ length: monthCount }, (_, index) => addMonths(earliest, index));
+      const columns = `repeat(${months.length}, minmax(62px, 1fr))`;
+
+      calendar.innerHTML = `<div class="maturity-calendar">
+        <div class="maturity-axis">
+          <div class="maturity-axis-label">대출 / Tranche</div>
+          <div class="maturity-months" style="grid-template-columns:${columns}">${months.map((date) => `<span>${monthLabel(date)}</span>`).join("")}</div>
+        </div>
+        ${dated.map(({ loan, start, end }) => {
+          const rowStart = start || end;
+          const startIndex = Math.max(0, monthDiff(earliest, rowStart));
+          const endIndex = Math.max(startIndex, monthDiff(earliest, end));
+          const gridColumn = `${startIndex + 1} / ${Math.min(endIndex + 2, months.length + 1)}`;
+          return `<div class="maturity-row">
+            <div class="maturity-meta">
+              <strong>${escapeHtml(loan.tranche || loan.loanType)}</strong>
+              <span>${escapeHtml(loan.lender || "")}</span>
+              <em>${lfcAmount(loan.amount)}</em>
+            </div>
+            <div class="maturity-track" style="grid-template-columns:${columns}">
+              <button class="maturity-span ${trancheClass(loan.tranche)}" type="button" data-maturity-loan="${escapeHtml(loan.id)}" style="grid-column:${gridColumn}" aria-label="${escapeHtml(`${loan.lender || loan.loanType} 만기 ${loan.maturity}`)}">
+                <span>${escapeHtml(loan.maturity || "")}</span>
+              </button>
+            </div>
+          </div>`;
+        }).join("")}
+      </div>
+      ${missing.length ? `<div class="maturity-missing">${missing.map((loan) => `<div class="maturity-missing-row"><strong>${escapeHtml(loan.loanType)} ${escapeHtml(loan.tranche || "")}</strong><span>${escapeHtml(loan.lender || "대주명 입력 대기")}</span></div>`).join("")}</div>` : ""}`;
+    }
+
+    function renderPfPlan() {
+      const rows = LFC_V2.pfPlan || [];
+      document.getElementById("pfPlanRail").innerHTML = rows.map((item) => `
+        <button class="pf-step" type="button" data-pf-step="${escapeHtml(item.id)}">
+          <span>STEP ${escapeHtml(item.step)}</span>
+          <strong>${escapeHtml(item.name)}</strong>
+        </button>
+      `).join("");
+      document.getElementById("pfPlanTable").innerHTML = rows.map((item) => `
+        <tr>
+          <td>${escapeHtml(item.step)}</td>
+          <td><strong>${escapeHtml(item.name)}</strong></td>
+          <td>${escapeHtml(item.materials || "")}</td>
+          <td>${escapeHtml(item.counterparty || "")}</td>
+          <td>${escapeHtml(item.target || "")}</td>
+          <td><button class="pf-detail-btn" type="button" data-pf-step="${escapeHtml(item.id)}" aria-label="${escapeHtml(`${item.name} 상세 보기`)}">상세</button></td>
+        </tr>
+      `).join("");
+    }
+
     function renderLfcExtra() {
+      renderMaturityCalendar();
+      renderPfPlan();
       document.getElementById("lfcExtraGrid").innerHTML = LFC_V2.extraItems.map((item) => `
         <article class="lfc-extra-card"><strong>${escapeHtml(item[0])}</strong><p>${escapeHtml(item[1])}</p></article>
       `).join("");
@@ -5321,6 +5532,37 @@
       document.getElementById("lfcCardModalBackdrop").hidden = true;
       document.body.style.overflow = "";
       if (lastLfcCardFocus && document.contains(lastLfcCardFocus)) lastLfcCardFocus.focus();
+    }
+
+    function openPfPlanDrawer(stepId) {
+      lastFinanceDrawerFocus = document.activeElement;
+      const item = (LFC_V2.pfPlan || []).find((row) => row.id === stepId);
+      if (!item) return;
+      document.getElementById("financeDrawerTitle").textContent = `본 PF 계획 · STEP ${item.step}`;
+      document.getElementById("financeDrawerSubtitle").textContent = item.name;
+      document.getElementById("financeDrawerBody").innerHTML = `
+        <section class="drawer-section">
+          <h3>업무 정의</h3>
+          <dl>
+            <div><dt>단계</dt><dd>${escapeHtml(item.step)}</dd></div>
+            <div><dt>업무</dt><dd>${escapeHtml(item.work || "")}</dd></div>
+            <div><dt>필요 자료</dt><dd>${escapeHtml(item.materials || "")}</dd></div>
+            <div><dt>카운터파티</dt><dd>${escapeHtml(item.counterparty || "")}</dd></div>
+            <div><dt>목표 일정</dt><dd>${escapeHtml(item.target || "")}</dd></div>
+          </dl>
+        </section>
+        <section class="drawer-section">
+          <h3>다음 액션</h3>
+          <p>${escapeHtml(item.next || "")}</p>
+        </section>
+        <section class="drawer-section">
+          <h3>LFC 관리 포인트</h3>
+          <p>본 PF 계획은 통합 PF 기준의 준비 업무만 이 컴포넌트에서 관리하고, 세부 협의 이력은 상단 LFC 업무 로그에 남기는 구조입니다.</p>
+        </section>
+      `;
+      document.getElementById("financeDrawerBackdrop").classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.getElementById("financeDrawerClose").focus();
     }
 
 
@@ -5786,6 +6028,24 @@
       if (!row) return;
       expandedLoanId = expandedLoanId === row.dataset.loanId ? "" : row.dataset.loanId;
       openFinanceDrawer(row.dataset.loanId);
+    });
+
+    document.getElementById("lfcMaturityCalendar").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-maturity-loan]");
+      if (!button) return;
+      openFinanceDrawer(button.dataset.maturityLoan);
+    });
+
+    document.getElementById("pfPlanRail").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-pf-step]");
+      if (!button) return;
+      openPfPlanDrawer(button.dataset.pfStep);
+    });
+
+    document.getElementById("pfPlanTable").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-pf-step]");
+      if (!button) return;
+      openPfPlanDrawer(button.dataset.pfStep);
     });
 
     document.getElementById("marketLenderFilter").addEventListener("change", (event) => {

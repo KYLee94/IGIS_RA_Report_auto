@@ -37,12 +37,8 @@ async function main() {
     await page.waitForFunction(() => document.querySelectorAll("#marketLenderFilter option").length > 0);
     return page.evaluate(() => ({
       meta: document.querySelector("#marketNewsMeta")?.textContent?.trim() || "",
-      options: [...document.querySelectorAll("#marketLenderFilter option")].map((option) =>
-        option.textContent.trim()
-      ),
-      visibleLenders: [...document.querySelectorAll("#marketWatchGrid .row-title")].map((item) =>
-        item.textContent.trim()
-      ),
+      options: [...document.querySelectorAll("#marketLenderFilter option")].map((option) => option.textContent.trim()),
+      visibleLenders: [...document.querySelectorAll("#marketWatchGrid .row-title")].map((item) => item.textContent.trim()),
     }));
   }
 
@@ -61,6 +57,34 @@ async function main() {
     const text = document.querySelector("#lfcLogList")?.textContent || "";
     return text.includes("QA LFC log");
   });
+
+  const followupState = await page.evaluate(() => ({
+    maturityMeta: document.querySelector("#maturityCalendarMeta")?.textContent?.trim() || "",
+    maturityMarkers: document.querySelectorAll("#lfcMaturityCalendar [data-maturity-loan]").length,
+    pfPlanRows: document.querySelectorAll("#pfPlanTable tr").length,
+    extraText: document.querySelector("#lfcExtraSection")?.textContent || "",
+  }));
+
+  await page.click("#lfcMaturityCalendar [data-maturity-loan]");
+  await page.waitForTimeout(250);
+  const maturityDrawerOpen = await page.evaluate(() => {
+    const drawer = document.querySelector("#financeDrawerBackdrop");
+    const text = document.querySelector("#financeDrawerBody")?.textContent || "";
+    return drawer?.classList.contains("open") && text.includes("Loan 조건");
+  });
+  await page.keyboard.press("Escape");
+  await page.waitForTimeout(100);
+
+  await page.click("#pfPlanTable [data-pf-step]");
+  await page.waitForTimeout(250);
+  const pfPlanDrawerOpen = await page.evaluate(() => {
+    const drawer = document.querySelector("#financeDrawerBackdrop");
+    const title = document.querySelector("#financeDrawerTitle")?.textContent || "";
+    const text = document.querySelector("#financeDrawerBody")?.textContent || "";
+    return drawer?.classList.contains("open") && title.includes("본 PF 계획") && text.includes("다음 액션");
+  });
+  await page.keyboard.press("Escape");
+  await page.waitForTimeout(100);
 
   await page.click("#loanTable tr[data-loan-id]");
   await page.waitForTimeout(250);
@@ -84,7 +108,7 @@ async function main() {
       cardCount: cards.length,
       cardsOneRow: rects.length === 4 && rects.every((rect) => Math.abs(Math.round(rect.top) - firstTop) <= 2),
       horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
-      forbiddenTextFound: ["Target Vehicle", "약정조건·만기 관리", "대주별 관리 및 이슈"].some((text) =>
+      forbiddenTextFound: ["Target Vehicle", "약정조건·만기 관리", "대주별 관리 및 이슈", "대주 커뮤니케이션 로그"].some((text) =>
         document.body.innerText.includes(text)
       ),
     };
@@ -101,14 +125,14 @@ async function main() {
     twoOptions: twoMarket.options,
     oneVisibleLenders: oneMarket.visibleLenders,
     twoVisibleLenders: twoMarket.visibleLenders,
-    oneHas427Lender: oneMarket.options.includes("KB국민은행"),
-    twoHas816Lender: twoMarket.options.includes("메리츠화재") || twoMarket.options.includes("NH투자증권"),
-    twoExcludes427OnlyLender: !twoMarket.options.includes("KB국민은행"),
+    oneHas427Lender: oneMarket.options.some((name) => name.includes("KB")),
+    twoHas816Lender: twoMarket.options.some((name) => name.includes("메리츠") || name.includes("NH")),
+    twoExcludes427OnlyLender: !twoMarket.options.some((name) => name.includes("KB")),
     listsDiffer: JSON.stringify(oneMarket.options) !== JSON.stringify(twoMarket.options),
   };
 
-  const interactions = { logSubmitOk, loanDrawerOpen, drawerClosedByEscape };
-  const payload = { ...result, marketFilter, interactions, consoleErrors, screenshotPath };
+  const interactions = { logSubmitOk, maturityDrawerOpen, pfPlanDrawerOpen, loanDrawerOpen, drawerClosedByEscape };
+  const payload = { ...result, marketFilter, followupState, interactions, consoleErrors, screenshotPath };
   console.log(JSON.stringify(payload, null, 2));
 
   if (!result.title.includes("LFC")) process.exitCode = 1;
@@ -116,11 +140,16 @@ async function main() {
   if (!result.cardsOneRow) process.exitCode = 1;
   if (result.horizontalOverflow) process.exitCode = 1;
   if (result.forbiddenTextFound) process.exitCode = 1;
+  if (followupState.maturityMarkers < 1) process.exitCode = 1;
+  if (followupState.pfPlanRows !== 7) process.exitCode = 1;
+  if (followupState.extraText.includes("대주 커뮤니케이션 로그")) process.exitCode = 1;
   if (!marketFilter.oneHas427Lender) process.exitCode = 1;
   if (!marketFilter.twoHas816Lender) process.exitCode = 1;
   if (!marketFilter.twoExcludes427OnlyLender) process.exitCode = 1;
   if (!marketFilter.listsDiffer) process.exitCode = 1;
   if (!interactions.logSubmitOk) process.exitCode = 1;
+  if (!interactions.maturityDrawerOpen) process.exitCode = 1;
+  if (!interactions.pfPlanDrawerOpen) process.exitCode = 1;
   if (!interactions.loanDrawerOpen) process.exitCode = 1;
   if (!interactions.drawerClosedByEscape) process.exitCode = 1;
   if (consoleErrors.length) process.exitCode = 1;
