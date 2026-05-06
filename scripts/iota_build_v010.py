@@ -366,6 +366,7 @@ def lfc_payload() -> dict[str, Any]:
         )
 
     lender_groups = lender_search_groups(loan_lenders)
+    market_fallback = market_news_fallback(lender_groups)
     return {
         "meta": {"lead": "박준호", "members": "1명"},
         "summaryCards": [
@@ -428,19 +429,7 @@ def lfc_payload() -> dict[str, Any]:
         },
         "equityInvestors": equity_investors,
         "loanLenders": loan_lenders,
-        "marketNewsFallback": {
-            "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
-            "windowDays": 3,
-            "items": [
-                {
-                    "lender": g["lender"],
-                    "relation": g["relation"],
-                    "projects": g.get("projects", []),
-                    "articles": [],
-                }
-                for g in lender_groups
-            ],
-        },
+        "marketNewsFallback": market_fallback,
         "newsLenders": lender_groups,
         "extraItems": [
             ["대출 조건 체크리스트", "대출금액, 금리, 수수료, 선후순위, 인출조건, 후행조건을 조건별로 체크합니다."],
@@ -462,9 +451,11 @@ def lender_search_groups(loan_lenders: list[dict[str, Any]]) -> list[dict[str, A
         display = search_terms[0] if search_terms else lender
         relation = f"{row.get('project')} {row.get('tranche') or row.get('loanType')}"
         if display not in groups:
-            groups[display] = {"lender": display, "relation": relation, "searchNames": search_terms, "projects": [row.get("project")]}
+            groups[display] = {"lender": display, "relation": relation, "relations": [relation], "searchNames": search_terms, "projects": [row.get("project")]}
         else:
-            groups[display]["relation"] = f"{groups[display]['relation']} / {relation}"
+            if relation not in groups[display]["relations"]:
+                groups[display]["relations"].append(relation)
+                groups[display]["relation"] = " / ".join(groups[display]["relations"])
             if row.get("project") not in groups[display]["projects"]:
                 groups[display]["projects"].append(row.get("project"))
     defaults = [
@@ -477,12 +468,45 @@ def lender_search_groups(loan_lenders: list[dict[str, Any]]) -> list[dict[str, A
     ]
     for display, relation, search_names, projects in defaults:
         if display not in groups:
-            groups[display] = {"lender": display, "relation": relation, "searchNames": search_names, "projects": projects}
+            groups[display] = {"lender": display, "relation": relation, "relations": [relation], "searchNames": search_names, "projects": projects}
         else:
+            if relation not in groups[display]["relations"]:
+                groups[display]["relations"].append(relation)
+                groups[display]["relation"] = " / ".join(groups[display]["relations"])
             for project in projects:
                 if project not in groups[display]["projects"]:
                     groups[display]["projects"].append(project)
-    return sorted(groups.values(), key=lambda x: x["lender"])
+    return sorted(({k: v for k, v in group.items() if k != "relations"} for group in groups.values()), key=lambda x: x["lender"])
+
+
+def market_news_fallback(lender_groups: list[dict[str, Any]]) -> dict[str, Any]:
+    items_by_lender: dict[str, dict[str, Any]] = {}
+    market_news_path = DATA_DIR / "lfc-market-news.json"
+    if market_news_path.exists():
+        try:
+            payload = json.loads(market_news_path.read_text(encoding="utf-8"))
+            for item in payload.get("items", []):
+                lender = str(item.get("lender") or "")
+                if lender:
+                    items_by_lender[lender] = item
+        except Exception:
+            items_by_lender = {}
+    items = []
+    for group in lender_groups:
+        existing = items_by_lender.get(group["lender"], {})
+        items.append(
+            {
+                "lender": group["lender"],
+                "relation": group["relation"],
+                "projects": group.get("projects", []),
+                "articles": existing.get("articles", []),
+            }
+        )
+    return {
+        "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "windowDays": 3,
+        "items": items,
+    }
 
 
 def lender_terms(lender: str) -> list[str]:

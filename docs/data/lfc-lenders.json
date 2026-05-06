@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T18:27:09",
+  "generatedAt": "2026-05-06T18:53:39",
   "lenders": [
     {
       "lender": "KB국민은행",
@@ -14,7 +14,7 @@
     },
     {
       "lender": "NH투자증권",
-      "relation": "816 Tr.A-2",
+      "relation": "816 Tr.A-2 / 816 Tr.A-2 SPC 및 대리금융 관련 모니터링",
       "searchNames": [
         "NH투자증권",
         "갤럭시이오㈜ (NH투자증권 SPC)"
@@ -47,7 +47,7 @@
     },
     {
       "lender": "메리츠화재",
-      "relation": "816 Tr.A-1 / 816 Tr.A-1",
+      "relation": "816 Tr.A-1",
       "searchNames": [
         "메리츠화재",
         "케이에이치엘제이십일차㈜ (메리츠증권 SPC)"
@@ -124,7 +124,7 @@
     },
     {
       "lender": "신한투자증권",
-      "relation": "816 Tr.B / 816 Tr.C",
+      "relation": "816 Tr.B / 816 Tr.C / 427/816 투자자·SPC 관련 모니터링",
       "searchNames": [
         "신한투자증권",
         "816공간제일차(신한증권)"
@@ -158,7 +158,7 @@
     },
     {
       "lender": "한국투자리얼에셋운용",
-      "relation": "816 Tr.B / 816 Tr.B",
+      "relation": "816 Tr.B",
       "searchNames": [
         "한국투자리얼에셋운용",
         "한국투자Debt Strategy 일반사모부동산투자신탁1호 (한투리얼에셋운용)"
