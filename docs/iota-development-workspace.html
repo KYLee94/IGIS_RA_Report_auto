@@ -1875,17 +1875,17 @@
     .capital-segment span { color: var(--text); }
     .market-row { grid-template-columns: 170px minmax(0, 1fr); }
     .market-row .article-list a { display: block; }
-    .lfc-extra-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+    .lfc-extra-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .lfc-extra-card { border: 1px solid var(--line); border-radius: 15px; background: var(--panel-2); padding: 15px; min-height: 104px; }
     .lfc-extra-card strong { display: block; font-size: 15px; line-height: 1.35; }
     .lfc-extra-card p { margin: 10px 0 0; color: var(--muted-2); font-size: 13px; line-height: 1.5; }
     .lfc-followup-stack { display: grid; gap: 14px; }
-    .lfc-followup-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 14px; align-items: start; }
+    .lfc-followup-grid { display: grid; grid-template-columns: 1fr; gap: 14px; align-items: start; }
     .lfc-followup-card { border: 1px solid var(--line); border-radius: 16px; background: var(--panel-2); padding: 16px; min-width: 0; }
     .lfc-followup-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
     .lfc-followup-head strong { font-size: 16px; line-height: 1.3; }
     .lfc-followup-head span { color: var(--muted-2); font-size: 12px; font-weight: 900; white-space: nowrap; }
-    .maturity-calendar { border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; overflow-x: auto; }
+    .maturity-calendar { max-height: 520px; border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; overflow: auto; }
     .maturity-axis, .maturity-row { min-width: 820px; display: grid; grid-template-columns: 220px minmax(0, 1fr); }
     .maturity-axis { position: sticky; top: 0; z-index: 1; border-bottom: 1px solid var(--line-soft); background: #1f1f1e; color: var(--muted); font-size: 11px; font-weight: 900; }
     .maturity-axis-label { padding: 10px 12px; border-right: 1px solid var(--line-soft); }
@@ -1893,12 +1893,14 @@
     .maturity-months span { padding: 10px 6px; text-align: center; border-left: 1px solid rgba(255,255,255,.05); }
     .maturity-row { border-top: 1px solid var(--line-soft); }
     .maturity-row:first-of-type { border-top: 0; }
-    .maturity-meta { padding: 11px 12px; border-right: 1px solid var(--line-soft); min-width: 0; }
+    .maturity-axis-label, .maturity-meta { position: sticky; left: 0; z-index: 2; background: #191918; }
+    .maturity-axis-label { z-index: 4; background: #1f1f1e; }
+    .maturity-meta { padding: 8px 12px; border-right: 1px solid var(--line-soft); min-width: 0; }
     .maturity-meta strong { display: block; font-size: 13px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .maturity-meta span { display: block; margin-top: 5px; color: var(--muted-2); font-size: 11px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .maturity-track { position: relative; align-items: center; padding: 10px 0; }
+    .maturity-meta span { display: block; margin-top: 3px; color: var(--muted-2); font-size: 11px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .maturity-track { position: relative; align-items: center; padding: 7px 0; }
     .maturity-track::before { content: ""; grid-column: 1 / -1; height: 1px; background: #3a3a38; align-self: center; }
-    .maturity-span { min-height: 24px; border: 1px solid rgba(136,169,178,.46); border-radius: 999px; background: rgba(136,169,178,.26); color: var(--text); align-self: center; z-index: 1; display: flex; align-items: center; justify-content: flex-end; padding: 0 7px; font-size: 10px; font-weight: 900; cursor: pointer; white-space: nowrap; overflow: hidden; }
+    .maturity-span { min-height: 20px; border: 1px solid rgba(136,169,178,.46); border-radius: 999px; background: rgba(136,169,178,.26); color: var(--text); align-self: center; z-index: 1; display: flex; align-items: center; justify-content: flex-end; padding: 0 7px; font-size: 10px; font-weight: 900; cursor: pointer; white-space: nowrap; overflow: hidden; }
     .maturity-span:hover, .maturity-span:focus-visible { outline: none; border-color: #88a9b2; box-shadow: 0 0 0 3px rgba(136,169,178,.16); }
     .maturity-point { width: 18px; height: 18px; border: 2px solid #88a9b2; border-radius: 999px; background: #171716; align-self: center; justify-self: center; z-index: 2; cursor: pointer; font-size: 0; }
     .maturity-point:hover, .maturity-point:focus-visible { outline: none; border-color: var(--text); box-shadow: 0 0 0 4px rgba(136,169,178,.18); }
@@ -1910,7 +1912,7 @@
     .pf-step strong { display: block; font-size: 12px; line-height: 1.35; }
     .pf-step:hover, .pf-step:focus-visible { border-color: #88a9b2; outline: none; }
     #pfPlanSection table { min-width: 920px; }
-    .pf-detail-btn { min-width: 50px; height: 32px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
+    .pf-detail-btn { min-width: 54px; height: 36px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
     .pf-detail-btn:hover, .pf-detail-btn:focus-visible { border-color: #88a9b2; outline: none; }
 
     @media (max-width: 1320px) {
@@ -2188,6 +2190,7 @@
     .capital-segment.shareholder { background: #686a66; }
     .capital-segment.plan { background: #6c6c6c; color: #f5f5f5; }
     .capital-segment.past { background: repeating-linear-gradient(135deg, #343434 0 8px, #444 8px 16px); color: #d7d7d7; }
+    .capital-segment:focus-visible { outline: 2px solid #88a9b2; outline-offset: -3px; }
     .capital-stack-foot { color: var(--muted-2); font-size: 12px; line-height: 1.5; min-height: 54px; }
     .capital-legend { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; color: var(--muted-2); font-size: 12px; }
     .capital-legend span { display: inline-flex; align-items: center; gap: 6px; }
@@ -2215,6 +2218,9 @@
     .interest-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; color: var(--muted-2); font-size: 12px; }
     .interest-legend span { display: inline-flex; align-items: center; gap: 6px; }
     .interest-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+    .interest-empty-grid .interest-stack { opacity: .9; }
+    .interest-empty-grid .interest-segment { min-height: 10px; border: 1px dashed #555; background: #2c302f; }
+    .interest-empty-grid .interest-label strong { color: var(--muted); font-size: 10px; font-weight: 800; }
     .interest-empty { min-height: 250px; display: grid; place-content: center; gap: 8px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted-2); text-align: center; padding: 24px; }
     .interest-empty strong { color: var(--text); font-size: 15px; }
     .interest-empty p { margin: 0; max-width: 520px; font-size: 13px; line-height: 1.55; }
@@ -2248,12 +2254,14 @@
     .app.finance-active #equitySection table { min-width: 760px; }
     .app.finance-active .compact-table th,
     .app.finance-active .compact-table td { padding-top: 8px; padding-bottom: 8px; }
-    .loan-detail-btn { min-width: 50px; height: 34px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
+    .app.finance-active #loanTable .lfc-lender-name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 280px; line-height: 1.35; }
+    .app.finance-active #loanTable td { vertical-align: middle; }
+    .loan-detail-btn { min-width: 54px; height: 36px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); font-size: 12px; font-weight: 900; cursor: pointer; white-space: nowrap; }
     .loan-detail-btn:hover,
     .loan-detail-btn:focus-visible { border-color: #88a9b2; outline: none; }
-    @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards, .lfc-followup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 1180px) { .lfc-cell-cards { grid-template-columns: repeat(4, minmax(118px, 1fr)); gap: 8px; } .lfc-cell-card { min-height: 82px; padding: 10px 11px; } .lfc-cell-card strong { font-size: 17px; margin-top: 7px; } .lfc-cell-card .card-caption { font-size: 10px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .capital-stack-chart { grid-template-columns: repeat(3, minmax(180px, 1fr)); overflow-x: auto; } .capital-stack { grid-template-rows: auto 220px auto; } .capital-stack-body { height: 220px; } }
-    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .lfc-followup-grid, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: 0; right: auto; transform: none; width: min(200px, 72vw); } }
+    @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lender-summary-grid, .lfc-lender-cards, .lfc-followup-grid, .lfc-extra-grid, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } .lfc-cell-cards { grid-template-columns: repeat(4, minmax(132px, 1fr)); overflow-x: auto; padding-bottom: 4px; } .interest-segment .chart-tooltip { left: 0; right: auto; transform: none; width: min(200px, 72vw); } }
 
   </style>
 </head>
@@ -2523,12 +2531,12 @@
 
               <section class="section" id="loanSection">
                 <div class="section-head"><div><div class="section-kicker">Loan Lenders</div><h2>대주별 Loan 현황</h2></div></div>
-                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>대출 종류</th><th>Tranche</th><th>대주</th><th class="num">약정액</th><th class="num">비율</th><th>실행일</th><th>만기</th><th>금리</th><th>수수료</th><th>상세</th></tr></thead><tbody id="loanTable"></tbody></table></div></div>
+                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>구분</th><th>대출 종류</th><th>Tranche</th><th>대주</th><th class="num">약정액</th><th class="num">비율</th><th>실행일</th><th>만기</th><th>금리</th><th>수수료</th><th>상세</th></tr></thead><tbody id="loanTable"></tbody></table></div></div>
               </section>
 
               <section class="section" id="equitySection">
                 <div class="section-head"><div><div class="section-kicker">Equity Investors</div><h2>자본구조 참고 - Equity 투자자 현황</h2></div></div>
-                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>Vehicle</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
+                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>구분</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
               </section>
 
               <section class="section" id="interestSection">
@@ -2551,7 +2559,7 @@
               </section>
 
               <section class="section" id="lfcExtraSection">
-                <div class="section-head"><div><div class="section-kicker">Follow-up Controls</div><h2>LFC 후속 관리 항목</h2></div></div>
+                <div class="section-head"><div><div class="section-kicker">Follow-up Controls</div><h2>만기·본 PF 전환 관리</h2></div></div>
                 <div class="section-body">
                   <div class="lfc-followup-stack">
                     <div class="lfc-followup-grid">
@@ -5204,7 +5212,7 @@
         const total = stack.segments.reduce((sum, seg) => sum + (Number(seg.value) || 0), 0);
         const segments = stack.segments.map((seg) => {
           const h = Math.max(((Number(seg.value) || 0) / Math.max(total, 1)) * 100, 5);
-          return `<div class="capital-segment ${escapeHtml(seg.type)}" style="height:${h}%"><span>${escapeHtml(seg.name)} ${lfcAmount(seg.value)}</span></div>`;
+          return `<div class="capital-segment ${escapeHtml(seg.type)}" tabindex="0" aria-label="${escapeHtml(`${stack.label} ${seg.name} ${lfcAmount(seg.value)}`)}" style="height:${h}%"><span>${escapeHtml(seg.name)} ${lfcAmount(seg.value)}</span></div>`;
         }).join("");
         return `<article class="capital-stack${active}">
           <div class="capital-stack-title"><strong>${escapeHtml(stack.label)}</strong><span>${lfcAmount(total)}</span></div>
@@ -5236,7 +5244,7 @@
           <td>${loan.project === "427" ? "IOTA One 427" : "IOTA Two 816"}</td>
           <td>${escapeHtml(loan.loanType)}</td>
           <td>${escapeHtml(loan.tranche || "")}</td>
-          <td>${escapeHtml(loan.lender || "")}</td>
+          <td><span class="lfc-lender-name">${escapeHtml(loan.lender || "")}</span></td>
           <td class="num">${lfcAmount(loan.amount)}</td>
           <td class="num">${ratio(Number(loan.amount) || 0, total)}</td>
           <td>${escapeHtml(lfcText(loan.execution))}</td>
@@ -5291,8 +5299,17 @@
       });
       const hasInterestRows = buckets.some((bucket) => bucket.rows.length);
       if (!hasInterestRows) {
-        document.getElementById("interestChart").innerHTML = `<div class="interest-empty"><strong>월별 이자 계산 대기</strong><p>금리 확정값이 입력된 Loan만 차트로 표시합니다. 현재는 Loan 표에서 금리·수수료 확인 필요 항목을 우선 관리하세요.</p></div>`;
-        document.getElementById("interestNote").textContent = "계산 제외: 금리 미확정 또는 실행일/만기 확인 필요 항목";
+        document.getElementById("interestChart").innerHTML = `<div class="interest-axis"><span>입력 후 계산</span><span></span><span>0</span></div><div class="interest-month-grid interest-empty-grid">${buckets.map((bucket) => `
+          <div class="interest-month">
+            <div class="interest-stack">
+              <div class="interest-segment other" tabindex="0" aria-label="${escapeHtml(`${bucket.month} 월별 이자 데이터 입력 대기`)}" style="height:10px">
+                <span class="chart-tooltip">${escapeHtml(bucket.month)}<br>금리·만기 입력 후 월별 이자 발생액이 표시됩니다.</span>
+              </div>
+            </div>
+            <div class="interest-label">${escapeHtml(bucket.month.slice(2))}<br><strong>입력 대기</strong></div>
+          </div>
+        `).join("")}</div>`;
+        document.getElementById("interestNote").textContent = "금리·실행일·만기 입력 시 월별 발생액이 표시됩니다.";
         return;
       }
       const max = Math.max(...buckets.map((bucket) => bucket.total), 1);
@@ -5472,7 +5489,7 @@
     function renderPfPlan() {
       const rows = LFC_V2.pfPlan || [];
       document.getElementById("pfPlanRail").innerHTML = rows.map((item) => `
-        <button class="pf-step" type="button" data-pf-step="${escapeHtml(item.id)}">
+        <button class="pf-step" type="button" data-pf-step="${escapeHtml(item.id)}" aria-label="${escapeHtml(`STEP ${item.step} ${item.name} 상세 보기`)}">
           <span>STEP ${escapeHtml(item.step)}</span>
           <strong>${escapeHtml(item.name)}</strong>
         </button>
@@ -5577,7 +5594,7 @@
         <section class="drawer-section">
           <h3>Loan 조건</h3>
           <dl>
-            <div><dt>Vehicle</dt><dd>${escapeHtml(loan.project === "427" ? "IOTA One 427" : loan.project === "816" ? "IOTA Two 816" : "통합")}</dd></div>
+            <div><dt>구분</dt><dd>${escapeHtml(loan.project === "427" ? "IOTA One 427" : loan.project === "816" ? "IOTA Two 816" : "통합")}</dd></div>
             <div><dt>대출 종류</dt><dd>${escapeHtml(lfcText(loan.loanType))}</dd></div>
             <div><dt>Tranche</dt><dd>${escapeHtml(lfcText(loan.tranche))}</dd></div>
             <div><dt>대주</dt><dd>${escapeHtml(lfcText(loan.lender))}</dd></div>

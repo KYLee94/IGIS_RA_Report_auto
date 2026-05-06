@@ -42,13 +42,35 @@ async function main() {
     }));
   }
 
+  async function readProjectState() {
+    return page.evaluate(() => {
+      const financeText = document.querySelector("#financeView")?.innerText || "";
+      return {
+        activeProject: [...document.querySelectorAll(".project-btn")]
+          .find((button) => button.classList.contains("active"))
+          ?.textContent.trim() || "",
+        activeStack: document.querySelector(".capital-stack.active .capital-stack-title strong")?.textContent.trim() || "",
+        loanRows: document.querySelectorAll("#loanTable tr").length,
+        equityRows: document.querySelectorAll("#equityTable tr").length,
+        maturityMeta: document.querySelector("#maturityCalendarMeta")?.textContent?.trim() || "",
+        maturityMarkers: document.querySelectorAll("#lfcMaturityCalendar [data-maturity-loan]").length,
+        interestFrameSlots: document.querySelectorAll("#interestChart .interest-empty-grid .interest-segment, #interestChart .interest-segment").length,
+        visibleDevTitle: financeText.includes("개발관리"),
+        visibleMolitTitle: financeText.includes("국토부 보고"),
+      };
+    });
+  }
+
   const totalMarket = await readMarketState();
+  const totalState = await readProjectState();
   await page.click('.project-btn[data-project="427"]');
   await page.waitForTimeout(250);
   const oneMarket = await readMarketState();
+  const oneState = await readProjectState();
   await page.click('.project-btn[data-project="816"]');
   await page.waitForTimeout(250);
   const twoMarket = await readMarketState();
+  const twoState = await readProjectState();
 
   await page.fill('#lfcLogForm textarea[name="text"]', `QA LFC log ${Date.now()}`);
   await page.click('#lfcLogForm button[type="submit"]');
@@ -131,8 +153,9 @@ async function main() {
     listsDiffer: JSON.stringify(oneMarket.options) !== JSON.stringify(twoMarket.options),
   };
 
+  const projectSwitch = { totalState, oneState, twoState };
   const interactions = { logSubmitOk, maturityDrawerOpen, pfPlanDrawerOpen, loanDrawerOpen, drawerClosedByEscape };
-  const payload = { ...result, marketFilter, followupState, interactions, consoleErrors, screenshotPath };
+  const payload = { ...result, marketFilter, projectSwitch, followupState, interactions, consoleErrors, screenshotPath };
   console.log(JSON.stringify(payload, null, 2));
 
   if (!result.title.includes("LFC")) process.exitCode = 1;
@@ -143,6 +166,17 @@ async function main() {
   if (followupState.maturityMarkers < 1) process.exitCode = 1;
   if (followupState.pfPlanRows !== 7) process.exitCode = 1;
   if (followupState.extraText.includes("대주 커뮤니케이션 로그")) process.exitCode = 1;
+  if (!totalState.activeProject.includes("통합")) process.exitCode = 1;
+  if (!oneState.activeProject.includes("427")) process.exitCode = 1;
+  if (!twoState.activeProject.includes("816")) process.exitCode = 1;
+  if (!totalState.activeStack.includes("통합")) process.exitCode = 1;
+  if (!oneState.activeStack.includes("IOTA One")) process.exitCode = 1;
+  if (!twoState.activeStack.includes("IOTA Two")) process.exitCode = 1;
+  if (!totalState.loanRows || !oneState.loanRows || !twoState.loanRows) process.exitCode = 1;
+  if (!twoState.maturityMarkers) process.exitCode = 1;
+  if (!twoState.interestFrameSlots) process.exitCode = 1;
+  if (totalState.visibleDevTitle || oneState.visibleDevTitle || twoState.visibleDevTitle) process.exitCode = 1;
+  if (totalState.visibleMolitTitle || oneState.visibleMolitTitle || twoState.visibleMolitTitle) process.exitCode = 1;
   if (!marketFilter.oneHas427Lender) process.exitCode = 1;
   if (!marketFilter.twoHas816Lender) process.exitCode = 1;
   if (!marketFilter.twoExcludes427OnlyLender) process.exitCode = 1;
