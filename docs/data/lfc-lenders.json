@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-05-06T17:56:53",
+  "lenders": [
+    {
+      "lender": "KB국민은행",
+      "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링",
+      "searchNames": [
+        "KB국민은행"
+      ]
+    },
+    {
+      "lender": "NH투자증권",
+      "relation": "816 Tr.A-2",
+      "searchNames": [
+        "NH투자증권",
+        "갤럭시이오㈜ (NH투자증권 SPC)"
+      ]
+    },
+    {
+      "lender": "대신저축은행",
+      "relation": "816 Tr.B",
+      "searchNames": [
+        "대신저축은행",
+        "대신저축은행"
+      ]
+    },
+    {
+      "lender": "대신증권",
+      "relation": "816 Tr.C",
+      "searchNames": [
+        "대신증권",
+        "이터널하이브(대신증권)"
+      ]
+    },
+    {
+      "lender": "메리츠화재",
+      "relation": "816 Tr.A-1 / 816 Tr.A-1",
+      "searchNames": [
+        "메리츠화재",
+        "케이에이치엘제이십일차㈜ (메리츠증권 SPC)"
+      ]
+    },
+    {
+      "lender": "비씨카드",
+      "relation": "816 Tr.B",
+      "searchNames": [
+        "비씨카드",
+        "비씨카드"
+      ]
+    },
+    {
+      "lender": "소노인터내셔널",
+      "relation": "816 Tr.D",
+      "searchNames": [
+        "소노인터내셔널",
+        "케이에이치엘제이십이차㈜ (소노인터네셔널 SPC)"
+      ]
+    },
+    {
+      "lender": "스틱얼터너티브자산운용",
+      "relation": "816 Tr.B",
+      "searchNames": [
+        "스틱얼터너티브자산운용",
+        "스틱얼터너티브자산운용㈜ (스틱크레딧안정화일반사모투자신탁제5호(전문))"
+      ]
+    },
+    {
+      "lender": "신한투자증권",
+      "relation": "816 Tr.B / 816 Tr.C",
+      "searchNames": [
+        "신한투자증권",
+        "816공간제일차(신한증권)"
+      ]
+    },
+    {
+      "lender": "코람코자산운용",
+      "relation": "816 Tr.C",
+      "searchNames": [
+        "코람코자산운용",
+        "코람코국내개발일반사모부동산투자신탁제1-2호 (코람코운용)"
+      ]
+    },
+    {
+      "lender": "키움투자자산운용",
+      "relation": "816 Tr.C",
+      "searchNames": [
+        "키움투자자산운용",
+        "키움가치추구형일반사모부동산투자신탁제1호 (키움투자자산운용)"
+      ]
+    },
+    {
+      "lender": "한국투자리얼에셋운용",
+      "relation": "816 Tr.B / 816 Tr.B",
+      "searchNames": [
+        "한국투자리얼에셋운용",
+        "한국투자Debt Strategy 일반사모부동산투자신탁1호 (한투리얼에셋운용)"
+      ]
+    },
+    {
+      "lender": "한화저축은행",
+      "relation": "816 Tr.B",
+      "searchNames": [
+        "한화저축은행",
+        "한화실버아이언제일차(한화저축은행)"
+      ]
+    },
+    {
+      "lender": "흥국저축은행",
+      "relation": "816 Tr.B",
+      "searchNames": [
+        "흥국저축은행",
+        "흥국저축은행"
+      ]
+    }
+  ]
+}

@@ -1,138 +1,51 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IOTA Seoul Data Package v0.9</title>
+  <title>IOTA Seoul Data Package v0.10</title>
   <style>
-    :root {
-      color-scheme: light;
-      --text: #1d1d1f;
-      --muted: #6e6e73;
-      --line: #d8d8dc;
-      --panel: #ffffff;
-      --bg: #f5f5f7;
-      --accent: #1f2a44;
-    }
+    :root { color-scheme: light; --text:#1d1d1f; --muted:#6e6e73; --line:#d8d8dc; --panel:#fff; --bg:#f5f5f7; --accent:#1f2a44; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 56px 24px 72px;
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: 34px;
-      line-height: 1.15;
-    }
-    .lead {
-      margin: 0 0 28px;
-      color: var(--muted);
-      font-size: 16px;
-    }
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 22px;
-      margin-top: 16px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-    a {
-      color: var(--accent);
-      font-weight: 800;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-    .file {
-      display: block;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px;
-      min-height: 106px;
-      background: #fbfbfd;
-    }
-    .file strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-    .file span {
-      display: block;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    ol {
-      margin: 0;
-      padding-left: 21px;
-    }
-    @media (max-width: 720px) {
-      .grid { grid-template-columns: 1fr; }
-      main { padding: 36px 16px 54px; }
-    }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    main { max-width:960px; margin:0 auto; padding:56px 24px 72px; }
+    h1 { margin:0 0 10px; font-size:34px; line-height:1.15; }
+    .lead { margin:0 0 28px; color:var(--muted); font-size:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px; margin-top:16px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    a { color:var(--accent); font-weight:800; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .file { display:block; border:1px solid var(--line); border-radius:12px; padding:14px; min-height:106px; background:#fbfbfd; }
+    .file strong { display:block; margin-bottom:6px; font-size:15px; }
+    .file span { display:block; color:var(--muted); font-size:13px; }
+    ol { margin:0; padding-left:21px; }
+    @media (max-width:720px){ .grid{grid-template-columns:1fr;} main{padding:36px 16px 54px;} }
   </style>
 </head>
 <body>
   <main>
-    <h1>IOTA Seoul Data Package v0.9</h1>
-    <p class="lead">IOTA Seoul 개발관리 Workspace 화면 제작 및 데이터 검수용 산출물입니다. 기준일은 2026-04-30입니다.</p>
-
+    <h1>IOTA Seoul Data Package v0.10</h1>
+    <p class="lead">IOTA Seoul 개발관리 Workspace 및 LFC 화면 제작/데이터 검수용 산출물입니다. 기준일은 2026-04-30입니다.</p>
     <section class="card">
       <h2>바로 다운로드</h2>
       <div class="grid">
-        <a class="file" href="./IOTA_Seoul_Data_Package_v0.9.zip" download>
-          <strong>전체 패키지 ZIP</strong>
-          <span>엑셀 3종, build report, README.md를 한 번에 받습니다.</span>
-        </a>
-        <a class="file" href="./README.md">
-          <strong>README.md</strong>
-          <span>각 파일의 목적과 확인 순서를 설명한 안내문입니다.</span>
-        </a>
-        <a class="file" href="./IOTA_Seoul_IFPDP_HandOff_v0.9.xlsx" download>
-          <strong>IFPDP HandOff v0.9</strong>
-          <span>제작 담당자가 먼저 볼 요약형 엑셀입니다.</span>
-        </a>
-        <a class="file" href="./IOTA_Seoul_DB_for_UI_v0.9.xlsx" download>
-          <strong>DB for UI v0.9</strong>
-          <span>UI 화면 제작에 바로 쓰기 위한 정제 DB입니다.</span>
-        </a>
-        <a class="file" href="./IOTA_Seoul_Master_DB_v0.9.xlsx" download>
-          <strong>Master DB v0.9</strong>
-          <span>스키마와 검수용 메타를 유지한 마스터 DB입니다.</span>
-        </a>
-        <a class="file" href="./v0.9_build_report.md">
-          <strong>Build Report</strong>
-          <span>반영/보류/충돌 건수와 검증 결과입니다.</span>
-        </a>
+        <a class="file" href="./IOTA_Seoul_Data_Package_v0.10.zip" download><strong>전체 패키지 ZIP</strong><span>엑셀 3종, build report, README.md를 한 번에 받습니다.</span></a>
+        <a class="file" href="./README.md"><strong>README.md</strong><span>각 파일의 목적과 확인 순서를 설명한 안내문입니다.</span></a>
+        <a class="file" href="./IOTA_Seoul_IFPDP_HandOff_v0.10.xlsx" download><strong>IFPDP HandOff v0.10</strong><span>제작 담당자가 먼저 볼 요약형 엑셀입니다.</span></a>
+        <a class="file" href="./IOTA_Seoul_DB_for_UI_v0.10.xlsx" download><strong>DB for UI v0.10</strong><span>UI 화면 제작에 바로 쓰기 위한 정제 DB입니다.</span></a>
+        <a class="file" href="./IOTA_Seoul_Master_DB_v0.10.xlsx" download><strong>Master DB v0.10</strong><span>스키마와 검수용 메타를 유지한 마스터 DB입니다.</span></a>
+        <a class="file" href="./v0.10_build_report.md"><strong>Build Report</strong><span>원천 파일 색인, LFC 보강, 구조 검증 결과입니다.</span></a>
       </div>
     </section>
-
     <section class="card">
       <h2>권장 확인 순서</h2>
       <ol>
-        <li>먼저 <strong>IFPDP HandOff v0.9</strong>의 요약 시트를 봅니다.</li>
-        <li>화면 제작에 필요한 확정값은 <strong>확정값</strong> 시트를 기준으로 봅니다.</li>
-        <li>계획안·검토안·시나리오 값은 확정값과 분리해서 봅니다.</li>
-        <li>충돌값과 미충전값은 별도 확인 자료가 들어오기 전까지 확정값으로 쓰지 않습니다.</li>
+        <li>먼저 <strong>IFPDP HandOff v0.10</strong>의 요약 시트를 봅니다.</li>
+        <li>LFC 화면 제작값은 <strong>v0.10_LFC_DATA</strong>와 <strong>계획_시나리오값</strong>을 봅니다.</li>
+        <li>충돌값과 미충전값은 추가 원천 확인 전까지 화면 확정값으로 쓰지 않습니다.</li>
       </ol>
     </section>
-
-    <section class="card">
-      <h2>관련 화면</h2>
-      <p><a href="../iota-development-workspace.html">IOTA 개발관리 Workspace HTML 열기</a></p>
-    </section>
+    <section class="card"><h2>관련 화면</h2><p><a href="../iota-development-workspace.html#lfc">IOTA LFC Workspace HTML 열기</a></p></section>
   </main>
 </body>
 </html>
-

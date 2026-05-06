@@ -2116,19 +2116,20 @@
     .app.finance-active .project-rail .date-chip { display: none; }
     .app.finance-active .project-rail { padding: 12px; background: #202020; }
     .app.finance-active .rail-btn.active { background: #111; color: #fff; box-shadow: inset 0 0 0 1px #3c3c3c; }
-    .lfc-page-head { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 28px; align-items: start; margin-bottom: 26px; }
+    .lfc-page-head { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px; align-items: start; margin-bottom: 22px; }
     .lfc-page-head h1 { margin: 0; font-size: 38px; line-height: 1.08; letter-spacing: 0; }
     .lfc-page-head p { margin: 12px 0 0; max-width: 720px; color: var(--muted-2); font-size: 14px; line-height: 1.55; }
-    .lfc-page-meta { min-width: 326px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); display: grid; grid-template-columns: repeat(2, 1fr); overflow: hidden; }
-    .lfc-page-meta div { padding: 14px 17px; border-left: 1px solid var(--line-soft); }
+    .lfc-page-meta { min-width: 286px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); display: grid; grid-template-columns: repeat(2, 1fr); overflow: hidden; }
+    .lfc-page-meta div { padding: 12px 14px; border-left: 1px solid var(--line-soft); }
     .lfc-page-meta div:first-child { border-left: 0; }
     .lfc-page-meta span { display: block; color: var(--muted); font-size: 12px; font-weight: 800; margin-bottom: 5px; }
     .lfc-page-meta strong { display: block; font-size: 14px; line-height: 1.25; }
-    .lfc-cell-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 22px; }
-    .lfc-cell-card { border: 1px solid var(--line); border-radius: 16px; background: var(--panel); min-height: 116px; padding: 17px 18px; display: grid; align-content: space-between; cursor: pointer; }
+    .lfc-cell-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 18px; }
+    .lfc-cell-card { border: 1px solid var(--line); border-radius: 14px; background: var(--panel); min-height: 94px; padding: 13px 14px; display: grid; align-content: space-between; cursor: pointer; }
     .lfc-cell-card:hover, .lfc-cell-card:focus-visible { border-color: #5a5a5a; outline: none; }
-    .lfc-cell-card .cell-top { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; font-weight: 900; }
-    .lfc-cell-card strong { display: block; margin-top: 16px; font-size: 15px; line-height: 1.45; }
+    .lfc-cell-card .cell-top { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 11px; font-weight: 900; }
+    .lfc-cell-card strong { display: block; margin-top: 11px; font-size: 14px; line-height: 1.35; }
+    .lfc-cell-card .card-caption { font-size: 11px; line-height: 1.35; }
     #lfcLogForm textarea[name="text"] { display: block; width: 100%; min-height: 170px; margin-top: 10px; padding: 22px 25px; border: 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: transparent; color: var(--text); resize: vertical; outline: none; font-size: 15px; line-height: 1.7; }
     #lfcLogForm textarea[name="text"]::placeholder { color: #5f5f5f; }
     .pm-log-footer { padding: 14px 16px 12px 25px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center; }
@@ -2138,12 +2139,12 @@
     .pm-log-footer button { height: 52px; border: 1px solid var(--line); border-radius: 13px; background: transparent; color: var(--text); padding: 0 28px; font-size: 14px; font-weight: 900; cursor: pointer; }
     .pm-log-footer button:hover, .pm-log-footer button:focus-visible { border-color: #88a9b2; outline: none; }
     .lfc-recent { margin-top: 16px; }
-    .capital-stack-chart { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: end; min-height: 420px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel-2); padding: 20px 22px 18px; }
-    .capital-stack { min-width: 0; display: grid; grid-template-rows: auto 280px auto; gap: 12px; opacity: 0.32; transition: opacity .16s ease, transform .16s ease; }
+    .capital-stack-chart { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: end; min-height: 360px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel-2); padding: 16px 18px 14px; }
+    .capital-stack { min-width: 0; display: grid; grid-template-rows: auto 240px auto; gap: 10px; opacity: 0.32; transition: opacity .16s ease, transform .16s ease; }
     .capital-stack.active { opacity: 1; transform: translateY(-2px); }
     .capital-stack-title { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; color: var(--muted-2); font-size: 13px; font-weight: 900; }
     .capital-stack-title strong { color: var(--text); font-size: 15px; }
-    .capital-stack-body { height: 280px; border: 1px solid var(--line); border-radius: 15px; background: #171716; padding: 10px; display: flex; flex-direction: column-reverse; overflow: hidden; }
+    .capital-stack-body { height: 240px; border: 1px solid var(--line); border-radius: 15px; background: #171716; padding: 10px; display: flex; flex-direction: column-reverse; overflow: hidden; }
     .capital-segment { min-height: 18px; border-top: 1px solid rgba(0,0,0,.35); display: grid; align-items: center; padding: 0 10px; color: #111; font-size: 11px; font-weight: 900; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .capital-segment:first-child { border-top: 0; }
     .capital-segment.equity { background: #88a9b2; }
@@ -2158,11 +2159,11 @@
     .lfc-data-row { cursor: pointer; }
     .lfc-data-row:hover { background: rgba(255,255,255,.035); }
     .lfc-detail-row td { padding: 0; background: #1d1d1c; }
-    .inline-detail { padding: 18px 22px 20px; border-top: 1px solid var(--line-soft); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .inline-detail { padding: 14px 16px 16px; border-top: 1px solid var(--line-soft); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
     .inline-detail div { border: 1px solid var(--line-soft); border-radius: 13px; padding: 13px; background: #202020; }
     .inline-detail span { display: block; color: var(--muted); font-size: 11px; font-weight: 900; margin-bottom: 7px; }
     .inline-detail strong, .inline-detail p { margin: 0; color: var(--text); font-size: 13px; line-height: 1.55; }
-    .monthly-interest-chart { position: relative; border: 1px solid var(--line); border-radius: 18px; background: var(--panel-2); padding: 18px 18px 14px; min-height: 310px; overflow-x: auto; }
+    .monthly-interest-chart { position: relative; border: 1px solid var(--line); border-radius: 18px; background: var(--panel-2); padding: 16px 16px 12px; min-height: 288px; overflow-x: auto; }
     .interest-month-grid { min-width: 920px; height: 250px; display: grid; grid-template-columns: repeat(13, minmax(48px, 1fr)); gap: 10px; align-items: end; }
     .interest-month { display: grid; grid-template-rows: 210px auto; gap: 9px; align-items: end; }
     .interest-stack { height: 210px; display: flex; flex-direction: column-reverse; justify-content: flex-start; border-bottom: 1px solid #555; }
@@ -2197,7 +2198,12 @@
     .article-list { display: grid; gap: 8px; }
     .article-list a, .article-list span { color: var(--text); font-size: 13px; line-height: 1.45; text-decoration: none; }
     .article-list a:hover { text-decoration: underline; }
-    @media (max-width: 1320px) { .lfc-cell-cards, .lender-summary-grid, .lfc-lender-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: 1fr; } .capital-stack { grid-template-rows: auto 230px auto; } .capital-stack-body { height: 230px; } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .app.finance-active .table-card { overflow-x: auto; }
+    .app.finance-active #loanSection table { min-width: 1120px; }
+    .app.finance-active .compact-table th,
+    .app.finance-active .compact-table td { padding-top: 8px; padding-bottom: 8px; }
+    @media (max-width: 1320px) { .lender-summary-grid, .lfc-lender-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inline-detail, .issue-inline-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 1180px) { .lfc-cell-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } .capital-stack-chart { grid-template-columns: 1fr; } .capital-stack { grid-template-rows: auto 220px auto; } .capital-stack-body { height: 220px; } }
     @media (max-width: 760px) { .lfc-page-head, .lfc-page-meta, .lfc-cell-cards, .lender-summary-grid, .lfc-lender-cards, .inline-detail, .issue-inline-detail, .covenant-row, .lender-issue-row, .market-row, .pm-log-footer { grid-template-columns: 1fr; } }
 
   </style>
@@ -2646,28 +2652,749 @@
   </div>
 
   <script>
-    // @iota-data-v09:start
+    // @iota-data-v010:start
     const iotaData = {
-      "version": "v0.9",
-      "workbook": "IOTA_Seoul_DB_for_UI_v0.9.xlsx",
-      "generatedAt": "2026-04-30",
+      "version": "v0.10",
+      "workbook": "IOTA_Seoul_DB_for_UI_v0.10.xlsx",
+      "generatedAt": "2026-05-06",
       "sourceDate": "2026-04-30",
-      "extraExtractRows": 61,
-      "promotionStatus": {
-            "반영": 9,
-            "보류-검토안": 49,
-            "보류-충돌": 3
-      },
+      "sourceFileCount": 82,
+      "extraExtractRows": 38,
       "financeValues": {
-            "Bridge Loan": "기존 B/L 7,170억원 / 리파이낸싱 후 Tr.A 5,600억원 / Tr.B 1,400억원 / Tr.C 970억원 / 합계 7,970억원",
-            "본 PF": "통합 PF 2027.02, IOTA1 착공 2027.05, IOTA2 착공 2028.05, 통합준공 2032.07 / Equity 1.3조원, Loan 5.7조원, 신규 FI 1조원, IGIS+SI 3,000억원"
+            "Equity/Loan": "최종 엑셀 수령 후 금액 검증 및 교체 예정"
       },
       "syncNotes": [
-            "HTML 표시값은 v0.9 UI workbook 기준으로 동기화합니다.",
-            "계획안/검토안/시나리오 값은 확정값으로 승격하지 않습니다."
-      ]
+            "HTML LFC 표시값은 v0.10 UI workbook 기준으로 동기화합니다.",
+            "Equity/Loan 금액은 사용자 최종 엑셀 수령 전까지 검증하지 않습니다.",
+            "원천에서 확인되지 않은 427 개별 대주명은 빈칸으로 유지합니다."
+      ],
+      "lfc": {
+            "meta": {
+                  "lead": "박준호",
+                  "members": "1명"
+            },
+            "summaryCards": [
+                  {
+                        "id": "aum",
+                        "label": "AUM",
+                        "caption": "Equity, 주주대여금, Loan 합산 관리 규모"
+                  },
+                  {
+                        "id": "equity",
+                        "label": "Equity",
+                        "caption": "Vehicle별 투자자 투입 자본"
+                  },
+                  {
+                        "id": "loan",
+                        "label": "Loan",
+                        "caption": "대주별 약정액과 tranche 관리"
+                  },
+                  {
+                        "id": "status",
+                        "label": "주요 현황",
+                        "caption": "LFC 관리 대상과 다음 데이터 확보 항목"
+                  }
+            ],
+            "cardDetails": {
+                  "aum": [
+                        [
+                              "Equity",
+                              800,
+                              25,
+                              825,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "주주대여금",
+                              2000,
+                              2535,
+                              4535,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "Loan",
+                              48000,
+                              7970,
+                              55970,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "AUM",
+                              50800,
+                              10530,
+                              61330,
+                              "최종 엑셀 수령 후 교체"
+                        ]
+                  ],
+                  "equity": [
+                        [
+                              "PFV 직접 Equity",
+                              800,
+                              25,
+                              825,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "421호/REF 계열",
+                              591,
+                              20,
+                              611,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "시공/전략 투자자",
+                              99,
+                              6,
+                              105,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "기타 금융/고유 투자자",
+                              110,
+                              0,
+                              110,
+                              "최종 엑셀 수령 후 교체"
+                        ]
+                  ],
+                  "loan": [
+                        [
+                              "Senior / 본PF Loan",
+                              48000,
+                              "",
+                              48000,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "Refi Loan",
+                              "",
+                              7970,
+                              7970,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "현재 Loan 합계",
+                              48000,
+                              7970,
+                              55970,
+                              "최종 엑셀 수령 후 교체"
+                        ],
+                        [
+                              "대체 전 B/L",
+                              "",
+                              7170,
+                              7170,
+                              "히스토리"
+                        ]
+                  ],
+                  "status": [
+                        [
+                              "427",
+                              "본PF 개별 대주명·조건표 확보 필요",
+                              "",
+                              "",
+                              ""
+                        ],
+                        [
+                              "816",
+                              "Refi 7,970억원 대주별 명단 반영",
+                              "",
+                              "",
+                              ""
+                        ],
+                        [
+                              "통합",
+                              "427 + 816 기준으로 합산",
+                              "",
+                              "",
+                              ""
+                        ],
+                        [
+                              "뉴스",
+                              "대주 테이블 기준 검색대상 자동 생성",
+                              "",
+                              "",
+                              ""
+                        ]
+                  ]
+            },
+            "capitalStacks": {
+                  "427": {
+                        "label": "IOTA One 427",
+                        "segments": [
+                              {
+                                    "name": "Equity",
+                                    "value": 800,
+                                    "type": "equity"
+                              },
+                              {
+                                    "name": "주주대여금",
+                                    "value": 2000,
+                                    "type": "shareholder"
+                              },
+                              {
+                                    "name": "Loan",
+                                    "value": 48000,
+                                    "type": "loan"
+                              }
+                        ]
+                  },
+                  "816": {
+                        "label": "IOTA Two 816",
+                        "segments": [
+                              {
+                                    "name": "Equity",
+                                    "value": 25,
+                                    "type": "equity"
+                              },
+                              {
+                                    "name": "주주대여금",
+                                    "value": 2535,
+                                    "type": "shareholder"
+                              },
+                              {
+                                    "name": "Loan",
+                                    "value": 7970,
+                                    "type": "loan"
+                              }
+                        ]
+                  },
+                  "total": {
+                        "label": "통합",
+                        "segments": [
+                              {
+                                    "name": "Equity",
+                                    "value": 825,
+                                    "type": "equity"
+                              },
+                              {
+                                    "name": "주주대여금",
+                                    "value": 4535,
+                                    "type": "shareholder"
+                              },
+                              {
+                                    "name": "Loan",
+                                    "value": 55970,
+                                    "type": "loan"
+                              }
+                        ]
+                  }
+            },
+            "equityInvestors": [
+                  {
+                        "project": "427",
+                        "tranche": "보통주/우선주",
+                        "investor": "이지스REF",
+                        "amount": 591,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주/우선주",
+                        "investor": "이지스자산운용",
+                        "amount": 10,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주/우선주",
+                        "investor": "신한GIB",
+                        "amount": 100,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주",
+                        "investor": "신한투자증권",
+                        "amount": 30,
+                        "timing": "기투입",
+                        "countInTotal": false
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주",
+                        "investor": "신한은행",
+                        "amount": 50,
+                        "timing": "기투입",
+                        "countInTotal": false
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주",
+                        "investor": "신한캐피탈",
+                        "amount": 20,
+                        "timing": "기투입",
+                        "countInTotal": false
+                  },
+                  {
+                        "project": "427",
+                        "tranche": "보통주",
+                        "investor": "현대건설",
+                        "amount": 99,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주/우선주",
+                        "investor": "이지스421호",
+                        "amount": 19.55,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주",
+                        "investor": "이지스자산운용",
+                        "amount": 0,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주/우선주",
+                        "investor": "신한투자증권",
+                        "amount": 5.45,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주",
+                        "investor": "에셀유한회사",
+                        "amount": 0,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주",
+                        "investor": "NH투자증권",
+                        "amount": 0,
+                        "timing": "기투입"
+                  },
+                  {
+                        "project": "816",
+                        "tranche": "보통주",
+                        "investor": "삼성물산",
+                        "amount": 0,
+                        "timing": "기투입"
+                  }
+            ],
+            "loanLenders": [
+                  {
+                        "id": "427-senior-frame",
+                        "project": "427",
+                        "loanType": "본PF / Senior Loan",
+                        "tranche": "",
+                        "lender": "",
+                        "amount": 48000,
+                        "execution": "",
+                        "maturity": "",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-01",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.A-1",
+                        "lender": "케이에이치엘제이십일차㈜ (메리츠증권 SPC)",
+                        "amount": 1800,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-02",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.A-1",
+                        "lender": "메리츠화재",
+                        "amount": 1800,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-03",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.A-2",
+                        "lender": "갤럭시이오㈜ (NH투자증권 SPC)",
+                        "amount": 1300,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-04",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "816공간제일차(신한증권)",
+                        "amount": 50,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-05",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "한화실버아이언제일차(한화저축은행)",
+                        "amount": 50,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-06",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "한국투자Debt Strategy 일반사모부동산투자신탁1호 (한투리얼에셋운용)",
+                        "amount": 600,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-07",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "한국투자메자닌일반사모부동산투자신탁2호 (한투리얼에셋운용)",
+                        "amount": 350,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-08",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "스틱얼터너티브자산운용㈜ (스틱크레딧안정화일반사모투자신탁제5호(전문))",
+                        "amount": 100,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-09",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "대신저축은행",
+                        "amount": 80,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-10",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "비씨카드",
+                        "amount": 150,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-11",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.B",
+                        "lender": "흥국저축은행",
+                        "amount": 20,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-12",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.C",
+                        "lender": "816공간제일차(신한증권)",
+                        "amount": 200,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-13",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.C",
+                        "lender": "키움가치추구형일반사모부동산투자신탁제1호 (키움투자자산운용)",
+                        "amount": 90,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-14",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.C",
+                        "lender": "이터널하이브(대신증권)",
+                        "amount": 480,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-15",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.C",
+                        "lender": "코람코국내개발일반사모부동산투자신탁제1-2호 (코람코운용)",
+                        "amount": 200,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  },
+                  {
+                        "id": "816-refi-16",
+                        "project": "816",
+                        "loanType": "Refi",
+                        "tranche": "Tr.D",
+                        "lender": "케이에이치엘제이십이차㈜ (소노인터네셔널 SPC)",
+                        "amount": 700,
+                        "execution": "2026-04-23",
+                        "maturity": "2027-04-23",
+                        "rate": "",
+                        "fee": ""
+                  }
+            ],
+            "marketNewsFallback": {
+                  "generatedAt": "2026-05-06T17:56:47+09:00",
+                  "windowDays": 3,
+                  "items": [
+                        {
+                              "lender": "KB국민은행",
+                              "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링",
+                              "articles": []
+                        },
+                        {
+                              "lender": "NH투자증권",
+                              "relation": "816 Tr.A-2",
+                              "articles": []
+                        },
+                        {
+                              "lender": "대신저축은행",
+                              "relation": "816 Tr.B",
+                              "articles": []
+                        },
+                        {
+                              "lender": "대신증권",
+                              "relation": "816 Tr.C",
+                              "articles": []
+                        },
+                        {
+                              "lender": "메리츠화재",
+                              "relation": "816 Tr.A-1 / 816 Tr.A-1",
+                              "articles": []
+                        },
+                        {
+                              "lender": "비씨카드",
+                              "relation": "816 Tr.B",
+                              "articles": []
+                        },
+                        {
+                              "lender": "소노인터내셔널",
+                              "relation": "816 Tr.D",
+                              "articles": []
+                        },
+                        {
+                              "lender": "스틱얼터너티브자산운용",
+                              "relation": "816 Tr.B",
+                              "articles": []
+                        },
+                        {
+                              "lender": "신한투자증권",
+                              "relation": "816 Tr.B / 816 Tr.C",
+                              "articles": []
+                        },
+                        {
+                              "lender": "코람코자산운용",
+                              "relation": "816 Tr.C",
+                              "articles": []
+                        },
+                        {
+                              "lender": "키움투자자산운용",
+                              "relation": "816 Tr.C",
+                              "articles": []
+                        },
+                        {
+                              "lender": "한국투자리얼에셋운용",
+                              "relation": "816 Tr.B / 816 Tr.B",
+                              "articles": []
+                        },
+                        {
+                              "lender": "한화저축은행",
+                              "relation": "816 Tr.B",
+                              "articles": []
+                        },
+                        {
+                              "lender": "흥국저축은행",
+                              "relation": "816 Tr.B",
+                              "articles": []
+                        }
+                  ]
+            },
+            "newsLenders": [
+                  {
+                        "lender": "KB국민은행",
+                        "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링",
+                        "searchNames": [
+                              "KB국민은행"
+                        ]
+                  },
+                  {
+                        "lender": "NH투자증권",
+                        "relation": "816 Tr.A-2",
+                        "searchNames": [
+                              "NH투자증권",
+                              "갤럭시이오㈜ (NH투자증권 SPC)"
+                        ]
+                  },
+                  {
+                        "lender": "대신저축은행",
+                        "relation": "816 Tr.B",
+                        "searchNames": [
+                              "대신저축은행",
+                              "대신저축은행"
+                        ]
+                  },
+                  {
+                        "lender": "대신증권",
+                        "relation": "816 Tr.C",
+                        "searchNames": [
+                              "대신증권",
+                              "이터널하이브(대신증권)"
+                        ]
+                  },
+                  {
+                        "lender": "메리츠화재",
+                        "relation": "816 Tr.A-1 / 816 Tr.A-1",
+                        "searchNames": [
+                              "메리츠화재",
+                              "케이에이치엘제이십일차㈜ (메리츠증권 SPC)"
+                        ]
+                  },
+                  {
+                        "lender": "비씨카드",
+                        "relation": "816 Tr.B",
+                        "searchNames": [
+                              "비씨카드",
+                              "비씨카드"
+                        ]
+                  },
+                  {
+                        "lender": "소노인터내셔널",
+                        "relation": "816 Tr.D",
+                        "searchNames": [
+                              "소노인터내셔널",
+                              "케이에이치엘제이십이차㈜ (소노인터네셔널 SPC)"
+                        ]
+                  },
+                  {
+                        "lender": "스틱얼터너티브자산운용",
+                        "relation": "816 Tr.B",
+                        "searchNames": [
+                              "스틱얼터너티브자산운용",
+                              "스틱얼터너티브자산운용㈜ (스틱크레딧안정화일반사모투자신탁제5호(전문))"
+                        ]
+                  },
+                  {
+                        "lender": "신한투자증권",
+                        "relation": "816 Tr.B / 816 Tr.C",
+                        "searchNames": [
+                              "신한투자증권",
+                              "816공간제일차(신한증권)"
+                        ]
+                  },
+                  {
+                        "lender": "코람코자산운용",
+                        "relation": "816 Tr.C",
+                        "searchNames": [
+                              "코람코자산운용",
+                              "코람코국내개발일반사모부동산투자신탁제1-2호 (코람코운용)"
+                        ]
+                  },
+                  {
+                        "lender": "키움투자자산운용",
+                        "relation": "816 Tr.C",
+                        "searchNames": [
+                              "키움투자자산운용",
+                              "키움가치추구형일반사모부동산투자신탁제1호 (키움투자자산운용)"
+                        ]
+                  },
+                  {
+                        "lender": "한국투자리얼에셋운용",
+                        "relation": "816 Tr.B / 816 Tr.B",
+                        "searchNames": [
+                              "한국투자리얼에셋운용",
+                              "한국투자Debt Strategy 일반사모부동산투자신탁1호 (한투리얼에셋운용)"
+                        ]
+                  },
+                  {
+                        "lender": "한화저축은행",
+                        "relation": "816 Tr.B",
+                        "searchNames": [
+                              "한화저축은행",
+                              "한화실버아이언제일차(한화저축은행)"
+                        ]
+                  },
+                  {
+                        "lender": "흥국저축은행",
+                        "relation": "816 Tr.B",
+                        "searchNames": [
+                              "흥국저축은행",
+                              "흥국저축은행"
+                        ]
+                  }
+            ],
+            "extraItems": [
+                  [
+                        "대출 조건 체크리스트",
+                        "대출금액, 금리, 수수료, 선후순위, 인출조건, 후행조건을 조건별로 체크합니다."
+                  ],
+                  [
+                        "만기 캘린더",
+                        "Vehicle별 만기, 연장 가능일, 본PF 전환 목표일을 캘린더형으로 관리합니다."
+                  ],
+                  [
+                        "자료 요청 리스트",
+                        "대주별 약정서, term sheet, 수수료 산출표, 신용보강 자료 요청 상태를 관리합니다."
+                  ],
+                  [
+                        "대주 커뮤니케이션 로그",
+                        "대주별 회신, 요청사항, 다음 미팅일, 내부 담당자를 누적 관리합니다."
+                  ],
+                  [
+                        "본PF 전환 준비사항",
+                        "Refi 이후 본PF 전환을 위한 조건, 모집 주관사, 대체 상환재원을 별도 추적합니다."
+                  ]
+            ]
+      }
 };
-        // @iota-data-v09:end
+    // @iota-data-v010:end
 
     const DATA = {
       meta: { sourceDate: "2026-04-30", dbVersion: iotaData.version, workbook: iotaData.workbook },
@@ -3205,100 +3932,7 @@
     };
 
 
-    const LFC_V2 = {
-      meta: { lead: "박준호", members: "1명" },
-      summaryCards: [
-        { id: "aum", label: "AUM", caption: "Equity, 주주대여금, Loan 합산 관리 규모" },
-        { id: "equity", label: "Equity", caption: "Vehicle별 투자자 투입 자본" },
-        { id: "loan", label: "Loan", caption: "대주별 약정액과 tranche 관리" },
-        { id: "status", label: "주요 현황", caption: "현재 조달 관리 포인트" }
-      ],
-      cardDetails: {
-        aum: [
-          ["Equity", 900, 64, 964, ""],
-          ["주주대여금", 2000, 2535, 4535, ""],
-          ["Loan", 48000, 7970, 55970, ""],
-          ["AUM", 50900, 10569, 61469, ""]
-        ],
-        equity: [
-          ["PFV 직접 Equity", 900, 64, 964, ""],
-          ["421호 계열", 591, 20, 611, ""],
-          ["시공/전략 투자자", 99, 6, 105, ""],
-          ["기타 금융/고유 투자자", 210, 38, 248, ""]
-        ],
-        loan: [
-          ["Senior / 본PF Loan", 48000, "", 48000, ""],
-          ["Refi Loan", "", 7970, 7970, ""],
-          ["현재 Loan 합계", 48000, 7970, 55970, ""],
-          ["대체 전 B/L", "", 7170, 7170, "히스토리"]
-        ],
-        status: [
-          ["427", "본PF 대주별 조건 테이블 확보 필요", "", "", ""],
-          ["816", "Refi 7,970억원 대주별 관리", "", "", ""],
-          ["통합", "427 + 816 기준으로 자금구조 합산", "", "", ""],
-          ["뉴스", "GitHub Actions로 매일 07:00 KST 업데이트", "", "", ""]
-        ]
-      },
-      capitalStacks: {
-        "427": { label: "IOTA One 427", segments: [{ name: "Equity", value: 900, type: "equity" }, { name: "주주대여금", value: 2000, type: "shareholder" }, { name: "Loan", value: 48000, type: "loan" }] },
-        "816": { label: "IOTA Two 816", segments: [{ name: "Equity", value: 64, type: "equity" }, { name: "주주대여금", value: 2535, type: "shareholder" }, { name: "Loan", value: 7970, type: "loan" }] },
-        total: { label: "통합", segments: [{ name: "Equity", value: 964, type: "equity" }, { name: "주주대여금", value: 4535, type: "shareholder" }, { name: "Loan", value: 55970, type: "loan" }] }
-      },
-      equityInvestors: [
-        { project: "427", tranche: "보통주/우선주", investor: "이지스421호", amount: 591, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "이지스자산운용", amount: 10, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "신한GIB", amount: 100, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "신한투자증권", amount: 30, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "신한은행", amount: 50, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "신한캐피탈", amount: 20, timing: "기투입" },
-        { project: "427", tranche: "보통주", investor: "현대건설", amount: 99, timing: "기투입" },
-        { project: "816", tranche: "보통주/우선주", investor: "이지스421호", amount: 19.55, timing: "기투입" },
-        { project: "816", tranche: "보통주", investor: "이지스자산운용", amount: 1, timing: "기투입" },
-        { project: "816", tranche: "보통주", investor: "신한투자증권", amount: 12.95, timing: "기투입" },
-        { project: "816", tranche: "보통주", investor: "에셀유한회사", amount: 16.5, timing: "기투입" },
-        { project: "816", tranche: "보통주", investor: "NH투자증권", amount: 7.95, timing: "기투입" },
-        { project: "816", tranche: "보통주", investor: "삼성물산", amount: 6, timing: "기투입" }
-      ],
-      loanLenders: [
-        { id: "427-senior-frame", project: "427", loanType: "본PF / Senior Loan", tranche: "", lender: "", amount: 48000, execution: "", maturity: "", rate: "", fee: "" },
-        { id: "816-a1-khl21", project: "816", loanType: "Refi", tranche: "Tr.A-1", lender: "케이에이치엘제이십일차(KHL21)", amount: 1800, execution: "2026-04-23", maturity: "2027-04-23", rate: "", fee: "" },
-        { id: "816-a1-meritz", project: "816", loanType: "Refi", tranche: "Tr.A-1", lender: "메리츠화재해상보험", amount: 1800, execution: "2026-04-23", maturity: "2027-04-23", rate: "", fee: "" },
-        { id: "816-a2-galaxy", project: "816", loanType: "Refi", tranche: "Tr.A-2", lender: "갤럭시이오", amount: 1300, execution: "2026-04-23", maturity: "2027-04-23", rate: "", fee: "" },
-        { id: "816-b-space", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "816공간제일차", amount: 50, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-woori", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "우리은행", amount: 600, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-ksfc", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "한국증권금융", amount: 350, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-heungkuklife", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "흥국생명보험", amount: 100, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-daesin", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "대신저축은행", amount: 80, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-heungkuksb", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "흥국저축은행", amount: 20, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-bccard", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "비씨카드", amount: 150, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-b-silver", project: "816", loanType: "Refi", tranche: "Tr.B", lender: "실버아이언제일차", amount: 50, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-c-space", project: "816", loanType: "Refi", tranche: "Tr.C", lender: "816공간제일차", amount: 200, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-c-eternal", project: "816", loanType: "Refi", tranche: "Tr.C", lender: "이터널하이브", amount: 480, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-c-koramco", project: "816", loanType: "Refi", tranche: "Tr.C", lender: "코람코국내개발", amount: 200, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-c-kiwoom", project: "816", loanType: "Refi", tranche: "Tr.C", lender: "키움가치추구형", amount: 90, execution: "2026-04-23", maturity: "2027-04-23", rate: "6.5%", fee: "" },
-        { id: "816-d-khl22", project: "816", loanType: "Refi", tranche: "Tr.D", lender: "케이에이치엘제이십이차(KHL22)", amount: 700, execution: "2026-04-23", maturity: "2027-04-23", rate: "", fee: "" }
-      ],
-      marketNewsFallback: {
-        generatedAt: "2026-05-06T07:00:00+09:00",
-        windowDays: 3,
-        items: [
-          { lender: "우리은행", relation: "816 Tr.B / 은행권 PF 모니터링", articles: [] },
-          { lender: "메리츠화재", relation: "816 Tr.A-1 / 보험권 대주", articles: [] },
-          { lender: "한국증권금융", relation: "816 Tr.B / 증권금융 대주", articles: [] },
-          { lender: "저축은행권", relation: "대신저축은행·흥국저축은행", articles: [] },
-          { lender: "NH투자증권", relation: "대리금융기관·SPC 관련", articles: [] },
-          { lender: "신한투자증권", relation: "427/816 투자자·SPC 관련", articles: [] },
-          { lender: "KB국민은행", relation: "통합 PF 후보 주관기관", articles: [] }
-        ]
-      },
-      extraItems: [
-        ["대출 조건 체크리스트", "대출금액, 금리, 수수료, 선후순위, 인출조건, 후행조건을 조건별로 체크합니다."],
-        ["만기 캘린더", "Vehicle별 만기, 연장 가능일, 본PF 전환 목표일을 캘린더형으로 관리합니다."],
-        ["자료 요청 리스트", "대주별 약정서, term sheet, 수수료 산출표, 신용보강 자료 요청 상태를 관리합니다."],
-        ["대주 커뮤니케이션 로그", "대주별 회신, 요청사항, 다음 미팅일, 내부 담당자를 누적 관리합니다."],
-        ["본PF 전환 준비사항", "Refi 이후 본PF 전환을 위한 조건, 모집 주관사, 대체 상환재원을 별도 추적합니다."]
-      ]
-    };
+    const LFC_V2 = iotaData.lfc;
 
     const app = document.getElementById("app");
     const sidebarToggle = document.getElementById("sidebarToggle");
@@ -3933,14 +4567,14 @@
 
     function renderLfcEquityTable() {
       const rows = lfcRowsForProject(LFC_V2.equityInvestors);
-      const total = rows.reduce((sum, row) => sum + (Number(row.amount) || 0), 0);
+      const total = rows.reduce((sum, row) => sum + (row.countInTotal === false ? 0 : (Number(row.amount) || 0)), 0);
       document.getElementById("equityTable").innerHTML = rows.map((row) => `
         <tr>
           <td>${row.project === "427" ? "IOTA One 427" : "IOTA Two 816"}</td>
           <td>${escapeHtml(row.tranche)}</td>
           <td>${escapeHtml(row.investor)}</td>
           <td class="num">${lfcAmount(row.amount)}</td>
-          <td class="num">${ratio(Number(row.amount) || 0, total)}</td>
+          <td class="num">${row.countInTotal === false ? "" : ratio(Number(row.amount) || 0, total)}</td>
           <td>${escapeHtml(row.timing || "")}</td>
         </tr>
       `).join("");
@@ -3967,13 +4601,19 @@
 
     function interestFrameRows() {
       const rows = lfcRowsForProject(LFC_V2.loanLenders).filter((loan) => loan.loanType !== "주주대여금");
-      const start = new Date(2026, 3, 1);
-      const months = Array.from({ length: 13 }, (_, index) => new Date(start.getFullYear(), start.getMonth() + index, 1));
+      const datedRows = rows.filter((loan) => loan.execution && loan.maturity);
+      const baseStart = datedRows.length ? new Date(Math.min(...datedRows.map((loan) => new Date(`${loan.execution.slice(0, 7)}-01`).getTime()))) : new Date(2026, 3, 1);
+      const baseEnd = datedRows.length ? new Date(Math.max(...datedRows.map((loan) => new Date(`${loan.maturity.slice(0, 7)}-01`).getTime()))) : new Date(baseStart.getFullYear(), baseStart.getMonth() + 12, 1);
+      const monthCount = Math.max(1, Math.min(36, (baseEnd.getFullYear() - baseStart.getFullYear()) * 12 + (baseEnd.getMonth() - baseStart.getMonth()) + 1));
+      const months = Array.from({ length: monthCount }, (_, index) => new Date(baseStart.getFullYear(), baseStart.getMonth() + index, 1));
       const series = [];
       rows.forEach((loan) => {
+        const execution = loan.execution ? new Date(`${loan.execution.slice(0, 7)}-01`) : null;
+        const maturity = loan.maturity ? new Date(`${loan.maturity.slice(0, 7)}-01`) : null;
         months.forEach((date) => {
           const rate = Number(String(loan.rate || "").replace(/[^0-9.]/g, ""));
           const principal = Number(loan.amount) || 0;
+          const activeMonth = (!execution || date >= execution) && (!maturity || date <= maturity);
           series.push({
             project: loan.project,
             loanType: loan.loanType,
@@ -3982,7 +4622,7 @@
             month: monthKey(date),
             principal,
             rate: rate || "",
-            interestAmount: rate ? principal * (rate / 100) / 12 : ""
+            interestAmount: activeMonth && rate ? principal * (rate / 100) / 12 : ""
           });
         });
       });

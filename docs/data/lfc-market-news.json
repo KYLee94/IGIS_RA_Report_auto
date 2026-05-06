@@ -1,73 +1,76 @@
 {
-  "generatedAt": "2026-05-06T17:12:19+09:00",
+  "generatedAt": "2026-05-06T18:01:58+09:00",
   "windowDays": 3,
   "items": [
     {
-      "lender": "우리은행",
-      "relation": "816 Tr.B / 은행권 PF 모니터링",
+      "lender": "KB국민은행",
+      "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링",
+      "articles": []
+    },
+    {
+      "lender": "NH투자증권",
+      "relation": "816 Tr.A-2",
+      "articles": []
+    },
+    {
+      "lender": "대신저축은행",
+      "relation": "816 Tr.B",
+      "articles": []
+    },
+    {
+      "lender": "대신증권",
+      "relation": "816 Tr.C",
       "articles": []
     },
     {
       "lender": "메리츠화재",
-      "relation": "816 Tr.A-1 / 보험권 대주",
+      "relation": "816 Tr.A-1 / 816 Tr.A-1",
       "articles": []
     },
     {
-      "lender": "한국증권금융",
-      "relation": "816 Tr.B / 증권금융 대주",
+      "lender": "비씨카드",
+      "relation": "816 Tr.B",
       "articles": []
     },
     {
-      "lender": "저축은행권",
-      "relation": "대신저축은행·흥국저축은행",
-      "articles": [
-        {
-          "date": "2026-05-05",
-          "title": "[2026-05-05] [저축銀 자산전환-③] 애큐온저축은행 김희상, 부동산PF 털고 기업금융으로 - 매일일보",
-          "publisher": "매일일보",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BamMzQlFOMlE2OVY5bldfMHhKekdGM3BYTDdKVW1RQ2JsWmlwUUFxSm1jelVIbTJRTm95VmpyMUsxRi1GdVRmaVVpNDltajZyZUpwbVlTcjNCbnZ5cHBhVlNsWVc?oc=5"
-        },
-        {
-          "date": "2026-05-06",
-          "title": "[2026-05-06] 고금리·부동산 침체, 저축은행·신탁사 신용등급 줄강등[fn마켓워치] - 파이낸셜뉴스",
-          "publisher": "파이낸셜뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XNkdWYVBoX0N4S1luekVybjhUTVNDbnRHRnJUV0oyTEFON2RSczFFLVl6ZGlKd2ZoX2JTOU02T0ZNZGxFVFJFcmotRkJ4OHdQLXU2R0toZ3VOZ9IBXkFVX3lxTE5fakdlQTlIc3NCNXBTWktwdkE4LUFpcG1RYVZ4Y1NVMS1pdGt2MmZrcU0wQkxNZElNVTJ6RzFyMHp0NEpOU0ExbHBTck1fVEhqdkEyRFhmLWFoWFFsM1E?oc=5"
-        }
-      ]
+      "lender": "소노인터내셔널",
+      "relation": "816 Tr.D",
+      "articles": []
     },
     {
-      "lender": "NH투자증권",
-      "relation": "대리금융기관·SPC 관련",
+      "lender": "스틱얼터너티브자산운용",
+      "relation": "816 Tr.B",
       "articles": []
     },
     {
       "lender": "신한투자증권",
-      "relation": "427/816 투자자·SPC 관련",
+      "relation": "816 Tr.B / 816 Tr.C",
       "articles": []
     },
     {
-      "lender": "KB국민은행",
-      "relation": "통합 PF 후보 주관기관",
-      "articles": [
-        {
-          "date": "2026-05-06",
-          "title": "[2026-05-06] KB국민은행 인니, 1분기 순익 급감 \"건전성은 개선돼\" - 더구루",
-          "publisher": "더구루",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5EQmQwak44NVhKWDlDTGJoV2ZnanhVV1lMMUN4eXVGX0I2TnpRaUZ2alRhX2RmWFdIdE9hT1kyVG9DMUN1ZFp1LWZEUkdNU1ctWU5uVjdudFAwQmp5Z1E?oc=5"
-        },
-        {
-          "date": "2026-05-04",
-          "title": "[2026-05-04] [심층 분석] KB국민은행, ‘민간 중금리 대출’ 확대...금융 포용성 제고와 건전성 관리의 딜레마 - 뉴스밸류",
-          "publisher": "뉴스밸류",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4T0ZQMkNZcVVYZDNDZDhUYkVIYTRGUGFnLTNFSTdaS2VubWwtUC1yQXV3bDVvdFNxbXRZXzBRVDU4Ujd6ODd3dEN4eVRpb2NOT0RlTXktZzYwQmdfakZncFEydjl4R0hvb0E?oc=5"
-        },
-        {
-          "date": "2026-05-05",
-          "title": "[2026-05-05] KB금융, '2026 KB 부동산 보고서' 발간…“올해 집값 안정세” - 오피니언뉴스",
-          "publisher": "오피니언뉴스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Ob1R3SVBIVElKMUhxM24yY29SWDI0c3pLQWk1T3hPNjNoaWN4YW9URFVnSGl5d2ljczRkdmRmb2Mwd21zSHJwdFpjbnlwQjhMeVZsTkU2cWhlS1Z0VXZkN1hBc0o0UW5RMU5RUUVUdjQ?oc=5"
-        }
-      ]
+      "lender": "코람코자산운용",
+      "relation": "816 Tr.C",
+      "articles": []
+    },
+    {
+      "lender": "키움투자자산운용",
+      "relation": "816 Tr.C",
+      "articles": []
+    },
+    {
+      "lender": "한국투자리얼에셋운용",
+      "relation": "816 Tr.B / 816 Tr.B",
+      "articles": []
+    },
+    {
+      "lender": "한화저축은행",
+      "relation": "816 Tr.B",
+      "articles": []
+    },
+    {
+      "lender": "흥국저축은행",
+      "relation": "816 Tr.B",
+      "articles": []
     }
   ]
 }

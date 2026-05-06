@@ -14,10 +14,11 @@ from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parents[1]
+LENDER_JSON = ROOT / "docs" / "data" / "lfc-lenders.json"
 OUT = ROOT / "docs" / "data" / "lfc-market-news.json"
 
 KEYWORDS = ["부동산 PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"]
-RELEVANCE_TERMS = ["부동산", "PF", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"]
+RELEVANCE_TERMS = ["부동산", "PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"]
 
 
 @dataclass(frozen=True)
@@ -27,19 +28,36 @@ class LenderGroup:
     search_names: tuple[str, ...]
 
 
-LENDERS = [
-    LenderGroup("우리은행", "816 Tr.B / 은행권 PF 모니터링", ("우리은행", "우리금융")),
-    LenderGroup("메리츠화재", "816 Tr.A-1 / 보험권 대주", ("메리츠화재", "메리츠금융")),
-    LenderGroup("한국증권금융", "816 Tr.B / 증권금융 대주", ("한국증권금융",)),
-    LenderGroup("저축은행권", "대신저축은행·흥국저축은행", ("대신저축은행", "흥국저축은행", "저축은행")),
-    LenderGroup("NH투자증권", "대리금융기관·SPC 관련", ("NH투자증권", "NH금융")),
-    LenderGroup("신한투자증권", "427/816 투자자·SPC 관련", ("신한투자증권", "신한금융")),
-    LenderGroup("KB국민은행", "통합 PF 후보 주관기관", ("KB국민은행", "KB금융")),
+FALLBACK_LENDERS = [
+    LenderGroup("메리츠증권", "816 Tr.A-1 SPC 관련 모니터링", ("메리츠증권", "메리츠화재")),
+    LenderGroup("NH투자증권", "816 Tr.A-2 SPC 및 대리금융 관련 모니터링", ("NH투자증권", "NH금융")),
+    LenderGroup("신한투자증권", "816공간제일차 SPC 관련 모니터링", ("신한투자증권", "신한금융")),
+    LenderGroup("대신증권", "이터널하이브 SPC 관련 모니터링", ("대신증권", "대신저축은행")),
+    LenderGroup("KB국민은행", "본PF 후보 주관기관 모니터링", ("KB국민은행", "KB금융")),
 ]
 
 
 def normalize_title(title: str) -> str:
     return " ".join((title or "").replace("\xa0", " ").split())
+
+
+def load_lenders() -> list[LenderGroup]:
+    if not LENDER_JSON.exists():
+        return FALLBACK_LENDERS
+    try:
+        payload = json.loads(LENDER_JSON.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"warn: cannot read {LENDER_JSON}: {exc}", file=sys.stderr)
+        return FALLBACK_LENDERS
+    groups = []
+    for row in payload.get("lenders", []):
+        lender = str(row.get("lender") or "").strip()
+        if not lender:
+            continue
+        relation = str(row.get("relation") or "").strip()
+        names = tuple(str(v).strip() for v in row.get("searchNames", []) if str(v).strip())
+        groups.append(LenderGroup(lender, relation, names or (lender,)))
+    return groups or FALLBACK_LENDERS
 
 
 def google_news_url(query: str) -> str:
@@ -50,7 +68,7 @@ def google_news_url(query: str) -> str:
 def fetch_rss(query: str) -> list[dict]:
     req = urllib.request.Request(
         google_news_url(query),
-        headers={"User-Agent": "Mozilla/5.0 IOTA-LFC-NewsBot/1.0"},
+        headers={"User-Agent": "Mozilla/5.0 IOTA-LFC-NewsBot/1.1"},
     )
     with urllib.request.urlopen(req, timeout=25) as resp:
         data = resp.read()
@@ -71,9 +89,9 @@ def fetch_rss(query: str) -> list[dict]:
 
 def related(article: dict, group: LenderGroup) -> bool:
     title = article["title"]
-    if not any(name in title for name in group.search_names):
-        return False
     compact = title.replace(" ", "")
+    if not any(name and name.replace(" ", "") in compact for name in group.search_names):
+        return False
     return any(term.replace(" ", "") in compact for term in RELEVANCE_TERMS)
 
 
@@ -81,7 +99,7 @@ def collect() -> dict:
     now = datetime.now(KST)
     cutoff = (now - timedelta(days=3)).date()
     items = []
-    for group in LENDERS:
+    for group in load_lenders():
         seen = set()
         articles = []
         for name in group.search_names:
