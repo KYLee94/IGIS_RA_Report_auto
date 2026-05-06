@@ -431,7 +431,15 @@ def lfc_payload() -> dict[str, Any]:
         "marketNewsFallback": {
             "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
             "windowDays": 3,
-            "items": [{"lender": g["lender"], "relation": g["relation"], "articles": []} for g in lender_groups],
+            "items": [
+                {
+                    "lender": g["lender"],
+                    "relation": g["relation"],
+                    "projects": g.get("projects", []),
+                    "articles": [],
+                }
+                for g in lender_groups
+            ],
         },
         "newsLenders": lender_groups,
         "extraItems": [
@@ -454,11 +462,26 @@ def lender_search_groups(loan_lenders: list[dict[str, Any]]) -> list[dict[str, A
         display = search_terms[0] if search_terms else lender
         relation = f"{row.get('project')} {row.get('tranche') or row.get('loanType')}"
         if display not in groups:
-            groups[display] = {"lender": display, "relation": relation, "searchNames": search_terms}
+            groups[display] = {"lender": display, "relation": relation, "searchNames": search_terms, "projects": [row.get("project")]}
         else:
             groups[display]["relation"] = f"{groups[display]['relation']} / {relation}"
-    for display in ["KB국민은행", "신한투자증권", "NH투자증권"]:
-        groups.setdefault(display, {"lender": display, "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링", "searchNames": [display]})
+            if row.get("project") not in groups[display]["projects"]:
+                groups[display]["projects"].append(row.get("project"))
+    defaults = [
+        ("KB국민은행", "427 본PF 후보 주관기관 모니터링", ["KB국민은행", "KB금융"], ["427"]),
+        ("신한GIB", "427 금융 투자자·본PF 후보군 모니터링", ["신한GIB", "신한금융"], ["427"]),
+        ("신한은행", "427 금융 투자자·대주 후보군 모니터링", ["신한은행", "신한금융"], ["427"]),
+        ("신한캐피탈", "427 금융 투자자·여전사 모니터링", ["신한캐피탈", "신한금융"], ["427"]),
+        ("신한투자증권", "427/816 투자자·SPC 관련 모니터링", ["신한투자증권", "신한금융"], ["427", "816"]),
+        ("NH투자증권", "816 Tr.A-2 SPC 및 대리금융 관련 모니터링", ["NH투자증권", "NH금융"], ["816"]),
+    ]
+    for display, relation, search_names, projects in defaults:
+        if display not in groups:
+            groups[display] = {"lender": display, "relation": relation, "searchNames": search_names, "projects": projects}
+        else:
+            for project in projects:
+                if project not in groups[display]["projects"]:
+                    groups[display]["projects"].append(project)
     return sorted(groups.values(), key=lambda x: x["lender"])
 
 

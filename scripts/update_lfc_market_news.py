@@ -31,14 +31,15 @@ class LenderGroup:
     lender: str
     relation: str
     search_names: tuple[str, ...]
+    projects: tuple[str, ...] = ()
 
 
 FALLBACK_LENDERS = [
-    LenderGroup("메리츠증권", "816 Tr.A-1 SPC 관련 모니터링", ("메리츠증권", "메리츠화재")),
-    LenderGroup("NH투자증권", "816 Tr.A-2 SPC 및 대리금융 관련 모니터링", ("NH투자증권", "NH금융")),
-    LenderGroup("신한투자증권", "816공간제일차 SPC 관련 모니터링", ("신한투자증권", "신한금융")),
-    LenderGroup("대신증권", "이터널하이브 SPC 관련 모니터링", ("대신증권", "대신저축은행")),
-    LenderGroup("KB국민은행", "본PF 후보 주관기관 모니터링", ("KB국민은행", "KB금융")),
+    LenderGroup("메리츠증권", "816 Tr.A-1 SPC 관련 모니터링", ("메리츠증권", "메리츠화재"), ("816",)),
+    LenderGroup("NH투자증권", "816 Tr.A-2 SPC 및 대리금융 관련 모니터링", ("NH투자증권", "NH금융"), ("816",)),
+    LenderGroup("신한투자증권", "427/816 투자자·SPC 관련 모니터링", ("신한투자증권", "신한금융"), ("427", "816")),
+    LenderGroup("대신증권", "이터널하이브 SPC 관련 모니터링", ("대신증권", "대신저축은행"), ("816",)),
+    LenderGroup("KB국민은행", "427 본PF 후보 주관기관 모니터링", ("KB국민은행", "KB금융"), ("427",)),
 ]
 
 
@@ -61,7 +62,8 @@ def load_lenders() -> list[LenderGroup]:
             continue
         relation = str(row.get("relation") or "").strip()
         names = tuple(str(v).strip() for v in row.get("searchNames", []) if str(v).strip())
-        groups.append(LenderGroup(lender, relation, names or (lender,)))
+        projects = tuple(str(v).strip() for v in row.get("projects", []) if str(v).strip())
+        groups.append(LenderGroup(lender, relation, names or (lender,), projects))
     return groups or FALLBACK_LENDERS
 
 
@@ -205,7 +207,7 @@ def collect() -> dict:
     items = []
     for group in load_lenders():
         articles = collect_group_articles(group, cutoff, 3)
-        items.append({"lender": group.lender, "relation": group.relation, "articles": articles[:3]})
+        items.append({"lender": group.lender, "relation": group.relation, "projects": list(group.projects), "articles": articles[:3]})
     return {"generatedAt": now.isoformat(timespec="seconds"), "windowDays": 3, "items": items}
 
 

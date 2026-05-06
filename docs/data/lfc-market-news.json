@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-05-06T18:12:58+09:00",
+  "generatedAt": "2026-05-06T18:27:23+09:00",
   "windowDays": 3,
   "items": [
     {
       "lender": "KB국민은행",
-      "relation": "본PF/대리금융 후보 및 SPC 관련 모니터링",
+      "relation": "427 본PF 후보 주관기관 모니터링",
+      "projects": [
+        "427"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -32,6 +35,9 @@
     {
       "lender": "NH투자증권",
       "relation": "816 Tr.A-2",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -49,9 +55,9 @@
         },
         {
           "date": "2026-05-06",
-          "title": "[2026-05-06] NH투자증권, '전국 순회 Special 릴레이 세미나' 성료 - PRESS9",
-          "publisher": "PRESS9",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yQVVBbFgzTVBVYWZGV0ZySms5MFoxN1hFY3ZXQ3FOb0x0UVRraVU4dk1TeXdIVVY5MHdzYldrZGhPTzhwRDdkdGcxT1luc1h4NEVCNjcyQzNHMk41ek5fbm16YTU?oc=5",
+          "title": "[2026-05-06] [증권 NOW] 한국투자증권·NH투자증권·한화투자증권 - 위키리크스한국",
+          "publisher": "위키리크스한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zTXVRaVhNQUtOYzFFMGpQeWNhTXVuN3UyRUV0N0tGM2FkTEpybnRCVU9WcmdXb1pKNzdZVlZlb2dkYnhaZ1htMk9XbmVwY0dRTk16SGRXX2RvNklHckZxTGV2MEhmdDFBODJFOEdtVQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -59,6 +65,9 @@
     {
       "lender": "대신저축은행",
       "relation": "816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -86,6 +95,9 @@
     {
       "lender": "대신증권",
       "relation": "816 Tr.C",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -113,6 +125,9 @@
     {
       "lender": "메리츠화재",
       "relation": "816 Tr.A-1 / 816 Tr.A-1",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -140,6 +155,9 @@
     {
       "lender": "비씨카드",
       "relation": "816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -167,6 +185,9 @@
     {
       "lender": "소노인터내셔널",
       "relation": "816 Tr.D",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-04",
@@ -194,6 +215,9 @@
     {
       "lender": "스틱얼터너티브자산운용",
       "relation": "816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-05",
@@ -219,8 +243,102 @@
       ]
     },
     {
+      "lender": "신한GIB",
+      "relation": "427 금융 투자자·본PF 후보군 모니터링",
+      "projects": [
+        "427"
+      ],
+      "articles": [
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한금융x서울시, 혁신 핀테크 기업 발굴 나서 - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE84Y1NpTjI2a3NPRXd0SHdHYWNodC1TblZyWWhZd2dJNG9COFBVMmFNRHIzTTBuZUJSWFpuNk5QVUpEal9acEJIWFAtUE1IdXBkX3lzZ2ZKaHZHWlFNODNrMWdxYjFsUVM3MW14aWZJTy11RGNzRHZr0gF3QVVfeXFMTzhjU2lOMjZrc09Fd3RId0dhY2h0LVNuVnJZaFl3Z0k0b0I4UFUyYU1EcjNNMG5lQlJYWm42TlBVSkRqX1pwQkhYUC1QTUh1cGRfeXNnZkpodkdaUU04M2sxZ3FiMWxRUzcxbXhpZklPLXVEY3NEdms?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한금융·서울시, 미래 금융 판도 바꿀 ‘스타트업’ 찾는다 - v.daum.net",
+          "publisher": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uT19RNVpKcXEyS18tdWpFWkhhZ29FU1RwYmlsZmFRdjF3YXhtY242WE5FUGFxVlhCdDBJQ1puRTVfb1YyQjY4WHZybExwZnc?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한금융 4개 그룹사, 서울시와 혁신 스타트업 발굴 - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00c0Y2dmI4TDBIOWJZbVdNQVlwVWhySVBZSTBHOU5HYnhIbjF5TFgzcnoyS19PMkNSWFBGUnptTEpqU1JDcGVSXzRUV29semktOUNNUXo5RnNtZ3pwM1VZUNIBYEFVX3lxTE00c0Y2dmI4TDBIOWJZbVdNQVlwVWhySVBZSTBHOU5HYnhIbjF5TFgzcnoyS19PMkNSWFBGUnptTEpqU1JDcGVSXzRUV29semktOUNNUXo5RnNtZ3pwM1VZUA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
+    },
+    {
+      "lender": "신한은행",
+      "relation": "427 금융 투자자·대주 후보군 모니터링",
+      "projects": [
+        "427"
+      ],
+      "articles": [
+        {
+          "date": "2026-05-05",
+          "title": "[2026-05-05] 신한은행, 맞춤형 신용대출 조회 서비스 - 한국경제",
+          "publisher": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fWEx6akd3X3F2OUs3aUZWYjVoU2s4SWJJaEUtLWtxNUpIaHNIdlpNOWMwYmdJVUVfYTNJU2VZSFdVeVVwc0NJM25rU0E5MjZERmVmZDFDU0I3QdIBVEFVX3lxTE94QUREZ1JuTGlONTRIRGl6TllwLW4zREhqLVdXaXZVR1BMR0FZUWpTcldBejdHVng0bGxxb3k0US1DejE0RHhUSk9Mam5YaG52S1BOWQ?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한은행, 카드·증권·라이프와 힘 합친다…서울시와 혁신 핀테크 발굴 - v.daum.net",
+          "publisher": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15cjlZSnl5Wm1IY1VlZ3BlMDVGc3NoazBvRmw3VFBpRzVaNGk4QjYtc3ByZFVIRFRkYnZWNkY5RzlTc3M5SU44RF9wZ3IxaEU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 인천시·신한은행, 소상공인 지원 맞손…공공배달앱 ‘땡겨요’ 상생협약 - 경기일보",
+          "publisher": "경기일보",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DdzlDdUUtZEVEbEs3NzFpcElSWWs3c3Ffa1hEZmVlV2MtNXAxX1VJOElIMUsyUFcwZ2JUT0xITnRBY0Qtc3FCN3ZnMnpvSkFJNTdLRjYyY1RobDA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
+    },
+    {
+      "lender": "신한캐피탈",
+      "relation": "427 금융 투자자·여전사 모니터링",
+      "projects": [
+        "427"
+      ],
+      "articles": [
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] [금융지주 벤처투자②] 신한금융 '제 2 APR' 키운다···투자부터 IPO까지 생태계 구축 - 현대경제신문",
+          "publisher": "현대경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAza1VVUmpRdlVBTkFlSVNYZHdfazJkNkhxSm9sOVhzRlFRWDREVUZVdTB0VXNyT0dJVVYtV05DN2tmd0ZDemFlZXA2M1E2dnhGSlBMX0RwWWc4Q3J1d0VYelJ0TUYwb2FP0gFrQVVfeXFMTVBOQXBkQVEzdVZOcXRuMUNyZ29ueHNUZUVUOW1OZzJBaWJTWERyYk8xRWE2SGVEREp6MTU5b051bFRIaE1qdnJFWjUwVWJ4WVJiUTdjbXR5X1Q2S0RBSDNqbVBITVRkaXVhS1E?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한금융x서울시, 혁신 핀테크 기업 발굴 나서 - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE84Y1NpTjI2a3NPRXd0SHdHYWNodC1TblZyWWhZd2dJNG9COFBVMmFNRHIzTTBuZUJSWFpuNk5QVUpEal9acEJIWFAtUE1IdXBkX3lzZ2ZKaHZHWlFNODNrMWdxYjFsUVM3MW14aWZJTy11RGNzRHZr0gF3QVVfeXFMTzhjU2lOMjZrc09Fd3RId0dhY2h0LVNuVnJZaFl3Z0k0b0I4UFUyYU1EcjNNMG5lQlJYWm42TlBVSkRqX1pwQkhYUC1QTUh1cGRfeXNnZkpodkdaUU04M2sxZ3FiMWxRUzcxbXhpZklPLXVEY3NEdms?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-05-06",
+          "title": "[2026-05-06] 신한금융·서울시, 미래 금융 판도 바꿀 ‘스타트업’ 찾는다 - v.daum.net",
+          "publisher": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uT19RNVpKcXEyS18tdWpFWkhhZ29FU1RwYmlsZmFRdjF3YXhtY242WE5FUGFxVlhCdDBJQ1puRTVfb1YyQjY4WHZybExwZnc?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
+    },
+    {
       "lender": "신한투자증권",
       "relation": "816 Tr.B / 816 Tr.C",
+      "projects": [
+        "816",
+        "427"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -248,6 +366,9 @@
     {
       "lender": "코람코자산운용",
       "relation": "816 Tr.C",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-05",
@@ -275,6 +396,9 @@
     {
       "lender": "키움투자자산운용",
       "relation": "816 Tr.C",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -302,6 +426,9 @@
     {
       "lender": "한국투자리얼에셋운용",
       "relation": "816 Tr.B / 816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-05",
@@ -329,6 +456,9 @@
     {
       "lender": "한화저축은행",
       "relation": "816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
@@ -356,6 +486,9 @@
     {
       "lender": "흥국저축은행",
       "relation": "816 Tr.B",
+      "projects": [
+        "816"
+      ],
       "articles": [
         {
           "date": "2026-05-06",
