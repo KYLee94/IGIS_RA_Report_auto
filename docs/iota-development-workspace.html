@@ -414,7 +414,30 @@
       padding: 0 9px 5px;
     }
 
-    .rail-index-btn {
+    .rail-index-list {
+      display: grid;
+      gap: 4px;
+    }
+
+    .rail-index-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 26px 26px;
+      gap: 3px;
+      align-items: center;
+      border-radius: 9px;
+    }
+
+    .rail-index-item.dragging {
+      opacity: 0.48;
+    }
+
+    .rail-index-item.drag-over {
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: inset 2px 0 0 var(--accent);
+    }
+
+    .rail-index-btn,
+    .rail-order-btn {
       width: 100%;
       min-height: 30px;
       border: 0;
@@ -431,9 +454,26 @@
       text-overflow: ellipsis;
     }
 
+    .rail-index-btn {
+      cursor: grab;
+    }
+
+    .rail-index-btn:active {
+      cursor: grabbing;
+    }
+
+    .rail-order-btn {
+      padding: 0;
+      text-align: center;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
     .rail-index-btn:hover,
     .rail-index-btn:focus-visible,
-    .rail-index-btn.active {
+    .rail-index-btn.active,
+    .rail-order-btn:hover,
+    .rail-order-btn:focus-visible {
       color: var(--text);
       background: rgba(255, 255, 255, 0.045);
       outline: none;
@@ -1966,25 +2006,26 @@
     .lfc-db-mode { height: 32px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted-2); padding: 0 13px; font-size: 12px; font-weight: 900; cursor: pointer; }
     .lfc-db-mode.active, .lfc-db-mode:hover, .lfc-db-mode:focus-visible { border-color: #88a9b2; color: var(--text); outline: none; }
     .lfc-db-table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; }
-    .lfc-db-table { width: 100%; min-width: 1480px; border-collapse: collapse; table-layout: fixed; }
+    .lfc-db-table { width: 100%; min-width: 1780px; border-collapse: collapse; table-layout: fixed; }
     .lfc-db-table.request-table { min-width: 1360px; }
     .lfc-db-table th, .lfc-db-table td { border-top: 1px solid var(--line-soft); padding: 9px 8px; vertical-align: top; font-size: 12px; line-height: 1.35; }
     .lfc-db-table th { border-top: 0; color: var(--muted); background: #202020; font-size: 11px; font-weight: 900; text-align: left; white-space: nowrap; }
     .lfc-db-table th.num, .lfc-db-table td.num { text-align: right; }
     #loanConditionBoard .lfc-db-table th:nth-child(1), #loanConditionBoard .lfc-db-table td:nth-child(1) { width: 106px; }
     #loanConditionBoard .lfc-db-table th:nth-child(2), #loanConditionBoard .lfc-db-table td:nth-child(2) { width: 104px; }
+    #loanConditionBoard .lfc-db-table th:nth-child(4), #loanConditionBoard .lfc-db-table td:nth-child(4) { width: 170px; }
     #loanConditionBoard .lfc-db-table th:nth-child(5), #loanConditionBoard .lfc-db-table td:nth-child(5),
     #loanConditionBoard .lfc-db-table th:nth-child(13), #loanConditionBoard .lfc-db-table td:nth-child(13) { width: 54px; text-align: center; }
     #loanConditionBoard .lfc-db-table th:nth-child(10), #loanConditionBoard .lfc-db-table td:nth-child(10) { width: 132px; }
     #loanConditionBoard .lfc-db-table th:nth-child(11), #loanConditionBoard .lfc-db-table td:nth-child(11),
-    #loanConditionBoard .lfc-db-table th:nth-child(12), #loanConditionBoard .lfc-db-table td:nth-child(12) { width: 185px; }
+    #loanConditionBoard .lfc-db-table th:nth-child(12), #loanConditionBoard .lfc-db-table td:nth-child(12) { width: 310px; }
     #documentRequestBoard .lfc-db-table th:nth-child(1), #documentRequestBoard .lfc-db-table td:nth-child(1) { width: 110px; }
     #documentRequestBoard .lfc-db-table th:nth-child(5), #documentRequestBoard .lfc-db-table td:nth-child(5),
     #documentRequestBoard .lfc-db-table th:nth-child(7), #documentRequestBoard .lfc-db-table td:nth-child(7) { width: 56px; text-align: center; }
     #documentRequestBoard .lfc-db-table th:nth-child(6), #documentRequestBoard .lfc-db-table td:nth-child(6) { width: 470px; }
     .lfc-db-input, .lfc-db-select, .lfc-db-date, .lfc-db-textarea { width: 100%; border: 1px solid transparent; border-radius: 8px; background: #222221; color: var(--text); font: inherit; font-size: 12px; line-height: 1.35; padding: 7px 8px; }
     .lfc-db-input:focus, .lfc-db-select:focus, .lfc-db-date:focus, .lfc-db-textarea:focus { border-color: #88a9b2; outline: none; background: #242423; }
-    .lfc-db-textarea { min-height: 58px; resize: vertical; white-space: pre-wrap; }
+    .lfc-db-textarea { min-height: 92px; resize: vertical; white-space: pre-wrap; }
     .lfc-db-check { display: grid; place-items: center; min-height: 32px; }
     .lfc-db-check input { width: 16px; height: 16px; accent-color: #88a9b2; }
     .lfc-db-add { margin-top: 12px; height: 34px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); padding: 0 14px; font-size: 12px; font-weight: 900; cursor: pointer; }
@@ -2027,6 +2068,22 @@
     .maturity-point:hover, .maturity-point:focus-visible { outline: none; border-color: var(--text); box-shadow: 0 0 0 4px rgba(136,169,178,.18); }
     .maturity-missing { margin-top: 12px; display: grid; gap: 8px; }
     .maturity-missing-row { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 10px; border: 1px solid var(--line-soft); border-radius: 12px; background: #1c1c1b; padding: 10px 12px; color: var(--muted-2); font-size: 12px; }
+    .maturity-board { display: grid; gap: 12px; }
+    .maturity-month-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 8px; }
+    .maturity-month-card { min-height: 68px; border: 1px solid var(--line-soft); border-radius: 12px; background: #1c1c1b; padding: 10px 12px; }
+    .maturity-month-card span { display: block; color: var(--muted); font-size: 11px; font-weight: 900; margin-bottom: 6px; }
+    .maturity-month-card strong { display: block; color: var(--text); font-size: 18px; line-height: 1.2; }
+    .maturity-month-card em { display: block; color: var(--muted-2); font-style: normal; font-size: 11px; font-weight: 800; margin-top: 4px; }
+    .maturity-list { border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; overflow: hidden; }
+    .maturity-list-head,
+    .maturity-list-row { display: grid; grid-template-columns: 86px 92px minmax(120px, .75fr) minmax(160px, 1fr) 90px 90px 80px; gap: 8px; align-items: center; }
+    .maturity-list-head { min-height: 38px; padding: 0 12px; color: var(--muted); background: #202020; font-size: 11px; font-weight: 900; }
+    .maturity-list-row { width: 100%; min-height: 52px; border: 0; border-top: 1px solid var(--line-soft); background: transparent; color: var(--muted-2); padding: 8px 12px; text-align: left; cursor: pointer; font: inherit; font-size: 12px; }
+    .maturity-list-row:hover,
+    .maturity-list-row:focus-visible { background: rgba(255, 255, 255, 0.035); outline: none; }
+    .maturity-list-row strong { color: var(--text); font-size: 13px; line-height: 1.3; }
+    .maturity-list-row .dday { color: var(--text); font-weight: 900; }
+    .maturity-list-row .date { white-space: nowrap; color: var(--text); font-weight: 900; }
     .pf-plan-rail { display: grid; grid-template-columns: repeat(7, minmax(94px, 1fr)); gap: 8px; margin-bottom: 12px; overflow-x: auto; padding-bottom: 2px; }
     .pf-step { min-height: 70px; border: 1px solid var(--line-soft); border-radius: 12px; background: #1c1c1b; color: var(--text); text-align: left; padding: 10px; cursor: pointer; }
     .pf-step span { display: block; color: var(--muted); font-size: 11px; font-weight: 900; margin-bottom: 7px; }
@@ -2242,6 +2299,17 @@
         text-align: center;
       }
 
+      .rail-index-list {
+        display: flex;
+        gap: 4px;
+        overflow-x: auto;
+      }
+
+      .rail-index-item {
+        flex: 0 0 auto;
+        grid-template-columns: minmax(100px, auto) 26px 26px;
+      }
+
       .add-form,
       .task-row,
       .kpi-grid,
@@ -2290,8 +2358,7 @@
     /* LFC v2: reference-app aligned workspace */
     .app.finance-active .page-head { display: none; }
     .app.finance-active .project-rail .rail-divider,
-    .app.finance-active .project-rail .view-btn,
-    .app.finance-active .project-rail .date-chip { display: none; }
+    .app.finance-active .project-rail .view-btn { display: none; }
     .app.finance-active .project-rail { padding: 12px; background: #202020; }
     .app.finance-active .rail-btn.active { background: var(--accent); color: #111; box-shadow: none; }
     .lfc-page-head { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px; align-items: start; margin-bottom: 22px; }
@@ -2466,7 +2533,6 @@
             <div class="rail-divider"></div>
             <button class="view-btn active" type="button" data-view="workspace">개발관리</button>
             <button class="view-btn" type="button" data-view="molit">국토부 보고</button>
-            <div class="date-chip">2026-04-30</div>
             <div class="rail-index" id="railIndex" aria-label="현재 화면 목차"></div>
           </aside>
 
@@ -4810,30 +4876,13 @@
     const lfcLoanConditionStorageKey = "iotaLfcLoanConditions.v1";
     const lfcDocumentRequestStorageKey = "iotaLfcDocumentRequests.v1";
     const sectionCollapseStorageKey = "iotaSectionCollapse.v1";
+    const sectionOrderStorageKey = "iotaSectionOrder.v1";
     const sectionIndexConfig = {
-      workspace: [
-        ["taskSection", "주요 진행 업무"],
-        ["changeSection", "Meeting Board"],
-        ["milestoneSection", "개발 일정"],
-        ["kpiSection", "물리 제원"],
-        ["costSection", "공사비"],
-        ["archSection", "건축개요"],
-        ["rrSection", "R&R"],
-        ["counterpartySection", "카운터파티"]
-      ],
-      finance: [
-        ["lfcWorkLogSection", "LFC 업무"],
-        ["fundingStructureSection", "자금구조"],
-        ["loanSection", "Loan 현황"],
-        ["lfcExtraSection", "조건·자료"],
-        ["interestSection", "이자 시계열"],
-        ["lfcMaturitySection", "만기 캘린더"],
-        ["lfcPfPlanSection", "본 PF 계획"],
-        ["equitySection", "Equity"],
-        ["marketWatchSection", "시장 이슈"]
-      ]
+      workspace: ["taskSection", "changeSection", "milestoneSection", "kpiSection", "costSection", "archSection", "rrSection", "counterpartySection"],
+      finance: ["lfcWorkLogSection", "fundingStructureSection", "loanSection", "lfcExtraSection", "interestSection", "lfcMaturitySection", "lfcPfPlanSection", "equitySection", "marketWatchSection"]
     };
     let sectionCollapseState = loadSectionCollapseState();
+    let sectionOrderState = loadSectionOrderState();
     let lfcLogs = loadLfcLogs();
     let loanConditionRows = loadLoanConditionRows();
     let documentRequestRows = loadDocumentRequestRows();
@@ -4999,6 +5048,20 @@
       localStorage.setItem(sectionCollapseStorageKey, JSON.stringify(sectionCollapseState));
     }
 
+    function loadSectionOrderState() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(sectionOrderStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (error) {
+        console.warn("Section order storage reset", error);
+        return {};
+      }
+    }
+
+    function saveSectionOrderState() {
+      localStorage.setItem(sectionOrderStorageKey, JSON.stringify(sectionOrderState));
+    }
+
     function setSectionCollapsed(section, collapsed) {
       const button = section.querySelector(":scope > .section-head .section-toggle");
       section.classList.toggle("collapsed", collapsed);
@@ -5051,9 +5114,66 @@
       });
     }
 
+    function defaultSectionIds(view = currentView) {
+      return sectionIndexConfig[view] || [];
+    }
+
+    function orderedSectionIds(view = currentView) {
+      const defaults = defaultSectionIds(view);
+      const saved = Array.isArray(sectionOrderState[view]) ? sectionOrderState[view] : [];
+      return [...saved.filter((id) => defaults.includes(id)), ...defaults.filter((id) => !saved.includes(id))];
+    }
+
+    function sectionTitle(sectionId) {
+      return document.getElementById(sectionId)?.querySelector(":scope > .section-head h2")?.textContent?.trim() || sectionId;
+    }
+
+    function sectionContainer(view = currentView) {
+      if (view === "finance") return document.getElementById("financeView");
+      if (view === "workspace") return document.getElementById("workspaceView");
+      return null;
+    }
+
+    function sectionInsertAnchor(view = currentView) {
+      if (view === "finance") return document.getElementById("lfcCardModalBackdrop");
+      return null;
+    }
+
+    function applySectionOrder(view = currentView) {
+      const container = sectionContainer(view);
+      if (!container) return;
+      const anchor = sectionInsertAnchor(view);
+      orderedSectionIds(view).forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) container.insertBefore(section, anchor);
+      });
+    }
+
+    function setSectionOrder(view, ids) {
+      const defaults = defaultSectionIds(view);
+      sectionOrderState[view] = ids.filter((id) => defaults.includes(id));
+      saveSectionOrderState();
+      applySectionOrder(view);
+      renderRailIndex();
+    }
+
+    function moveSectionInIndex(sectionId, direction) {
+      const ids = orderedSectionIds(currentView);
+      const index = ids.indexOf(sectionId);
+      if (index < 0) return;
+      const nextIndex = direction === "up" ? index - 1 : index + 1;
+      if (nextIndex < 0 || nextIndex >= ids.length) return;
+      [ids[index], ids[nextIndex]] = [ids[nextIndex], ids[index]];
+      setSectionOrder(currentView, ids);
+      scrollToSection(sectionId);
+    }
+
+    let draggedSectionId = "";
+
     function renderRailIndex() {
       const railIndex = document.getElementById("railIndex");
-      const items = sectionIndexConfig[currentView] || [];
+      applySectionOrder(currentView);
+      const items = orderedSectionIds(currentView).filter((id) => document.getElementById(id));
       if (!railIndex || !items.length) {
         if (railIndex) railIndex.hidden = true;
         return;
@@ -5061,17 +5181,22 @@
       railIndex.hidden = false;
       railIndex.innerHTML = `
         <div class="rail-index-title">Index</div>
-        ${items.map(([id, label]) => `<button class="rail-index-btn" type="button" data-section-target="${escapeHtml(id)}">${escapeHtml(label)}</button>`).join("")}
+        <div class="rail-index-list">
+          ${items.map((id) => `<div class="rail-index-item" draggable="true" data-section-target="${escapeHtml(id)}">
+            <button class="rail-index-btn" type="button" data-section-target="${escapeHtml(id)}" title="${escapeHtml(sectionTitle(id))}">${escapeHtml(sectionTitle(id))}</button>
+            <button class="rail-order-btn" type="button" data-section-move="up" data-section-target="${escapeHtml(id)}" aria-label="${escapeHtml(`${sectionTitle(id)} 위로 이동`)}">↑</button>
+            <button class="rail-order-btn" type="button" data-section-move="down" data-section-target="${escapeHtml(id)}" aria-label="${escapeHtml(`${sectionTitle(id)} 아래로 이동`)}">↓</button>
+          </div>`).join("")}
+        </div>
       `;
-      const firstVisible = items.find(([id]) => document.getElementById(id));
-      if (firstVisible) updateRailIndexActive(firstVisible[0]);
+      if (items[0]) updateRailIndexActive(items[0]);
     }
 
     function updateRailIndexFromScroll() {
-      const items = sectionIndexConfig[currentView] || [];
+      const items = orderedSectionIds(currentView);
       if (!items.length) return;
-      let activeId = items[0][0];
-      items.forEach(([id]) => {
+      let activeId = items[0];
+      items.forEach((id) => {
         const section = document.getElementById(id);
         if (section && section.getBoundingClientRect().top <= 150) activeId = id;
       });
@@ -5817,6 +5942,7 @@
     let lfcMarketNewsLoaded = false;
     let lfcMarketNewsLoading = false;
     let lfcMarketNewsStatus = "내장 데이터";
+    let lfcMarketNewsCheckedAt = "";
 
     function currentMarketNews() {
       return lfcMarketNews || LFC_V2.marketNewsFallback;
@@ -5842,16 +5968,24 @@
     async function loadLfcMarketNews(force = false) {
       if (lfcMarketNewsLoading) return;
       if (lfcMarketNewsLoaded && !force) return;
+      const button = document.getElementById("lfcNewsRefresh");
       if (location.protocol === "file:") {
         lfcMarketNews = LFC_V2.marketNewsFallback;
         lfcMarketNewsLoaded = true;
         lfcMarketNewsStatus = "내장 데이터";
+        lfcMarketNewsCheckedAt = new Date().toISOString();
+        if (button && force) {
+          button.textContent = "확인 완료";
+          window.setTimeout(() => { button.textContent = "뉴스 업데이트"; }, 1200);
+        }
         renderLfcMarket();
         return;
       }
       lfcMarketNewsLoading = true;
-      const button = document.getElementById("lfcNewsRefresh");
-      if (button) button.textContent = "업데이트 중";
+      if (button) {
+        button.disabled = true;
+        button.textContent = "업데이트 중";
+      }
       try {
         const response = await fetch(`data/lfc-market-news.json?ts=${Date.now()}`, { cache: "no-store" });
         if (response.ok) {
@@ -5867,7 +6001,12 @@
         lfcMarketNewsStatus = "업데이트 실패 · 내장 데이터";
       } finally {
         lfcMarketNewsLoading = false;
-        if (button) button.textContent = "뉴스 업데이트";
+        lfcMarketNewsCheckedAt = new Date().toISOString();
+        if (button) {
+          button.disabled = false;
+          button.textContent = "업데이트 완료";
+          window.setTimeout(() => { button.textContent = "뉴스 업데이트"; }, 1200);
+        }
         renderLfcMarket();
       }
     }
@@ -5900,7 +6039,11 @@
       const filtered = marketLenderFilter === "all" ? rows : rows.filter((row) => row.lender === marketLenderFilter);
       const meta = document.getElementById("marketNewsMeta");
       const selectedStack = LFC_V2.capitalStacks[currentLfcKey()];
-      if (meta) meta.textContent = news.generatedAt ? `업데이트 ${escapeHtml(formatNewsTimestamp(news.generatedAt))} · ${escapeHtml(selectedStack?.label || "통합")} · ${escapeHtml(lfcMarketNewsStatus)}` : "";
+      if (meta) {
+        const generated = news.generatedAt ? `뉴스 ${formatNewsTimestamp(news.generatedAt)}` : "";
+        const checked = lfcMarketNewsCheckedAt ? `확인 ${formatNewsTimestamp(lfcMarketNewsCheckedAt)}` : "";
+        meta.textContent = [generated, checked, selectedStack?.label || "통합", lfcMarketNewsStatus].filter(Boolean).join(" · ");
+      }
       document.getElementById("marketWatchGrid").innerHTML = filtered.length ? filtered.map((row) => `<div class="market-row">
         <div><div class="row-title">${escapeHtml(row.lender)}</div><div class="row-desc">${escapeHtml(row.relation || "")}</div></div>
         <div class="article-list">${(row.articles || []).length ? (row.articles || []).map((article) => article.url ? `<a href="${escapeHtml(article.url)}" target="_blank" rel="noreferrer">${escapeHtml(article.title)}</a>` : `<span>${escapeHtml(article.title)}</span>`).join("") : `<span>최근 기사 스냅샷이 없습니다.</span>`}</div>
@@ -5924,6 +6067,21 @@
 
     function monthLabel(date) {
       return `${String(date.getFullYear()).slice(2)}.${String(date.getMonth() + 1).padStart(2, "0")}`;
+    }
+
+    function dateLabel(value) {
+      const date = monthDate(value);
+      if (!date) return lfcText(value);
+      return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+    }
+
+    function ddayText(value) {
+      const date = monthDate(value);
+      if (!date) return "";
+      const base = new Date(DATA.meta.sourceDate);
+      const diff = Math.ceil((date.getTime() - base.getTime()) / 86400000);
+      if (diff === 0) return "D-Day";
+      return diff > 0 ? `D-${diff}` : `D+${Math.abs(diff)}`;
     }
 
     function lfcProjectLabel(project) {
@@ -6033,37 +6191,32 @@
         return;
       }
 
-      const earliest = new Date(Math.min(...dated.map((row) => (row.start || row.end).getTime())));
-      const latest = new Date(Math.max(...dated.map((row) => row.end.getTime())));
-      const monthCount = Math.max(1, Math.min(36, monthDiff(earliest, latest) + 1));
-      const months = Array.from({ length: monthCount }, (_, index) => addMonths(earliest, index));
-      const columns = `repeat(${months.length}, minmax(62px, 1fr))`;
+      const monthGroups = dated.reduce((acc, row) => {
+        const key = `${row.end.getFullYear()}-${String(row.end.getMonth() + 1).padStart(2, "0")}`;
+        if (!acc[key]) acc[key] = { key, count: 0, amount: 0 };
+        acc[key].count += 1;
+        acc[key].amount += Number(row.loan.amount) || 0;
+        return acc;
+      }, {});
+      const monthCards = Object.values(monthGroups)
+        .sort((a, b) => a.key.localeCompare(b.key))
+        .map((item) => `<div class="maturity-month-card"><span>${escapeHtml(item.key)}</span><strong>${item.count}건</strong><em>${lfcAmount(item.amount)}</em></div>`)
+        .join("");
 
-      calendar.innerHTML = `<div class="maturity-calendar">
-        <div class="maturity-axis">
-          <div class="maturity-project-head">프로젝트</div>
-          <div class="maturity-axis-label">대출 / Tranche</div>
-          <div class="maturity-months" style="grid-template-columns:${columns}">${months.map((date) => `<span>${monthLabel(date)}</span>`).join("")}</div>
+      calendar.innerHTML = `<div class="maturity-board">
+        <div class="maturity-month-strip">${monthCards}</div>
+        <div class="maturity-list">
+          <div class="maturity-list-head"><div>프로젝트</div><div>만기</div><div>대출 / Tranche</div><div>대주</div><div>금액</div><div>실행</div><div>D-Day</div></div>
+          ${dated.map(({ loan }) => `<button class="maturity-list-row" type="button" data-maturity-loan="${escapeHtml(loan.id)}" aria-label="${escapeHtml(`${loan.lender || loan.loanType} 만기 상세`) }">
+            <div>${escapeHtml(lfcProjectShort(loan.project))}</div>
+            <div class="date">${escapeHtml(dateLabel(loan.maturity))}</div>
+            <div><strong>${escapeHtml(loan.tranche || loan.loanType)}</strong><br><span>${escapeHtml(loan.loanType || "")}</span></div>
+            <div>${escapeHtml(loan.lender || "")}</div>
+            <div>${lfcAmount(loan.amount)}</div>
+            <div>${escapeHtml(dateLabel(loan.execution))}</div>
+            <div class="dday">${escapeHtml(ddayText(loan.maturity))}</div>
+          </button>`).join("")}
         </div>
-        ${dated.map(({ loan, start, end }) => {
-          const rowStart = start || end;
-          const startIndex = Math.max(0, monthDiff(earliest, rowStart));
-          const endIndex = Math.max(startIndex, monthDiff(earliest, end));
-          const gridColumn = `${startIndex + 1} / ${Math.min(endIndex + 2, months.length + 1)}`;
-          return `<div class="maturity-row">
-            <div class="maturity-project-cell">${escapeHtml(lfcProjectShort(loan.project))}</div>
-            <div class="maturity-meta">
-              <strong>${escapeHtml(loan.tranche || loan.loanType)}</strong>
-              <span>${escapeHtml(loan.lender || "")}</span>
-              <em>${lfcAmount(loan.amount)}</em>
-            </div>
-            <div class="maturity-track" style="grid-template-columns:${columns}">
-              <button class="maturity-span ${trancheClass(loan.tranche)}" type="button" data-maturity-loan="${escapeHtml(loan.id)}" style="grid-column:${gridColumn}" aria-label="${escapeHtml(`${loan.lender || loan.loanType} 만기 ${loan.maturity}`)}">
-                <span>${escapeHtml(loan.maturity || "")}</span>
-              </button>
-            </div>
-          </div>`;
-        }).join("")}
       </div>
       ${missing.length ? `<div class="maturity-missing">${missing.map((loan) => `<div class="maturity-missing-row"><strong>${escapeHtml(loan.loanType)} ${escapeHtml(loan.tranche || "")}</strong><span>${escapeHtml(loan.lender || "대주명 입력 대기")}</span></div>`).join("")}</div>` : ""}`;
     }
@@ -6539,9 +6692,49 @@
     });
 
     document.getElementById("railIndex").addEventListener("click", (event) => {
+      const moveButton = event.target.closest("[data-section-move]");
+      if (moveButton) {
+        moveSectionInIndex(moveButton.dataset.sectionTarget, moveButton.dataset.sectionMove);
+        return;
+      }
       const button = event.target.closest("[data-section-target]");
       if (!button) return;
       scrollToSection(button.dataset.sectionTarget);
+    });
+
+    document.getElementById("railIndex").addEventListener("dragstart", (event) => {
+      const item = event.target.closest(".rail-index-item");
+      if (!item) return;
+      draggedSectionId = item.dataset.sectionTarget;
+      item.classList.add("dragging");
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("text/plain", draggedSectionId);
+    });
+
+    document.getElementById("railIndex").addEventListener("dragover", (event) => {
+      const item = event.target.closest(".rail-index-item");
+      if (!item || !draggedSectionId || item.dataset.sectionTarget === draggedSectionId) return;
+      event.preventDefault();
+      document.querySelectorAll(".rail-index-item.drag-over").forEach((node) => node.classList.remove("drag-over"));
+      item.classList.add("drag-over");
+    });
+
+    document.getElementById("railIndex").addEventListener("drop", (event) => {
+      const item = event.target.closest(".rail-index-item");
+      if (!item || !draggedSectionId) return;
+      event.preventDefault();
+      const targetId = item.dataset.sectionTarget;
+      const ids = orderedSectionIds(currentView).filter((id) => id !== draggedSectionId);
+      const targetIndex = ids.indexOf(targetId);
+      ids.splice(targetIndex < 0 ? ids.length : targetIndex, 0, draggedSectionId);
+      setSectionOrder(currentView, ids);
+      scrollToSection(draggedSectionId);
+      draggedSectionId = "";
+    });
+
+    document.getElementById("railIndex").addEventListener("dragend", () => {
+      draggedSectionId = "";
+      document.querySelectorAll(".rail-index-item.dragging, .rail-index-item.drag-over").forEach((node) => node.classList.remove("dragging", "drag-over"));
     });
 
     document.querySelectorAll(".period-btn").forEach((button) => {
