@@ -1875,10 +1875,42 @@
     .capital-segment span { color: var(--text); }
     .market-row { grid-template-columns: 170px minmax(0, 1fr); }
     .market-row .article-list a { display: block; }
-    .lfc-extra-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .lfc-extra-card { border: 1px solid var(--line); border-radius: 15px; background: var(--panel-2); padding: 15px; min-height: 104px; }
-    .lfc-extra-card strong { display: block; font-size: 15px; line-height: 1.35; }
-    .lfc-extra-card p { margin: 10px 0 0; color: var(--muted-2); font-size: 13px; line-height: 1.5; }
+    .lfc-db-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .lfc-db-card { border: 1px solid var(--line); border-radius: 16px; background: var(--panel-2); padding: 16px; min-width: 0; }
+    .lfc-db-toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: -2px 0 12px; }
+    .lfc-db-mode { height: 32px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted-2); padding: 0 13px; font-size: 12px; font-weight: 900; cursor: pointer; }
+    .lfc-db-mode.active, .lfc-db-mode:hover, .lfc-db-mode:focus-visible { border-color: #88a9b2; color: var(--text); outline: none; }
+    .lfc-db-table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; }
+    .lfc-db-table { width: 100%; min-width: 1480px; border-collapse: collapse; table-layout: fixed; }
+    .lfc-db-table.request-table { min-width: 1360px; }
+    .lfc-db-table th, .lfc-db-table td { border-top: 1px solid var(--line-soft); padding: 9px 8px; vertical-align: top; font-size: 12px; line-height: 1.35; }
+    .lfc-db-table th { border-top: 0; color: var(--muted); background: #202020; font-size: 11px; font-weight: 900; text-align: left; white-space: nowrap; }
+    .lfc-db-table th.num, .lfc-db-table td.num { text-align: right; }
+    #loanConditionBoard .lfc-db-table th:nth-child(1), #loanConditionBoard .lfc-db-table td:nth-child(1) { width: 106px; }
+    #loanConditionBoard .lfc-db-table th:nth-child(2), #loanConditionBoard .lfc-db-table td:nth-child(2) { width: 104px; }
+    #loanConditionBoard .lfc-db-table th:nth-child(5), #loanConditionBoard .lfc-db-table td:nth-child(5),
+    #loanConditionBoard .lfc-db-table th:nth-child(13), #loanConditionBoard .lfc-db-table td:nth-child(13) { width: 54px; text-align: center; }
+    #loanConditionBoard .lfc-db-table th:nth-child(10), #loanConditionBoard .lfc-db-table td:nth-child(10) { width: 132px; }
+    #loanConditionBoard .lfc-db-table th:nth-child(11), #loanConditionBoard .lfc-db-table td:nth-child(11),
+    #loanConditionBoard .lfc-db-table th:nth-child(12), #loanConditionBoard .lfc-db-table td:nth-child(12) { width: 185px; }
+    #documentRequestBoard .lfc-db-table th:nth-child(1), #documentRequestBoard .lfc-db-table td:nth-child(1) { width: 110px; }
+    #documentRequestBoard .lfc-db-table th:nth-child(5), #documentRequestBoard .lfc-db-table td:nth-child(5),
+    #documentRequestBoard .lfc-db-table th:nth-child(7), #documentRequestBoard .lfc-db-table td:nth-child(7) { width: 56px; text-align: center; }
+    #documentRequestBoard .lfc-db-table th:nth-child(6), #documentRequestBoard .lfc-db-table td:nth-child(6) { width: 470px; }
+    .lfc-db-input, .lfc-db-select, .lfc-db-date, .lfc-db-textarea { width: 100%; border: 1px solid transparent; border-radius: 8px; background: #222221; color: var(--text); font: inherit; font-size: 12px; line-height: 1.35; padding: 7px 8px; }
+    .lfc-db-input:focus, .lfc-db-select:focus, .lfc-db-date:focus, .lfc-db-textarea:focus { border-color: #88a9b2; outline: none; background: #242423; }
+    .lfc-db-textarea { min-height: 58px; resize: vertical; white-space: pre-wrap; }
+    .lfc-db-check { display: grid; place-items: center; min-height: 32px; }
+    .lfc-db-check input { width: 16px; height: 16px; accent-color: #88a9b2; }
+    .lfc-db-add { margin-top: 12px; height: 34px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--text); padding: 0 14px; font-size: 12px; font-weight: 900; cursor: pointer; }
+    .lfc-db-add:hover, .lfc-db-add:focus-visible { border-color: #88a9b2; outline: none; }
+    .lfc-db-delete, .lfc-request-delete { width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: var(--text); cursor: pointer; font-size: 15px; line-height: 1; display: inline-grid; place-items: center; white-space: nowrap; }
+    .lfc-db-delete:hover, .lfc-db-delete:focus-visible, .lfc-request-delete:hover, .lfc-request-delete:focus-visible { border-color: #88a9b2; outline: none; }
+    .lfc-request-list { display: grid; gap: 7px; }
+    .lfc-request-item { display: grid; grid-template-columns: 20px minmax(0, 1fr) 28px; gap: 6px; align-items: start; }
+    .lfc-request-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 7px; accent-color: #88a9b2; }
+    .lfc-request-add { justify-self: start; height: 30px; border: 1px dashed var(--line); border-radius: 8px; background: transparent; color: var(--muted-2); padding: 0 10px; font-size: 12px; font-weight: 900; cursor: pointer; }
+    .lfc-request-add:hover, .lfc-request-add:focus-visible { border-color: #88a9b2; color: var(--text); outline: none; }
     .lfc-followup-stack { display: grid; gap: 14px; }
     .lfc-followup-grid { display: grid; grid-template-columns: 1fr; gap: 14px; align-items: start; }
     .lfc-followup-card { border: 1px solid var(--line); border-radius: 16px; background: var(--panel-2); padding: 16px; min-width: 0; }
@@ -1886,18 +1918,22 @@
     .lfc-followup-head strong { font-size: 16px; line-height: 1.3; }
     .lfc-followup-head span { color: var(--muted-2); font-size: 12px; font-weight: 900; white-space: nowrap; }
     .maturity-calendar { max-height: 520px; border: 1px solid var(--line-soft); border-radius: 14px; background: #191918; overflow: auto; }
-    .maturity-axis, .maturity-row { min-width: 820px; display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+    .maturity-axis, .maturity-row { min-width: 980px; display: grid; grid-template-columns: 112px 240px minmax(0, 1fr); }
     .maturity-axis { position: sticky; top: 0; z-index: 1; border-bottom: 1px solid var(--line-soft); background: #1f1f1e; color: var(--muted); font-size: 11px; font-weight: 900; }
-    .maturity-axis-label { padding: 10px 12px; border-right: 1px solid var(--line-soft); }
+    .maturity-project-head, .maturity-axis-label { padding: 10px 12px; border-right: 1px solid var(--line-soft); }
     .maturity-months, .maturity-track { display: grid; gap: 0; min-width: 0; }
     .maturity-months span { padding: 10px 6px; text-align: center; border-left: 1px solid rgba(255,255,255,.05); }
     .maturity-row { border-top: 1px solid var(--line-soft); }
     .maturity-row:first-of-type { border-top: 0; }
-    .maturity-axis-label, .maturity-meta { position: sticky; left: 0; z-index: 2; background: #191918; }
-    .maturity-axis-label { z-index: 4; background: #1f1f1e; }
+    .maturity-project-head, .maturity-project-cell, .maturity-axis-label, .maturity-meta { position: sticky; background: #191918; }
+    .maturity-project-head, .maturity-project-cell { left: 0; z-index: 5; }
+    .maturity-axis-label, .maturity-meta { left: 112px; z-index: 4; }
+    .maturity-project-head, .maturity-axis-label { background: #1f1f1e; }
+    .maturity-project-cell { display: flex; align-items: center; padding: 8px 12px; border-right: 1px solid var(--line-soft); color: var(--text); font-size: 12px; font-weight: 900; white-space: nowrap; }
     .maturity-meta { padding: 8px 12px; border-right: 1px solid var(--line-soft); min-width: 0; }
     .maturity-meta strong { display: block; font-size: 13px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .maturity-meta span { display: block; margin-top: 3px; color: var(--muted-2); font-size: 11px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .maturity-meta em { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; font-style: normal; font-weight: 900; }
     .maturity-track { position: relative; align-items: center; padding: 7px 0; }
     .maturity-track::before { content: ""; grid-column: 1 / -1; height: 1px; background: #3a3a38; align-self: center; }
     .maturity-span { min-height: 20px; border: 1px solid rgba(136,169,178,.46); border-radius: 999px; background: rgba(136,169,178,.26); color: var(--text); align-self: center; z-index: 1; display: flex; align-items: center; justify-content: flex-end; padding: 0 7px; font-size: 10px; font-weight: 900; cursor: pointer; white-space: nowrap; overflow: hidden; }
@@ -2573,7 +2609,58 @@
                         <div class="table-card compact-table"><table><thead><tr><th>단계</th><th>업무</th><th>필요 자료</th><th>카운터파티</th><th>목표 일정</th><th>상세</th></tr></thead><tbody id="pfPlanTable"></tbody></table></div>
                       </article>
                     </div>
-                    <div class="lfc-extra-grid" id="lfcExtraGrid"></div>
+                    <div class="lfc-db-grid">
+                      <article class="lfc-db-card" id="loanConditionBoard">
+                        <div class="lfc-followup-head"><strong>대출 조건 협의 로그</strong><span id="loanConditionMeta"></span></div>
+                        <div class="lfc-db-table-wrap">
+                          <table class="lfc-db-table">
+                            <thead>
+                              <tr>
+                                <th>프로젝트</th>
+                                <th>대출 단계</th>
+                                <th>Tranche</th>
+                                <th>대주</th>
+                                <th>Drop</th>
+                                <th class="num">금액</th>
+                                <th>금리</th>
+                                <th>수수료</th>
+                                <th>All-in</th>
+                                <th>심의 일정</th>
+                                <th>미팅 기록</th>
+                                <th>기타</th>
+                                <th>삭제</th>
+                              </tr>
+                            </thead>
+                            <tbody id="loanConditionTable"></tbody>
+                          </table>
+                        </div>
+                        <button class="lfc-db-add" type="button" id="addLoanConditionRow">+ 행 추가</button>
+                      </article>
+                      <article class="lfc-db-card" id="documentRequestBoard">
+                        <div class="lfc-followup-head"><strong>자료 요청 리스트</strong><span id="documentRequestMeta"></span></div>
+                        <div class="lfc-db-toolbar" role="tablist" aria-label="자료 요청 대상 대주 구분">
+                          <button class="lfc-db-mode active" type="button" data-request-mode="existing">현 대주</button>
+                          <button class="lfc-db-mode" type="button" data-request-mode="new">신규 대주</button>
+                        </div>
+                        <div class="lfc-db-table-wrap">
+                          <table class="lfc-db-table request-table">
+                            <thead>
+                              <tr>
+                                <th>프로젝트</th>
+                                <th>대출 단계</th>
+                                <th>Tranche</th>
+                                <th>대주</th>
+                                <th>Drop</th>
+                                <th>자료 요청 리스트</th>
+                                <th>삭제</th>
+                              </tr>
+                            </thead>
+                            <tbody id="documentRequestTable"></tbody>
+                          </table>
+                        </div>
+                        <button class="lfc-db-add" type="button" id="addDocumentRequestRow">+ 행 추가</button>
+                      </article>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -4604,7 +4691,12 @@
     let activeEntryId = "";
     let lastControlCard = null;
     const lfcLogStorageKey = "iotaLfcLogs.v1";
+    const lfcLoanConditionStorageKey = "iotaLfcLoanConditions.v1";
+    const lfcDocumentRequestStorageKey = "iotaLfcDocumentRequests.v1";
     let lfcLogs = loadLfcLogs();
+    let loanConditionRows = loadLoanConditionRows();
+    let documentRequestRows = loadDocumentRequestRows();
+    let documentRequestMode = "existing";
     let financeInterestMode = "monthly";
     let expandedLoanId = "";
     let expandedIssueId = "";
@@ -4991,6 +5083,166 @@
 
     function saveLfcLogs() {
       localStorage.setItem(lfcLogStorageKey, JSON.stringify(lfcLogs));
+    }
+
+    function localRowId(prefix) {
+      return `${prefix}-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    }
+
+    function defaultLoanConditionRows() {
+      const source = Array.isArray(LFC_V2.loanLenders) ? LFC_V2.loanLenders : [];
+      const seeded = source
+        .filter((loan) => loan.loanType !== "주주대여금")
+        .slice(0, 6)
+        .map((loan, index) => ({
+          id: `condition-seed-${index + 1}`,
+          project: loan.project || "total",
+          loanStage: normalizeLfcLoanStage(loan.loanType),
+          tranche: loan.tranche || "",
+          lender: loan.lender || "",
+          dropped: false,
+          amount: loan.amount || "",
+          rate: loan.rate || "",
+          fee: loan.fee || "",
+          allIn: "",
+          reviewDate: "",
+          meetingNotes: "- ",
+          notes: "- "
+        }));
+      return seeded.length ? seeded : [{
+        id: "condition-seed-empty",
+        project: "total",
+        loanStage: "본 PF",
+        tranche: "",
+        lender: "",
+        dropped: false,
+        amount: "",
+        rate: "",
+        fee: "",
+        allIn: "",
+        reviewDate: "",
+        meetingNotes: "- ",
+        notes: "- "
+      }];
+    }
+
+    function normalizeLoanCondition(row) {
+      return {
+        id: row.id || localRowId("condition"),
+        project: row.project || "total",
+        loanStage: normalizeLfcLoanStage(row.loanStage),
+        tranche: row.tranche || "",
+        lender: row.lender || "",
+        dropped: Boolean(row.dropped),
+        amount: row.amount || "",
+        rate: row.rate || "",
+        fee: row.fee || "",
+        allIn: row.allIn || "",
+        reviewDate: row.reviewDate || "",
+        meetingNotes: row.meetingNotes || "",
+        notes: row.notes || ""
+      };
+    }
+
+    function loadLoanConditionRows() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(lfcLoanConditionStorageKey) || "null");
+        if (Array.isArray(saved)) return saved.map(normalizeLoanCondition);
+      } catch (error) {
+        console.warn("Failed to load LFC loan condition rows", error);
+      }
+      return defaultLoanConditionRows().map(normalizeLoanCondition);
+    }
+
+    function saveLoanConditionRows() {
+      localStorage.setItem(lfcLoanConditionStorageKey, JSON.stringify(loanConditionRows));
+    }
+
+    function defaultDocumentRequestRows() {
+      const source = Array.isArray(LFC_V2.loanLenders) ? LFC_V2.loanLenders : [];
+      const seeded = source
+        .filter((loan) => loan.loanType !== "주주대여금")
+        .slice(0, 6)
+        .map((loan, index) => ({
+          id: `request-seed-${index + 1}`,
+          lenderType: index < 4 ? "existing" : "new",
+          project: loan.project || "total",
+          loanStage: normalizeLfcLoanStage(loan.loanType),
+          tranche: loan.tranche || "",
+          lender: loan.lender || "",
+          dropped: false,
+          requests: [
+            { id: `request-seed-${index + 1}-1`, title: "약정 주요 조건표", done: false },
+            { id: `request-seed-${index + 1}-2`, title: "심의 일정 및 승인 조건", done: false }
+          ]
+        }));
+      return seeded.length ? seeded : [{
+        id: "request-seed-empty",
+        lenderType: "existing",
+        project: "total",
+        loanStage: "본 PF",
+        tranche: "",
+        lender: "",
+        dropped: false,
+        requests: [{ id: "request-seed-empty-1", title: "", done: false }]
+      }];
+    }
+
+    function normalizeDocumentRequest(row) {
+      const requests = Array.isArray(row.requests) ? row.requests : [];
+      return {
+        id: row.id || localRowId("request"),
+        lenderType: row.lenderType || "existing",
+        project: row.project || "total",
+        loanStage: normalizeLfcLoanStage(row.loanStage),
+        tranche: row.tranche || "",
+        lender: row.lender || "",
+        dropped: Boolean(row.dropped),
+        requests: requests.length ? requests.map((item) => ({
+          id: item.id || localRowId("request-item"),
+          title: item.title || "",
+          done: Boolean(item.done)
+        })) : [{ id: localRowId("request-item"), title: "", done: false }]
+      };
+    }
+
+    function loadDocumentRequestRows() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(lfcDocumentRequestStorageKey) || "null");
+        if (Array.isArray(saved)) return saved.map(normalizeDocumentRequest);
+      } catch (error) {
+        console.warn("Failed to load LFC document request rows", error);
+      }
+      return defaultDocumentRequestRows().map(normalizeDocumentRequest);
+    }
+
+    function saveDocumentRequestRows() {
+      localStorage.setItem(lfcDocumentRequestStorageKey, JSON.stringify(documentRequestRows));
+    }
+
+    function lfcProjectFilter(project) {
+      return currentProject === "total" ? true : project === currentProject;
+    }
+
+    function lfcProjectOptions(selected) {
+      return [
+        ["total", "통합"],
+        ["427", "IOTA One"],
+        ["816", "IOTA Two"]
+      ].map(([value, label]) => `<option value="${value}"${selected === value ? " selected" : ""}>${label}</option>`).join("");
+    }
+
+    function lfcLoanStageOptions(selected) {
+      const normalized = normalizeLfcLoanStage(selected);
+      return ["Br. Loan", "Pre-PF", "본 PF", "담보대출"].map((value) => `<option value="${escapeHtml(value)}"${normalized === value ? " selected" : ""}>${escapeHtml(value)}</option>`).join("");
+    }
+
+    function normalizeLfcLoanStage(value) {
+      const text = String(value || "");
+      if (text.includes("Pre")) return "Pre-PF";
+      if (text.includes("본") || text.includes("Senior")) return "본 PF";
+      if (text.includes("담보")) return "담보대출";
+      return "Br. Loan";
     }
 
     function renderFinanceKpis(data) {
@@ -5385,6 +5637,21 @@
       }
     }
 
+    function formatNewsTimestamp(value) {
+      if (!value) return "";
+      const parsed = new Date(value);
+      if (!Number.isNaN(parsed.getTime())) {
+        const yyyy = parsed.getFullYear();
+        const mm = String(parsed.getMonth() + 1).padStart(2, "0");
+        const dd = String(parsed.getDate()).padStart(2, "0");
+        const hh = String(parsed.getHours()).padStart(2, "0");
+        const mi = String(parsed.getMinutes()).padStart(2, "0");
+        return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
+      }
+      const fallback = String(value).replace("T", " ").match(/(20\d{2}-\d{2}-\d{2})\s+(\d{2}:\d{2})/);
+      return fallback ? `${fallback[1]} ${fallback[2]}` : String(value).slice(0, 16).replace("T", " ");
+    }
+
     function renderLfcMarket() {
       const news = currentMarketNews();
       const rows = projectMarketRows();
@@ -5398,7 +5665,7 @@
       const filtered = marketLenderFilter === "all" ? rows : rows.filter((row) => row.lender === marketLenderFilter);
       const meta = document.getElementById("marketNewsMeta");
       const selectedStack = LFC_V2.capitalStacks[currentLfcKey()];
-      if (meta) meta.textContent = news.generatedAt ? `업데이트 ${escapeHtml(String(news.generatedAt).slice(0, 10))} · ${escapeHtml(selectedStack?.label || "통합")} · ${escapeHtml(lfcMarketNewsStatus)}` : "";
+      if (meta) meta.textContent = news.generatedAt ? `업데이트 ${escapeHtml(formatNewsTimestamp(news.generatedAt))} · ${escapeHtml(selectedStack?.label || "통합")} · ${escapeHtml(lfcMarketNewsStatus)}` : "";
       document.getElementById("marketWatchGrid").innerHTML = filtered.length ? filtered.map((row) => `<div class="market-row">
         <div><div class="row-title">${escapeHtml(row.lender)}</div><div class="row-desc">${escapeHtml(row.relation || "")}</div></div>
         <div class="article-list">${(row.articles || []).length ? (row.articles || []).map((article) => article.url ? `<a href="${escapeHtml(article.url)}" target="_blank" rel="noreferrer">${escapeHtml(article.title)}</a>` : `<span>${escapeHtml(article.title)}</span>`).join("") : `<span>최근 기사 스냅샷이 없습니다.</span>`}</div>
@@ -5428,6 +5695,84 @@
       if (project === "427") return "IOTA One 427";
       if (project === "816") return "IOTA Two 816";
       return "통합";
+    }
+
+    function lfcProjectShort(project) {
+      if (project === "427") return "IOTA One";
+      if (project === "816") return "IOTA Two";
+      return "통합";
+    }
+
+    function conditionRowsForProject() {
+      return loanConditionRows.filter((row) => lfcProjectFilter(row.project));
+    }
+
+    function documentRowsForProject() {
+      return documentRequestRows.filter((row) => row.lenderType === documentRequestMode && lfcProjectFilter(row.project));
+    }
+
+    function renderLoanConditionRows() {
+      const rows = conditionRowsForProject();
+      const meta = document.getElementById("loanConditionMeta");
+      const tbody = document.getElementById("loanConditionTable");
+      if (meta) meta.textContent = `${lfcProjectLabel(currentLfcKey())} · ${rows.length}건`;
+      if (!rows.length) {
+        tbody.innerHTML = `<tr><td colspan="13"><div class="empty">선택한 프로젝트의 대출 조건 협의 로그가 없습니다. 아래 행 추가로 새 협의 조건을 등록하세요.</div></td></tr>`;
+        return;
+      }
+      tbody.innerHTML = rows.map((row) => `
+        <tr data-condition-id="${escapeHtml(row.id)}">
+          <td><select class="lfc-db-select" data-condition-field="project" aria-label="프로젝트">${lfcProjectOptions(row.project)}</select></td>
+          <td><select class="lfc-db-select" data-condition-field="loanStage" aria-label="대출 단계">${lfcLoanStageOptions(row.loanStage)}</select></td>
+          <td><input class="lfc-db-input" data-condition-field="tranche" value="${escapeHtml(row.tranche)}" aria-label="Tranche"></td>
+          <td><input class="lfc-db-input" data-condition-field="lender" value="${escapeHtml(row.lender)}" aria-label="대주"></td>
+          <td><label class="lfc-db-check"><input type="checkbox" data-condition-field="dropped" ${row.dropped ? "checked" : ""} aria-label="Drop 여부"></label></td>
+          <td><input class="lfc-db-input num" inputmode="decimal" data-condition-field="amount" value="${escapeHtml(row.amount)}" aria-label="금액"></td>
+          <td><input class="lfc-db-input" data-condition-field="rate" value="${escapeHtml(row.rate)}" aria-label="금리"></td>
+          <td><input class="lfc-db-input" data-condition-field="fee" value="${escapeHtml(row.fee)}" aria-label="수수료"></td>
+          <td><input class="lfc-db-input" data-condition-field="allIn" value="${escapeHtml(row.allIn)}" aria-label="All-in"></td>
+          <td><input class="lfc-db-date" type="date" data-condition-field="reviewDate" value="${escapeHtml(row.reviewDate)}" aria-label="심의 일정"></td>
+          <td><textarea class="lfc-db-textarea" data-condition-field="meetingNotes" aria-label="미팅 기록">${escapeHtml(row.meetingNotes)}</textarea></td>
+          <td><textarea class="lfc-db-textarea" data-condition-field="notes" aria-label="기타">${escapeHtml(row.notes)}</textarea></td>
+          <td><button class="lfc-db-delete" type="button" data-delete-condition="${escapeHtml(row.id)}" aria-label="대출 조건 행 삭제">×</button></td>
+        </tr>
+      `).join("");
+    }
+
+    function renderDocumentRequestRows() {
+      const rows = documentRowsForProject();
+      const meta = document.getElementById("documentRequestMeta");
+      const tbody = document.getElementById("documentRequestTable");
+      if (meta) meta.textContent = `${lfcProjectLabel(currentLfcKey())} · ${documentRequestMode === "existing" ? "현 대주" : "신규 대주"} ${rows.length}건`;
+      document.querySelectorAll("[data-request-mode]").forEach((button) => {
+        button.classList.toggle("active", button.dataset.requestMode === documentRequestMode);
+      });
+      if (!rows.length) {
+        tbody.innerHTML = `<tr><td colspan="7"><div class="empty">선택 조건의 자료 요청 행이 없습니다. 아래 행 추가로 새 요청 리스트를 등록하세요.</div></td></tr>`;
+        return;
+      }
+      tbody.innerHTML = rows.map((row) => `
+        <tr data-document-request-id="${escapeHtml(row.id)}">
+          <td><select class="lfc-db-select" data-document-field="project" aria-label="프로젝트">${lfcProjectOptions(row.project)}</select></td>
+          <td><select class="lfc-db-select" data-document-field="loanStage" aria-label="대출 단계">${lfcLoanStageOptions(row.loanStage)}</select></td>
+          <td><input class="lfc-db-input" data-document-field="tranche" value="${escapeHtml(row.tranche)}" aria-label="Tranche"></td>
+          <td><input class="lfc-db-input" data-document-field="lender" value="${escapeHtml(row.lender)}" aria-label="대주"></td>
+          <td><label class="lfc-db-check"><input type="checkbox" data-document-field="dropped" ${row.dropped ? "checked" : ""} aria-label="Drop 여부"></label></td>
+          <td>
+            <div class="lfc-request-list">
+              ${(row.requests || []).map((item) => `
+                <div class="lfc-request-item" data-request-item-id="${escapeHtml(item.id)}">
+                  <input type="checkbox" data-request-done ${item.done ? "checked" : ""} aria-label="제공 완료">
+                  <input class="lfc-db-input" data-request-title value="${escapeHtml(item.title)}" aria-label="자료 요청 항목">
+                  <button class="lfc-request-delete" type="button" data-delete-request-item="${escapeHtml(item.id)}" aria-label="자료 요청 항목 삭제">×</button>
+                </div>
+              `).join("")}
+              <button class="lfc-request-add" type="button" data-add-request-item="${escapeHtml(row.id)}">+ 자료 추가</button>
+            </div>
+          </td>
+          <td><button class="lfc-db-delete" type="button" data-delete-document-row="${escapeHtml(row.id)}" aria-label="자료 요청 행 삭제">×</button></td>
+        </tr>
+      `).join("");
     }
 
     function maturityRowsForProject() {
@@ -5461,6 +5806,7 @@
 
       calendar.innerHTML = `<div class="maturity-calendar">
         <div class="maturity-axis">
+          <div class="maturity-project-head">프로젝트</div>
           <div class="maturity-axis-label">대출 / Tranche</div>
           <div class="maturity-months" style="grid-template-columns:${columns}">${months.map((date) => `<span>${monthLabel(date)}</span>`).join("")}</div>
         </div>
@@ -5470,6 +5816,7 @@
           const endIndex = Math.max(startIndex, monthDiff(earliest, end));
           const gridColumn = `${startIndex + 1} / ${Math.min(endIndex + 2, months.length + 1)}`;
           return `<div class="maturity-row">
+            <div class="maturity-project-cell">${escapeHtml(lfcProjectShort(loan.project))}</div>
             <div class="maturity-meta">
               <strong>${escapeHtml(loan.tranche || loan.loanType)}</strong>
               <span>${escapeHtml(loan.lender || "")}</span>
@@ -5509,9 +5856,8 @@
     function renderLfcExtra() {
       renderMaturityCalendar();
       renderPfPlan();
-      document.getElementById("lfcExtraGrid").innerHTML = LFC_V2.extraItems.map((item) => `
-        <article class="lfc-extra-card"><strong>${escapeHtml(item[0])}</strong><p>${escapeHtml(item[1])}</p></article>
-      `).join("");
+      renderLoanConditionRows();
+      renderDocumentRequestRows();
     }
 
     function renderFinance() {
@@ -5904,6 +6250,36 @@
       sidebarToggle.setAttribute("aria-label", collapsed ? "사이드바 펼치기" : "사이드바 접기");
     }
 
+    function handleLoanConditionField(event) {
+      const field = event.target.dataset.conditionField;
+      if (!field) return;
+      const rowElement = event.target.closest("[data-condition-id]");
+      const row = loanConditionRows.find((item) => item.id === rowElement?.dataset.conditionId);
+      if (!row) return;
+      row[field] = field === "dropped" ? event.target.checked : event.target.value;
+      saveLoanConditionRows();
+      if (field === "project") renderLoanConditionRows();
+    }
+
+    function handleDocumentRequestField(event) {
+      const rowElement = event.target.closest("[data-document-request-id]");
+      const row = documentRequestRows.find((item) => item.id === rowElement?.dataset.documentRequestId);
+      if (!row) return;
+      const field = event.target.dataset.documentField;
+      if (field) {
+        row[field] = field === "dropped" ? event.target.checked : event.target.value;
+        saveDocumentRequestRows();
+        if (field === "project") renderDocumentRequestRows();
+        return;
+      }
+      const itemElement = event.target.closest("[data-request-item-id]");
+      const request = row.requests.find((item) => item.id === itemElement?.dataset.requestItemId);
+      if (!request) return;
+      if (event.target.matches("[data-request-title]")) request.title = event.target.value;
+      if (event.target.matches("[data-request-done]")) request.done = event.target.checked;
+      saveDocumentRequestRows();
+    }
+
     document.querySelectorAll(".project-btn").forEach((button) => {
       button.addEventListener("click", () => {
         if (document.getElementById("financeDrawerBackdrop").classList.contains("open")) {
@@ -6091,6 +6467,86 @@
     document.getElementById("lfcCardModalClose").addEventListener("click", closeLfcCardModal);
     document.getElementById("lfcCardModalBackdrop").addEventListener("click", (event) => {
       if (event.target.id === "lfcCardModalBackdrop") closeLfcCardModal();
+    });
+
+    document.getElementById("loanConditionTable").addEventListener("input", handleLoanConditionField);
+    document.getElementById("loanConditionTable").addEventListener("change", handleLoanConditionField);
+    document.getElementById("loanConditionTable").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-delete-condition]");
+      if (!button) return;
+      loanConditionRows = loanConditionRows.filter((row) => row.id !== button.dataset.deleteCondition);
+      saveLoanConditionRows();
+      renderLoanConditionRows();
+    });
+
+    document.getElementById("addLoanConditionRow").addEventListener("click", () => {
+      loanConditionRows.push(normalizeLoanCondition({
+        id: localRowId("condition"),
+        project: currentProject === "total" ? "total" : currentProject,
+        loanStage: "본 PF",
+        tranche: "",
+        lender: "",
+        dropped: false,
+        amount: "",
+        rate: "",
+        fee: "",
+        allIn: "",
+        reviewDate: "",
+        meetingNotes: "- ",
+        notes: "- "
+      }));
+      saveLoanConditionRows();
+      renderLoanConditionRows();
+    });
+
+    document.querySelectorAll("[data-request-mode]").forEach((button) => {
+      button.addEventListener("click", () => {
+        documentRequestMode = button.dataset.requestMode;
+        renderDocumentRequestRows();
+      });
+    });
+
+    document.getElementById("documentRequestTable").addEventListener("input", handleDocumentRequestField);
+    document.getElementById("documentRequestTable").addEventListener("change", handleDocumentRequestField);
+    document.getElementById("documentRequestTable").addEventListener("click", (event) => {
+      const rowElement = event.target.closest("[data-document-request-id]");
+      const row = documentRequestRows.find((item) => item.id === rowElement?.dataset.documentRequestId);
+      const deleteRow = event.target.closest("[data-delete-document-row]");
+      if (deleteRow) {
+        documentRequestRows = documentRequestRows.filter((item) => item.id !== deleteRow.dataset.deleteDocumentRow);
+        saveDocumentRequestRows();
+        renderDocumentRequestRows();
+        return;
+      }
+      const addItem = event.target.closest("[data-add-request-item]");
+      if (addItem && row) {
+        row.requests.push({ id: localRowId("request-item"), title: "", done: false });
+        saveDocumentRequestRows();
+        renderDocumentRequestRows();
+        return;
+      }
+      const deleteItem = event.target.closest("[data-delete-request-item]");
+      if (deleteItem && row) {
+        row.requests = row.requests.filter((item) => item.id !== deleteItem.dataset.deleteRequestItem);
+        if (!row.requests.length) row.requests.push({ id: localRowId("request-item"), title: "", done: false });
+        saveDocumentRequestRows();
+        renderDocumentRequestRows();
+      }
+    });
+
+    document.getElementById("addDocumentRequestRow").addEventListener("click", () => {
+      documentRequestRows.push(normalizeDocumentRequest({
+        id: localRowId("request"),
+        lenderType: documentRequestMode,
+        project: currentProject === "total" ? "total" : currentProject,
+        loanStage: "본 PF",
+        tranche: "",
+        lender: "",
+        dropped: false,
+        requests: [{ id: localRowId("request-item"), title: "", done: false }]
+      }));
+      saveDocumentRequestRows();
+      renderDocumentRequestRows();
     });
 
     document.getElementById("costTable").addEventListener("click", (event) => {
