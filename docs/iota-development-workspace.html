@@ -5965,6 +5965,205 @@
       return rows.filter((row) => marketProjects(row).includes(key));
     }
 
+    const realtimeNewsKeywords = ["부동산 PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"];
+    const realtimeRelevanceTerms = ["부동산", "PF", "대출", "건전성", "신용등급", "금융당국", "책임준공", "부동산금융"];
+    const realtimeGlobalQueries = ["부동산 PF 대출 건전성", "부동산 PF 금융당국", "부동산금융 신용등급"];
+
+    function googleNewsRssUrl(query) {
+      const params = new URLSearchParams({
+        q: `${query} when:3d`,
+        hl: "ko",
+        gl: "KR",
+        ceid: "KR:ko"
+      });
+      return `https://news.google.com/rss/search?${params.toString()}`;
+    }
+
+    function withTimeout(ms = 9000) {
+      const controller = new AbortController();
+      const timer = window.setTimeout(() => controller.abort(), ms);
+      return { signal: controller.signal, clear: () => window.clearTimeout(timer) };
+    }
+
+    function rejectAfter(ms, message = "timeout") {
+      return new Promise((_, reject) => {
+        window.setTimeout(() => reject(new Error(message)), ms);
+      });
+    }
+
+    async function fetchJsonWithHardTimeout(url, ms = 4500) {
+      return Promise.race([
+        fetch(url, { cache: "no-store" }).then((response) => {
+          if (!response.ok) throw new Error(`News API ${response.status}`);
+          return response.json();
+        }),
+        rejectAfter(ms, "News API timeout")
+      ]);
+    }
+
+    async function fetchTextWithCorsFallback(url) {
+      const endpoints = [
+        url,
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+      ];
+      let lastError = null;
+      for (const endpoint of endpoints) {
+        const timeout = withTimeout();
+        try {
+          const response = await fetch(endpoint, { cache: "no-store", signal: timeout.signal });
+          timeout.clear();
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return await response.text();
+        } catch (error) {
+          timeout.clear();
+          lastError = error;
+        }
+      }
+      throw lastError || new Error("RSS fetch failed");
+    }
+
+    function cleanNewsTitle(title) {
+      return String(title || "").replace(/\s+-\s+Google 뉴스$/, "").replace(/\s+/g, " ").trim();
+    }
+
+    function parseRssDate(value) {
+      const date = new Date(value || "");
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function parseRssArticles(xmlText) {
+      const doc = new DOMParser().parseFromString(xmlText, "text/xml");
+      return Array.from(doc.querySelectorAll("item")).map((item) => {
+        const pub = parseRssDate(item.querySelector("pubDate")?.textContent);
+        const source = item.querySelector("source")?.textContent || "";
+        const title = cleanNewsTitle(item.querySelector("title")?.textContent || "");
+        const date = pub ? pub.toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
+        return {
+          date,
+          title: title.startsWith("[") ? title : `[${date}] ${title}`,
+          publisher: source,
+          url: item.querySelector("link")?.textContent || "",
+          matchMode: "실시간 RSS"
+        };
+      }).filter((article) => article.title);
+    }
+
+    function lenderSearchNames(group) {
+      const names = Array.isArray(group.searchNames) ? group.searchNames : [];
+      return [...new Set([group.lender, ...names].filter(Boolean))];
+    }
+
+    function compactText(value) {
+      return String(value || "").replace(/\s+/g, "");
+    }
+
+    function newsArticleRelated(article, group) {
+      const compact = compactText(article.title);
+      const lenderMatched = lenderSearchNames(group).some((name) => compact.includes(compactText(name)));
+      const termMatched = realtimeRelevanceTerms.some((term) => compact.includes(compactText(term)));
+      return lenderMatched || termMatched;
+    }
+
+    function realtimeSectorQueries(group) {
+      const text = [group.lender, group.relation, ...lenderSearchNames(group)].join(" ");
+      const queries = [];
+      if (text.includes("저축은행")) queries.push("저축은행 부동산 PF 건전성", "저축은행 부동산 PF 신용등급");
+      if (text.includes("증권")) queries.push("증권사 부동산 PF 대출", "증권사 부동산 PF 건전성");
+      if (text.includes("자산운용") || text.includes("운용")) queries.push("자산운용 부동산 PF", "부동산펀드 PF 대출");
+      if (text.includes("화재") || text.includes("보험")) queries.push("보험사 부동산 PF 대출", "보험사 대체투자 건전성");
+      if (text.includes("카드")) queries.push("카드사 부동산 PF 대출", "여전사 부동산 PF");
+      if (text.includes("은행") && !text.includes("저축은행")) queries.push("은행 부동산 PF 대출", "은행 부동산PF 건전성");
+      return [...new Set([...queries, ...realtimeGlobalQueries])];
+    }
+
+    async function fetchRealtimeQuery(query, group, limit = 3) {
+      const rssUrl = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&setlang=ko-KR&cc=KR`;
+      const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&ts=${Date.now()}`;
+      const payload = await fetchJsonWithHardTimeout(apiUrl);
+      const seen = new Set();
+      const out = [];
+      const items = Array.isArray(payload.items) ? payload.items : [];
+      for (const item of items) {
+        const rawDate = item.pubDate || item.pubdate || item.published || new Date().toISOString();
+        const parsedDate = parseRssDate(rawDate);
+        const date = parsedDate ? parsedDate.toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
+        const article = {
+          date,
+          title: `[${date}] ${cleanNewsTitle(item.title || "")}`,
+          publisher: item.author || item.source || "",
+          url: item.link || item.guid || "",
+          matchMode: "실시간 Bing News"
+        };
+        if (!newsArticleRelated(article, group)) continue;
+        const key = article.title;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(article);
+        if (out.length >= limit) break;
+      }
+      return out;
+    }
+
+    async function realtimeArticlesForGroup(group) {
+      const seen = new Set();
+      const articles = [];
+      const pushArticles = (items) => {
+        items.forEach((item) => {
+          if (!item?.title || seen.has(item.title) || articles.length >= 3) return;
+          seen.add(item.title);
+          articles.push(item);
+        });
+      };
+
+      const names = lenderSearchNames(group);
+      const primaryName = names[0] || group.lender;
+      const queries = [`${primaryName} 부동산 PF 대출 건전성 신용등급`];
+      for (const query of queries) {
+        try {
+          pushArticles(await fetchRealtimeQuery(query, group, 3));
+        } catch (error) {
+          // 일부 RSS 쿼리 실패는 다음 쿼리로 보완합니다.
+        }
+        if (articles.length >= 3) break;
+      }
+
+      if (!articles.length) {
+        const fallback = (currentMarketNews().items || []).find((item) => item.lender === group.lender);
+        pushArticles((fallback?.articles || []).map((article) => ({ ...article, matchMode: "저장본 보완" })));
+      }
+      return articles.slice(0, 3);
+    }
+
+    async function mapWithConcurrency(items, limit, worker) {
+      const results = new Array(items.length);
+      let cursor = 0;
+      const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+        while (cursor < items.length) {
+          const index = cursor++;
+          results[index] = await worker(items[index], index);
+        }
+      });
+      await Promise.all(runners);
+      return results;
+    }
+
+    async function crawlLfcMarketNewsRealtime() {
+      const groups = LFC_V2.newsLenders || [];
+      const items = await mapWithConcurrency(groups, 8, async (group) => ({
+        lender: group.lender,
+        relation: group.relation,
+        projects: group.projects || [],
+        articles: await realtimeArticlesForGroup(group)
+      }));
+      return {
+        generatedAt: new Date().toISOString(),
+        checkedAt: new Date().toISOString(),
+        windowDays: 3,
+        crawlMode: "browser-realtime-rss",
+        items
+      };
+    }
+
     async function loadLfcMarketNews(force = false) {
       if (lfcMarketNewsLoading) return;
       if (lfcMarketNewsLoaded && !force) return;
@@ -5984,27 +6183,50 @@
       lfcMarketNewsLoading = true;
       if (button) {
         button.disabled = true;
-        button.textContent = "업데이트 중";
+        button.textContent = force ? "실시간 크롤링 중" : "업데이트 중";
       }
       try {
-        const response = await fetch(`data/lfc-market-news.json?ts=${Date.now()}`, { cache: "no-store" });
-        if (response.ok) {
-          lfcMarketNews = await response.json();
+        if (force) {
+          lfcMarketNews = await crawlLfcMarketNewsRealtime();
           lfcMarketNewsLoaded = true;
-          lfcMarketNewsStatus = "온라인 업데이트";
+          lfcMarketNewsStatus = "실시간 크롤링";
+        } else {
+          const response = await fetch(`data/lfc-market-news.json?ts=${Date.now()}`, { cache: "no-store" });
+          if (response.ok) {
+            lfcMarketNews = await response.json();
+            lfcMarketNewsLoaded = true;
+            lfcMarketNewsStatus = "온라인 업데이트";
+          } else {
+            lfcMarketNews = LFC_V2.marketNewsFallback;
+            lfcMarketNewsStatus = "업데이트 실패 · 내장 데이터";
+          }
+        }
+      } catch (error) {
+        if (force) {
+          try {
+            const response = await fetch(`data/lfc-market-news.json?ts=${Date.now()}`, { cache: "no-store" });
+            if (response.ok) {
+              lfcMarketNews = await response.json();
+              lfcMarketNewsLoaded = true;
+              lfcMarketNewsStatus = "실시간 실패 · 온라인 저장본";
+            } else {
+              lfcMarketNews = LFC_V2.marketNewsFallback;
+              lfcMarketNewsStatus = "실시간 실패 · 내장 데이터";
+            }
+          } catch (fallbackError) {
+            lfcMarketNews = LFC_V2.marketNewsFallback;
+            lfcMarketNewsStatus = "실시간 실패 · 내장 데이터";
+          }
         } else {
           lfcMarketNews = LFC_V2.marketNewsFallback;
           lfcMarketNewsStatus = "업데이트 실패 · 내장 데이터";
         }
-      } catch (error) {
-        lfcMarketNews = LFC_V2.marketNewsFallback;
-        lfcMarketNewsStatus = "업데이트 실패 · 내장 데이터";
       } finally {
         lfcMarketNewsLoading = false;
         lfcMarketNewsCheckedAt = new Date().toISOString();
         if (button) {
           button.disabled = false;
-          button.textContent = "업데이트 완료";
+          button.textContent = force ? "크롤링 완료" : "업데이트 완료";
           window.setTimeout(() => { button.textContent = "뉴스 업데이트"; }, 1200);
         }
         renderLfcMarket();
