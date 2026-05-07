@@ -2187,7 +2187,7 @@
     .app.finance-active .project-rail .view-btn,
     .app.finance-active .project-rail .date-chip { display: none; }
     .app.finance-active .project-rail { padding: 12px; background: #202020; }
-    .app.finance-active .rail-btn.active { background: #111; color: #fff; box-shadow: inset 0 0 0 1px #3c3c3c; }
+    .app.finance-active .rail-btn.active { background: var(--accent); color: #111; box-shadow: none; }
     .lfc-page-head { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px; align-items: start; margin-bottom: 22px; }
     .lfc-page-head h1 { margin: 0; font-size: 38px; line-height: 1.08; letter-spacing: 0; }
     .lfc-page-head p { margin: 12px 0 0; max-width: 720px; color: var(--muted-2); font-size: 14px; line-height: 1.55; }
@@ -2569,45 +2569,10 @@
                 <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>구분</th><th>대출 종류</th><th>Tranche</th><th>대주</th><th class="num">약정액</th><th class="num">비율</th><th>실행일</th><th>만기</th><th>금리</th><th>수수료</th><th>상세</th></tr></thead><tbody id="loanTable"></tbody></table></div></div>
               </section>
 
-              <section class="section" id="equitySection">
-                <div class="section-head"><div><div class="section-kicker">Equity Investors</div><h2>자본구조 참고 - Equity 투자자 현황</h2></div></div>
-                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>구분</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
-              </section>
-
-              <section class="section" id="interestSection">
-                <div class="section-head"><div><div class="section-kicker">Interest Timeline</div><h2>월별 이자 발생 시계열</h2></div></div>
-                <div class="section-body">
-                  <div class="monthly-interest-chart" id="interestChart"></div>
-                  <div class="interest-note" id="interestNote"></div>
-                </div>
-              </section>
-
-              <section class="section" id="marketWatchSection">
-                <div class="section-head">
-                  <div><div class="section-kicker">Market Watch</div><h2>시장 이슈 모니터링</h2></div>
-                  <button class="action-btn" type="button" id="lfcNewsRefresh">뉴스 업데이트</button>
-                </div>
-                <div class="section-body">
-                  <div class="lfc-filter-row"><select class="market-filter" id="marketLenderFilter" aria-label="대주별 시장 이슈 선택"></select><span class="mini" id="marketNewsMeta" aria-live="polite"></span></div>
-                  <div class="market-watch-list" id="marketWatchGrid"></div>
-                </div>
-              </section>
-
               <section class="section" id="lfcExtraSection">
-                <div class="section-head"><div><div class="section-kicker">Follow-up Controls</div><h2>만기·본 PF 전환 관리</h2></div></div>
+                <div class="section-head"><div><div class="section-kicker">Negotiation Board</div><h2>대출 조건·자료 요청 관리</h2></div></div>
                 <div class="section-body">
                   <div class="lfc-followup-stack">
-                    <div class="lfc-followup-grid">
-                      <article class="lfc-followup-card" id="maturityCalendarSection">
-                        <div class="lfc-followup-head"><strong>만기 캘린더</strong><span id="maturityCalendarMeta"></span></div>
-                        <div id="lfcMaturityCalendar"></div>
-                      </article>
-                      <article class="lfc-followup-card" id="pfPlanSection">
-                        <div class="lfc-followup-head"><strong>본 PF 계획(통합 PF)</strong><span>통합 기준</span></div>
-                        <div class="pf-plan-rail" id="pfPlanRail"></div>
-                        <div class="table-card compact-table"><table><thead><tr><th>단계</th><th>업무</th><th>필요 자료</th><th>카운터파티</th><th>목표 일정</th><th>상세</th></tr></thead><tbody id="pfPlanTable"></tbody></table></div>
-                      </article>
-                    </div>
                     <div class="lfc-db-grid">
                       <article class="lfc-db-card" id="loanConditionBoard">
                         <div class="lfc-followup-head"><strong>대출 조건 협의 로그</strong><span id="loanConditionMeta"></span></div>
@@ -2661,6 +2626,51 @@
                       </article>
                     </div>
                   </div>
+                </div>
+              </section>
+
+              <section class="section" id="interestSection">
+                <div class="section-head"><div><div class="section-kicker">Interest Timeline</div><h2>월별 이자 발생 시계열</h2></div></div>
+                <div class="section-body">
+                  <div class="monthly-interest-chart" id="interestChart"></div>
+                  <div class="interest-note" id="interestNote"></div>
+                </div>
+              </section>
+
+              <section class="section" id="lfcMaturitySection">
+                <div class="section-head"><div><div class="section-kicker">Maturity Calendar</div><h2>만기 캘린더</h2></div></div>
+                <div class="section-body">
+                  <article class="lfc-followup-card" id="maturityCalendarSection">
+                    <div class="lfc-followup-head"><strong>대출 만기 일정</strong><span id="maturityCalendarMeta"></span></div>
+                    <div id="lfcMaturityCalendar"></div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="section" id="lfcPfPlanSection">
+                <div class="section-head"><div><div class="section-kicker">PF Conversion</div><h2>본 PF 계획(통합 PF)</h2></div></div>
+                <div class="section-body">
+                  <article class="lfc-followup-card" id="pfPlanSection">
+                    <div class="lfc-followup-head"><strong>본 PF 전환 준비사항</strong><span>통합 기준</span></div>
+                    <div class="pf-plan-rail" id="pfPlanRail"></div>
+                    <div class="table-card compact-table"><table><thead><tr><th>단계</th><th>업무</th><th>필요 자료</th><th>카운터파티</th><th>목표 일정</th><th>상세</th></tr></thead><tbody id="pfPlanTable"></tbody></table></div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="section" id="equitySection">
+                <div class="section-head"><div><div class="section-kicker">Equity Investors</div><h2>자본구조 참고 - Equity 투자자 현황</h2></div></div>
+                <div class="section-body"><div class="table-card compact-table"><table><thead><tr><th>구분</th><th>Tranche</th><th>투자자</th><th class="num">금액</th><th class="num">비율</th><th>투입시점</th></tr></thead><tbody id="equityTable"></tbody></table></div></div>
+              </section>
+
+              <section class="section" id="marketWatchSection">
+                <div class="section-head">
+                  <div><div class="section-kicker">Market Watch</div><h2>시장 이슈 모니터링</h2></div>
+                  <button class="action-btn" type="button" id="lfcNewsRefresh">뉴스 업데이트</button>
+                </div>
+                <div class="section-body">
+                  <div class="lfc-filter-row"><select class="market-filter" id="marketLenderFilter" aria-label="대주별 시장 이슈 선택"></select><span class="mini" id="marketNewsMeta" aria-live="polite"></span></div>
+                  <div class="market-watch-list" id="marketWatchGrid"></div>
                 </div>
               </section>
 
