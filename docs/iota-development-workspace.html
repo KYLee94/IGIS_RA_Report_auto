@@ -5941,6 +5941,7 @@
     let lfcMarketNews = null;
     let lfcMarketNewsLoaded = false;
     let lfcMarketNewsLoading = false;
+    let lfcMarketNewsRealtimeQueued = false;
     let lfcMarketNewsStatus = "내장 데이터";
     let lfcMarketNewsCheckedAt = "";
 
@@ -6147,27 +6148,66 @@
       return results;
     }
 
-    async function crawlLfcMarketNewsRealtime() {
+    function realtimeNewsGroups() {
       const groups = LFC_V2.newsLenders || [];
-      const items = await mapWithConcurrency(groups, 8, async (group) => ({
-        lender: group.lender,
-        relation: group.relation,
-        projects: group.projects || [],
-        articles: await realtimeArticlesForGroup(group)
-      }));
+      const key = currentLfcKey();
+      const selectedLender = marketLenderFilter;
+      return groups.filter((group) => {
+        const projects = Array.isArray(group.projects) ? group.projects : [];
+        const projectMatched = key === "total" || projects.includes(key);
+        const lenderMatched = !selectedLender || selectedLender === "all" || group.lender === selectedLender;
+        return projectMatched && lenderMatched;
+      });
+    }
+
+    function mergeRealtimeNewsItems(items) {
+      const incoming = new Map((items || []).map((item) => [item.lender, item]));
+      const baseItems = currentMarketNews().items || [];
+      const untouched = baseItems.filter((item) => !incoming.has(item.lender));
+      return [...untouched, ...incoming.values()];
+    }
+
+    async function crawlLfcMarketNewsRealtime(onProgress) {
+      const groups = realtimeNewsGroups();
+      let done = 0;
+      const items = await mapWithConcurrency(groups, 8, async (group) => {
+        const item = {
+          lender: group.lender,
+          relation: group.relation,
+          projects: group.projects || [],
+          articles: await realtimeArticlesForGroup(group)
+        };
+        done += 1;
+        if (typeof onProgress === "function") {
+          onProgress({ done, total: groups.length, item });
+        }
+        return item;
+      });
+      const mergedItems = mergeRealtimeNewsItems(items);
+      const now = new Date().toISOString();
+      const existingGeneratedAt = currentMarketNews().generatedAt;
       return {
-        generatedAt: new Date().toISOString(),
-        checkedAt: new Date().toISOString(),
+        generatedAt: now,
+        checkedAt: now,
+        previousGeneratedAt: existingGeneratedAt,
         windowDays: 3,
         crawlMode: "browser-realtime-rss",
-        items
+        items: mergedItems
       };
     }
 
     async function loadLfcMarketNews(force = false) {
-      if (lfcMarketNewsLoading) return;
-      if (lfcMarketNewsLoaded && !force) return;
       const button = document.getElementById("lfcNewsRefresh");
+      if (lfcMarketNewsLoading) {
+        if (force) {
+          lfcMarketNewsRealtimeQueued = true;
+          lfcMarketNewsStatus = "실시간 크롤링 예약";
+          if (button) button.textContent = "크롤링 예약됨";
+          renderLfcMarket();
+        }
+        return;
+      }
+      if (lfcMarketNewsLoaded && !force) return;
       if (location.protocol === "file:") {
         lfcMarketNews = LFC_V2.marketNewsFallback;
         lfcMarketNewsLoaded = true;
@@ -6187,7 +6227,22 @@
       }
       try {
         if (force) {
-          lfcMarketNews = await crawlLfcMarketNewsRealtime();
+          const partialItems = [];
+          lfcMarketNews = await crawlLfcMarketNewsRealtime(({ done, total, item }) => {
+            partialItems.push(item);
+            const now = new Date().toISOString();
+            lfcMarketNews = {
+              generatedAt: now,
+              checkedAt: now,
+              windowDays: 3,
+              crawlMode: "browser-realtime-rss-progress",
+              items: mergeRealtimeNewsItems(partialItems)
+            };
+            lfcMarketNewsStatus = `실시간 크롤링 ${done}/${total}`;
+            if (button) button.textContent = `크롤링 ${done}/${total}`;
+            lfcMarketNewsCheckedAt = now;
+            renderLfcMarket();
+          });
           lfcMarketNewsLoaded = true;
           lfcMarketNewsStatus = "실시간 크롤링";
         } else {
@@ -6227,9 +6282,15 @@
         if (button) {
           button.disabled = false;
           button.textContent = force ? "크롤링 완료" : "업데이트 완료";
-          window.setTimeout(() => { button.textContent = "뉴스 업데이트"; }, 1200);
+          if (!lfcMarketNewsRealtimeQueued) {
+            window.setTimeout(() => { button.textContent = "뉴스 업데이트"; }, 1200);
+          }
         }
         renderLfcMarket();
+        if (lfcMarketNewsRealtimeQueued) {
+          lfcMarketNewsRealtimeQueued = false;
+          window.setTimeout(() => loadLfcMarketNews(true), 0);
+        }
       }
     }
 
