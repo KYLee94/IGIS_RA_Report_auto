@@ -394,6 +394,51 @@
       white-space: nowrap;
     }
 
+    .rail-index {
+      margin-top: 12px;
+      padding-top: 11px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 4px;
+    }
+
+    .rail-index[hidden] {
+      display: none;
+    }
+
+    .rail-index-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 0 9px 5px;
+    }
+
+    .rail-index-btn {
+      width: 100%;
+      min-height: 30px;
+      border: 0;
+      border-radius: 9px;
+      background: transparent;
+      color: var(--muted-2);
+      padding: 0 9px;
+      font-size: 12px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .rail-index-btn:hover,
+    .rail-index-btn:focus-visible,
+    .rail-index-btn.active {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.045);
+      outline: none;
+    }
+
     .view-panel[hidden] {
       display: none;
     }
@@ -414,6 +459,10 @@
       overflow: visible;
     }
 
+    .section.collapsed {
+      overflow: hidden;
+    }
+
     .section-head {
       padding: 20px 25px 16px;
       display: flex;
@@ -421,6 +470,43 @@
       justify-content: space-between;
       gap: 16px;
       border-bottom: 1px solid var(--line-soft);
+    }
+
+    .section.collapsed > .section-head {
+      border-bottom: 0;
+    }
+
+    .section.collapsed > .section-body {
+      display: none;
+    }
+
+    .section-head-actions {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .section-toggle {
+      min-width: 58px;
+      min-height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--muted-2);
+      padding: 0 11px;
+      font-size: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .section-toggle:hover,
+    .section-toggle:focus-visible {
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.24);
+      outline: none;
     }
 
     .section-kicker {
@@ -2136,6 +2222,26 @@
         margin-top: 0;
       }
 
+      .rail-index {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        overflow-x: auto;
+        margin-top: 4px;
+        padding-top: 8px;
+      }
+
+      .rail-index-title {
+        display: none;
+      }
+
+      .rail-index-btn {
+        width: auto;
+        flex: 0 0 auto;
+        text-align: center;
+      }
+
       .add-form,
       .task-row,
       .kpi-grid,
@@ -2361,6 +2467,7 @@
             <button class="view-btn active" type="button" data-view="workspace">개발관리</button>
             <button class="view-btn" type="button" data-view="molit">국토부 보고</button>
             <div class="date-chip">2026-04-30</div>
+            <div class="rail-index" id="railIndex" aria-label="현재 화면 목차"></div>
           </aside>
 
           <div class="workspace-main">
@@ -4702,6 +4809,31 @@
     const lfcLogStorageKey = "iotaLfcLogs.v1";
     const lfcLoanConditionStorageKey = "iotaLfcLoanConditions.v1";
     const lfcDocumentRequestStorageKey = "iotaLfcDocumentRequests.v1";
+    const sectionCollapseStorageKey = "iotaSectionCollapse.v1";
+    const sectionIndexConfig = {
+      workspace: [
+        ["taskSection", "주요 진행 업무"],
+        ["changeSection", "Meeting Board"],
+        ["milestoneSection", "개발 일정"],
+        ["kpiSection", "물리 제원"],
+        ["costSection", "공사비"],
+        ["archSection", "건축개요"],
+        ["rrSection", "R&R"],
+        ["counterpartySection", "카운터파티"]
+      ],
+      finance: [
+        ["lfcWorkLogSection", "LFC 업무"],
+        ["fundingStructureSection", "자금구조"],
+        ["loanSection", "Loan 현황"],
+        ["lfcExtraSection", "조건·자료"],
+        ["interestSection", "이자 시계열"],
+        ["lfcMaturitySection", "만기 캘린더"],
+        ["lfcPfPlanSection", "본 PF 계획"],
+        ["equitySection", "Equity"],
+        ["marketWatchSection", "시장 이슈"]
+      ]
+    };
+    let sectionCollapseState = loadSectionCollapseState();
     let lfcLogs = loadLfcLogs();
     let loanConditionRows = loadLoanConditionRows();
     let documentRequestRows = loadDocumentRequestRows();
@@ -4853,6 +4985,99 @@
       localStorage.setItem(controlStorageKey, JSON.stringify(controlRooms));
     }
 
+    function loadSectionCollapseState() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(sectionCollapseStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (error) {
+        console.warn("Section collapse storage reset", error);
+        return {};
+      }
+    }
+
+    function saveSectionCollapseState() {
+      localStorage.setItem(sectionCollapseStorageKey, JSON.stringify(sectionCollapseState));
+    }
+
+    function setSectionCollapsed(section, collapsed) {
+      const button = section.querySelector(":scope > .section-head .section-toggle");
+      section.classList.toggle("collapsed", collapsed);
+      section.classList.toggle("open", !collapsed && section.dataset.initialOpen === "true");
+      if (button) {
+        button.textContent = collapsed ? "펼치기" : "접기";
+        button.setAttribute("aria-expanded", String(!collapsed));
+        button.setAttribute("aria-label", `${section.querySelector("h2")?.textContent?.trim() || "섹션"} ${collapsed ? "펼치기" : "접기"}`);
+      }
+      if (section.id) {
+        sectionCollapseState[section.id] = collapsed;
+        saveSectionCollapseState();
+      }
+    }
+
+    function setupSectionControls() {
+      document.querySelectorAll("#workspaceView > .section, #financeView > .section").forEach((section) => {
+        const head = section.querySelector(":scope > .section-head");
+        if (!head || head.querySelector(".section-toggle")) return;
+        section.dataset.initialOpen = String(section.classList.contains("open"));
+
+        let actions = head.querySelector(":scope > .section-head-actions");
+        if (!actions) {
+          actions = document.createElement("div");
+          actions.className = "section-head-actions";
+          Array.from(head.children).slice(1).forEach((child) => actions.appendChild(child));
+          head.appendChild(actions);
+        }
+
+        const button = document.createElement("button");
+        button.className = "section-toggle";
+        button.type = "button";
+        button.addEventListener("click", () => setSectionCollapsed(section, !section.classList.contains("collapsed")));
+        actions.appendChild(button);
+        setSectionCollapsed(section, Boolean(sectionCollapseState[section.id]));
+      });
+    }
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (!section) return;
+      if (section.classList.contains("collapsed")) setSectionCollapsed(section, false);
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      updateRailIndexActive(sectionId);
+    }
+
+    function updateRailIndexActive(activeId) {
+      document.querySelectorAll(".rail-index-btn").forEach((button) => {
+        button.classList.toggle("active", button.dataset.sectionTarget === activeId);
+      });
+    }
+
+    function renderRailIndex() {
+      const railIndex = document.getElementById("railIndex");
+      const items = sectionIndexConfig[currentView] || [];
+      if (!railIndex || !items.length) {
+        if (railIndex) railIndex.hidden = true;
+        return;
+      }
+      railIndex.hidden = false;
+      railIndex.innerHTML = `
+        <div class="rail-index-title">Index</div>
+        ${items.map(([id, label]) => `<button class="rail-index-btn" type="button" data-section-target="${escapeHtml(id)}">${escapeHtml(label)}</button>`).join("")}
+      `;
+      const firstVisible = items.find(([id]) => document.getElementById(id));
+      if (firstVisible) updateRailIndexActive(firstVisible[0]);
+    }
+
+    function updateRailIndexFromScroll() {
+      const items = sectionIndexConfig[currentView] || [];
+      if (!items.length) return;
+      let activeId = items[0][0];
+      items.forEach(([id]) => {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= 150) activeId = id;
+      });
+      updateRailIndexActive(activeId);
+    }
+
     function setActive(buttons, activeValue, attr) {
       buttons.forEach((button) => {
         button.classList.toggle("active", button.dataset[attr] === activeValue);
@@ -4873,6 +5098,7 @@
       if (view !== "finance" && location.hash === "#lfc") history.replaceState(null, "", location.pathname);
       if (view === "finance") renderFinance();
       if (view === "molit") renderMolit();
+      renderRailIndex();
     }
 
     function renderMilestones() {
@@ -6308,7 +6534,14 @@
       button.addEventListener("click", (event) => {
         event.preventDefault();
         setView(button.dataset.view);
+        updateRailIndexFromScroll();
       });
+    });
+
+    document.getElementById("railIndex").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-section-target]");
+      if (!button) return;
+      scrollToSection(button.dataset.sectionTarget);
     });
 
     document.querySelectorAll(".period-btn").forEach((button) => {
@@ -6654,9 +6887,14 @@
       applySidebarState();
     });
 
+    window.addEventListener("scroll", updateRailIndexFromScroll, { passive: true });
+
+    setupSectionControls();
     applySidebarState();
     renderAll();
     if (location.hash === "#lfc") setView("finance");
+    else renderRailIndex();
+    updateRailIndexFromScroll();
   </script>
 </body>
 </html>
