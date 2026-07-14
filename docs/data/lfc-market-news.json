@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T08:01:51+09:00",
+  "generatedAt": "2026-07-15T08:02:19+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -10,13 +10,6 @@
       ],
       "articles": [
         {
-          "date": "2026-07-14",
-          "title": "[2026-07-14] [S-이슈] 안철수 “국민 자금줄 끊었다”… KB국민은행 대출 축소에 강력 비판 - S저널",
-          "publisher": "S저널",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNVFgwdzFGTmY2V3VSQWJ3U1hmLWNnNW82WlZlQWs1X0JHemNkMlZGMzN2Z3AtVWo2M3RVd0FCRVJnaEtZcXo3TEF4Q3c5YURRSURfOFc1dmMtcHc5NUJBZWFhdnF3bWp3bWRwUVFB?oc=5",
-          "matchMode": "대주명+PF키워드"
-        },
-        {
           "date": "2026-07-12",
           "title": "[2026-07-12] KB국민은행, 주담대 한도 6억에서 3억으로 반토막... 부동산시장 직격탄 - 영남경제",
           "publisher": "영남경제",
@@ -24,10 +17,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [이슈&논란] KB국민은행, 주택담보대출 먼저 줄인 이유 '정권 코드 맞추기' vs '총량 관리 실패'…안철수 \"JM재명은행으로 바꿔라\" - 뉴스스페이스",
-          "publisher": "뉴스스페이스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4yblZPZFVlRnNLSkE3d1VsTXJScGNtc1k2b3kzMmhzZlRRcnl3b1dfdGhmMklkbXZBV0JBdG01Y2t2TXNmVzB5QVFCQmRyWkNhMkFQblJLX3RXRzQ?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [S-이슈] 안철수 “국민 자금줄 끊었다”… KB국민은행 대출 축소에 강력 비판 - S저널",
+          "publisher": "S저널",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNVFgwdzFGTmY2V3VSQWJ3U1hmLWNnNW82WlZlQWs1X0JHemNkMlZGMzN2Z3AtVWo2M3RVd0FCRVJnaEtZcXo3TEF4Q3c5YURRSURfOFc1dmMtcHc5NUJBZWFhdnF3bWp3bWRwUVFB?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] '6억이 3억으로'...KB국민은행發 대출 조이기 본격화, 하반기 '대출 절벽' 오나 - 테크M",
+          "publisher": "테크M",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE41R0ZjMUN0Vml2WHRiV1lBXzE5VjJnb2RicG5kWjhHTXhrZ3dpYnh6WHU3dXNwbHprWk1BLXhkdjJEWHNiaHY5WDNXZkVRNHJMdTh3RFJFSlN1aVFfRTRNYVNWOFBlUdIBakFVX3lxTE1kc0QyU2tEQmdJZHp3V0p3WnB0bEhpSjJwRjlRbVhiekxPaDlRSHc2cTJXV2JRUFJpWEdOd2YtUnl1SXhMTzN1bTFVaHJ0R1p0VnItWHhEYnduYXBLM0EzSElCWkNrVjE4NFE?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -40,24 +40,24 @@
       ],
       "articles": [
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] (단독)NH투자증권, 웹 거래 접고 '해외주식 리눅스' 집중 - 뉴스토마토",
-          "publisher": "뉴스토마토",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZQjFUTmtLU09XMHRWRHEzWXBxTUFQWV82c1FacFJCTDNCajIyUDdhX3ZZQ3ZBNmZMMUQ1QTh4aWhoS2hjem5mU293NlE0YnZPNlpGLWZyY2taU3NXYnh3Ng?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [여의도단신]미래에셋증권·NH투자증권 - 매일신문",
+          "publisher": "매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9yV0V4cVpKQTRMQU44TkdrZEp5SHcxNGxTQkJqQ2NjQ3Y5d1ByYnY1cTZndUUtU0w2SGYxd1B3ZW94amZNcV94bm02ZUpzdjBuMk5hU2hYcktZQVA2eUhmVC1n?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] NH투자증권 \"변동성·쏠림 시장엔 자산배분이 답\" - 머니투데이 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qTktkOGY3OFdGNmxJczMtVEM1dEplYnNaejZEemVqMzlVRWhBdzBaeFlrVVE5SHVBcDhlZWd5Q1c2czRKd00ybnlsZ0hiZFlSdHVnSXloMWkwV3RnVVd3X1dUOFR0SldhcWZIXzZ30gFuQVVfeXFMTmpOS2Q4Zjc4V0Y2bElzMy1UQzV0SmVic1p6NkR6ZWozOVVFaEF3MFp4WWtVUTlIdUFwOGVlZ3lDVzZzNEp3TTJueWxnSGJkWVJ0dWdJeWgxaTBXdGdVV3dfV1Q4VHRKV2FxZkhfNnc?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] NH투자증권 세미나…“반도체 슈퍼사이클·AI 인프라에 기회” - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZUV9JNlJZcVVhM2F0LWJsMFQ0YW1SNWhEajhxVHh2VHRwUVVBV3pjUnNrYzB3TXhjeHMzT081VXd3Yy13RDc2bVdhZUR1Tnc0VVlFcWd5ZGxUSElrbTRwZnZxaUM?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] '주가조작 1호' 의혹 NH투자증권, DI동일·벽산의 '수상한 리포트' - 세이프타임즈",
-          "publisher": "세이프타임즈",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5tWVJRV2FzMTJlaFU3WDZZSGpub3FGY1djcGhUNzM4Umt5VTlZdUtFUXRjNGRGYWcyTk11Y0steHFzQTdLM0ZPN1dtcWJTa2VwUjh6SDhBdTJpaUg2VjdIQmliZEdudVM4dmtuZUJKZ3F1QjjSAXNBVV95cUxObVlSUVdhczEyZWhVN1g2WUhqbm9xRmNXY3BoVDczOFJreVU5WXVLRVF0YzRkRmFnMk5NdWNLLXhxc0E3SzNGTzdXbXFiU2tlcFI4ekg4QXUyaWlINlY3SEJpYmRHbnVTOHZrbmVCSmdxdUI4?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [더밸류 브리핑] 오늘의 NH금융 소식...NH투자증권·NH- 아문디자산운용 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hUjRWV2cxQ1JpUjQyQ3kyMnFtN29sUTcydThMcE4tYnBpbEE1NldqbFZEYUVjY0JSUG5fTlE2R0RwUkl0Mm5fc0p4U3d0ZF8yS2FV?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -70,24 +70,24 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 은행 규제 강화 불구 저축은행 ‘대출 축소’…풍선효과 막는 PF 후폭풍 - 메가경제",
+          "publisher": "메가경제",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QdIBckFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [저축은행 뇌관] JT친애 '반짝 흑자' 후 건전성·수익성 다시 흔들 - ebn.co.kr",
+          "publisher": "ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YMFVVQm4tY0RGSkdqZ29ISGJXb0VwVFU1OUVjLTc4T2pNUWdCUllmZS1mLUhteFU2WjBHNVAxUTZPdTA1UTFhM0Z0UkNNZDktNkNIaFJOZlRodWdDR1dkMGFLdWc5SG1n?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NdGN5UHhzR2pmblJ3NmVPSFZtQlpFb3dmNFc4UHo3Ujd3cmozdTZneXZSZjdvbDFuZGVQWm5ybGhZSkwwOVlDd0drSEk4MmFxMEhZWDZQSGZDOUQ3RGpKQ2d4bUNreG1GYkRWN0ozT3pWZw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [단독]상반기 PF 성적표 앞두고 820억 정리…저축은행, 부실채권 선제 매각 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GQko3OElqY2ppUjBkMkhpU3VYdzVIV2doTGRvM3FwcHZoMHM3clhIWFpTYWJWRS1hM19PUzBXekxsSnc5Wjl5N2llUVhIRmxRZC1xX1FmNkxwSnE3SGRxQjkyR1FpUnE2LWs1dHVjazhCcUHSAXdBVV95cUxOdFlGYjNyckxtWWU3Y0NkRnRmS3U2by01V0p6cXdzM0llT21CUHM1S0I3ZzRMOGItWHhfWHhfeHUxMWt1MjVYVDJKMTktUDRJZUo0Yi1wNU51RUF6eDFHcGNXUmxtVlloWEk0RWxlNTgxOFVNbzdwQQ?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] '홈플러스 청산 위기'에 2금융권 리스크 예의주시…\"건전성 미칠 영향 제한적\" - v.daum.net",
-          "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nSDZ5RHVfTTZnZmdmcW1yNk95ckpzRkxVd2F5WHJMSkdUR3poQVlHNVJ4SmtJVHhwYnoxUE8xQVB5WVNpUmhNZWo2WVRFX2s?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -101,23 +101,23 @@
       "articles": [
         {
           "date": "2026-07-14",
-          "title": "[2026-07-14] 대신증권 \"금호타이어 목표가 8300원 상향…광주 공장 매각 수혜 기대\" - 이투데이",
-          "publisher": "이투데이",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE42QjZReXh2MWZFYVltM0gtY2MzTlNiaV8xaHhzUFBNNHVReTJPVi1fX1pHOWhpNEY1NDdOeTRKdkZfQ0o1UEtkQ25GWWNNQVFLRFlRcw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 코스피 급락에도 실적은 레벨업...대신증권, \"8200선 안착이 관건\" - 녹색경제신문",
-          "publisher": "녹색경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wMm5VVGwtQ0RfNWZDUnNncmFNM3BIYW9pZzFJYTVUdTQ3cUoybVQyMEtuYVRyamp3aUJFZG13bk1Xbm9UclBiUlo3Q01MVXFXd181dlg3SUpMdU1aZEJaZlAzcUI0bUZQ?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 대신증권 \"SK하이닉스 ADR 프리미엄, SK스퀘어에도 호재…목표가↑\" - 연합뉴스",
+          "title": "[2026-07-14] 대신증권 \"롯데렌탈, 사모펀드의 인수 추진에 재평가 기대\" - 연합뉴스",
           "publisher": "연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80dFpCMFRWeE9tMmc1V21PWjBmOGViQXc5eDVMaG9BZW5VSFFSejRUb0ZjTUZJcF9ReXJjUGRRWGZsdjROckUyMjBDanczcXYtTDJvMnNjdXk0U1nSAWBBVV95cUxNczBiNC1ZZnN5S1BVMFpMZm5KOE5NSVdMV0VEQm0zajhKZ1NiOTd4b3BPNGIwRkZyTlF5N3VwYTlsQWJBSXZEakh1d1phS0s1R1ZqaHV4R3JRNjFMNTZDcGo?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JMHhNQTViazFqX0FRVnBOZDZfM1ZEMTB6b3hmT3RWcUdmRVhRT1dHTVNpTHhGUmV4SmN2ZHRLVlQwNXFJbDhXb2d0NUQ2Uk9ldEpOWUFhQ01JMkXSAWBBVV95cUxPdTVnVzhjNk1yUmotR3JITGF6N0FXamdEN3hQcHJ2ZGMweVJYaHN3VEVKcTRLN1ZxQkRYczdvMlZ1bzRBaGhGdmJFT0tReU1EdDFiRkhFcVV6aF94SV9ieTc?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 엠앤와이즈, 대신증권 통합 메시징 시스템 구축…발송 비용 44% 절감 - 머니투데이 - 머니투데이",
+          "publisher": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9aVXlVc1FrRktUdmg4ZW5qdWoxM19ERGloYmowNDU2OVVGNlAyeVgtRmtzTURnYldlb0dpVWktTlo3bGtZYzhycWlFSWNMNW9hS08taVZXSkVMdnhDVVpjY3Y0ZVVVNjRzcUZkYkVkYVdxZ9IBckFVX3lxTE9aVXlVc1FrRktUdmg4ZW5qdWoxM19ERGloYmowNDU2OVVGNlAyeVgtRmtzTURnYldlb0dpVWktTlo3bGtZYzhycWlFSWNMNW9hS08taVZXSkVMdnhDVVpjY3Y0ZVVVNjRzcUZkYkVkYVdxZw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 중복상장 '모범사례' 덕산하이메탈...주목받는 대신증권 - 비즈워치",
+          "publisher": "비즈워치",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9lZ0lkbGRpdnJkWDdNMlFfX3djbjh1R3gzcWpFVDVNRWRlRXRKQUJ6dGo2VEFPd055Zml2YlMySk9ZX3pLa2dsZTNSY3c2OEExSTlJaHI5QTc2dTZxbDRmWWo1amJYRGFoSFE?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -130,6 +130,13 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] “이제 병용치료까지 매년 반복 보장”… 또 한 번 시장 선도, 메리츠화재 ‘암치단비Ⅱ’ - 보험저널",
+          "publisher": "보험저널",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE10bnNRbjRyM0xlSDRmc1lhaUw4Vmt6S3NTRk5HX1V6bm52S1hTOGFqU2YyczFTNy1wTzJEWTR1Ni1BSnFvY2NEWXlMWHJha3dnWHkzcWsyNWprLWNPSXNZbHg4S3IwbTNPVmNnR1NvZw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
@@ -137,17 +144,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 규제 없는 P2P로 몰렸다…개인신용대출 1년새 10배 쑥 - v.daum.net",
-          "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwdE1RS1JVYnR0X2ZYZWYwWHptQ3ZtU2VUb2hMZi1oNThkWlVPWHJGNFRYQ0sybVdVdkVlN2lZeGIxRHlySnc?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 경매 대신 공공임대로…새마을금고, 자회사 통해 부실 PF 회수 나선다 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05UWwzbF96WnctVVBCNEZXdF9KemZHN1J4ek1sNlNmLUFiS1RzaXVnQlp5WXZKNGVuVmNhZmU2YWJZMWk1aHhrOEpWZ1JSeG8tVWJVaXUxMDU3bTQ0NFEyem9GMzgxLUVQdjZ3bC1CQzBlcjTSAXdBVV95cUxQUDUtXzYxQnNHQjh6TGplcnpQQzI0YTZWUTR4bF9IdFJLTWQzMGNfMGpmTVZpWnRpM0VzQUhJWXctTUxtT3hiYkFZTkdSNV9XcUlaLURvdERTTWhKLUE3Vkg5WmVqeUR6WHNzeURqTVFTMlJLNUxCcw?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 부동산 PF, 다시 적신호…현대건설, 롯데건설, SK에코플랜트 많아 - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5MZXBLTzFuU002Ri04TkREUnRGTjA2ZlJwOVJHQThHZ3hhX19QMDJmc2tCSkJJbTVEeEhFODZaZU90LWY3LXR0MERPVmVkY3hYOGh5U29uMHhFY3gyYnoyYldMQXRtR1hCN2xYbTFLekZwWlXSAXdBVV95cUxNYnRVVEtuT3BtWTU2a2hZSWNyaWdndEh1VklCOTh2MnNrUkZMRUxIOW5QTVhXbWxfaDFFQzBsajB6MGhoRzlTblVUS1FEOXJLZTdxRWpoaXNJemd2OWdYc1RhT3BMWFlqbnZCbXlMMmh6bzZqLUdfVQ?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -160,24 +160,24 @@
       ],
       "articles": [
         {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] 비씨카드, 창립 40주년 기념 '포x텐이 터진다' 이벤트 - 전자신문",
-          "publisher": "전자신문",
-          "url": "https://news.google.com/rss/articles/CBMilgVBVV95cUxPQzJhN0VsWEVoLW45LXNFLVhoSlY5RzF3Y0s5aGQxN0IxZ1E0RFRSLTB6aWt0dUhvallGWFdOQ3loRVJLQjdvVE1sQXkxT2VKcm5PdEpKOVl6WUxJR29zaTB6R3YySGFnVzE0R0ROTUxoT3oySnludHFHVlMxWVdVbXhrS2dBbGJwVkFGcG9UU0xYZmREbHZ4Zkl2WUpXNzJJV29wdllwcjBleFpvT1hJakExX2w1cC1wS3d0dWNCTWNDbFZPMWdnRGNhRzNxaEpBdUV3b2tZUWszczB5TXN0cUxmWEx3QkFmb3lyeFhKTU1wbFBpSWdXS2dXUndyTzBWc3BIMHRqYWtjY183Umx0WGRrMkpIOFhEUjlNVkp0Ny0xY013eFlXT3IxaExjckxwM2ZWU2gwMWo0NXc0TldxVmJGR0M0WERlbjE4TUg0TmhzTHBvQVVRWUZyYWNhSDBKV0NVOXhZTEdVdndraHpkQXpRVklpRzR2My1hN0pQb3VWdWFxdjc3RmNFU3VaVGRNeGo0MUFHRExTZjA1cldsTnd5alh2aDRoay1nN09MMjV5MFZpWmQ2YU53a0RUVmpsY2ltX0NzV09JamJORWpmNDBrQlppblZWSHlqTjlzdUU1WGdmTHNaTlM5bHdHT3U3ZEtxR1BWYTFNUmlkUW93c0ROVHI3dmUyVHl1N2xKeDh2S29CenM3ZmkwcWlqTmpNVWJzc2xOUGlvZkpnSHdhaTBPVVc0ZmYwZ1FhNjN1UHNFSGhpcVFxb2JQcXhXWG1Ib2taaFJrRVBySmN5TW0zbkd6WjhJNkIxcl8yV29hVnd5dmFwVmdlVzE1OVFkVS1hZFVGTmVWc0RtSGktTUQwT053WGFsdw?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 비씨카드, 대학생 서포터즈와 중국 QR 결제 이용 활성화 - 중소기업신문",
+          "publisher": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuT3IzTjVfZ2xvUUppQlI3dGdSeUxtYWIzVkRxUVVuVkowd1FpX2JPNU9GNnZhTE16MGpHYkl6NF9iUXVIc2JpeTUwTHNPdUhycnZOS3pyR2xMaDg1Wms4a2xhLUt6NHVIemM5QjRR?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] 취임 100일 비씨카드 김영우호…풀어야 할 숙제들 - MSN",
-          "publisher": "MSN",
-          "url": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxONUswMzMyMFU5MEh0TGlhMlFtaGx0TXdxWER2MURBaXpZNEdlZUtyTXB4bFMtbU5lUnNMamdmU3BvWml3d3QyWlpiM2sybGJUQkdyNExGZm5PcG15Z2xjQXpscG9KZnRtNnhuMEpHWTZJTjNWcTV6N0R4aXpuYlgxSFRFNlpHSTVGS1hqWDg2UU8yM1Z4aXU1QzdxTmxfMWpuWl9GT0kwdk5XUENfVHgxWkloTWRTdXlwSTZhbDRqRm1LUGJQYlhlbGpKTzdiN09teWRfYVFhcGtNVVp2RTVBZUJMX3ZrcTBjZjZkTkx2X3lPQ1lBUXNxRG9yV3B2N3pFUmdHZmthbUFDajBSTkxHcmE2VWVzMTZRTkozVEJlbUhCcWo1NGJUMklRWTVHempYakladHpMYmJNV3FmR29fQXlsT19rUTNSVUhONDd5UG9IWjFpRWZ5ZDVaeTRMV1FzenRhejVRaF9jRzg5U21PRjM5RWRQLUlHazVpbDBfSzY5RGdjWVZBY3Z1M19xZWMtZ002VTJRNF9SOEJYdzc1cWR5UGZnQWxSRWtoTk5EdFEtaUNibzNnV1RzQmtQS2ZaZWl5bVVlNXB1NHI3ZkFLa3E5czM3a3o5?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 비씨카드, 대학생 서포터즈와 '중국 QR 결제' 이용 활성화 나서 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9NSjhEb1pDaTZSdFJpd1NWUkNSYnhBbTJuQTdvOFlGVGdkVVJhc3RNY1dSUDJyV2RKTE04ZVUzbU5xaHdCQjRRSUpwM0p3Zw?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-11",
-          "title": "[2026-07-11] 비씨카드, \"뮤지컬 리허설 같이 봐요\" - 전자신문",
-          "publisher": "전자신문",
-          "url": "https://news.google.com/rss/articles/CBMizwRBVV95cUxNUFZaejNjR2pEZHRNUDRUWmtLMXpGSzNsUEtUbTNoZGdVNW9TbFFHeURfMnRFS1FZVHZtUFFkcVZidF9jUDZYa0VxTWFENUVnM09BaGlQTUt2RmtrckVqVTAyYzR0UmJvTVU2Y1p3UlFUOHZ5RGZwZTRYRm5EZy1HSHRWcHQ3cW9XRGJ0OThCWG1qV0pGdjEtYWlUVHMyY28zQVVTQS03Y0ZmZm5lTHFmazYta2lWTEZfc0tMWVQzSmlScll1U0xHSWtCLWI4a3h3Y0hZQXRWXzZvYTU2eE5BbnotS2VMWlNLZ1lHNFpoTTJpeHJUWlQzREI3LS1CX1p1bkw2Wkl4UEszTHNLcmpiR04xd1MteW81d2pKY3JwVUJTSzU1RW1LM2hhaUNCck9DQ2NUaTV5YkxQUTVPdXROWkt3eHYzMFREV3pjQ3ktOFNnYmh0VmZZZDdFMWpCNFpxMzdCZ3UtOWp1aGNXSFhpOFdEeVhlMDl2UUxUeG5vRFJ5blRWZmJnY2c0TDBqMkVWU1FRRlFGWm1Kc0U1NG5SRVM0d21KREhKQ2JnSzVCSGVkWGxqWTRkb2VCcGFJLWpjWEdGLTE4cFBldkNkSmJZZ1lsTmRRRmdtRjVFemlqRWg1cDhCeU9DVjFIMjFCTDRKWkw4UlFPQXJyd2VvQjMtd1llanZzZEhwYWR3Q1J3VEExZE0xVlJveVgzSlc0SGp2cjd2alN0ZVoyMWxyUkZVZ01IaUpSR0Z5SXZkU2JHVnd1LWpNajlxem5IRC1VWHM?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [카드News]NH농협카드·비씨카드·현대카드 - 메트로신문",
+          "publisher": "메트로신문",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZRllkdjNhWUI1UDBBZExlQmhvM1ktV05kRkVvVVNLTXhLS2ZaY2RBOUV5NG82Z0V4elUwTzA0dFJocEp0SllxUmh5WmZDVmhCSGxTeHhFbWs1N1hGTE9aVg?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -190,25 +190,25 @@
       ],
       "articles": [
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 소노인터내셔널, 2026 ‘소노 런트립 180K in 비발디파크’ 성료 - livesnews.com",
-          "publisher": "livesnews.com",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xelVVOXkwN0RZVnFJbGVyNHFxYU5GRkpycnRxNWEzY1JpcnZpMHZSaW1KZU9veVZUT1h3bEJUTzJQT1RpRnpTRV9URHkxRnFvVVZTOFEwel9QWTJm?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 소노인터내셔널, 코스피 IPO 예심 신청…'중복 상장' 규제 정면돌파 - 녹색경제신문",
+          "publisher": "녹색경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TNGVVSjNzWlJITFZESWFUYnVqQ3VIb253UEUyOTZQaTl6OS1UTTZUbzNOTnFoS2ZSZ1Q0WkJFaUpXbEpOTDhZaVJlTlNlNmFWVGhheGl4LU5hcWpoUEJ2RnZKOWQ1SjF6?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] [산업 이모저모] NOL, \"AI 큐레이션 ‘발견’ 서비스 공개\", 소노인터내셔널 ‘소노 런트립 180K in 비발디파크’ 성황리 마무리 - 비즈월드",
-          "publisher": "비즈월드",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxRWdSNXU5X09iNmdGQUNFUVhGOHRyemkzODdCMVdOM2YzWE9kdzliRDJMcWJBYnFZT2hlLUtQTVFkTzFwTjRlN1FRaFc3dzhHZGM3bnQwS3d3dHJFaGFSUTNfY2lpOVI2VnhR?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 소노인터내셔널 뉴욕 호텔, 하이브 측과 공식 파트너십 체결...미션 수행 프로그램도 준비 - 리버티코리아포스트",
+          "publisher": "리버티코리아포스트",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXUzJxUndfU3lkZU9XdHg2UWlzSms3WWFzOXhmVF9vTXY4VW9ab2JYMTRobHhGaG1QLTZaaE1GaTVVV0xqZjAtdEUyNFpoeUJTQzVMOGFQdm5ma0RiNUNkR0xaUC1CbHfSAWdBVV95cUxQV1MycVJ3X1N5ZGVPV3R4NlFpc0prN1lhczl4ZlRfb012OFVvWm9iWDE0aGx4RmhtUC02WmhNRmk1VVdMamYwLXRFMjRaaHlCU0M1TDhhUHZuZmtEYjVDZEdMWlAtQmx3?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 부동산 디벨로퍼로 새판 짜는 김동선… 강남 개발부지에 2367억 베팅 - 조선비즈 - Chosunbiz",
-          "publisher": "Chosunbiz",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWTBuLThEMzN5M1BBOW5ldXNoU1JSLXIyMm93V1A5Z2VlQjRBRVRGN1hsdU1BTUtlMDRvVGx5NzFHcUpYXzZVREVuOWRCeEVpSGZXajRyVDZHeDZ6bDFiLWNVektzb2h1aXI0RGNoWXFBTGlibGVPeFlVZG9EOW5ENHFkN0FyVmvSAZsBQVVfeXFMTXQwR2l6UEpQWlQyTS1VLUJhbTljelkzcVprSkdEczBoYno5ZHJXV2ZLZGM0eTdqVTloQkNvUHphWlB3YlR3WVZfaDhTODZYalZjVUZDMW03SEFNV2ZjbHJlVHhZOEdsRkpwczRMLVJhRWVGdnFGaVYtbUlIV1oyZFFJZVdSMlUwY0EzdG1QVndoalFVYnVMM1YtYlk?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 소노인터내셔널, 뉴욕 호텔서 BTS 연계 프로그램 운영 - 라이센스뉴스",
+          "publisher": "라이센스뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBicEpoaTNBNG5RcUtLeGc4anlVU2V3NGxPWDFEMVZjeEhlU3lNS1llb2RlNzRkRkVpYXR1ZjNzQzN1WDBMQTNrNFAtT1JXUlRkMk1DWkF2ZF90QUFBcWVjV2FYaWZGVkcwakNv?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -220,6 +220,13 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] '힐튼·메트로타워' PF 통합 시도…변수는 현대건설 - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53ZktOMG14dHp4VkFWeERQaWRSNERCVHpZeTRBTm1YVGxheExRWmJKeHY1dmhkbENiOGlvRDZMQmpsM1NlclhHd2I3M2ZWNEU?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
@@ -227,17 +234,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 경매 대신 공공임대로…새마을금고, 자회사 통해 부실 PF 회수 나선다 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05UWwzbF96WnctVVBCNEZXdF9KemZHN1J4ek1sNlNmLUFiS1RzaXVnQlp5WXZKNGVuVmNhZmU2YWJZMWk1aHhrOEpWZ1JSeG8tVWJVaXUxMDU3bTQ0NFEyem9GMzgxLUVQdjZ3bC1CQzBlcjTSAXdBVV95cUxQUDUtXzYxQnNHQjh6TGplcnpQQzI0YTZWUTR4bF9IdFJLTWQzMGNfMGpmTVZpWnRpM0VzQUhJWXctTUxtT3hiYkFZTkdSNV9XcUlaLURvdERTTWhKLUE3Vkg5WmVqeUR6WHNzeURqTVFTMlJLNUxCcw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] [이슈분석] 홈플러스 위기가 왜 건설사 PF 리스크로 번졌나 - thedailyeconomy.kr",
-          "publisher": "thedailyeconomy.kr",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55eVZ6bnQ0OHNuN05SMzdIVUZaUzZvaFlJaHFFUlJBYVZncEt3N0p2aVpLWUN1dnVnQklzb2dfTVRyQkpIR3JkQ09IelpxSEtQOUZ0RHRYbjBKbHI2NWRtcy1yQlh1QldqTUdDYnNkYjk?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 메리츠금융지주, 회사채 발행의 그늘…PF 11조 안은 화재에 배당 의존 - 토요경제",
+          "publisher": "토요경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OSzlhRmZGU2dpeDVYcDNqM0xuaWpKX0dSWVQwQXo4Y2dEOWwzU29PVTZLSXJLcjdEVUJSeHUwWURzN0VreS1tNy1nNmgyVExEX2dNa1RyakRDX2U4UHJtbNIBb0FVX3lxTE9TdUJmTE1yMFFfdnB6ZExfcmx5S0prc1BxTTRjMEtSSk1KTmF0N1NHU25IUVVGLXFIZmNzZHB3ajVYYkZIbENiT1c1N2lQdk1iYjFuOUNXY2F6YXhvVGp1T0g4NnpUaXlIdEFZUXFSNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -250,24 +250,24 @@
       ],
       "articles": [
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융지주·신한은행· 신한장학재단 - 더밸류뉴스",
-          "publisher": "더밸류뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA3cHhvSXROZHJWUmlxSGJzdHp2b2gxUkh4YVZ5dGk4RmY2QU9BRFVvMWVSTzlxY0dQcC1kd1Z0OWhSSndjQjFId0pWUURoSlZDLVZpdQ?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이",
+          "publisher": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 신한금융, 채무조정 8136억으로 5대 지주 1위…KPI 반영이 격차 만들었다 - 녹색경제신문",
-          "publisher": "녹색경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JQklNRFV2aGtwMkM4VW91ZWM2X0JfeGx0aVBscGRaX19FNFpvTl9CQXVZcjhvbWdBVFNVenNKODZqTGI2bVNtWG1wZzAwcTlIdXAycHNMMWNDNllhb1Y2TFkwSQ?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 신한금융, 'AI 전환 DNA’ 사회공헌으로 확산 - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5SdUNjQV9iOTQ0SDJrVlc1RW5JNEJmLTBDS0x3REc1RGJjOUxrOFBzek5xeDhlakxYdG1aUHVrSWpGMnZNWWdpMmh0MGlCcm1kTmVfczlDVFhUajVjR2c0WEVKdUtka0o2RW8wQ1VFc21BeUXSAXdBVV95cUxOMmdSODJwRUphbFg0Z0RPWEd4cWNRY3JPMjBHU0tUYngyUVVWUXNUVmxKRkx6ZTBLUkJzMnN5Rkw3anVCSDQwSEFJV2RTMTBGMjJ2MVNwYjdCR0lKY0JFUkRBamZiMlgwb20zaGVBemp2MXJmZFNjRQ?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 밸류업에 '진심'인 신한금융…“진옥동 이어 곽수근도 해외IR” - sisaon.co.kr",
-          "publisher": "sisaon.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HY0dlcFlFQWN5MlVkemRSNG5rYl8xci1vMnJNTXRvWUF4STg2bWVfQjE2Tm9hNDk5eHNLZ01SNFlYNXRrWEJzNW85WWJ1LThvc09mODdiaUZaVFphZTZCQ25NS2xkUkJOQ3dj?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [ESG보고서 돋보기] 신한금융, ESG에서 Value-up으로…미래 성장전략 진화 - 데일리e뉴스",
+          "publisher": "데일리e뉴스",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GMzR2bzB5amtYNGNWZXhxRFhzdXVLbzNSSG9fekZnZ0JjSFU1SXYxZTI0cXNvTW9MMGJPOU9wc1BEMEZqUWxXQVh0NHdUMjdUU0wyUWFfeHZicWJoejRHTkdicFhZNzFHcWlNQWx6WQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -287,17 +287,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] \"금융권 대출 축소… 하나은행·신한은행, 대출 문턱 높인다\" - 스페셜타임스",
-          "publisher": "스페셜타임스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WclBTNVdQd3NlS1huYXZObjFfNkdLenNBcmFuZVhEXzBYU2d6NWFYOGQ1WURGT1lZcDdPcmxRMXJMLW13NG94N1BBa1RaN3VYV2FfZkN2ZnBJN1NKUXUwWHlldUszeUFwOWdJU2x6d1FObEU?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 신한은행 ‘신용평가모형’ 효과…서민 642명에 추가 대출 - 서울경제",
+          "publisher": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BbTBhXzRqTnNHcUYzck1QRW1NRElfVWNQWVNla1VUWHFjdDAzN0NaLVBjd09nVGl5TTA4NERtODNneGRlM1Rzb0N1ZnJzY05SMENZ0gFTQVVfeXFMTUFtMGFfNGpOc0dxRjNyTVBFbU1ESV9VY1BZU2VrVVRYcWN0MDM3Q1otUGN3T2dUaXlNMDg0RG04M2d4ZGUzVHNvQ3VmcnNjTlIwQ1k?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
           "date": "2026-07-12",
-          "title": "[2026-07-12] 신한은행도 대출 조이기 동참… 시중은행 줄줄이 모기지보험 가입 중단 - 금강일보",
-          "publisher": "금강일보",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjS2dmdVVDQ0p1RHRYUWJQbHhwU2tjNmY0Y3NON3lnckMybmwzcjVqSm5RWXRDRF9FSG00SEZTNUtFUXNuUW9qbmJMc05fMGFaSWNQZXZSS0NzNkxsSm9RdkdDUzlCR2VMMFE?oc=5",
+          "title": "[2026-07-12] \"금융권 대출 축소… 하나은행·신한은행, 대출 문턱 높인다\" - 스페셜타임스",
+          "publisher": "스페셜타임스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WclBTNVdQd3NlS1huYXZObjFfNkdLenNBcmFuZVhEXzBYU2d6NWFYOGQ1WURGT1lZcDdPcmxRMXJMLW13NG94N1BBa1RaN3VYV2FfZkN2ZnBJN1NKUXUwWHlldUszeUFwOWdJU2x6d1FObEU?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -317,17 +317,17 @@
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한금융지주·신한은행· 신한장학재단 - 더밸류뉴스",
-          "publisher": "더밸류뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA3cHhvSXROZHJWUmlxSGJzdHp2b2gxUkh4YVZ5dGk4RmY2QU9BRFVvMWVSTzlxY0dQcC1kd1Z0OWhSSndjQjFId0pWUURoSlZDLVZpdQ?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [단독]신한금융, 롯데손보 우선협상자 유력.. 몸값 1조 안팎 협상 - 머니투데이 - 머니투데이",
+          "publisher": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBheHQ0YkQ2bUx2Z2VyZTVjY0ptT3ZHakZZXzZzam13RHJaenUyTkg2M292LTNET2dUVDE1LVlxN0VTcHZqOHVYWllZWk1kbGEwbXB4b091LVplZjZIeUtNeW9BM2hIdEV3WXRN0gFwQVVfeXFMTWVfMUJBNzlnYU1QV2N1c3pVZmtyeGRHVUsxQ1pUWTkxREJGeUQ3WEc1LXIwRUlwb0hZT1JoeVNQTlBqd3MtdFUxMU9aa0tyNnczSWdFeTVHTzI1UGRwTFdEX0oyTEg5bGhGVXgySlJkeg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 신한금융, 채무조정 8136억으로 5대 지주 1위…KPI 반영이 격차 만들었다 - 녹색경제신문",
-          "publisher": "녹색경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JQklNRFV2aGtwMkM4VW91ZWM2X0JfeGx0aVBscGRaX19FNFpvTl9CQXVZcjhvbWdBVFNVenNKODZqTGI2bVNtWG1wZzAwcTlIdXAycHNMMWNDNllhb1Y2TFkwSQ?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 신한금융, 'AI 전환 DNA’ 사회공헌으로 확산 - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5SdUNjQV9iOTQ0SDJrVlc1RW5JNEJmLTBDS0x3REc1RGJjOUxrOFBzek5xeDhlakxYdG1aUHVrSWpGMnZNWWdpMmh0MGlCcm1kTmVfczlDVFhUajVjR2c0WEVKdUtka0o2RW8wQ1VFc21BeUXSAXdBVV95cUxOMmdSODJwRUphbFg0Z0RPWEd4cWNRY3JPMjBHU0tUYngyUVVWUXNUVmxKRkx6ZTBLUkJzMnN5Rkw3anVCSDQwSEFJV2RTMTBGMjJ2MVNwYjdCR0lKY0JFUkRBamZiMlgwb20zaGVBemp2MXJmZFNjRQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -341,24 +341,24 @@
       ],
       "articles": [
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 신한투자증권, IRP 신규·이전 고객에 상품권 증정 이벤트 - 머니투데이 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8zREF0ZWtsUjN4VVRtcFNWQzVnYXo1NlYxOFVRdXR2elE5OU9iTnhxaUhEQTN1T3pJZlVOSWkwSWlxMDZ3TUJkNklPNWhCOXdVSDZWYllrQnlKdmJpOGxHQy1pUFczR0lBaHN2QkxR0gFuQVVfeXFMTzNEQXRla2xSM3hVVG1wU1ZDNWdhejU2VjE4VVF1dHZ6UTk5T2JOeHFpSERBM3VPeklmVU5JaTBJaXEwNndNQmQ2SU81aEI5d1VINlZiWWtCeUp2Ymk4bEdDLWlQVzNHSUFoc3ZCTFE?oc=5",
-          "matchMode": "대주명"
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 신한투자증권, 시에라·현대커머셜과 500억 규모 모빌리티 사모대출 펀드 조성하기로 - 비즈니스포스트",
+          "publisher": "비즈니스포스트",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE56eHNyNEVnbm5kdlZyRC15RE5nd2tjeFVJOWdIRXBEYzlCeWIzZmU2dTNZZlkwSmNCbHZKZmlyNXRXWFM0UkJiczBjRFE2MlJoQ0tvbGhSWkphZUl1QTkxdVA1MDJYdjBvaFh2YlM4ZWpSNkU?oc=5",
+          "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [더밸류 브리핑] 오늘의 증권사 소식...한국투자증권· 신한투자증권 - 더밸류뉴스",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 신한투자증권, 모빌리티 공급망 금융 확대...500억 사모대출펀드 결성 - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBRLTlzTTVoeXBRdldQZnBWU3FCUm9MQWFmS2VXVWpzaWwySTh3OWhlbUs0aVBjbXdkc3MtQ3VSc2Z6VHkxaW1MNHdHSVg5S0VzM3docVptWEM0ZjdjMEdzeGRGUzBsOVk?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [더밸류 브리핑] 오늘의 증권사 소식...신한투자증권·DB증권 - 더밸류뉴스",
           "publisher": "더밸류뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8xM1NKT2NjNk9qam8xUkR3ZUYyZWJicEdXUmVEZWJ2X2ttVUVZOE5LSzUxVG1MZFp6VEI3NndkVWRPTHJOOXBqRmVINTZUY1drbXRRUw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 신한투자증권, 3분기 퇴직연금 이벤트 실시 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE83VnNfcktobFNkeHJ2YnU4YVJ1R21scWtjcUljS0dCdzJDa2dNM1NiTFoyMW5oOGZnd01UNmlCcHZ1bDFjZ2h2bXp4amZGMU1IUHhkRzlla1NlWTU2?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVWkNzRWVsZW9KTDBxZ1NHMUFNTmN4cFJVbjVjMExYT2RkVllNdm1GTUZrS1NJcUNvYWV2UXh2Z1VGWHJoU1IyLTFxYzZyZjE2NVYw?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -371,6 +371,13 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] '힐튼·메트로타워' PF 통합 시도…변수는 현대건설 - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53ZktOMG14dHp4VkFWeERQaWRSNERCVHpZeTRBTm1YVGxheExRWmJKeHY1dmhkbENiOGlvRDZMQmpsM1NlclhHd2I3M2ZWNEU?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
@@ -378,17 +385,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 경매 대신 공공임대로…새마을금고, 자회사 통해 부실 PF 회수 나선다 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05UWwzbF96WnctVVBCNEZXdF9KemZHN1J4ek1sNlNmLUFiS1RzaXVnQlp5WXZKNGVuVmNhZmU2YWJZMWk1aHhrOEpWZ1JSeG8tVWJVaXUxMDU3bTQ0NFEyem9GMzgxLUVQdjZ3bC1CQzBlcjTSAXdBVV95cUxQUDUtXzYxQnNHQjh6TGplcnpQQzI0YTZWUTR4bF9IdFJLTWQzMGNfMGpmTVZpWnRpM0VzQUhJWXctTUxtT3hiYkFZTkdSNV9XcUlaLURvdERTTWhKLUE3Vkg5WmVqeUR6WHNzeURqTVFTMlJLNUxCcw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] [이슈분석] 홈플러스 위기가 왜 건설사 PF 리스크로 번졌나 - thedailyeconomy.kr",
-          "publisher": "thedailyeconomy.kr",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55eVZ6bnQ0OHNuN05SMzdIVUZaUzZvaFlJaHFFUlJBYVZncEt3N0p2aVpLWUN1dnVnQklzb2dfTVRyQkpIR3JkQ09IelpxSEtQOUZ0RHRYbjBKbHI2NWRtcy1yQlh1QldqTUdDYnNkYjk?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 메리츠금융지주, 회사채 발행의 그늘…PF 11조 안은 화재에 배당 의존 - 토요경제",
+          "publisher": "토요경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OSzlhRmZGU2dpeDVYcDNqM0xuaWpKX0dSWVQwQXo4Y2dEOWwzU29PVTZLSXJLcjdEVUJSeHUwWURzN0VreS1tNy1nNmgyVExEX2dNa1RyakRDX2U4UHJtbNIBb0FVX3lxTE9TdUJmTE1yMFFfdnB6ZExfcmx5S0prc1BxTTRjMEtSSk1KTmF0N1NHU25IUVVGLXFIZmNzZHB3ajVYYkZIbENiT1c1N2lQdk1iYjFuOUNXY2F6YXhvVGp1T0g4NnpUaXlIdEFZUXFSNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -411,7 +411,7 @@
           "date": "2026-07-13",
           "title": "[2026-07-13] [머니人터뷰] 이경준 키움투자자산운용 ETF운용본부장 \"변동성은 뉴노멀…AI 투자는 이제 시작\" - v.daum.net",
           "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90NVJDUk1wTUZTVlNPd2tadU9rUExVdVZzMEhJM29MWG5HQjZDc3BZR1l2cTdzQU5BSTBGRWpyOHJLZHEtblE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2YTlLR2taTHpGWWloTXRiYjl1QVdjVlFqX1U0M2J0RF96RzhMWXM5MUpWYVc3TU5DYVBSVzg0MkhxcDRuX3B4dWRvOA?oc=5",
           "matchMode": "대주명"
         },
         {
@@ -431,6 +431,13 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] '힐튼·메트로타워' PF 통합 시도…변수는 현대건설 - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE53ZktOMG14dHp4VkFWeERQaWRSNERCVHpZeTRBTm1YVGxheExRWmJKeHY1dmhkbENiOGlvRDZMQmpsM1NlclhHd2I3M2ZWNEU?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
@@ -438,17 +445,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] 경매 대신 공공임대로…새마을금고, 자회사 통해 부실 PF 회수 나선다 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05UWwzbF96WnctVVBCNEZXdF9KemZHN1J4ek1sNlNmLUFiS1RzaXVnQlp5WXZKNGVuVmNhZmU2YWJZMWk1aHhrOEpWZ1JSeG8tVWJVaXUxMDU3bTQ0NFEyem9GMzgxLUVQdjZ3bC1CQzBlcjTSAXdBVV95cUxQUDUtXzYxQnNHQjh6TGplcnpQQzI0YTZWUTR4bF9IdFJLTWQzMGNfMGpmTVZpWnRpM0VzQUhJWXctTUxtT3hiYkFZTkdSNV9XcUlaLURvdERTTWhKLUE3Vkg5WmVqeUR6WHNzeURqTVFTMlJLNUxCcw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] [이슈분석] 홈플러스 위기가 왜 건설사 PF 리스크로 번졌나 - thedailyeconomy.kr",
-          "publisher": "thedailyeconomy.kr",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55eVZ6bnQ0OHNuN05SMzdIVUZaUzZvaFlJaHFFUlJBYVZncEt3N0p2aVpLWUN1dnVnQklzb2dfTVRyQkpIR3JkQ09IelpxSEtQOUZ0RHRYbjBKbHI2NWRtcy1yQlh1QldqTUdDYnNkYjk?oc=5",
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 메리츠금융지주, 회사채 발행의 그늘…PF 11조 안은 화재에 배당 의존 - 토요경제",
+          "publisher": "토요경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OSzlhRmZGU2dpeDVYcDNqM0xuaWpKX0dSWVQwQXo4Y2dEOWwzU29PVTZLSXJLcjdEVUJSeHUwWURzN0VreS1tNy1nNmgyVExEX2dNa1RyakRDX2U4UHJtbNIBb0FVX3lxTE9TdUJmTE1yMFFfdnB6ZExfcmx5S0prc1BxTTRjMEtSSk1KTmF0N1NHU25IUVVGLXFIZmNzZHB3ajVYYkZIbENiT1c1N2lQdk1iYjFuOUNXY2F6YXhvVGp1T0g4NnpUaXlIdEFZUXFSNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -461,24 +461,24 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 은행 규제 강화 불구 저축은행 ‘대출 축소’…풍선효과 막는 PF 후폭풍 - 메가경제",
+          "publisher": "메가경제",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QdIBckFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [저축은행 뇌관] JT친애 '반짝 흑자' 후 건전성·수익성 다시 흔들 - ebn.co.kr",
+          "publisher": "ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YMFVVQm4tY0RGSkdqZ29ISGJXb0VwVFU1OUVjLTc4T2pNUWdCUllmZS1mLUhteFU2WjBHNVAxUTZPdTA1UTFhM0Z0UkNNZDktNkNIaFJOZlRodWdDR1dkMGFLdWc5SG1n?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NdGN5UHhzR2pmblJ3NmVPSFZtQlpFb3dmNFc4UHo3Ujd3cmozdTZneXZSZjdvbDFuZGVQWm5ybGhZSkwwOVlDd0drSEk4MmFxMEhZWDZQSGZDOUQ3RGpKQ2d4bUNreG1GYkRWN0ozT3pWZw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [단독]상반기 PF 성적표 앞두고 820억 정리…저축은행, 부실채권 선제 매각 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GQko3OElqY2ppUjBkMkhpU3VYdzVIV2doTGRvM3FwcHZoMHM3clhIWFpTYWJWRS1hM19PUzBXekxsSnc5Wjl5N2llUVhIRmxRZC1xX1FmNkxwSnE3SGRxQjkyR1FpUnE2LWs1dHVjazhCcUHSAXdBVV95cUxOdFlGYjNyckxtWWU3Y0NkRnRmS3U2by01V0p6cXdzM0llT21CUHM1S0I3ZzRMOGItWHhfWHhfeHUxMWt1MjVYVDJKMTktUDRJZUo0Yi1wNU51RUF6eDFHcGNXUmxtVlloWEk0RWxlNTgxOFVNbzdwQQ?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] '홈플러스 청산 위기'에 2금융권 리스크 예의주시…\"건전성 미칠 영향 제한적\" - v.daum.net",
-          "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nSDZ5RHVfTTZnZmdmcW1yNk95ckpzRkxVd2F5WHJMSkdUR3poQVlHNVJ4SmtJVHhwYnoxUE8xQVB5WVNpUmhNZWo2WVRFX2s?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -491,24 +491,24 @@
       ],
       "articles": [
         {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] 은행 규제 강화 불구 저축은행 ‘대출 축소’…풍선효과 막는 PF 후폭풍 - 메가경제",
+          "publisher": "메가경제",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QdIBckFVX3lxTFBNUFdqVEVyMUtHVEExYlQ3OW5rR0hfaDZFLTZnSi1LV1Qya2tMVEhCeHgxVGtSZVExZW5nRFhackZiNUlLMGpOdkFzQkh5eXcwdldoUnlkTzhVNU1BeUpvMGZUeEpfU3ZZN3RwVmdKTF90QQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-07-14",
+          "title": "[2026-07-14] [저축은행 뇌관] JT친애 '반짝 흑자' 후 건전성·수익성 다시 흔들 - ebn.co.kr",
+          "publisher": "ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YMFVVQm4tY0RGSkdqZ29ISGJXb0VwVFU1OUVjLTc4T2pNUWdCUllmZS1mLUhteFU2WjBHNVAxUTZPdTA1UTFhM0Z0UkNNZDktNkNIaFJOZlRodWdDR1dkMGFLdWc5SG1n?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-07-13",
           "title": "[2026-07-13] 부동산 PF 익스포저 170조원 아래로…증권·저축銀 잠재 부실 남아 - 오피니언뉴스",
           "publisher": "오피니언뉴스",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NdGN5UHhzR2pmblJ3NmVPSFZtQlpFb3dmNFc4UHo3Ujd3cmozdTZneXZSZjdvbDFuZGVQWm5ybGhZSkwwOVlDd0drSEk4MmFxMEhZWDZQSGZDOUQ3RGpKQ2d4bUNreG1GYkRWN0ozT3pWZw?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-13",
-          "title": "[2026-07-13] [단독]상반기 PF 성적표 앞두고 820억 정리…저축은행, 부실채권 선제 매각 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GQko3OElqY2ppUjBkMkhpU3VYdzVIV2doTGRvM3FwcHZoMHM3clhIWFpTYWJWRS1hM19PUzBXekxsSnc5Wjl5N2llUVhIRmxRZC1xX1FmNkxwSnE3SGRxQjkyR1FpUnE2LWs1dHVjazhCcUHSAXdBVV95cUxOdFlGYjNyckxtWWU3Y0NkRnRmS3U2by01V0p6cXdzM0llT21CUHM1S0I3ZzRMOGItWHhfWHhfeHUxMWt1MjVYVDJKMTktUDRJZUo0Yi1wNU51RUF6eDFHcGNXUmxtVlloWEk0RWxlNTgxOFVNbzdwQQ?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "[2026-07-12] '홈플러스 청산 위기'에 2금융권 리스크 예의주시…\"건전성 미칠 영향 제한적\" - v.daum.net",
-          "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nSDZ5RHVfTTZnZmdmcW1yNk95ckpzRkxVd2F5WHJMSkdUR3poQVlHNVJ4SmtJVHhwYnoxUE8xQVB5WVNpUmhNZWo2WVRFX2s?oc=5",
           "matchMode": "업권/시장"
         }
       ]
