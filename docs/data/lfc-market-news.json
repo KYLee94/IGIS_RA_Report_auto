@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:28:52+09:00",
+  "generatedAt": "2026-08-25T07:33:33+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -8,7 +8,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] KB국민은행, 부동산 세제 변화에 따른 맞춤형 자산관리 세미나 개최 - 파이낸셜리더스",
+          "publisher": "파이낸셜리더스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ub09jZTZ1SzI4ZlVsMGkzNERqdGJ6eFh6azJuRG04QUlhUDAwX1pkS3dBSTNmbVVZY0szV1dmTlRraEJyMHplRDFjQmRSa1F3QkpaWnBvNTVUVWVETUdpeVlLYzR4UlE2VUE?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [은행가] KB국민은행, 부동산 세제 맞춤형 자산관리 세미나 外 - 싱글리스트",
+          "publisher": "싱글리스트",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UclhMWGNYdFNJNzU0YnhDUVMtd3RMeWF3a25tSUV1Qjk0djJNeEJ4RlA3UDltRGxzZ05yZWNRRlI1WEhDcVJ1WDRidzNRWFpHTUxTTlBaZFc2WEt4bDYtbVR0bEhLZw?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] KB국민카드-KB국민은행, 최고 연 12.0% 'KB카드쓰담적금' 협업 출시 - livesnews.com",
+          "publisher": "livesnews.com",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yUzlVbTZmWFZvd2JtMFBNREN2WXdHVFBNc3hfMDE3eTZPQ0QtWXZaRDRmTkI0RWtlNkZfdWNERDU3LW41akxCdWs4cE1XdkpfU21yWHdWX2xxRmJD?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "NH투자증권",
@@ -16,7 +38,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [기자수첩] 최대 실적 낸 사장이 잘린다… '농협' 뒤에 숨은 NH투자증권 - 펜앤마이크",
+          "publisher": "펜앤마이크",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0zSnVLWUpwVDhrenZjR1poNDNjd0JMNVpMSTRoRG55R3ZWZlozRGxHN0Zod3EzYjVHajRuZ3NEbjJsSjJRUHRwbU9PN0xYRktORkJ1Ulc3NGFsQndPOEVPUjkyTW9jWDAxUE1v0gFvQVVfeXFMTXFzRkZFcDlGeHZyd2FKSGpSWklmWThNVS1LMzJQTTlsaTV2elN6eXpPX0xLUjVLLXIyT2d4NnU0RldtTEJtSHp4Z29ITlhOVVhuVFFsT2xfWUE0OVZSY25pUU5rNFc1LVgwTUxMZjVJ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] NH투자증권 해외사업 ‘미국 질주’…동남아는 부진 지속 - CEO스코어데일리",
+          "publisher": "CEO스코어데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wb2NFZkhnX05TdXdaeUl2WVJCUkZWLVBoWG01LXRZM0RrSE12NDdkbTJqMS15LU05TmM3alR3NmM5ZjgwZDA4RFhIYUNUWjI2aE8tckNuMmtabFYwZHFXdlBVRXNpeUU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [기업&나눔] NH투자증권, 농촌 '오늘과 내일' 챙긴다…세대별 맞춤 지원 - 뉴스웍스",
+          "publisher": "뉴스웍스",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53Yl94anRiLU9ob1lwWjRGSjFKNXhweGlLb19ydU10M2N2LXdHVlpQNTRRbXpuRHhreDFhM3lZM3JDV19PLWNCbXZzT2RGN3JzMHBFbE5aRkF2bXNhQmp2al9KUnFGVEhsUFNOMDFVSdIBc0FVX3lxTFA3dHRKbVZicEF3Vndra2NhYm1ON0p4ajZ6SFlDdktaVzh2NWxONDd6WjlGZmZ4bFFTUlFHVzBnVjBCRDZnWEVmVjc3bnZXWU0zWnhCOHl5eVBSeUwteTJxeHA1aVJmalZqcVh4TEdvTFprbTg?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "대신저축은행",
@@ -24,7 +68,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 2금융권, 대출공급도 숨통 트이나…중금리대출 총량 제외 - 대한경제",
+          "publisher": "대한경제",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DbjM5eGFYVzM5NFZEU3h0V0lsc0ZvRTVRV0R6eW51eWxnVldrdUxxY3hZUlV2S1g5ZEJNTkEzZ2lic1ROQ3huYlhjSWYteU9uVUphYW85dFU3M2ViRlgtaE5pUGRZcVpiN0VpRTB5bVpJaXlN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [MD포커스] 중금리대출 ‘총량 족쇄’ 풀었지만…상호금융·저축銀 ‘서민금융 딜레마’ - mydaily.co.kr",
+          "publisher": "mydaily.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkSHYwVlZTaHlFMkR6clZwcE0wQlFnVnMyQkRIN2RwZjI1RnhGUlhSZWV4MHBCRFgwQnlNTnR0SEN5eXozTUJRc1NhbHRZekw1TGFtWHY1dlhYaE1CTjlNQQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [DQN] 종투사 10곳 NCR 평균 2400%대…'건전 기조 VS 과대 평가' [2026 상반기 증권사 리그테이블 (2) 건전성] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QR0hlRjVWUmJQdHlYbkRObWdIT2dPWUtUdGJmYXRQM1NCNkt2RXBvNlpGaGxKVkJGSmJfNGVFNC1iejNRMGp1S0JqbVJDckNuZkh3QW01NVk5MUR0ZmozZmQ1SnoyY1pGLVN5X0tBckJIbFI3X0UwWGVwTlg?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "대신증권",
@@ -32,7 +98,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 매도담보대출 금리 줄줄이 인하, 대신증권 8→5% ‘최대폭’…이자수익에 제동? - CEO스코어데일리",
+          "publisher": "CEO스코어데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05YjhEdVZJZFRfbDBBbkN1NnpnNkJKRk5kSWY1bU9mMjZaeWZGWE1QenhSSHlFOVE2cGhVSE4xVXp2cFFDQXIzQ21qTW80OWhvcTIxaFFoa3hRQ0FsNDR0ckFIdVZhLTA?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] '중복상장 1호' 물꼬 튼 대신증권, IPO 실적 반등할까 - 톱데일리",
+          "publisher": "톱데일리",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBxZzRSUFJLUG1yUVcySWVfcXRkYTRKMGdQUS1aaVNPaHg0d3VyYkRQdUg3TzVvb3NMT21mUFg3a3JGOXg2Y3p1MnFxYzFKblN0?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [리포트 브리핑]카카오, '분할 이후 홀가분한 카카오톡의 성장을 기대 ' 목표가 47,000원 - 대신증권 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE90RXh5QXRfR1pRRW9XNE8zZVBocjY5SUpmeVVtVXFBdVRXMURwbjF3ZGxnWkpIUXhWUlhKQkdrQlZMcXdsaTFreGVEYjdpc2dpYzlXZzd3RzJiUVRh?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "메리츠화재",
@@ -40,7 +128,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-25",
+          "title": "[2026-08-25] 메리츠화재, 부채 줄고 미래이익 늘었다…DB손보와 CSM 격차 급감 - 금융경제신문",
+          "publisher": "금융경제신문",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9odmMtRjVnZmZUaWJlUkczSnR3SlVXblRYeHBPY2htVjc4WHlUV0NaS2lmREdOM1VYMG94WUhsa3dGX0cwZ3JuTFltNURyc3N3ZVI1RUExM0d0ZUYzMUV5em1sRmNORmpTMVJrTNIBb0FVX3lxTFB5WUo3NlFITk52OG5tanc4ck1CZ2VsQk9udnF3Zkk2QU42NjBfREtBNlFnajdJMVpReUVYSkpIeXVYZ0tHTFRFRmRmMTN4bHNiT0ZJWDNEaklyZXFlZGRfYTV0X0hfSXp0WlltcEpXOA?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-22",
+          "title": "[2026-08-22] 중국 코로나 봉쇄우려에 이틀째 증시 약세/ 메리츠금융지주 메리츠화재,메리츠증권 비상장 자회사로 전환한다 Myisha Hines-allen (TObmVo0A5i) - Mshale",
+          "publisher": "Mshale",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JV2RZVHpmNkFjODRKTjV3SkNmUkNGRDE2MVpfbUQ5MDJQb0VwaWJaVk40T1kyYTZPRTZ0NmhYRnE3T09tdGVobS1UX3FEeldHNThaX2pXcW5xbkE?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 레고랜드發 구조조정 끝난 부동산PF…증권사 IB 수익원 재부상 - 머니투데이 - 머니투데이",
+          "publisher": "머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DQVRFeEw5YUJnY0NZU0hZS191cU1UZVl3Y0ZPdFViWE1rWE91bUhNam5pZ0ZEanhNVFV2dXhTbGY1MHh4cFVVcEpDZTRDa2Vidk1MTU9ta1VXRDVJODA3UUpsWTY4MXI00gFuQVVfeXFMTThtYWNYcGhITDNPLW8zQWVFSW9ZSW5IWm9QWEtxVkc5NDFFVzlMX1RWNWppaThLcHM4Zm1uOU90X0pqZFZhWlNFbEt3TmZNQlU0N0tWcldfZldRQm9ST21GYUgyT2c5YUdmNGhuVXc?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "비씨카드",
@@ -48,7 +158,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [여름, 핫 카드]비씨카드 “온라인 쇼핑 혜택 특화 '페이북카드' 출시” - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LcGlYR0JDRkpQMWhPbVg2TUZlYlRuWkFlOGtEemRMUmJxa3lUU2tYNk5yNHBYMGxnZENqLTBoVGVkb09tdExPVXFwWWluUQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [2026 KLPGA 투어-20차] 비씨카드ㆍ한경 제48회 KLPGA 챔피언십 최종 순위 - 골프타임즈",
+          "publisher": "골프타임즈",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yekY0VnBaZkdMczVNaW8yNWtLb3dYaTZwazRsbVNRaHI0OUJhNlpzaGpCd1U1YmFMbFIzbGJfVC1Kbm11OENteXZVejlfTFF1RExONzVEV2xmM2FfUG5SV3V3eDhoUlhDbjc0bjdZZEJIZw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 사진=비씨카드 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMigARBVV95cUxONkUwNmJTUkNzWTRqWXk0ZXdkZVFzYTQ1S05CaHhMYjJUUjZ0dG96alBoNXBMR2txZVRLMURhTnlTcnJtc3VrSTYxTzUxMDdfSk9aRUtZaFJqZkg3M0hxQVJyYTlabzVGOENod1A0WkxJcC1EUlRHT0FqcnZQWEIwX0ZHekVMTDlVVTlQQk5sUDdzcVk4SF9XUS1KNFRUV2k5T2tlN1FxY1ZYSU1FZVhVM0RyeVFZOWFyamFJdGlaV0xlbkhlVUFIVW56dF9XR2FUbmRqRmV1UEltem5pSElnMHhyU0hyYVJsUEFZTERTb2tNR0QzM1ZhMFdrbTlIaDhzdnBCUjhxVF9wWlgyY0k5N3l2TFZKdm5fMFA4NFVoUG5ldnJSZG9hZmM5aWFMbmI2U2xIcVc2eVd5RDFvYlN2dE42SXpZRmw5ZVE0YnpXbk0weFBWSzd3SU5ZS0dkMUcxcW9BMmNPNTBFRE9wTmtmb3J3TE4xNTBQeENnUEdycjFfczFzcVdNQ2JXaDYyeUNCbDdvQWFHV1dvU3JpaFNCeko2YmRKcjdrWXRsdzJsQTJlYUF3Mmk5T1NyQWlrdi1nSWtLeFFZNi1teWt1eUdabmx0bmRwMndjU2hGYTNacW1TUEhYOWhDWVp6cXM2Yy1TNDAyX2t5dE5oM3ZwY3ZyUg?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "소노인터내셔널",
@@ -56,7 +188,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 소노인터내셔널, ‘BTS THE CITY ARIRANG - NEW YORK’ 마무리 - 주간한국",
+          "publisher": "주간한국",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1rSHhxcTV1RWNxOXJaZzB3QWpHSF93b2tfSVoyUmxpZHhndTFnMEpIeUQzcGhuRWM1VkVQbVh0clZ1d01HbzRfMWZhaUtDOVBpVDd3bEEycmZuRjZCNHl2TXlpSmtjdjZqSXFwSTFnT1owYmZ10gF0QVVfeXFMTWtIeHFxNXVFY3E5clpnMHdBakdIX3dva19JWjJSbGlkeGd1MWcwSkh5RDNwaG5FYzVWRVBtWHRyVnV3TUdvNF8xZmFpS0M5UGlUN3dsQTJyZm5GNkI0eXZNeWlKa2N2NmpJcXBJMWdPWjBiZnU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 소노인터내셔널, 'BTS THE CITY ARIRANG - NEW YORK' 개최 - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XRU9xRFdEc1NxdXB5WXhqTEJQX3NDdTJmWnFNSm9VM1FzWkRURDBqVjhXclRVczNJR3I0eThsWUdhbnd0WWZlUFhwQjF4Q2RFaFgtczBkQWl0V01TZldURzlJUVJrR2s?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 소노인터내셔널, BTS와 뉴욕 달궜다…글로벌 호텔 운영 역량 입증 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYRzdtUDFndXU5VmRiR3VUMzdiTEpXZkdOOUwwS1pTajRLelJJcGhKRHhERGVMSmowUFhqcVdxTUtzMHg3YXNwc0NvN1FuY3dUOVBkUFJkeUpSc183M2hGTHNSU1lvc3hyeWZj?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "스틱얼터너티브자산운용",
@@ -64,7 +218,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 전세보증금으로 PF 굴린다…전월세 안심신탁의 3가지 치명적 결함 - 땅집고",
+          "publisher": "땅집고",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9abUMxVGc2RFNRUVBKbFdQeWpXN2FQdXVNcU9hMnhCMVoxY3dwT0NzVmkyRUY0a09iYzRjZDdJX0hiQkl3Y2VoNVpmWFdhVU9RNEs5RTVqbGZvNHUxVjZIMEJoY3UzanZzWGp4NXVmcUppTDBtaTRZaE5lQUdZaVHSAXNBVV95cUxOZUVTTUduejFqUXNNYllNcnhDcG96ZmwxaTZianBNSEpjdk0xRnFCWXlRcVI0bGJHWjFvWmg5Q2pXeHFpa3NEUjY2SVpWcU5CR2U1aWY5VTlHZFNyUlZveVNTNVk3TldINWYyeDRDaFM3eXZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [디벨로퍼, 생존의 조건⑨] 73조 이지스, 건물 넘어 도시 개발… 초대형 PF 시험대 - 아주경제",
+          "publisher": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1YjMwN0w5eFR2Q1d6elp3dWFfRG9WYkJUbklOUGVaejRiUGljYmVxTXZrQm5uMWRndVlqN2VYQ0VTa2hsdENTTGIwTmhpblFDTk9zZDY5SHp1QdIBWEFVX3lxTE85SXNqV1oydE5rLUlyMVJEVWVOR1pPaWc5Mkdyc0xoU3FwUlZ3bUpYOUZhUU5Xbm9XLWZyMnNHRTdndFhxUWtjdEJBNk5EUlRBNGlKcjJEY1o?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 금융권 PF 연체율 10년 만에 최고… 갈길 먼 '정상화' - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xMjJxRWV4Q2o2QTBjRjFiTy1XazlOdzNnaV9DekhNUkVjT2hCZHdiRmtVTkVQbHBtUWNDVDluS3JyaTdUWmZ0Q1puSTRGTUNGZm5oN3k0MjlEZTVCODVMVE1lUV8?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "신한GIB",
@@ -72,7 +248,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-25",
+          "title": "[2026-08-25] [기업&나눔] 신한금융, 기부 넘어 돌봄·일자리까지…상생 보폭 넓힌다 - 뉴스웍스",
+          "publisher": "뉴스웍스",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuOHVtTmRtMWlOSXNubGtlV05FWnk1LVkzZjZwR29xMnlJRWlKbmZKZmljSjdpNDdYRlZ2UXJnOXhWZ05WaVVLMVU3dXdOaGVYTmpZWVNJNV9tMnU2Mi03TXJBc2tCMmdYOXQzMlV4WdIBc0FVX3lxTE9mYWV2NXBwc1N2Q1hSYVRyUjRZVFBLZ0E5aDFFdXo1Q3R4OVJGWDBROGJ5V2F3UlBFN0V3MGZ3bFh4Mm9PdklrZlNkM2N3U3dKc3FPU0NPN3E0SnRFZjd3d0swbTEwN0xDRWN5OTNocklIRGs?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [금융계 7월 동향] 신한금융, 청년 지원 프로그램 확대···지속가능경영 강화 - 통신일보",
+          "publisher": "통신일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QVW1LakRtLVFwUzh0aHdkVnk1R3NWZlNPbTcxTE5YVDVSem8tbmtTMnNXTFZuaE9fTm9xUG0zRGRCVG56OTZ0NTZHdGI3dEE1THpVSHI2SDBFQzFUS01SY0p4UmJ2dw?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한은행",
@@ -80,7 +278,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 신한은행, 전문직 대출 통합한다 - 네이트",
+          "publisher": "네이트",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15dFh0TnhkbzEzRjBZTGJiUlRnelB3cmliRFpBZW15dlZBSW0zZ1RxTGF0TUFUOVEzS3J3aDQ2NGlDN2d3SVAzZ1JZbER0dGh6cmFn?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-08-22",
+          "title": "[2026-08-22] \"신용평점 하위50%에 최대 2천만원 대출\" 신한은행 '슈퍼 쏠 중금리 대출' 출시 - catchnews.kr",
+          "publisher": "catchnews.kr",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZeWZ3YXNLdGRWYXdlVzF6MHBuTUlCOFJCUlRKZFpmMng0STFweGlJeUpPbVdxbjFHSllfN0dHUDFpeDVidFdVOWlDY3V3VkNRT2Q4RHdxb3BuZE01S1JGUzlDdk01OEE0M0hj?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 신한은행, 전문직 대출 통합한다 - 서울경제",
+          "publisher": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTOEdMajN2MXpuVGpBLVN2U2I2WG9jWDJjUkZhaGQ1TG1PN2o0T0Q3andhY0VFOWJ4aUxzSDlJVy1NUUJlNXNRVVJhTjZ0ZTZ4V0E?oc=5",
+          "matchMode": "대주명+PF키워드"
+        }
+      ]
     },
     {
       "lender": "신한캐피탈",
@@ -88,7 +308,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [금융계 7월 동향] 신한금융, 청년 지원 프로그램 확대···지속가능경영 강화 - 통신일보",
+          "publisher": "통신일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QVW1LakRtLVFwUzh0aHdkVnk1R3NWZlNPbTcxTE5YVDVSem8tbmtTMnNXTFZuaE9fTm9xUG0zRGRCVG56OTZ0NTZHdGI3dEE1THpVSHI2SDBFQzFUS01SY0p4UmJ2dw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-25",
+          "title": "[2026-08-25] [기업&나눔] 신한금융, 기부 넘어 돌봄·일자리까지…상생 보폭 넓힌다 - 뉴스웍스",
+          "publisher": "뉴스웍스",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuOHVtTmRtMWlOSXNubGtlV05FWnk1LVkzZjZwR29xMnlJRWlKbmZKZmljSjdpNDdYRlZ2UXJnOXhWZ05WaVVLMVU3dXdOaGVYTmpZWVNJNV9tMnU2Mi03TXJBc2tCMmdYOXQzMlV4WdIBc0FVX3lxTE9mYWV2NXBwc1N2Q1hSYVRyUjRZVFBLZ0E5aDFFdXo1Q3R4OVJGWDBROGJ5V2F3UlBFN0V3MGZ3bFh4Mm9PdklrZlNkM2N3U3dKc3FPU0NPN3E0SnRFZjd3d0swbTEwN0xDRWN5OTNocklIRGs?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한투자증권",
@@ -97,7 +339,29 @@
         "816",
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [증권 NOW] 메리츠증권·키움증권·신한투자증권 - 위키리크스한국",
+          "publisher": "위키리크스한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wOWdDUDE2dERYVWVqcGFsZF9ocmE0ZEtvSUlnR0RUMUtWdHA1T1RrVUFSbHc0d1NYMml3ekFFQ2FqX2tJaVk4VnV2QXJoandadjNzUmVXWTlWQ0tBMGNrUWx6Tl9yWDgtX2NPblJHWQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [더밸류 브리핑] 오늘의 신한금융그룹 소식...신한투자증권· 신한카드 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yeHNXVmJDNHBKTmFWYTFEcXVvTmVPS0QzWHc3dXNFWjJXbjNoaC1WSUpfcjl3RzBlaVVyelFwUThLNm9iQ0ZGY3dzdE9Zc2FvNk1DVg?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-25",
+          "title": "[2026-08-25] 신한투자증권, ‘AX 챔피언스데이’ 개최 外 | - 리얼캐스트",
+          "publisher": "리얼캐스트",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9VWVRVWjFhUjM4em1LdkNSLWQ5MU56RWZOWkNZRFcxWlQ5azBZSExWX2NNMmNGdEVyQm10bE1yT09CV3kyU1NzT2pmb1lSVzhoYnE3cFYwNTRZeXlXQThUeXphSDIyRE5jTlYtZw?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "코람코자산운용",
@@ -105,7 +369,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 전세보증금으로 PF 굴린다…전월세 안심신탁의 3가지 치명적 결함 - 땅집고",
+          "publisher": "땅집고",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9abUMxVGc2RFNRUVBKbFdQeWpXN2FQdXVNcU9hMnhCMVoxY3dwT0NzVmkyRUY0a09iYzRjZDdJX0hiQkl3Y2VoNVpmWFdhVU9RNEs5RTVqbGZvNHUxVjZIMEJoY3UzanZzWGp4NXVmcUppTDBtaTRZaE5lQUdZaVHSAXNBVV95cUxOZUVTTUduejFqUXNNYllNcnhDcG96ZmwxaTZianBNSEpjdk0xRnFCWXlRcVI0bGJHWjFvWmg5Q2pXeHFpa3NEUjY2SVpWcU5CR2U1aWY5VTlHZFNyUlZveVNTNVk3TldINWYyeDRDaFM3eXZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [디벨로퍼, 생존의 조건⑨] 73조 이지스, 건물 넘어 도시 개발… 초대형 PF 시험대 - 아주경제",
+          "publisher": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1YjMwN0w5eFR2Q1d6elp3dWFfRG9WYkJUbklOUGVaejRiUGljYmVxTXZrQm5uMWRndVlqN2VYQ0VTa2hsdENTTGIwTmhpblFDTk9zZDY5SHp1QdIBWEFVX3lxTE85SXNqV1oydE5rLUlyMVJEVWVOR1pPaWc5Mkdyc0xoU3FwUlZ3bUpYOUZhUU5Xbm9XLWZyMnNHRTdndFhxUWtjdEJBNk5EUlRBNGlKcjJEY1o?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 금융권 PF 연체율 10년 만에 최고… 갈길 먼 '정상화' - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xMjJxRWV4Q2o2QTBjRjFiTy1XazlOdzNnaV9DekhNUkVjT2hCZHdiRmtVTkVQbHBtUWNDVDluS3JyaTdUWmZ0Q1puSTRGTUNGZm5oN3k0MjlEZTVCODVMVE1lUV8?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "키움투자자산운용",
@@ -113,7 +399,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 전세보증금으로 PF 굴린다…전월세 안심신탁의 3가지 치명적 결함 - 땅집고",
+          "publisher": "땅집고",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9abUMxVGc2RFNRUVBKbFdQeWpXN2FQdXVNcU9hMnhCMVoxY3dwT0NzVmkyRUY0a09iYzRjZDdJX0hiQkl3Y2VoNVpmWFdhVU9RNEs5RTVqbGZvNHUxVjZIMEJoY3UzanZzWGp4NXVmcUppTDBtaTRZaE5lQUdZaVHSAXNBVV95cUxOZUVTTUduejFqUXNNYllNcnhDcG96ZmwxaTZianBNSEpjdk0xRnFCWXlRcVI0bGJHWjFvWmg5Q2pXeHFpa3NEUjY2SVpWcU5CR2U1aWY5VTlHZFNyUlZveVNTNVk3TldINWYyeDRDaFM3eXZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [디벨로퍼, 생존의 조건⑨] 73조 이지스, 건물 넘어 도시 개발… 초대형 PF 시험대 - 아주경제",
+          "publisher": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1YjMwN0w5eFR2Q1d6elp3dWFfRG9WYkJUbklOUGVaejRiUGljYmVxTXZrQm5uMWRndVlqN2VYQ0VTa2hsdENTTGIwTmhpblFDTk9zZDY5SHp1QdIBWEFVX3lxTE85SXNqV1oydE5rLUlyMVJEVWVOR1pPaWc5Mkdyc0xoU3FwUlZ3bUpYOUZhUU5Xbm9XLWZyMnNHRTdndFhxUWtjdEJBNk5EUlRBNGlKcjJEY1o?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 금융권 PF 연체율 10년 만에 최고… 갈길 먼 '정상화' - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xMjJxRWV4Q2o2QTBjRjFiTy1XazlOdzNnaV9DekhNUkVjT2hCZHdiRmtVTkVQbHBtUWNDVDluS3JyaTdUWmZ0Q1puSTRGTUNGZm5oN3k0MjlEZTVCODVMVE1lUV8?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한국투자리얼에셋운용",
@@ -121,7 +429,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 전세보증금으로 PF 굴린다…전월세 안심신탁의 3가지 치명적 결함 - 땅집고",
+          "publisher": "땅집고",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9abUMxVGc2RFNRUVBKbFdQeWpXN2FQdXVNcU9hMnhCMVoxY3dwT0NzVmkyRUY0a09iYzRjZDdJX0hiQkl3Y2VoNVpmWFdhVU9RNEs5RTVqbGZvNHUxVjZIMEJoY3UzanZzWGp4NXVmcUppTDBtaTRZaE5lQUdZaVHSAXNBVV95cUxOZUVTTUduejFqUXNNYllNcnhDcG96ZmwxaTZianBNSEpjdk0xRnFCWXlRcVI0bGJHWjFvWmg5Q2pXeHFpa3NEUjY2SVpWcU5CR2U1aWY5VTlHZFNyUlZveVNTNVk3TldINWYyeDRDaFM3eXZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] [디벨로퍼, 생존의 조건⑨] 73조 이지스, 건물 넘어 도시 개발… 초대형 PF 시험대 - 아주경제",
+          "publisher": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1YjMwN0w5eFR2Q1d6elp3dWFfRG9WYkJUbklOUGVaejRiUGljYmVxTXZrQm5uMWRndVlqN2VYQ0VTa2hsdENTTGIwTmhpblFDTk9zZDY5SHp1QdIBWEFVX3lxTE85SXNqV1oydE5rLUlyMVJEVWVOR1pPaWc5Mkdyc0xoU3FwUlZ3bUpYOUZhUU5Xbm9XLWZyMnNHRTdndFhxUWtjdEJBNk5EUlRBNGlKcjJEY1o?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 금융권 PF 연체율 10년 만에 최고… 갈길 먼 '정상화' - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xMjJxRWV4Q2o2QTBjRjFiTy1XazlOdzNnaV9DekhNUkVjT2hCZHdiRmtVTkVQbHBtUWNDVDluS3JyaTdUWmZ0Q1puSTRGTUNGZm5oN3k0MjlEZTVCODVMVE1lUV8?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한화저축은행",
@@ -129,7 +459,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-23",
+          "title": "[2026-08-23] 24개월 최고 연 3.95%…한화저축은행 'Mymo·e뱅킹정기예금'[이주의 저축은행 예금금리-8월 4주] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBLcUdYd3BQbS1TN2RhNkdYR1pOU1ROczFlX044ampWMVhka2RMZkdmMG1FUmNjUjd1N2ZuQ20xeDJSLUxoV0J3bDZqOEF4V1VzVTg4d192YUIxQmdtVTI5dHduUm1YLUZqaS1sWnFSRmNwc0k1OWpNLVJtTnk?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 2금융권, 대출공급도 숨통 트이나…중금리대출 총량 제외 - 대한경제",
+          "publisher": "대한경제",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DbjM5eGFYVzM5NFZEU3h0V0lsc0ZvRTVRV0R6eW51eWxnVldrdUxxY3hZUlV2S1g5ZEJNTkEzZ2lic1ROQ3huYlhjSWYteU9uVUphYW85dFU3M2ViRlgtaE5pUGRZcVpiN0VpRTB5bVpJaXlN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [MD포커스] 중금리대출 ‘총량 족쇄’ 풀었지만…상호금융·저축銀 ‘서민금융 딜레마’ - mydaily.co.kr",
+          "publisher": "mydaily.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkSHYwVlZTaHlFMkR6clZwcE0wQlFnVnMyQkRIN2RwZjI1RnhGUlhSZWV4MHBCRFgwQnlNTnR0SEN5eXozTUJRc1NhbHRZekw1TGFtWHY1dlhYaE1CTjlNQQ?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "흥국저축은행",
@@ -137,7 +489,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] 2금융권, 대출공급도 숨통 트이나…중금리대출 총량 제외 - 대한경제",
+          "publisher": "대한경제",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DbjM5eGFYVzM5NFZEU3h0V0lsc0ZvRTVRV0R6eW51eWxnVldrdUxxY3hZUlV2S1g5ZEJNTkEzZ2lic1ROQ3huYlhjSWYteU9uVUphYW85dFU3M2ViRlgtaE5pUGRZcVpiN0VpRTB5bVpJaXlN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [MD포커스] 중금리대출 ‘총량 족쇄’ 풀었지만…상호금융·저축銀 ‘서민금융 딜레마’ - mydaily.co.kr",
+          "publisher": "mydaily.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkSHYwVlZTaHlFMkR6clZwcE0wQlFnVnMyQkRIN2RwZjI1RnhGUlhSZWV4MHBCRFgwQnlNTnR0SEN5eXozTUJRc1NhbHRZekw1TGFtWHY1dlhYaE1CTjlNQQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "[2026-08-24] [DQN] 종투사 10곳 NCR 평균 2400%대…'건전 기조 VS 과대 평가' [2026 상반기 증권사 리그테이블 (2) 건전성] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QR0hlRjVWUmJQdHlYbkRObWdIT2dPWUtUdGJmYXRQM1NCNkt2RXBvNlpGaGxKVkJGSmJfNGVFNC1iejNRMGp1S0JqbVJDckNuZkh3QW01NVk5MUR0ZmozZmQ1SnoyY1pGLVN5X0tBckJIbFI3X0UwWGVwTlg?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     }
   ]
 }
