@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T09:02:58+09:00",
+  "generatedAt": "2026-08-31T09:21:25+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -17,17 +17,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] KB국민은행, 산업단지 입주기업에 3500억원 보증대출 지원 - PRESS9",
-          "publisher": "PRESS9",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1EVklzS2I4U0dOeTZFeC1ONG91Nm9VZ1Q5d01LcHFuVjQ5a1I3MzRHWFFkS0NpMlY0c3JBLWVHNXVJTG9wMkFIVTE3NWR3U3A4TFgwRE9ZNVljLXFwOGswcFo3LTc?oc=5",
+          "date": "2026-08-28",
+          "title": "[2026-08-28] KB국민은행, KB부동산에 '전세안심 Check' 서비스 출시 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mNXBGeVNWQjJvYklyRnJYcHNCU2dUSFFjMjc3X1Uyd0hacGRycF82TU9uQ1JPT05jV082bjlzUTJJZ2F6Ykd4NDBIRnJacFVtalpram5ZRDlQcXZS?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] KB국민은행, 산업단지 입주기업에 3500억원 규모 보증서 대출 지원 - 퍼블릭타임스",
-          "publisher": "퍼블릭타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFOGZKTTFWd2VPNGw1ZlQ2TUZYeXl1dmdEQ2RvVC04OU5lM3NrZE1wSm9CUTZkOC1USW8yRE9mR0hFell5UDgxZnNhQVJCT0xkLXViQV9USHpiazloWm93VmJhcThtb1pPRUHSAW5BVV95cUxNSGx1R0h2Ympwcy1peEVBTjc2VFFCeWJCZnZmYmZlTWRMaXNQTU1EajBXRE50SWFYZjdnRG8wTjA5UkxoS1BOZG5Gd3NKa0tHX3RER2tOYnVpSDRKejhoOWg4aXcyTUhyN3pYM3FMQQ?oc=5",
+          "title": "[2026-08-28] [금융-라운지] KB국민은행 부동산 종합플랫폼 ‘KB부동산’ / 하나은행 / NH농협은행 / 한국투자액셀러레이터 - 비즈니스리포트",
+          "publisher": "비즈니스리포트",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9NUUJKaW0yMWdhZ0tkMjZiMWdvZnZ5cmZsYVJZSFBBczhKa25ZdnFVZ25Ncm1tZDdQR2VRdjlIdXdkeUlyc19NQzAwQkc5NWwwZmVKZmVUX002c1hyQ00wQ3ZWeTlBVzJ6ZDJyT21FWQ?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -40,24 +40,24 @@
       ],
       "articles": [
         {
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [리포트 브리핑]DB손해보험, '기대 이상의 기업가치 제고 계획' 목표가 256,000원 - NH투자증권 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41VERJTmtLRWZqVGNiRWlGZ0liUk1EMXJ6OFpZakxhNktucWxpclpPVUdVbm5CYWRJcE1CMXktQlBJRUc0UmhNZzg1Yk1acGVHTXFxM2dEWW9RRDVt?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 삼성바이오로직스 유증, 우수한 자본조달력이 CDMO 경쟁우위 근거-NH투자증권 - PRESS9",
+          "publisher": "PRESS9",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBncDZEbmdhWm5QVE9wUDV3RklpSXdmNGJFZk16WWVjMHp2TmdFa1h2MmNmdjNfZkg3WmJCeUQxaFVYX3pteFpyN19PTXN5cUNxV29xS3FDZWs0VVQ0Nkg1RDhnSWU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
           "date": "2026-08-29",
-          "title": "[2026-08-29] NH투자증권 채용, 신입 자소서·인성검사·NCS 전략 - 잡플래닛",
-          "publisher": "잡플래닛",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yS05XRlo4MkVDWjdYM0k1R2xKcVNFUENOTFhYamFNWTV0Y2dyaS1OV2wycGVaWDU0QVRZYTVQYjB6YUM1UGFSNUZrU0k2eU5BM2h5MzBlMUI0dw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] \"NH투자증권, 고배당·낮은 주가 변동성에 방어력 부각…목표가 3만5000원\" - 뉴스투데이",
-          "publisher": "뉴스투데이",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ROVRVaFAwOC1qSGVjMmo1QnJKdUFKbjlBRFpnZGpGLTB0TTAwUGFrdEg5SGdlcW41aTdJT3BCY08yLU14Unl3VlJhY25oVDRWVG5VUDJSRGdmUXBGUnc?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] NH투자증권 \"청년 농업인 대상 라이브커머스 진행\" - 아시아경제",
-          "publisher": "아시아경제",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NYXlSZUVBUDVLOFVzc0dVMGhJdndQdFZObm5tQkRaMUJzRUg3ZnRVQ1IyZ0J1MUhUVGRRb1VBdFZTZDFEWXNSdF9YUzV5Ui1xNWhTcnRsbjNTTTZCRWg3SE1R?oc=5",
+          "title": "[2026-08-29] NH투자증권, 포용금융 강화 위한 청년농 판로·경영 지원 확대 - 라이센스뉴스",
+          "publisher": "라이센스뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1TajlkWTEyaWprSWxvSDZscThnVXlERlJMeGVpZFJRTXdsb2twNzJQMDNRNHZpSF8wUWVwdmRUR2FENTJteTF1X1pzOUY0U21SR0tSNWtjZjQ4MUxZLVc2VmR2TXc4eDB4cThr?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -70,6 +70,13 @@
       ],
       "articles": [
         {
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [DQN] 우리저축은행 NPL비율 최저…하나저축은행 10% 육박 [2026 지주계 저축은행 상반기 리그테이블 - 건전성] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wOHBDV1o5dV9JUjZuSlFjY3RNNi1HSDFqSlBiQ1FRa01zZWF0VXFvVDdwckEzbGczVEdpQkU1UW9oNzJhZG9aejZLVkVocmQ5YTZJS1hYa09qdEdWQjJsdFJ3YVdreUVrbmNPOWR1OEh3LXZsTWR2NklOcjg?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-08-28",
           "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
           "publisher": "뉴스락",
@@ -77,17 +84,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 저축은행·상호금융 상반기 순익 개선…기업대출 연체율은 상승 - 비즈트리뷴",
-          "publisher": "비즈트리뷴",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vcXFQWlctRmpMMFFoUUZkYzE3YnNoMnJKTktadDlxOU5lRkNWZVVnRkxBQy0tbWF0dE5nZGI0d0tJYXZDRlRha2EtYjFmcjJkQlZGRTkya2dUdDdHMjBCV1k2SGZOckt4MkoySW5IVQ?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 보험사 기업대출 건전성 악화...부실채권비율 1.62%로 10년래 최고 - 청년일보",
-          "publisher": "청년일보",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ja0FFSHlxdmpnNUlnWnI4LWtpQ1pvUDAwMHo3ZGNvQlk4SHhjbDA5OXViZnZZQ3JTQ1ZiZlJ5cXBJWWZOSDlKSlZXazdvSnA2NEwxaFdtMWdYelowcTFwd1pSVjhZY28?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 주거사업장 PF 규제 2년 유예…방심은 금물 [바른 컴플라이언스리포트] - 네이트",
+          "publisher": "네이트",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12YndnTUR0bVRWblZJYTFPZFZjS3hsVjdSeWo0UDd0YnhLd0JYT2lHUGNENFRaS0NwSXVrM1hxQUFxSDU4MEdCR3BtcVBpMmtPNnZz?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -100,24 +100,24 @@
       ],
       "articles": [
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 대신증권, 자기자본 넘긴 채무보증 5.4조…초대형 IB 앞두고 건전성 시험대 - 녹색경제신문",
-          "publisher": "녹색경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyWk13TllJTG1xaFJkTkJNajlxWlIxc19oTnBoeTJHejIyM2RkN2Jkd2Z4RUIxNHlnUzFVeThjcEZKSko5YmNCcUlJUERPV2RERndreFJ5VFlHc1p5UHpvWEJtLWtDbXRk?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [데이터&뉴스] 금융당국 엄포에 증권사 매도담보대출 금리 속속 인하...대신증권 5% 최저 - 소비자가 만드는 신문",
+          "publisher": "소비자가 만드는 신문",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1hOTk0M0ZZS2JQSXBrTTFmU3dKa2VBdHlOVFdTWUJKMnBpWGRlTXBGZWg1UjMzYjV4ZDNNV2NXUXZUbm80N3BuUlF4RVZyaFhUQW84VU1yRllRbmN5ZW1GYUd2OVgtYUNrVnlhTDZyb0VrSkU?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 자기자본 4조원 넘어선 대신증권, ‘성장판’ 열린다 - Korea IT Times",
-          "publisher": "Korea IT Times",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vVzh6NFJkZTI4Q0RQLXFlckZOTTFZd0tySWJTRUVudWdzVl8tcHlvMmVHZEdZZi1TYmFMdzJYQXhDNE8yNHBGV2o2cHVtZmJGVWlwYXFtMjlxWkdOTGsxMmVQbW1LYVFkSU9EbW9OeHM?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 대신증권 \"美 금리 인상, 9월은 아냐…연내 동결전망 유지\" - 뉴스1",
+          "publisher": "뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51MVZvOGdsNWNPZnhWYXVRMmgxTkJTb05pN0NULU4tanR5aUlHZ3llSjJWMDNKa19QUjJQVmVuRXA0X3dfVHpFWkdyelMxQ19ZMDhWMnRxNnhJbExkaFUw0gFkQVVfeXFMUGY5cVM2LWdNRkZpal9tYVZ2ekMwTWxBS21DQ2drbzFKNjF0cmZpTVRkWkY0LS1QNjJ4QmlhMFNuMmxjaFRmckdQUjVjd205NTY2RHl4eUNpU2kwZXh3X1JYNDAwcw?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 대형 증권사, 평균급여‧생산성 순위 따로…삼성·대신증권 ‘높은 가성비’ - CEO스코어데일리",
-          "publisher": "CEO스코어데일리",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fQV9vbW52cDZ0V2owbVRIOHhBenBVR1BiejNkVHFYZXNnVDQyTzhuTVNiSjBvUW8zckRKblFrTEFFbTJ0R1Nac2FhSHNKYW5KVGI2X2s1c2l4RE84SzVUWU5aRnI3Rm4w?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] '아빠 육휴' 역행…대신증권, 상반기 남성 육휴사용자·사용률 모두 '0' - 더팩트",
+          "publisher": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxZnA1Mnc3VjhSZTZfY0pCRU85bThqZDZ2cDBHQ2NPa19xSGhnSmFySjl6NWZac0dzVzM4QUp3d2laN2RDc0VJb2ZDWlJFWGFBbU0xeV9qODhnUdIBVEFVX3lxTE1MdU8zSUFmbjhIMmpWZ29scEJSZlp3cVA5VGtsQlJkUEsyQWJibHN1Y21IRFQ0OGc0RGdkRk05T0FJTzRwTjZqeEh5NVBSN25yb2NJVw?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -130,17 +130,17 @@
       ],
       "articles": [
         {
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 메리츠화재, 장기 신계약 21% 늘린 비결… 성장 이끈 ‘채널·상품’ 경쟁력 - PRESS9",
+          "publisher": "PRESS9",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tQ0VsLVlVVTl0LUhLbFByNWpiWkl3S184cllKbUdiOGwxY1VVM2RpREZoRkczdUU2N2gtVi1XVFJDbmJ4YjdkeXZrbVBqZEtHbEdzN1J4VVQ1VGRtSUJUeTlmYmU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
           "date": "2026-08-28",
           "title": "[2026-08-28] 메리츠화재, 수익성은 좋으나 손보사중 위험자산비중 가장 높아 - 금융소비자뉴스",
           "publisher": "금융소비자뉴스",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TOHFnZF9zSWpOQWYzUGdoOGZVT1dnejAwV2NMckV2NDJ1WWVnc01pVGZpaGtja3JqdWxLNHFWaGtZeGJSdUFlcHA5eUROdXltMmRMUWJ0cFVzMUVNYWpMQXJNMmM?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] [DQN] 메리츠화재 DB손보 제치고 순익 2위…KB손보 나홀로 역성장 [2026 상반기 손보사 리그테이블] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBqZmVxSU9JZHZDWUtXX2JOQzVscXcxQVVhX2QtSFpTNkNMVWEyVWsxTjVKc1AtOG5GeFJZNXpzeFVUSWRGR25Qd0tIMnNKQXloWTQzSVV5MWtZRXJWd21sc0lEOUI1Vm92c2xIMTRtbnRGM3R1RlZPM0ZBUGo?oc=5",
           "matchMode": "대주명"
         },
         {
@@ -167,17 +167,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 카드사 상반기 순익 1.3조원…카드론 21% 급증에 건전성 부담 - thedailyeconomy.kr",
-          "publisher": "thedailyeconomy.kr",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5kdE9TdEVYYnd1WXdmT0RmYnM1bktnaTJBU1F0aGxwMkZuTlVoeWZjMXk1ZEwwTE9vRGN3d2twenkyY1JUVmNLSEtPQ1lUVzRUcnpCbFg1Nk12M0MtRHhMMmRqSmthMEh4eHNCUFpWZG4?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
           "date": "2026-08-29",
           "title": "[2026-08-29] 중금리 대출 늘리는 2금융권…\"업권에 맞는 인센티브 필요\" - 네이트",
           "publisher": "네이트",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBFOGtSazc4THE2a3RTYVRtLW9WX0haekVKZVRTdW1kdENWYW1IelpyUnJocjFaTFV2V2xaemZjcC1tRlZZbkdEdEVaRTlsTTFzeWl3?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-08-28",
+          "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14UGdKSENaaW5GYW5OdzBXaDBKQ3lodlhybGdlU1VpdEdISURZS2lnSW1LNXQ0ZzlOUXg3emZCZ0dWTGw5Mk91ZVZibEFmMmc3NklSenA3dy1BQy1rcW1hejhyN3JOYk5aa3Rubg?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -191,6 +191,13 @@
       "articles": [
         {
           "date": "2026-08-30",
+          "title": "[2026-08-30] 소노인터내셔널, 여름방학 맞아 전국 아동 270여 명 워터파크 체험·학습 물품 지원 - 퍼블릭뉴스통신",
+          "publisher": "퍼블릭뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fTlRIUHhPRWhwOTE4dlBRREVhY3d1N2hyYlpLV0ROSjdEeXY3Nld3WWxyT2s0S3BNOGZ3S1JmdEI3bnVtcFh0M1ZPc0tJenlnLTBZMnhydjF3cjU4NWdRWWJRa0UzaUJVWkE?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-08-30",
           "title": "[2026-08-30] 소노인터내셔널, 지역아동센터 연계 여름방학 체험 지원 - 비즈월드",
           "publisher": "비즈월드",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXQnBMQ0RTTG1fRVcxaWtMSFZydXFqZjFUTWJkc01mbWppZUhMNjlsOHZOVmVUXzd4cGFjUWhYWXp3REJTTWwzUkNQQkxIN252YVFiU1d4dE5zcDhmZWJtU3d6MlpGMjh6ZHc?oc=5",
@@ -200,14 +207,7 @@
           "date": "2026-08-29",
           "title": "[2026-08-29] ‘물놀이 선물’…소노인터내셔널, 아동센터에 초청·후원 활동 전개 - v.daum.net",
           "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6NmotS2dpMmRQMllnenhFRmxqTy11NlJnU3gxNG0zQ1RmM2Jxb2UtZGdRWGdNZm55Q29IcHB6ek1YTzBxNHNhOGVPVXRsNmw5X1VFUA?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-08-29",
-          "title": "[2026-08-29] 물놀이에 학습 지원까지···소노인터내셔널, 지역아동과 두 달간 '동행' - 스마트비즈",
-          "publisher": "스마트비즈",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05djZ0V09uWmdTNTlFaXgybXd2cUpsUU1hQXpJcHUwbWtrRFdOWC0yd0I2Snd2N2YzZFhIUlJVTHVObGVXWUxqZ1ZvWVNMVnh5SDE5aG1sNkNTa05PbC1PLWdob051eHh5dlRkVA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5vbWFDZ0gwTlJGeFBvYWRObWJ6Z19HcV9seVdyQ2lxbmduUl90aENHYTdXUHR0eDdXcnJ0SFhFVkZ4YjdoNXc?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -220,17 +220,17 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
-          "publisher": "인사이트코리아",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [증권업계 게임체인저]⑦ PF명가 메리츠증권, 새 엔진은 리테일 - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuemxSendaa2pvRzdPeEFIczhscVRNT3hBdHFhaDZjalY2MGJKdzQ2X051Z3lqbldwamNmSWZPRTlYa1VCbFFBcGVVbTFvWFUyUDhTOEhTNV9rR0hpaTZfRVBCUnJhRFhXR2Vv?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] “리테일로 굳히고 IB로 넓힌다”…엄주성號 키움증권, PF 확대 ‘양날의 검’ - 디지털데일리",
-          "publisher": "디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0VE85NGJCYzhYa09laFlValVKYk9rRUVYTDFad1V6LWI3bEJmVWFZek5WT29oZGY2TWNhczZFTF9HMWtxeXdpMzg0Nks0LVB1VVFjODRWWENBdVRTWkdRNDhwZVE?oc=5",
+          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
+          "publisher": "인사이트코리아",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
@@ -250,24 +250,24 @@
       ],
       "articles": [
         {
-          "date": "2026-08-30",
-          "title": "[2026-08-30] 신한금융, 독립이사에 금융 전문가 늘린다…선임 원칙 정비 - 머니투데이 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBS0h4RldzX05jUkNIcEZqUk4wOXdTdWZ0RnpmSVBoQ05TcWNwOWdTR3BfckIwRUlwUmgyV19HVFdYUThZZXFQQkJ0NEw1WnR5eWo2ZVRnb2ZMNGRCSmJNdnktME1NV2ZJb0I40gFwQVVfeXFMTW5xOGxWV3ZoSjFjeDk1cEJ5YlIzTDc2bkluTldFaVNNNnoxb0JZUXM0d0FJMWRBNF9pMW9qM0EtSUxUN3c0RVlmaWtwQzdQODNwdm1WYnlDdm9FbEZRemRoZzZpeUlwcXpwbms3TlJvdw?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 진옥동 신한금융 회장 \"투명한 소통으로 지속 가능 성장\" - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5temJmdUJUWS1NTlROUUF4QktrcldOaFh2VWZIWExKdzF1b2ZfclpBREVMLTZld2l6ZHFaMHg1RnZKYWNyR3lucTRaRm9pbVNlNnFpdzBXb2M3bDhZZ1ZzR3NiNUc0ZEd2TENtZQ?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-08-30",
-          "title": "[2026-08-30] 신한금융, 독립이사 금융전문가 늘린다…선임 원칙 정비 - 아이뉴스24",
-          "publisher": "아이뉴스24",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE90X0Z0Nm9uVnJUSkZFTndseXVOaTBOWFZnTFZSV19uRlVmV2g1aWVBTmZ4aDJFbS1aSTh5ZGhzT09hV3Jyam5OUUl0dw?oc=5",
+          "title": "[2026-08-30] 투자자 만난 신한금융…“독립이사 전문성·AI 내부통제 강화” - 매일경제",
+          "publisher": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HZWxwMEVGc1ZjT21EQS1KUnFUM2NnVGlMREVtS3ZIMWxyNW9HRnRvT2dzYmN3djk4OFZnU2REZUFIQTJSTlJvdC1FbGNsOWlQZjZ2eQ?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-08-30",
-          "title": "[2026-08-30] 신한금융 이사회에 쏠린 투자자 질문…주주환원·경영진 보상 - 서울타임즈뉴스",
-          "publisher": "서울타임즈뉴스",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GYVBhY0lZd1g0NWZhSkVjOGNZdm9TZVk5U0xjQjRoWC1kT3J4enRCLUdGbTBTUVJlTXdMZzNJSV9tc2pwQ3lRZE0ydWszSmh2d1g1bllOMWdsanBzMkFSSEVOd3ZtZFN2VERn?oc=5",
+          "title": "[2026-08-30] 진옥동 신한금융 회장 \"투자자 소통 바탕으로 지속 가능 성장\" - MTN 머니투데이방송",
+          "publisher": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE40bV9QMjAtSzNCVDMta2d6Q1U5YVZ6MmlVRWxOd2RwUjNTWExRSkhaWHVnRmZudEZiQnNfcUlaX1NkNjF3cXo1em5acWJma29BYXYwa0czQmExV2dkNmJORU03WEY?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -280,25 +280,25 @@
       ],
       "articles": [
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 신한은행 대출 있는 사람들 주목…별도 신청 없이 금리 내려간다 - 위키트리",
-          "publisher": "위키트리",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BdzVnOFNaRmJyRkI0SENleHpxTXlxeFlOVlF5V3NpZzRTZFBKMEdHSnBTaUx6SVVoa2FQbHdpc3VuejBpTDdaWUhtUUMtUnQ5YWlUdTdR?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 기보, 기업승계 M&A 지원 강화…신한은행과 414억 원 보증 맞손 - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwSWdwRUlGbmxUSjczWVV2SzJvRTBNZWFBb2JyNUZMbHBtUnFtOFBSTW5USjZnc1hqTWRYQVJMTmJzQWczZ3R1MnhhZmJ3Y0dhMVpfY1o5ZGJwTFF2Z2M3ZlQ0d0Y?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 신한은행, 고금리 가계대출 금리 인하 1년 ‘더’ - 비즈월드",
-          "publisher": "비즈월드",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZZmk3V2x6UmR2Um1LQ2VFSm00WGdGV2JUNFlNSk1MelJDVzdVR2FCZkhMcEZfM2RjaDlBT044TEIxWVZhNTVZWWRaQ2dKZVRCZV9ES080aXROTzFIY3JtNzNsLTZ3MWlKdTV3?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 신한은행, 경남 수해 지역 일상 회복 지원…성금·봉사·금융혜택 총동원 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1tSDlGcEtDcEpnVEhRVmI1WE1ncDY2bnpOcDVKbHVlNlFLMW5hZFY2TzZkNldoLXRrTXNFVExvamtUNWVpRlpoZEd6OHdiZw?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 신한은행, 고금리 가계대출 금리인하 1년 연장…중저신용자 지원도 확대 - 데일리한국",
-          "publisher": "데일리한국",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1NOTA4Q0FLMEFqT0p5TzNCaG91M0ZYTDFVZDNubWE5cW83TXFlRkhNeE9nU01ac3dndmpGWmI2WVZPTU5jVzltc0k4dHR1VFBVRWRPYWNkNnV5R3J1bjBPMHAyQW12Vlk4aU9yUDlYVdIBc0FVX3lxTE5rWlBEaVpGTXVNYnpFNkpmeVdxTTdoU2RKZmxNZm9wd1c3THN2THNaZjM1eGw0V2pqOW5CYTIzNnE3aW1mczEwbjlZbGNNV3hxbV9FUWhyallKSVVUamEyNGZ2YlhQU2hZUnVFeVktbmN6QzQ?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 신한은행, 거제·통영 수해 피해 지원 확대...임직원 참여 확산 - 팍스경제TV",
+          "publisher": "팍스경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KYlRod011V1RMbVhDWFBSblFXdUtyYnFKRFBhZGhfZzZVZ0Y5dDdJU3pTWjRUQWRBX0wxMHhUMGQxSGVtclo3ZjBRRGFBX1lpZHZ5N0VjejE0QmV5bldPRkxDWjh6aE1E?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -310,10 +310,10 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 신한금융, 여성 리더 육성 박차...‘쉬어로즈’ 70여명 대상 특강 - 청년일보",
+          "date": "2026-08-30",
+          "title": "[2026-08-30] 신한금융, ‘이사회 라운드테이블’ 개최...밸류업·보상체계 집중 논의 - 청년일보",
           "publisher": "청년일보",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9CRlRwcFZuNDhDX1NuOUtPMm5veXlOOFk1T2ZJUE1ZM0VOeWVxdUZZQmV4X2ZKOUhSS0UwQ3pXZHRGVzdXU0tScHU3WXFIRnlzX19GaExkOFhBUXNqcUxsVjJwVFU2STA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjV2N0RDIyUGRKNnNtVF9SU0ZzVjFLSV9DbUdDX1dWWFFQU0Y1Q21ka3FXOWZuaVdZQjJ5alkxRnVVa29SVjFtVVB5RUFLNGUwX1hwZTFmdmxQMTdkWnI2RlBDTVVEWTg?oc=5",
           "matchMode": "대주명"
         },
         {
@@ -324,10 +324,10 @@
           "matchMode": "대주명"
         },
         {
-          "date": "2026-08-30",
-          "title": "[2026-08-30] 신한금융, 독립이사에 금융 전문가 늘린다…선임 원칙 정비 - 머니투데이 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBS0h4RldzX05jUkNIcEZqUk4wOXdTdWZ0RnpmSVBoQ05TcWNwOWdTR3BfckIwRUlwUmgyV19HVFdYUThZZXFQQkJ0NEw1WnR5eWo2ZVRnb2ZMNGRCSmJNdnktME1NV2ZJb0I40gFwQVVfeXFMTW5xOGxWV3ZoSjFjeDk1cEJ5YlIzTDc2bkluTldFaVNNNnoxb0JZUXM0d0FJMWRBNF9pMW9qM0EtSUxUN3c0RVlmaWtwQzdQODNwdm1WYnlDdm9FbEZRemRoZzZpeUlwcXpwbms3TlJvdw?oc=5",
+          "date": "2026-08-28",
+          "title": "[2026-08-28] 신한금융, 여성 리더 육성 박차...‘쉬어로즈’ 70여명 대상 특강 - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9CRlRwcFZuNDhDX1NuOUtPMm5veXlOOFk1T2ZJUE1ZM0VOeWVxdUZZQmV4X2ZKOUhSS0UwQ3pXZHRGVzdXU0tScHU3WXFIRnlzX19GaExkOFhBUXNqcUxsVjJwVFU2STA?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -341,24 +341,24 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] [증권 & Now] 신한투자증권, 도쿄서 '한일 딥테크 컨퍼런스' 개최 등 - ebn.co.kr",
-          "publisher": "ebn.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aVVpGV0lEM1lfUy1yY3Zyb0RBQmpndE52UWZQeVEzTVhQT2hWbUFlaHNjdk1JU1ppbVd5eWhqTE84NU12MFdnRGFYdlhrc1FrUUd3QmhSQXhOeXp3d2RYN3l4bUxTRGJ5?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [리포트 브리핑]한온시스템, '조금씩 달라지고 있는 이익의 퀄리티' 중립 - 신한투자증권 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MQ0ZlLUlfMVBpU00wWkhQaWdrOHpNX1ExUlJqNTFJd3N4SVdCZWRvMWxfZ0xzdlk1anN6RDJqaXFXR3d6cHI2X0hzLVBqa2xva3RxSnliV2ZRdmZl?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-08-27",
-          "title": "[2026-08-27] 신한투자증권 \"IMA 시장 성장에도 회사채 수혜는 제한적\" - v.daum.net",
-          "publisher": "v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA0TnBYUnR5eU53U21udzJmTVZqamJMdkYzZDlGWWk3YjVMWlVNNVYzd1NPcjlseFVmRWlSWHNDVzVrUmE2d0VmanNPbmIwUERBY3pGMw?oc=5",
+          "date": "2026-08-30",
+          "title": "[2026-08-30] 신한투자증권, 연애 예능 ‘하룻밤 소개팅’ 공개…“증권사 콘텐츠 새 실험” - 나눔경제뉴스",
+          "publisher": "나눔경제뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyRDcweU1acVFfbUJWSmVoVVlqM1otUHVfYU5uRWNaM2F0SG9MODUxNXBOT2ttdFdNNno3ODRiX19tMjZObUppNVU1dW84c3I4RDdBQzA4NFFwVkdwWlNuN2FrTERvY0hDQXdpRg?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] 신한투자증권, 한일 딥테크 가교 나섰다…日 31개 기관 집결 - 뉴스투데이",
-          "publisher": "뉴스투데이",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9VU0JyYVMtWEczN1JnWFN6M19EUDVmOEREZ1oxRUFZXzd6eDFfWUplQXdQSDFTaXVrZ2Q2TnJEYl9BbmR6WWpjc3N6c0JVVmdSNS1xT2NFWGtBSllmQWc?oc=5",
+          "title": "[2026-08-28] 신한투자증권, 日서 '한일 딥테크 컨퍼런스' 성료 - 중소기업신문",
+          "publisher": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZR29DTWppUEJ6ZXZCRnNLSXk5eHdMam9BRElRdXNzUFgxOE1JdV9CUkhxbktxSEI3LVhmNy1LbFhDNXV2Q1cxd2p0eTY0TDBUbTJldlZGOERkeTBSSDdHd1lGeDlpRHJrcXhqb0ln?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -371,17 +371,17 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
-          "publisher": "인사이트코리아",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [증권업계 게임체인저]⑦ PF명가 메리츠증권, 새 엔진은 리테일 - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuemxSendaa2pvRzdPeEFIczhscVRNT3hBdHFhaDZjalY2MGJKdzQ2X051Z3lqbldwamNmSWZPRTlYa1VCbFFBcGVVbTFvWFUyUDhTOEhTNV9rR0hpaTZfRVBCUnJhRFhXR2Vv?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] “리테일로 굳히고 IB로 넓힌다”…엄주성號 키움증권, PF 확대 ‘양날의 검’ - 디지털데일리",
-          "publisher": "디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0VE85NGJCYzhYa09laFlValVKYk9rRUVYTDFad1V6LWI3bEJmVWFZek5WT29oZGY2TWNhczZFTF9HMWtxeXdpMzg0Nks0LVB1VVFjODRWWENBdVRTWkdRNDhwZVE?oc=5",
+          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
+          "publisher": "인사이트코리아",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
@@ -401,11 +401,11 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 삼전닉스 성장부터 주주환원까지 늘려 투자…새로운 ETF는? | 마지혜 키움투자자산운용 책임 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3X20tdXRkcUpqbUxjZnZzVnVoUzZWQkNOdmNHWnh2TjVfMWJnWVVkdUV3NGw5QTRwOEpOOVZUSEhhZnN5dkxDUVc3dDZ4SVJseEd3?oc=5",
-          "matchMode": "대주명"
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [증권업계 게임체인저]⑦ PF명가 메리츠증권, 새 엔진은 리테일 - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuemxSendaa2pvRzdPeEFIczhscVRNT3hBdHFhaDZjalY2MGJKdzQ2X051Z3lqbldwamNmSWZPRTlYa1VCbFFBcGVVbTFvWFUyUDhTOEhTNV9rR0hpaTZfRVBCUnJhRFhXR2Vv?oc=5",
+          "matchMode": "업권/시장"
         },
         {
           "date": "2026-08-28",
@@ -416,9 +416,9 @@
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] “리테일로 굳히고 IB로 넓힌다”…엄주성號 키움증권, PF 확대 ‘양날의 검’ - 디지털데일리",
-          "publisher": "디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0VE85NGJCYzhYa09laFlValVKYk9rRUVYTDFad1V6LWI3bEJmVWFZek5WT29oZGY2TWNhczZFTF9HMWtxeXdpMzg0Nks0LVB1VVFjODRWWENBdVRTWkdRNDhwZVE?oc=5",
+          "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14UGdKSENaaW5GYW5OdzBXaDBKQ3lodlhybGdlU1VpdEdISURZS2lnSW1LNXQ0ZzlOUXg3emZCZ0dWTGw5Mk91ZVZibEFmMmc3NklSenA3dy1BQy1rcW1hejhyN3JOYk5aa3Rubg?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -431,17 +431,17 @@
       ],
       "articles": [
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
-          "publisher": "인사이트코리아",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [증권업계 게임체인저]⑦ PF명가 메리츠증권, 새 엔진은 리테일 - 서울경제TV",
+          "publisher": "서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuemxSendaa2pvRzdPeEFIczhscVRNT3hBdHFhaDZjalY2MGJKdzQ2X051Z3lqbldwamNmSWZPRTlYa1VCbFFBcGVVbTFvWFUyUDhTOEhTNV9rR0hpaTZfRVBCUnJhRFhXR2Vv?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] “리테일로 굳히고 IB로 넓힌다”…엄주성號 키움증권, PF 확대 ‘양날의 검’ - 디지털데일리",
-          "publisher": "디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0VE85NGJCYzhYa09laFlValVKYk9rRUVYTDFad1V6LWI3bEJmVWFZek5WT29oZGY2TWNhczZFTF9HMWtxeXdpMzg0Nks0LVB1VVFjODRWWENBdVRTWkdRNDhwZVE?oc=5",
+          "title": "[2026-08-28] 증권사 IB금융 수익 개선…LH 매입 지원에 PF도 숨통 트이나 - 인사이트코리아",
+          "publisher": "인사이트코리아",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqazJuamRFN1Q2eWlnYnFCbkJnYlJzbFJhaXlidHBHUFpQTllkMG52T25zWGc2Mlo2aFdVZWRRSjM2R0NOMklIY0VPZzZUWFJLVy1wNWMxNUNLdUx2U1NfRW9tbWNScnc0MmNxbW1fN2hlU0XSAXdBVV95cUxOWmZXSEV0Wmlpd1pDWlBkTzRzb2tmYmM5OURnTmJzVmJ2UktUTVJ2ZHhpeDJnVTlVdkVYWVNvUjI3djFIR20tc250RlpZX3pMSU5jb3dPNnNhUWhIU25sYnZqYWF2eHR4cDBMWDNpNEprcFp4MEdHWQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
@@ -468,17 +468,17 @@
           "matchMode": "대주명"
         },
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
-          "publisher": "뉴스락",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14UGdKSENaaW5GYW5OdzBXaDBKQ3lodlhybGdlU1VpdEdISURZS2lnSW1LNXQ0ZzlOUXg3emZCZ0dWTGw5Mk91ZVZibEFmMmc3NklSenA3dy1BQy1rcW1hejhyN3JOYk5aa3Rubg?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [DQN] 우리저축은행 NPL비율 최저…하나저축은행 10% 육박 [2026 지주계 저축은행 상반기 리그테이블 - 건전성] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wOHBDV1o5dV9JUjZuSlFjY3RNNi1HSDFqSlBiQ1FRa01zZWF0VXFvVDdwckEzbGczVEdpQkU1UW9oNzJhZG9aejZLVkVocmQ5YTZJS1hYa09qdEdWQjJsdFJ3YVdreUVrbmNPOWR1OEh3LXZsTWR2NklOcjg?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-08-28",
-          "title": "[2026-08-28] 저축은행·상호금융 상반기 순익 개선…기업대출 연체율은 상승 - 비즈트리뷴",
-          "publisher": "비즈트리뷴",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vcXFQWlctRmpMMFFoUUZkYzE3YnNoMnJKTktadDlxOU5lRkNWZVVnRkxBQy0tbWF0dE5nZGI0d0tJYXZDRlRha2EtYjFmcjJkQlZGRTkya2dUdDdHMjBCV1k2SGZOckt4MkoySW5IVQ?oc=5",
+          "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14UGdKSENaaW5GYW5OdzBXaDBKQ3lodlhybGdlU1VpdEdISURZS2lnSW1LNXQ0ZzlOUXg3emZCZ0dWTGw5Mk91ZVZibEFmMmc3NklSenA3dy1BQy1rcW1hejhyN3JOYk5aa3Rubg?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -491,6 +491,13 @@
       ],
       "articles": [
         {
+          "date": "2026-08-31",
+          "title": "[2026-08-31] [DQN] 우리저축은행 NPL비율 최저…하나저축은행 10% 육박 [2026 지주계 저축은행 상반기 리그테이블 - 건전성] - 한국금융신문",
+          "publisher": "한국금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wOHBDV1o5dV9JUjZuSlFjY3RNNi1HSDFqSlBiQ1FRa01zZWF0VXFvVDdwckEzbGczVEdpQkU1UW9oNzJhZG9aejZLVkVocmQ5YTZJS1hYa09qdEdWQjJsdFJ3YVdreUVrbmNPOWR1OEh3LXZsTWR2NklOcjg?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
           "date": "2026-08-28",
           "title": "[2026-08-28] PF 정리에도 부동산업 대출 연체 부담…웰컴 43%, SBI·한투·OK 17%대 - 뉴스락",
           "publisher": "뉴스락",
@@ -498,17 +505,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 저축은행·상호금융 상반기 순익 개선…기업대출 연체율은 상승 - 비즈트리뷴",
-          "publisher": "비즈트리뷴",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vcXFQWlctRmpMMFFoUUZkYzE3YnNoMnJKTktadDlxOU5lRkNWZVVnRkxBQy0tbWF0dE5nZGI0d0tJYXZDRlRha2EtYjFmcjJkQlZGRTkya2dUdDdHMjBCV1k2SGZOckt4MkoySW5IVQ?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
-          "date": "2026-08-28",
-          "title": "[2026-08-28] 보험사 기업대출 건전성 악화...부실채권비율 1.62%로 10년래 최고 - 청년일보",
-          "publisher": "청년일보",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ja0FFSHlxdmpnNUlnWnI4LWtpQ1pvUDAwMHo3ZGNvQlk4SHhjbDA5OXViZnZZQ3JTQ1ZiZlJ5cXBJWWZOSDlKSlZXazdvSnA2NEwxaFdtMWdYelowcTFwd1pSVjhZY28?oc=5",
+          "date": "2026-08-31",
+          "title": "[2026-08-31] 주거사업장 PF 규제 2년 유예…방심은 금물 [바른 컴플라이언스리포트] - 네이트",
+          "publisher": "네이트",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12YndnTUR0bVRWblZJYTFPZFZjS3hsVjdSeWo0UDd0YnhLd0JYT2lHUGNENFRaS0NwSXVrM1hxQUFxSDU4MEdCR3BtcVBpMmtPNnZz?oc=5",
           "matchMode": "업권/시장"
         }
       ]
