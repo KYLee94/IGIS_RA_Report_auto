@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T09:08:14+09:00",
+  "generatedAt": "2026-09-09T08:59:30+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -8,7 +8,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-06",
+          "title": "[2026-09-06] KB국민은행, 기업대출 9.2조 늘 때 핵심예금 20.4조 증가…생산적 금융 조달력 키워 - 토요경제",
+          "publisher": "토요경제",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBFR3F3SGZUT0JkR0Z0VFgxX0dBYy1PeGRoY205aFVDdzlFd1I3UUExNWtLT2xVVVVmWmx4b3BZVTc3VTJCZy1yMDFKZjViQjVTQUF1QkJPYTh0SHkxNnEwb2ZtRFhDcXdmTzdNUE8wWdIBb0FVX3lxTFBFR3F3SGZUT0JkR0Z0VFgxX0dBYy1PeGRoY205aFVDdzlFd1I3UUExNWtLT2xVVVVmWmx4b3BZVTc3VTJCZy1yMDFKZjViQjVTQUF1QkJPYTh0SHkxNnEwb2ZtRFhDcXdmTzdNUE8wWQ?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] KB국민은행, 상반기 기업자금대출 6조5268억원 늘렸다 - 이포커스",
+          "publisher": "이포커스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MaEVGamFRZml1bzlIUXUtNGw1Q01JQlA4cG9lM29oS0xzdGdpdldUYkZDX1ZnN2NCM1E4ZG04OGc0SEtiTzQwazBHd0RCNU9ndXdJRXd2UDU0T2pldllMMDB3NlprbmFtOFVtRGJB?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] KB국민은행, 상반기 기업자금대출 6조5268억원 늘렸다 - e-focus.co.kr",
+          "publisher": "e-focus.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MaEVGamFRZml1bzlIUXUtNGw1Q01JQlA4cG9lM29oS0xzdGdpdldUYkZDX1ZnN2NCM1E4ZG04OGc0SEtiTzQwazBHd0RCNU9ndXdJRXd2UDU0T2pldllMMDB3NlprbmFtOFVtRGJB?oc=5",
+          "matchMode": "대주명+PF키워드"
+        }
+      ]
     },
     {
       "lender": "NH투자증권",
@@ -16,7 +38,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] NH투자증권, ’퇴직연금 개인투자용 국채’ 청약 개시 - 연합뉴스TV",
+          "publisher": "연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5IOWVFYXZvWEdlLTVCQ0p1U0QzSWdaNzduTjdqQmhPTndxWUdyaEF2TkJuUDY1ZGUxdlk5czh1TXVCUENqMjN4YXVlcmJZdV9OdXE0LV9kSTFwUjhKZmp0blJndkppMW8?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] NH투자증권, 퇴직연금 ‘개인투자용 국채’ 첫 청약 - 농민신문",
+          "publisher": "농민신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iZWZlZG9rY0xLVVIweEVwYzZCR2tXcFA2dGV6eTR4aXhseXQwTjZ4Wi1VN1FadnNFVjVOaTN5U3FyYnJJb19TZmZqclBKNFBYV0pTS3RpUFlzUQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] NH투자증권, 회사채 수요예측에 2.2조 몰려…모집액 11배(종합) - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wSm5NZkxYNXREakp1SXBacGZlSmN5UTk1THphM3BiYUlWQ0VWWmh0SjRCN1NwaHdWNFRMdzNvdmFiQ1ZPWnRvYS1ZQUdDbEpVU2JFTWFONWpKWG9LdGV4TNIBYEFVX3lxTE9wSm5NZkxYNXREakp1SXBacGZlSmN5UTk1THphM3BiYUlWQ0VWWmh0SjRCN1NwaHdWNFRMdzNvdmFiQ1ZPWnRvYS1ZQUdDbEpVU2JFTWFONWpKWG9LdGV4TA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "대신저축은행",
@@ -24,7 +68,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15blBoSmRBbnQ4cVd0NGw1SkROWUlCU3NNOTJ3N0psYm02RFJBdjBUSDA2dlZLRElPZm9uS1JzLXNaVXFUdDdSLUhvMnFhN2M?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 연장으로 버틴 부동산 PF…중소형 증권사 '잔존 부실' 시험대 - SR타임스",
+          "publisher": "SR타임스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnMTlPR3duZlV5eEt0LVVBNWZyVTZpR2RTWTMxVThQYjEtVExiTkMxM3FQMFgwOG5teDAtTlRGNDNadG5RLURyZTU2bmgtdlNiUkowWFFFYTNLemVtZ1pLZHFXX2xCR2hpY1hF0gFrQVVfeXFMUGcxOU9Hd25mVXl4S3QtVUE1ZnJVNmlHZFNZMzFVOFBiMS1UTGJOQzEzcVAwWDA4bm14MC1OVEY0M1p0blEtRHJlNTZuaC12U2JSSjBYUUVhM0t6ZW1nWktkcVdfbEJHaGljWEU?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "대신증권",
@@ -32,7 +98,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] 대신증권, 대손충당금 5배 증가…해외 부동산‧SPC 리스크 부각 - CEO스코어데일리",
+          "publisher": "CEO스코어데일리",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1XZWh6bWU1Tlp0cWgxcFc2SWVzQTZfZFQyMmxmeFNFRVRXUzZOeWxzRk9hclBPbmNkRmRPX1dodEZNWmtoR19WRzVhRnprRUNiWlRBQ1NIc2xQV3dxdGNaRXNOTjhmU2RUYTBN?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "[2026-09-09] 대신증권 \"심텍, 3분기 실적 컨센서스 상회…성장 기반 확보\" - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41bnBTSWxKdDlOLVBTY0RQeXlLTjhCcVpnOEoyVjlNem1sbjBXQXNsWU9rdG5qaGtzTjBKMVRzUGZPZXdwY0Rxc2NnVkJwSW9Xc3UtTEJ5T2VQN1XSAWBBVV95cUxNVUVEcmd6WHp2ZG9jQXJyMUhkaXYyZllvZGxUOGI1VlhaS1BwT2xMazFobjBXZTNualJTMFFwSEFvNTNNZHR4OWVwTG1TT01qYUhTOG4tMG4tQUhMeWk2cFQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "[2026-09-09] 대신증권, 최근 5년 기술특례 IPO '사후 경고' 최다 - 뉴스톱",
+          "publisher": "뉴스톱",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QQU5Vc3djc1hWM3UyM0NuMkFHV2tGNnBmSEY1M01oVHN1TkFwZVVxb0xMdWlYTW4ySmFxZnNBdGw2dXN5eXRHZjJlckd0RzhsT05tYWgxN2lnNkJIWVlad3lhajVWN1hJR3VsWU5xMA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "메리츠화재",
@@ -40,7 +128,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] [단독] 메리츠화재 '질문톡'서 보상 답변 오류…정정 완료 - 신아일보",
+          "publisher": "신아일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UZnZ1RTBlR3RhaU1lbjRfX01BenU3dks5N1dwRDRLWFBIc1hpUWdzNURFVkNpQVJaLU9PSUZvQlI1LVVqNGx1ZTJ5eWZma2RwZ2piRjJZeGFSRkRieTJBcVpwOTdrZTBhLTBtcnVucFg?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 메리츠화재 돌풍에 장기보험 순위변동…'질병·상해보험' 영업에서 갈렸다 - v.daum.net",
+          "publisher": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBuX2tpUGlwVHJCZHFObUxhcGFaLUh1bjlBcHZEaTZ0dFpscXBsY3JEUzczdlZVMU5ST2dUSlZmYTZmRktnSWc?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 메리츠화재, 투자로 끌어올린 실적...손익 변동성 낮추기 집중 - 뉴스투데이",
+          "publisher": "뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1YRXV6cnJGMHNYUEVtZjc5LTRTcTJ1N3Z1VHlzb2ZaT1NZT01iMFlqaTJXVFkyTlhDX1ZBQ0NFZVlZakRudEFpRjd4SHZhdWZZMDFGLU5XekdlZThhaXc?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "비씨카드",
@@ -48,7 +158,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] [취재후일담] ‘휴면카드’ 비중 50% 넘은 비씨카드, 억울한 속사정 - 아시아투데이",
+          "publisher": "아시아투데이",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE92M0xiUkVSOEY2QUw4ZUY5MVNEOTdJMWRELS10X291S1NxYU1yZ1Rpd19yWElLdld2cTN1RnFlY1ozOHFUbjhmbm9Ra0JVa0RNWndNZUNMbnQ5NWc2VGxfZFdITkNXR2xQQUxwUQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] 비씨카드, 가족·친구와 함께 결제 가능한 서비스 출시 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sSWNWSVphX3Q0LVc1SERRQUszU1pYWk9DcTM5OGMycHU1Nks1RFkwUWRVajRlZzB0Nm1jNzZjc1NYVHU3M3BJWXFLaDlYdw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] 비씨카드, 가족·친구 함께 쓰는 '가족페이' 출시 - 더팩트",
+          "publisher": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZOFQ4UmZtYmxlUkF3NURUS2ZCRWpBX2ExY2Q5VEYyRTBKM3pzcHp6eWJsTjBMdFpiUi1FMW5tRnctT3pISEZRb0xteFBFVkx3SFB6Y9IBVEFVX3lxTE1ZOFQ4UmZtYmxlUkF3NURUS2ZCRWpBX2ExY2Q5VEYyRTBKM3pzcHp6eWJsTjBMdFpiUi1FMW5tRnctT3pISEZRb0xteFBFVkx3SFB6Yw?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "소노인터내셔널",
@@ -56,7 +188,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 오션월드서 CPR부터 구조법까지…소노인터내셔널, 수상안전 캠페인 전개 - 뉴스탭",
+          "publisher": "뉴스탭",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8yR2FBTkJGSi02X0dwazdSQkpEOWdzUDdYRW5fQmE5N3h1c3BZdVRyWTkzQ19zcTZqcS1yZzl6c2dwZVkzOEJTX3FyUkQ2NDNYTFVtN2F2UGszYzF4Yjg1OS1rdFlsQ3h2ZmpSTg?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 소노인터내셔널, 오션월드서 수상안전 캠페인…취약계층 특별 기부 - 인더스트리뉴스",
+          "publisher": "인더스트리뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5xbWhNOHR0c0pEbkQ5alk1bVltYnUwQ3RqMnVDaXIzREU4WjhMWjVDWmJDbXpDako3WGlnejZLbHV6Y203TmxnaURCQi1pYXRPVFpsaENtSWNDdXBnWmhkRm9MaUc3SU1iN3k2a3dVVzFVZw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 소노인터내셔널 오션월드, 대한적십자사 강원지사와 물놀이 안전 캠페인 진행 - 이슈투데이",
+          "publisher": "이슈투데이",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13MlpnRnNmMWNubzMtZjN6NnRXVm1JZWkwYlM4YVR3UU1lZjlSUEVZeUthbVhsbVR3VjNudDQ2VGg1cEpiRkthRE1FSU41T0w1MXp6VF90NUh4U29SR1NsMk10NDRoZw?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "스틱얼터너티브자산운용",
@@ -64,7 +218,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] [단독] IMA 3사, 3.7조 자산운용 불구 부동산 투자는 ‘제로’ - fetv.co.kr",
+          "publisher": "fetv.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ldmFCdGdERjBsUjFXSEtNcWJTV1dKMnBzUFZ4d3JEMk9JMUQ2WHpyZmxWaXFOYnZfQVFzWFYyWVJTRlNzR0hGaTAxUi11U1M3a2w3dURsR3FwY3hYWmtIQ0Zwb3JBSlQx?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' : 네이버 블로그 - Naver Blog",
+          "publisher": "Naver Blog",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSjBzY2hrZ1U5d3VIa0szbkZ6bENSZFluOHBVcExEZERhdXYwankzellVQmZjX2MyQlJkVkN0dks0eUdVWkJ6V05jdE90SmdRMWtUV0t2dElCZW1OSWsxblZ3VnltR0JBSkVvS2xIZjZQOUFvbWZ2UF8yeEdVS1c4X2U5ejBVakRGc1lnOWF5WQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "신한GIB",
@@ -72,7 +248,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] “대출 갚으면 돈 준다”…신한금융, 8년간 청년 1만명 자산형성 지원 - 데일리한국",
+          "publisher": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02R0hXWWJjaFJabjc1LVVrcVpFZ3RqNEJacnVPMVYtVV93aTdQOW5XNTdyWEJfZDJpTnlIb2YwU0d0Uk42OTJsUDZsTlNsNXhSLUNYXzVqcEVFMmQ3V2NWTjNoc08wa29SMTREclpFMmdFNkXSAXNBVV95cUxNNkdIV1liY2hSWm43NS1Va3FaRWd0ajRCWnJ1TzFWLVVfd2k3UDluVzU3clhCX2QyaU55SG9mMFNHdFJONjkybFA2bE5TbDV4Ui1DWF81anBFRTJkN1djVk4zaHNPMGtvUjE0RHJaRTJnRTZF?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] “대출 갚으면 돈 준다”…신한금융, 8년간 청년 1만명 자산형성 지원 - 한국아이닷컴",
+          "publisher": "한국아이닷컴",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mNGx4bll4Qlp6OFlZSkh3bkk0dFdEVkNmX2VpcEdXc0gzbmhGNy11Sko4bVJkY0dnMTM0UG01LVgtVjh4YWcyQm5jam8xbWdZWjg1amU0LVdoYVBfOFpfNzNJWE1NVkM0SVlJ0gFvQVVfeXFMTTlUa3Zsb1N3dVUtQUl1Y2VCSWtqd3U2eFpsQ01iemFNWUZobmFpdDgyVmI2SkVvTG1iSkxiTHh6QnlQM2Izb3pSbW9jamR4SE5ZVjlIXzltNGEtdlI5aEZuc1oyNXNkYVltQkdJTmZF?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] [신한금융 주주 빅3]① 캐피털그룹, 10여년 만에 복귀한 미국 운용사 - 블로터",
+          "publisher": "블로터",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Qc3hPZXJwR3hCUXZMbnlvQ3B4Q2J3SHFBWTktYkFIdi1WOVBXbUlzdkpKLW1PSFRIWW0zRjM1SVFNZlk4QmhYMFlTNkNFNTJkeG1sS0RWazBLX21fSkhnX0p1dm01SDJsR3dmMNIBbEFVX3lxTE5Qc3hPZXJwR3hCUXZMbnlvQ3B4Q2J3SHFBWTktYkFIdi1WOVBXbUlzdkpKLW1PSFRIWW0zRjM1SVFNZlk4QmhYMFlTNkNFNTJkeG1sS0RWazBLX21fSkhnX0p1dm01SDJsR3dmMA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한은행",
@@ -80,7 +278,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] 삼립, 신한은행과 상생펀드 350억원으로 확대 … 협력사 대출금리 1.4%p 우대 - 워크투데이",
+          "publisher": "워크투데이",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE82X3l6RjRUTnBiOVhJeWtpcXBVUUN6R0V1TC1CS2RUN3VXU2NlSGJhY2hvYWFRSUZzdWd5bWdVeC1JbFppM3JtN1FXR2o3RGp4U2pYWjZQU1FuQ2Npd0NHMHE5MVlrT05KTkliSA?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] \"대출부터 IR·투자까지 잇는다\"…신한은행, 서초 AI·ICT 기업 성장지원 - Nate News",
+          "publisher": "Nate News",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIQmhaS2RvdmhDaXd2eXRSVUNzMkhubW5jT0MweF93N3ZDRmZZQTUtemxpbExlTVJESUlISHFLaEw4cnduRkQwWHFQc001elZGUHlr?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] “대출 갚으면 돈 준다”…신한금융, 8년간 청년 1만명 자산형성 지원 - 데일리한국",
+          "publisher": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02R0hXWWJjaFJabjc1LVVrcVpFZ3RqNEJacnVPMVYtVV93aTdQOW5XNTdyWEJfZDJpTnlIb2YwU0d0Uk42OTJsUDZsTlNsNXhSLUNYXzVqcEVFMmQ3V2NWTjNoc08wa29SMTREclpFMmdFNkXSAXNBVV95cUxNNkdIV1liY2hSWm43NS1Va3FaRWd0ajRCWnJ1TzFWLVVfd2k3UDluVzU3clhCX2QyaU55SG9mMFNHdFJONjkybFA2bE5TbDV4Ui1DWF81anBFRTJkN1djVk4zaHNPMGtvUjE0RHJaRTJnRTZF?oc=5",
+          "matchMode": "대주명+PF키워드"
+        }
+      ]
     },
     {
       "lender": "신한캐피탈",
@@ -88,7 +308,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] “대출 갚으면 돈 준다”…신한금융, 8년간 청년 1만명 자산형성 지원 - 데일리한국",
+          "publisher": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02R0hXWWJjaFJabjc1LVVrcVpFZ3RqNEJacnVPMVYtVV93aTdQOW5XNTdyWEJfZDJpTnlIb2YwU0d0Uk42OTJsUDZsTlNsNXhSLUNYXzVqcEVFMmQ3V2NWTjNoc08wa29SMTREclpFMmdFNkXSAXNBVV95cUxNNkdIV1liY2hSWm43NS1Va3FaRWd0ajRCWnJ1TzFWLVVfd2k3UDluVzU3clhCX2QyaU55SG9mMFNHdFJONjkybFA2bE5TbDV4Ui1DWF81anBFRTJkN1djVk4zaHNPMGtvUjE0RHJaRTJnRTZF?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] “대출 갚으면 돈 준다”…신한금융, 8년간 청년 1만명 자산형성 지원 - 한국아이닷컴",
+          "publisher": "한국아이닷컴",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mNGx4bll4Qlp6OFlZSkh3bkk0dFdEVkNmX2VpcEdXc0gzbmhGNy11Sko4bVJkY0dnMTM0UG01LVgtVjh4YWcyQm5jam8xbWdZWjg1amU0LVdoYVBfOFpfNzNJWE1NVkM0SVlJ0gFvQVVfeXFMTTlUa3Zsb1N3dVUtQUl1Y2VCSWtqd3U2eFpsQ01iemFNWUZobmFpdDgyVmI2SkVvTG1iSkxiTHh6QnlQM2Izb3pSbW9jamR4SE5ZVjlIXzltNGEtdlI5aEZuc1oyNXNkYVltQkdJTmZF?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] [신한금융 주주 빅3]① 캐피털그룹, 10여년 만에 복귀한 미국 운용사 - 블로터",
+          "publisher": "블로터",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Qc3hPZXJwR3hCUXZMbnlvQ3B4Q2J3SHFBWTktYkFIdi1WOVBXbUlzdkpKLW1PSFRIWW0zRjM1SVFNZlk4QmhYMFlTNkNFNTJkeG1sS0RWazBLX21fSkhnX0p1dm01SDJsR3dmMNIBbEFVX3lxTE5Qc3hPZXJwR3hCUXZMbnlvQ3B4Q2J3SHFBWTktYkFIdi1WOVBXbUlzdkpKLW1PSFRIWW0zRjM1SVFNZlk4QmhYMFlTNkNFNTJkeG1sS0RWazBLX21fSkhnX0p1dm01SDJsR3dmMA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한투자증권",
@@ -97,7 +339,29 @@
         "816",
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-09",
+          "title": "[2026-09-09] 신한투자증권 '신한 Premier PWM 센트럴용산센터' 통합 오픈...'신한 Premier Film Festa' 수상작 5편 선정 - 여성소비자신문",
+          "publisher": "여성소비자신문",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tb2NMLWx3TEdsOS1VQ1h4X202LXBSR1RCNFM2bzlzR0s1VUZjMTlId25GQlpQSEtWWkF0U3lPbS10aVA2RGJ4R3hkQmJ2amd3a0YzVXUwSmlMYlRGb0Q4X29lZXJkQQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "[2026-09-09] 신한투자증권 \"알테오젠, 일부 품목 임상3상 실패.. 목표가 하향\" - 글로벌이코노믹",
+          "publisher": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSDZLbVlnSF95bzkxYmxJS2VUUWthSmlob0FpeHFFQXRGZDJlZmh3bm1DNWFNeHBrV20zR3dYaTNFSVBVd2VrUGk2S0F2dXp6VGY5N3NJSXpLLWJpWmlNLTZCNFo3SWhhaDdVZnFaZDc5Q0RLWFVRajZvNkFQd29UN1lkaFk3YWVF?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "[2026-09-09] 신한투자증권 JTBC 채권발행 주관한 부서장 경질 - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zOEVTcmItc3JWa2lYZWFrTXYwSVNya3FyTXMtdEdwSHNLSnJfVWNBYVE0VVUxclRZQzFMN1RZUUR4d0h3VVRlTzJrbW80SWs?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "코람코자산운용",
@@ -105,7 +369,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] [단독] IMA 3사, 3.7조 자산운용 불구 부동산 투자는 ‘제로’ - fetv.co.kr",
+          "publisher": "fetv.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ldmFCdGdERjBsUjFXSEtNcWJTV1dKMnBzUFZ4d3JEMk9JMUQ2WHpyZmxWaXFOYnZfQVFzWFYyWVJTRlNzR0hGaTAxUi11U1M3a2w3dURsR3FwY3hYWmtIQ0Zwb3JBSlQx?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' : 네이버 블로그 - Naver Blog",
+          "publisher": "Naver Blog",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSjBzY2hrZ1U5d3VIa0szbkZ6bENSZFluOHBVcExEZERhdXYwankzellVQmZjX2MyQlJkVkN0dks0eUdVWkJ6V05jdE90SmdRMWtUV0t2dElCZW1OSWsxblZ3VnltR0JBSkVvS2xIZjZQOUFvbWZ2UF8yeEdVS1c4X2U5ejBVakRGc1lnOWF5WQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "키움투자자산운용",
@@ -113,7 +399,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] [단독] IMA 3사, 3.7조 자산운용 불구 부동산 투자는 ‘제로’ - fetv.co.kr",
+          "publisher": "fetv.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ldmFCdGdERjBsUjFXSEtNcWJTV1dKMnBzUFZ4d3JEMk9JMUQ2WHpyZmxWaXFOYnZfQVFzWFYyWVJTRlNzR0hGaTAxUi11U1M3a2w3dURsR3FwY3hYWmtIQ0Zwb3JBSlQx?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' : 네이버 블로그 - Naver Blog",
+          "publisher": "Naver Blog",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSjBzY2hrZ1U5d3VIa0szbkZ6bENSZFluOHBVcExEZERhdXYwankzellVQmZjX2MyQlJkVkN0dks0eUdVWkJ6V05jdE90SmdRMWtUV0t2dElCZW1OSWsxblZ3VnltR0JBSkVvS2xIZjZQOUFvbWZ2UF8yeEdVS1c4X2U5ejBVakRGc1lnOWF5WQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한국투자리얼에셋운용",
@@ -121,7 +429,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-07",
+          "title": "[2026-09-07] [단독] IMA 3사, 3.7조 자산운용 불구 부동산 투자는 ‘제로’ - fetv.co.kr",
+          "publisher": "fetv.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ldmFCdGdERjBsUjFXSEtNcWJTV1dKMnBzUFZ4d3JEMk9JMUQ2WHpyZmxWaXFOYnZfQVFzWFYyWVJTRlNzR0hGaTAxUi11U1M3a2w3dURsR3FwY3hYWmtIQ0Zwb3JBSlQx?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' : 네이버 블로그 - Naver Blog",
+          "publisher": "Naver Blog",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSjBzY2hrZ1U5d3VIa0szbkZ6bENSZFluOHBVcExEZERhdXYwankzellVQmZjX2MyQlJkVkN0dks0eUdVWkJ6V05jdE90SmdRMWtUV0t2dElCZW1OSWsxblZ3VnltR0JBSkVvS2xIZjZQOUFvbWZ2UF8yeEdVS1c4X2U5ejBVakRGc1lnOWF5WQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한화저축은행",
@@ -129,7 +459,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15blBoSmRBbnQ4cVd0NGw1SkROWUlCU3NNOTJ3N0psYm02RFJBdjBUSDA2dlZLRElPZm9uS1JzLXNaVXFUdDdSLUhvMnFhN2M?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 연장으로 버틴 부동산 PF…중소형 증권사 '잔존 부실' 시험대 - SR타임스",
+          "publisher": "SR타임스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnMTlPR3duZlV5eEt0LVVBNWZyVTZpR2RTWTMxVThQYjEtVExiTkMxM3FQMFgwOG5teDAtTlRGNDNadG5RLURyZTU2bmgtdlNiUkowWFFFYTNLemVtZ1pLZHFXX2xCR2hpY1hF0gFrQVVfeXFMUGcxOU9Hd25mVXl4S3QtVUE1ZnJVNmlHZFNZMzFVOFBiMS1UTGJOQzEzcVAwWDA4bm14MC1OVEY0M1p0blEtRHJlNTZuaC12U2JSSjBYUUVhM0t6ZW1nWktkcVdfbEJHaGljWEU?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "흥국저축은행",
@@ -137,7 +489,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] PF 악몽 딛고 증권사도 제쳤다…다올저축은행 '깜짝 반전' - 딜사이트",
+          "publisher": "딜사이트",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15blBoSmRBbnQ4cVd0NGw1SkROWUlCU3NNOTJ3N0psYm02RFJBdjBUSDA2dlZLRElPZm9uS1JzLXNaVXFUdDdSLUhvMnFhN2M?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 다올투자증권, 6분기 연속 \"흑자 행진\"...PF 줄였지만 본업 수익성 제고 ‘숙제’ - 청년일보",
+          "publisher": "청년일보",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VUTBXQnlaQ2o5a1lVUDQta0R0V09WZG5jTmVyWGUzUk54d203dDgwSmNLVU1EUERTS3J4alhsRHdHN001eG5TUFNkVXlkaHROTkxLUktCNENMY0dreE1xOWJOMEZXTEk?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-09-08",
+          "title": "[2026-09-08] 연장으로 버틴 부동산 PF…중소형 증권사 '잔존 부실' 시험대 - SR타임스",
+          "publisher": "SR타임스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBnMTlPR3duZlV5eEt0LVVBNWZyVTZpR2RTWTMxVThQYjEtVExiTkMxM3FQMFgwOG5teDAtTlRGNDNadG5RLURyZTU2bmgtdlNiUkowWFFFYTNLemVtZ1pLZHFXX2xCR2hpY1hF0gFrQVVfeXFMUGcxOU9Hd25mVXl4S3QtVUE1ZnJVNmlHZFNZMzFVOFBiMS1UTGJOQzEzcVAwWDA4bm14MC1OVEY0M1p0blEtRHJlNTZuaC12U2JSSjBYUUVhM0t6ZW1nWktkcVdfbEJHaGljWEU?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     }
   ]
 }
