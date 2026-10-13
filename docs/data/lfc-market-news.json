@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T10:09:11+09:00",
+  "generatedAt": "2026-10-13T11:56:55+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -10,24 +10,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] KB국민은행, 환전 고객 eSIM 1GB 무료 10월말 연장 - PRESS9",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 전북대병원, 주거래은행으로 KB국민은행 선정 - 뉴시스",
+          "publisher": "뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FM2hKZHFqWHlWZDEtQ2NyQ0JBcnY1V3k1NHFfT1Vsekx5UHN5ZkN3a2xUbmpXbFVKcXNDQTdNUVFOX2NVb2REVzdIU0c1dmdQdjJBLUkxZjc5cE80WFNoVFNNRWJBS0daRENxVUVHdURPQ1o0cG5BaNIBeEFVX3lxTE1FM2hKZHFqWHlWZDEtQ2NyQ0JBcnY1V3k1NHFfT1Vsekx5UHN5ZkN3a2xUbmpXbFVKcXNDQTdNUVFOX2NVb2REVzdIU0c1dmdQdjJBLUkxZjc5cE80WFNoVFNNRWJBS0daRENxVUVHdURPQ1o0cG5BaA?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 전북대학교병원, 차기 주거래은행에 KB국민은행 선정 - 전라일보",
+          "publisher": "전라일보",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96YmpIZHFBSHBoejlmckdFWDB5SndzVmkzbnllQWRXaFZfbmFjekRUYW9lVzFNWmdPci1FQVpIRHMzZ05DZlF3YUxpUmJUS29KaDVCb3I0bGVjVlEzdTViV0RjVFJ6MGhMZGxWdjlR0gFwQVVfeXFMTzBKYWtRdWxuWURMUTZOUmRtb3NpR0wyMlBYejVvWFVHVmRPT0MzU1pNUnZYVm5tOTQ4ekJkWnB6RDFyeVUxOUVhMlhiZnRPMWszekJyTG9LMWpiVVhHSXNpZ2NINTE3X1BBM2gxR3VIYw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-10-13",
+          "title": "[2026-10-13] KB국민은행, 보안투자 확대 여력 주목…4년간 예산 1011억원 미집행 - PRESS9",
           "publisher": "PRESS9",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tcHdlTmZiNUk3VGM5aUk3OTFXVkVQZ3M0OWJoNFJMME9QQlZRYXhPYklmU2kxcjZDN2pIM0hmUzNqYkh1OHFyWWRQT1dITnBTUkJpWVdxLW9fVmtzSkRWb0pmdkM?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-11",
-          "title": "[2026-10-11] KB국민은행, 환전 고객 대상 eSIM 1GB 무료 이벤트 10월 말까지 연장 - 인더스트리뉴스",
-          "publisher": "인더스트리뉴스",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1NTGtzSFNJcF9mMFAyaWZkMjhaSU9vVk9RWnVwc2VOcHVOZDdDQ2VyOVFDM1hJU1Jva0JDRWRZMEhlUVdYU3JqOXRMNkZJeUZjeDJ6OG5KQXVBb0JxcHI0b2sxSXhjRlJaQ2lkanJPUi0xdw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-11",
-          "title": "[2026-10-11] [금융 게시판] KB국민은행, 환전 고객 eSIM 1GB 무료 제공…농협은행, 기업금융 강화 - 라이센스뉴스",
-          "publisher": "라이센스뉴스",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE84YndBLU9JT2ZMSHo3YUhZcDFsWGZiaDRQNmxjM0IzcExMc191YXo3X0V0SnI4a2NwcXZJekNId1pCdGNJbzZBUDdxQVhHRjQwaGRfS2xGU053YmdPeGRlc0F6bHh4ZV9WT2RN?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HalY5MDZRdmVjbklaTDJvX1BYbG1yR01LVVVHamgydzRrZHRCYUNic1R5ZzhXYzhaa2NlOWFWWVNZazlaMkRQWjhlYmNKZ3RJaTNHV3o1MUttVVBTTU9jajBjaGc?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -41,23 +41,23 @@
       "articles": [
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] NH투자증권, ‘대한민국 부동산 인사이트 투어' 개최 - 스마트투데이",
-          "publisher": "스마트투데이",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02bzYzZjF6Y0tfRzE5UjRJRkNYcHM0ZVpXMjJOZnVPRGczOVdQUS1YQkE3OWFRaUUzVTJKampFVk01VWNKeVNYR0Zld2k3bjc2MmRpQ2hFWWd2VjJ4bnJv?oc=5",
+          "title": "[2026-10-12] NH투자증권, VIP 고객 대상 부동산 투자·절세 아카데미 개최 - 메트로신문",
+          "publisher": "메트로신문",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWYTc3UEFsWGVvcXI0c0FUTG5uWGMtQnZuOTRYNHo4Z244Zk15azJWMzlaTTB1OEhvRC1JVVdOalV5NWU0RzYxd1BGYS1CVzhnZzgycE1mYXU4TkJBZW1Ybg?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] NH투자증권, VIP 대상 부동산 아카데미…투자·절세 전략 제시 - 매일일보",
-          "publisher": "매일일보",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ncThVUmJfbDY2c2xOb1VRaGlXS3M5QzFvUjFSa0RjaElkSng5RTZUeTZMV0hHT2R0M0pPS2RyTU9pSWlnc1hoRGh4YzFZN0NyVEhBaHppS25aNUdHbWEtaF9DelQ?oc=5",
+          "title": "[2026-10-12] NH투자증권, VIP 고객 대상 부동산 투자·절세 전략 제시 - 뉴시안",
+          "publisher": "뉴시안",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zUmx2NHpjbDd3eEV6SUJCbXNpU1h4bGx5ZlNWcGdSUklyVkNRX2RITG43XzJjemMzUWpzQko2MXNaQVVEek1aYkx0S0RfdERKbmRKN2dJT01ITlJOY3JqR2pGOFdPWjA2TXh30gFuQVVfeXFMTW10d3Btdm9hdFktN3pMTTNhVEpONWg0RVItSTdJRjduU3VKNWV0Y1ROdlRKQ0ZfdXFzYkRRWEQxZFVxUUM0TFo5SFd5dkJFc2JNZ2VGcEdldUtFcVFBY2ZJMDY0WHhDRWx0dnI0ZEE?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] \"VIP 자산가 위해 전문가 집결\"…NH투자증권, 부동산아카데미 'Insight Tour' 연다 - www.thefairnews.co.kr",
-          "publisher": "www.thefairnews.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54RnpaS1oyRFNPMTN3ZDBNRTRkVzFBNE4yQVU2VUN2Y0RzRGg3YkQ0bXlldFpSWUtFWVNtZG1mYXVpLWtKaU5FT2pVVjZHd0trV0lzUmM0aGFMTjF0VnB2NEQ5VFlyWFVzWjJRd2dkdjA?oc=5",
+          "title": "[2026-10-12] NH투자증권, 부동산아카데미 ‘대한민국 부동산 Insight Tour’ 개최 - ER 이코노믹리뷰",
+          "publisher": "ER 이코노믹리뷰",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5aTkQzN0hDN3Fxbmo5cFlwMXQwTWFycGVNNy05ZHlaVW8ycEtzSEVyMEE4enpWT2tTd245V0piUEh5blRjV0ZMVWp6MUJDZ2ZGQ0ZEUHY4aTFHcW1neVAyUG1EOXRsZ081YWlyMA?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -84,10 +84,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -100,24 +100,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 대신증권, 시장조성 의무이행률 2%…첫해부터 철수 가닥 - 서울경제",
-          "publisher": "서울경제",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qMTlkQXYxRXR5SHI0Unp2X0Y5eU96aFA5RlRSRUNKMFZOdUJmdW1kT2hsX0xzUFUzQUx0UTc4aTBLUTgwaWcwbjd4TmtpbTZBckHSAVNBVV95cUxNXzRLVVBxSDRGSERVYUEzd0NvVDNsRmhDcGEtd29lV3V6TElYQWpLdms3R2Z2Z1drZ2dLRlVxUU12Q1hYOFFySWFickFfdXpyRXhhWQ?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 대신증권 \"KT, AIDC 확대가 성장 동력될것…스페이스X와 경쟁 우려 과도\" - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBITWpfQ3pObS14aFUzVFZ2OTROMGQ2cDQyYTFscE91NWE4Y05UcjVaalRxQXNDcElYa1p2cFU5c2dqSENqeHpscnJFdTlhZjdIWHdzVmhLMkNPcE9fU0ZmYtIBYEFVX3lxTFBITWpfQ3pObS14aFUzVFZ2OTROMGQ2cDQyYTFscE91NWE4Y05UcjVaalRxQXNDcElYa1p2cFU5c2dqSENqeHpscnJFdTlhZjdIWHdzVmhLMkNPcE9fU0ZmYg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [리포트 브리핑]GS건설, '주택은 순항 중, 데이터센터는 출발선' 목표가 44,000원 - 대신증권 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MNWthRXR5YTVNUzJ2VWNuNjN5aUVsMWNzUW02V1NqaGdfN3JscmVxQjBhVkhvRUEzTlRVT1N3SmlKSnNQM0hxcTFQbVNJXzhpTHpTZXhpM1hlQ2c2?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 대신증권, 시장조성 첫해 고전…운용 경험 부족에 증시 급변까지 - 뉴스투데이",
+          "publisher": "뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNQldvZldzdVZVR0xOM2RtRWVlQkZfaGJ5WnRGNmR4ZU5XUzVPNFZOOENvWE9Dc2ZoVlpudGxVQndGT2Z6cDRTa3hBZ0ZJYlhkYTZFM09YZ0VMakhRSWc?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [특징주]디아이, 대신증권 목표가 6만원 상향에 8.18% 오름세…3분기 매출 역대 최대 전망 - 남도일보",
-          "publisher": "남도일보",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KNjM1enduN2RSVWhVR2lERF9feTNXOXFYWmRieklIMTJfM2R2REt0VUJNTkJoMFJiYXF3NkxwZXJiN3hoUkpPZEc2NUc0Xy1LWVU0NzY1Wm5ySFZQOFR1emZjZkdQLWU2dEhSdtIBcEFVX3lxTE9UUTJkSWxwQUNzZkhjV3RveDR2OEQxeWVpeE5NQ1NNejhRUlFyeHdBMEREazZ0WE1Jdl96eDA3dGVGZXVkZlFfcFN2R18wU0FFRFdwUjdVdTNkWmFfdDRPQ1JQX1NnV1cyZDRVbVZBVjM?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 대신증권, 영광YKMC 코스닥 상장 주관 - 파이낸셜포스트",
+          "publisher": "파이낸셜포스트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBOSlJPaGo4blVxU3FiaTdPRTlILXAxUXhKTUZWZnUxZmlyNUJ4Q2Fway1yQWVwcVBOcU1xSWdCUWxZeUQwbFdIbU5tYzBTX1Z4NmxPY1ViLWpjemI2ak52NGJzT05QRlJrWV9DRWJ5bEtsX0hE?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -131,23 +131,23 @@
       "articles": [
         {
           "date": "2026-10-12",
+          "title": "[2026-10-12] 메리츠화재, 전속설계사 5만명…CSM 상승세 뒷받침 - 에너지경제신문",
+          "publisher": "에너지경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xVzRzTnVEaldsbFZPSmNrYjdEcURwS0p6c05fRkdoTXV6SXpJMURaSmUzcktOOTg3Qkk5Vm9jel9xVnN6YkpLLUJVeVpnVEdiN2Zrb0V5cGJwNVU?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-10-12",
+          "title": "[2026-10-12] 현대해상, 10월 손해보험 평판 1위 ‘독주’…메리츠화재 113% 폭증 ‘톱3 안착’ - 팝콘뉴스",
+          "publisher": "팝콘뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1EMHQ2dnlDTUg1M0c5ejhEMUtRM0JuQW5tOEU5c3B6Z3FJbDVjOWF4bVpNc29lOVZidGIzMm1nekxtZjF1V1ZnUC02N2RaanQzaFgyQ3VtdUItLVp3V05WN0RTZ1pLenZMdjZTeThSSjNNQdIBckFVX3lxTE1EMHQ2dnlDTUg1M0c5ejhEMUtRM0JuQW5tOEU5c3B6Z3FJbDVjOWF4bVpNc29lOVZidGIzMm1nekxtZjF1V1ZnUC02N2RaanQzaFgyQ3VtdUItLVp3V05WN0RTZ1pLenZMdjZTeThSSjNNQQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-10-12",
           "title": "[2026-10-12] 손해보험 브랜드 빅데이터 30.82% 증가…현대해상·KB손해보험·메리츠화재 톱3 - 핀포인트뉴스",
           "publisher": "핀포인트뉴스",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9nYnVTclZxbzhuQkt0LXlWRXVrZHZIQVZXVUljdmVlMGd1Rm5jUVU5QzFWV3BkenJBdHZmaGZzVTRZOF9GVDYydU1qRWloU3AtbmV5NThoa0NqQVlaeFNhWDFmQXl1LVNBbTg5cVk3bGFhek1qMDB30gF3QVVfeXFMT2didVNyVnFvOG5CS3QteVZFdWtkdkhBVldVSWN2ZWUwZ3VGbmNRVTlDMVZXcGR6ckF0dmZoZnNVNFk4X0ZUNjJ1TWpFaWhTcC1uZXk1OGhrQ2pBWVp4U2FYMWZBeXUtU0FtODlxWTdsYWF6TWowMHc?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [빅데이터로본다] 손해보험 2026년 10월 브랜드평판... 1위 현대해상, 2위 KB손해보험, 3위 메리츠화재 - 일간투데이",
-          "publisher": "일간투데이",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jRFozTko3UlcxRk9KaGpXMzlacEwxTjhaQ1I1VGhLQVp5OHNBTWpnV1ZIT0d5VGtoNEhrbFprbmpVQTIzOXZjdVh0bGdFRVlBSWNBUm1zS055ZUFWUklnTUlhTjd1LUg4bGk0?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 현대해상, 손해보험 브랜드평판 10월 빅데이터 1위... KB손해보험·메리츠화재 순 - 빅데이터뉴스",
-          "publisher": "빅데이터뉴스",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1zQy1seUgxLXh2ZUo5WHdsdGtYU1h1ZkNQVWtQNFpjMGxPOUZmMUVMZU9PUURNQ0hXS2h6U2JtNlAwTnB5VEFnRFBscGExT2JkOG15WHlvWFl6ZnpXb3o1NDdtQTQwN3FtYkh0ZkdoQkJCRGVPYmtuSGNJVm4?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -160,25 +160,25 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 비씨카드, 가을 음악 축제 'GMF 2026' 할인 이벤트 - 중소기업신문",
+          "publisher": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56VVdubFdTYkVkR1NoOGczVVVyZmJ5bU9xQWxCVzRQbUZtQTZXbXVsXzRjcTFnSVNSNlhVeklsak9kM0d2cl81MFZaeVEta2YwNi1XVnNMc0dOVXRXczZ2TkdFM2wwcDQtcl9lMA?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한저축銀 채수웅, 선제적 리스크 관리로 건전성 제고 [지주계 저축은행 하반기 건전성 전략 ②] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6VUswM3JSQmlaVmMwNnl6QlNuWENvang3eHJtd1R3em9GeEVUY1c0clFUa0E1UEpzQV91OXp5b2NhSVNWYU14UzYzT192U1hNTGxmb3BDbjl0NExuZmlvcFl0RlVTVjN0UUhLd0oyUlk3M0VQNXZDVkRHNDg?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-10-13",
+          "title": "[2026-10-13] [카드News]NH농협카드·비씨카드·신한카드 - 메트로신문",
+          "publisher": "메트로신문",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51bHZ2M0VaZlhkSHppb3JpbGpGTHNJZVBkX2xEVEZmblZGbS1hYjhQd3RMWFJBb09OSDBmZFBZZF92MTFTdjctUG9LSlppZmItZElkUEQ3azlobVJIb2h4eg?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-10-11",
-          "title": "[2026-10-11] 수도권 1.3조 잭팟 vs 지방 경·공매 속출…부동산 PF ′극단적 양극화′ - 메가경제",
-          "publisher": "메가경제",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UdIBckFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UQ?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 비씨카드, 가을 음악 축제 'GMF2026' 10% 할인 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1kbHkzT0czekdxbGVEaE1JM1lneHZOU0VGOWxBU1BEOVRPeWxpS3doM1c4WVhpdWN3VlZ3ZE1CSVhUSmk4SURrN2NsMG1HQQ?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -190,13 +190,6 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 소노인터내셔널, 지자체·로컬 관광시설과 손잡고 지역 상생 협력 확대 - 퍼블릭뉴스통신",
-          "publisher": "퍼블릭뉴스통신",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4xcGFZVXV2S1JIX0lyOE9nVDh0YlF5NWdjU1cwWjh4Z19NUEZyZXdqYXVpSUdkUllONnRRTV9JeXUyRWFGVjcyOXdGbXJCbTl0bGoyT2duYmo3YmxXRUIzVDRHVFVwcFdpN1E?oc=5",
-          "matchMode": "대주명"
-        },
-        {
           "date": "2026-10-12",
           "title": "[2026-10-12] 신라모노그램 거제, 5900억 원 본PF 조달 재추진…사업 정상화 주목 - 새거제신문",
           "publisher": "새거제신문",
@@ -204,10 +197,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-10-12",
+          "title": "[2026-10-12] “60MW에 금리 5% 초반”…한투증권, 군산 데이터센터 본PF 조달 성공 - 마켓인",
+          "publisher": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VYzI2dlJEV21STEpHTm9iVlJ2TElMSHVNUTF2bko5WWdZc1ptRVpDLUV5UFlzYlo3TzRlbEtZUGN5ODUwcVdiZHBtUDlLemhvNWJqU3FaZnV5SlpNTWFPdnVXay1oMWFHcFR4V0dJejBUdw?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -220,24 +220,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] “60MW에 금리 5% 초반”…한투증권, 군산 데이터센터 본PF 조달 성공 - 마켓인",
+          "publisher": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VYzI2dlJEV21STEpHTm9iVlJ2TElMSHVNUTF2bko5WWdZc1ptRVpDLUV5UFlzYlo3TzRlbEtZUGN5ODUwcVdiZHBtUDlLemhvNWJqU3FaZnV5SlpNTWFPdnVXay1oMWFHcFR4V0dJejBUdw?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] 신한저축銀 채수웅, 선제적 리스크 관리로 건전성 제고 [지주계 저축은행 하반기 건전성 전략 ②] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6VUswM3JSQmlaVmMwNnl6QlNuWENvang3eHJtd1R3em9GeEVUY1c0clFUa0E1UEpzQV91OXp5b2NhSVNWYU14UzYzT192U1hNTGxmb3BDbjl0NExuZmlvcFl0RlVTVjN0UUhLd0oyUlk3M0VQNXZDVkRHNDg?oc=5",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-11",
-          "title": "[2026-10-11] 수도권 1.3조 잭팟 vs 지방 경·공매 속출…부동산 PF ′극단적 양극화′ - 메가경제",
-          "publisher": "메가경제",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UdIBckFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UQ?oc=5",
+          "title": "[2026-10-11] 부동산 PF 다음은 ‘AI 데이터센터’…한투, 시장 27% 선점 - 쿠키뉴스",
+          "publisher": "쿠키뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12SGl0bUk2cF9CcV9SamJXZHJUU2c1Wi0ybTl3WEp5cTVMNWNHU2pVQlJTVmswbVFLSW94M3d6b205OGF0REZycnVEbE9IY2tSS3AteFo4SlluQ29SRVV1RjAyNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -250,24 +250,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한은행·신한카드 등 신한금융 베트남 계열사들, 4년째 통합 사회공헌 펼쳐 - 더구루",
-          "publisher": "더구루",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBudEV4MUJReVZENkNRdVh0MG5IS1RwZFc4MlhhVm1YS0l4clZXMm5BZk9NSFpmbVBnREFDNFBtZER3dFlfamNzSmtLLWgwMEpXLVJNTWo0eFZtMEstMmc?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한금융, 인도네시아 금융 지주회사 출범…국내 금융그룹 최초 - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9jZTBDc0xaQm5xYWJYejg3Q0xYYldrclUxbVpid3R5MW9HOEFhWU1qeGo2WVhPeFBkOW53ajFEWmRwN3hwamhUOGkwY1B6YlRCVVp1X1E3N0o5bDR4S05oWdIBYEFVX3lxTE9jZTBDc0xaQm5xYWJYejg3Q0xYYldrclUxbVpid3R5MW9HOEFhWU1qeGo2WVhPeFBkOW53ajFEWmRwN3hwamhUOGkwY1B6YlRCVVp1X1E3N0o5bDR4S05oWQ?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [금융지주 임원 인사 전망] [신한금융] 임기 2년여 남긴 진옥동…차기 체제까지 걸린 인사에 '긴장' - Naver Blog",
-          "publisher": "Naver Blog",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaW5pZkYySWZWeWRVcWhTWHBMQnh2TGwzTzFxeTdqRmZ1TGZEd2tlQnRMdXlaLURXbVBYLXlULTZyckZwamFBbnZyOWRBSTBZakdUQVV3ZnhXdk83UVM1QlpQM2FLRkZ4Nm5NeVFpVFo1YmRmaVl5cW5lYVRKbVlybTV5RHRySm5OSVV5MEpDNA?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한금융, 인도네시아 지주사 출범…국내 금융사 최초 - 연합인포맥스",
+          "publisher": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VVnNldXl0eGYyNDFaN3JlSmpwT0dzeDdKZ3Rvb3NKZFA3STlXY0p2Sy1Td2diX0ZXc1JpdF9xT1NQSXkyQ3djSnJndWp1dG1ZOWFObFpFd3NqZG9mVmhUWDBENDFXM1pycElYNDY0ajQ?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [금융지주 임원 인사 전망] [신한금융] 임기 2년여 남긴 진옥동…차기 체제까지 걸린 인사에 '긴장' - 딜사이트",
-          "publisher": "딜사이트",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9MVWRRQ1AtdUZ6Vk85WktkR3dIcjVOR1RtM1dUWkZhNVk4NnVTVENFYml5eEVKWTRGdkpQWEhDX25lRDV0MEIweFdhU09VT1E?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한금융, 국내 금융그룹 최초 인도네시아 금융지주 출범 - 헤럴드경제",
+          "publisher": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zaVFWLUwyb09QaF90UGVfdzlwMHg2WmtlRlpFR05RaUtPN3BlOG5mRDVmdk16U1FmMlZ3ZDhjS1dtSzhMQ2NhY1JLdG5FVExVNExaR19R?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -280,24 +280,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한은행·신한카드 등 신한금융 베트남 계열사들, 4년째 통합 사회공헌 펼쳐 - 더구루",
-          "publisher": "더구루",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBudEV4MUJReVZENkNRdVh0MG5IS1RwZFc4MlhhVm1YS0l4clZXMm5BZk9NSFpmbVBnREFDNFBtZER3dFlfamNzSmtLLWgwMEpXLVJNTWo0eFZtMEstMmc?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한은행, 해운기업 금융지원 확대…해운협회와 협약 - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZWEdacHVCcGZkbEdHLVppY19zTEZCXzJVNXdfNjkwMUlYVzBtUTQzT2E5ZkcyeG9tbWwyX1AxWURSUHFBdWZjNmVyVURSTTE3RG5oVVJuQWd5aWc5dUxIMtIBYEFVX3lxTE5ZWEdacHVCcGZkbEdHLVppY19zTEZCXzJVNXdfNjkwMUlYVzBtUTQzT2E5ZkcyeG9tbWwyX1AxWURSUHFBdWZjNmVyVURSTTE3RG5oVVJuQWd5aWc5dUxIMg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [청주 현장] \"신지현 늘 믿는다\" 최윤아 감독의 절대 신뢰... 어린 신한은행 중심엔 '베테랑 캡틴' 있다 - 스타뉴스",
-          "publisher": "스타뉴스",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1US2dkeXJzLUJ2LWtZVzdpLUQ5b1l0R25nRHFaYWd1NGtVNEhBdEp4VWFfenJKSzNCZExpeFZ5NEdzX3hYenVTbDBCa3Rab2hMQ0dVVnFERVBSRnI0SGZUVE8ybGFXTGl0RDltS0MycmpjdzViNUE?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한은행, 해운산업 지속가능한 성장 돕는다…해운협회와 맞손 - 동아일보",
+          "publisher": "동아일보",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iZzR1ZzlFY0kxZ0FTT2gtdmRQOUd3RTJod3JoM2s4WnhlaWdNdG9PQ2tPT2w2LUdhWmVDS085aDZiMUJzUzVMdThpVkxVQmhqZF9jOWRpRnJhbXpFaDZrUFJBTlVUQdIBZkFVX3lxTE5iZzR1ZzlFY0kxZ0FTT2gtdmRQOUd3RTJod3JoM2s4WnhlaWdNdG9PQ2tPT2w2LUdhWmVDS085aDZiMUJzUzVMdThpVkxVQmhqZF9jOWRpRnJhbXpFaDZrUFJBTlVUQQ?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한은행, 해킹 사전 경고에도 정보유출…보안예산도 10% 축소 - 비즈중앙",
-          "publisher": "비즈중앙",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9weFJXRXR3X2tLeWtDQkRrazItZ2p1blZkTnl4UDM3N1BMNEs4V2hudmhoRjd3VE5nRW9UeVhPMEdnaWVaWDJlUlpFYzhqdmdRUk9md3pWcmZ0T1NVeFo1Unpla0lzbkhudDNmcmRhaUs?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 한국해운협회-신한은행, 친환경 선박금융 협력 - BBS불교방송",
+          "publisher": "BBS불교방송",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjb2RjTHFrSmY5ZG9VcGQ0NTdsZzhxWXRXRExiUXBCc0NTNmttZmNhTVVsY3doMTB3Z2JYTV91Ujk1eTdfdW9ySzMtMGpKTXF2b3REeVBLUjVYQlZCWW5aUkRER2dJbmZ2RGtj?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -310,24 +310,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한은행·신한카드 등 신한금융 베트남 계열사들, 4년째 통합 사회공헌 펼쳐 - 더구루",
-          "publisher": "더구루",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBudEV4MUJReVZENkNRdVh0MG5IS1RwZFc4MlhhVm1YS0l4clZXMm5BZk9NSFpmbVBnREFDNFBtZER3dFlfamNzSmtLLWgwMEpXLVJNTWo0eFZtMEstMmc?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 전필환 신한캐피탈 대표 “고객 안심 금융서비스 환경 만들겠다” - 글로벌이코노믹",
+          "publisher": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVnZUalIxNlFFOGVSSEJRZTA4eXdRa2E0dmM4Z3h1S3FfOFZSWVlMY25zS3pyV3gtRVBhSHJJTjFzX3pWUnJuVXV0emszNE5DSkxQaTJOS2x3UTJKdlc1bjBFZ2lHZ3FEcG93YkYzUUhvb1RBay1UZFhoTk9MbUNEMW5ya2Q?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [금융지주 임원 인사 전망] [신한금융] 임기 2년여 남긴 진옥동…차기 체제까지 걸린 인사에 '긴장' - Naver Blog",
-          "publisher": "Naver Blog",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaW5pZkYySWZWeWRVcWhTWHBMQnh2TGwzTzFxeTdqRmZ1TGZEd2tlQnRMdXlaLURXbVBYLXlULTZyckZwamFBbnZyOWRBSTBZakdUQVV3ZnhXdk83UVM1QlpQM2FLRkZ4Nm5NeVFpVFo1YmRmaVl5cW5lYVRKbVlybTV5RHRySm5OSVV5MEpDNA?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한캐피탈, ‘사람 살리는 금융’ 캠페인 동참 - 한국경제",
+          "publisher": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1reXExR3BSSVppeFNPMmwzSDhhbF9OOC1uUmotVWxmcTJGd3hxSkYtUzAxMXA2a0VlaE4zcWQ3LU1naGNiS2FFZmJFbTY4TEhmNHlDT2VUc24xdw?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [금융지주 임원 인사 전망] [신한금융] 임기 2년여 남긴 진옥동…차기 체제까지 걸린 인사에 '긴장' - 딜사이트",
-          "publisher": "딜사이트",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9MVWRRQ1AtdUZ6Vk85WktkR3dIcjVOR1RtM1dUWkZhNVk4NnVTVENFYml5eEVKWTRGdkpQWEhDX25lRDV0MEIweFdhU09VT1E?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 전필환 신한캐피탈 대표, '사람 살리는 금융' 동참…소비자 보호 강조 - ER 이코노믹리뷰",
+          "publisher": "ER 이코노믹리뷰",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1tQ3hDenRlWDVVbmpaT0ZEWTBHcTdaZ043RExUd194eUJDU0RsSVczQkhrUW5YbzZfYkZYczNpR0VaOExtNFBwYy00bnp4LTF4NjR5aWxZUWt5SGRISGNyRm9YeVBUOFFpODdvNw?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -341,24 +341,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한투자증권, 교원라이프와 고객 맞춤형 상조서비스 제공 MOU - 머니투데이 - 머니투데이",
-          "publisher": "머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9yc2stVGc5VHpBRXc1NHVLVXN3YzhZbE0tYk42cjlPQzUzMGpuVDRiQnBXTUJwbWJ4YnVEMDFVYVJMVGpjcVp3emVlczlRWUx1ay04dVliTmNBMXdYWEVRWUF3WGprbTJxcXNGQmxpcTdBZ1J5MGfSAXtBVV95cUxQdGFtR2xqU2lnMXIxMjJJSmkzQ3JyZThqRGlBc29XUEZDSnZlREFjWTl5ZnpFMW9vc21XT3QyWTRFUG1oUXZmVzRyN1RSM1NxejJQalNCMVFkYUk2SWVFZ1FOMFI1NHRndmJ5OWZHQ2pNRE14M3lIM3lnLUk?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한투자증권, '라임 무역금융펀드' 우리은행에 453억 배상 확정 - 연합인포맥스",
+          "publisher": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82RkFBTkVBQmgxS25fTGhvLXQybHBTXzl3M05UbmtRYlJobjRvT3BBZTJVNzJ5aVE5cTJ4VE9fTkppSnUxYWhuSkx5cVk4NnVVYWR3Q0VvNDN0eUg1Mk43NG9fSl90elJVRFg1LVQyVzA?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] [리포트 브리핑]현대차, '당장은 실적' 목표가 630,000원 - 신한투자증권 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rakhDSnJDLXlEeElSblRVU0YwQjJNTlJrTGlCNmtZaEpITWYwRFUtY3JENGNBeENpYy1Tel9VQW1BeHdLdDhHYWxub1c1eXRhbXVsWmNxUTZ4dkI3?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한투자증권·라임운용, 우리은행에 453억 배상 판결 확정 - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YSVkwZnhMbGNHci03ZWFMRVJuMGpfMHZSRnlpcGJUd0VzOERuY2dPeVpuZjBxQ1VfSURLclJtNWY2U3hvYnlTZzBSZi1CUzNSSkJ4Nm9MVTZTOEpJdlYyQtIBYEFVX3lxTE1YSVkwZnhMbGNHci03ZWFMRVJuMGpfMHZSRnlpcGJUd0VzOERuY2dPeVpuZjBxQ1VfSURLclJtNWY2U3hvYnlTZzBSZi1CUzNSSkJ4Nm9MVTZTOEpJdlYyQg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-12",
-          "title": "[2026-10-12] 신한투자증권, 교원라이프와 맞손…1인가구 맞춤형 상조서비스 제공 - 더팩트",
-          "publisher": "더팩트",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94cEFmLTgzYW9sYTlBTktrNVJyRXRtamtLWTFsM1BVTkpEcDBOdnM5RWdpZVBBcGxMYVg3alMybHVIZlNUcXRtLTRuRjVWVkhWZHlHVmxrSnF1QdIBVEFVX3lxTFA0YzZCR05FTWpwRjJWOXZ5QnR1LWVGY05Bem16Z2g1QU9kV1ZJS0VlYzB1NF9qTldodGlxVU9wVVo5TkJQa0VGUEEtSTBYbDF0Um5qXw?oc=5",
+          "date": "2026-10-13",
+          "title": "[2026-10-13] 신한투자증권, 4분기 IRP·연금저축 자금 순입금 이벤트 - 글로벌이코노믹",
+          "publisher": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQODhvcmZFaW5hUy1PQ2Y3YTBPWF9vUnoyUWNwaVBvNjQ3MnVTLVZEcFdpODB6VzhlU1NLQ1dIdDNQTm9qZTJfY0xtakZsY21CUVF1MG1iRFNxbENXVXJIUlJoc0R6RjRCLXpiR0hLUVc2VlMzSU44LVZpMV9udWJuNlhyc2VRbWpW?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -371,24 +371,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] “60MW에 금리 5% 초반”…한투증권, 군산 데이터센터 본PF 조달 성공 - 마켓인",
+          "publisher": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VYzI2dlJEV21STEpHTm9iVlJ2TElMSHVNUTF2bko5WWdZc1ptRVpDLUV5UFlzYlo3TzRlbEtZUGN5ODUwcVdiZHBtUDlLemhvNWJqU3FaZnV5SlpNTWFPdnVXay1oMWFHcFR4V0dJejBUdw?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] 신한저축銀 채수웅, 선제적 리스크 관리로 건전성 제고 [지주계 저축은행 하반기 건전성 전략 ②] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6VUswM3JSQmlaVmMwNnl6QlNuWENvang3eHJtd1R3em9GeEVUY1c0clFUa0E1UEpzQV91OXp5b2NhSVNWYU14UzYzT192U1hNTGxmb3BDbjl0NExuZmlvcFl0RlVTVjN0UUhLd0oyUlk3M0VQNXZDVkRHNDg?oc=5",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-11",
-          "title": "[2026-10-11] 수도권 1.3조 잭팟 vs 지방 경·공매 속출…부동산 PF ′극단적 양극화′ - 메가경제",
-          "publisher": "메가경제",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UdIBckFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UQ?oc=5",
+          "title": "[2026-10-11] 부동산 PF 다음은 ‘AI 데이터센터’…한투, 시장 27% 선점 - 쿠키뉴스",
+          "publisher": "쿠키뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12SGl0bUk2cF9CcV9SamJXZHJUU2c1Wi0ybTl3WEp5cTVMNWNHU2pVQlJTVmswbVFLSW94M3d6b205OGF0REZycnVEbE9IY2tSS3AteFo4SlluQ29SRVV1RjAyNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -401,25 +401,25 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-10-13",
+          "title": "[2026-10-13] [여의도단신] 미래에셋자산운용·삼성자산운용·키움투자자산운용 - 매일신문",
+          "publisher": "매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLQkNVVlhsa0hoSUZDcDUyYjlVTm15QVA3NlBVWFpyajROaHRFS09rQVVBNDFWYTd1aVBudXlRNmZpZTFJR1FWZ1JaTzNxT2hsclhJWWZMVkRaTl9tZ2NsaFh3?oc=5",
+          "matchMode": "대주명"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] 신한저축銀 채수웅, 선제적 리스크 관리로 건전성 제고 [지주계 저축은행 하반기 건전성 전략 ②] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6VUswM3JSQmlaVmMwNnl6QlNuWENvang3eHJtd1R3em9GeEVUY1c0clFUa0E1UEpzQV91OXp5b2NhSVNWYU14UzYzT192U1hNTGxmb3BDbjl0NExuZmlvcFl0RlVTVjN0UUhLd0oyUlk3M0VQNXZDVkRHNDg?oc=5",
-          "matchMode": "업권/시장"
+          "title": "[2026-10-12] 키움투자자산운용, MLCC·AI기판 ETF 13일 상장 - 핀포인트뉴스",
+          "publisher": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAyNURmQ1BYSERhR2tzSTlmMlZJUW8teGlzMW9EREc0blk5dktaNHRMWU9od2J6b1BDSnMyXzNoWGtmWE9VQTFfaEZrMERpck84ZEtFWUhqQ2YtYXFOZnFPVFRRVGI1U0pjRG5nTEJhemlsRGvSAXdBVV95cUxOOWtUVWpZZjhoM05KNEhQc25udEhmZVI3TEVpaHkyd0lFYW1MU0p3M3R3Y0NKOEtoNUFMcmJvSEZtS0dGX1ZfT29PdU9HcFhvMndFcHhkc1pMY3RyVjIyYWhiX3M2OHhMdWlud25tYTg0dTZLVF9LVQ?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-10-11",
-          "title": "[2026-10-11] 수도권 1.3조 잭팟 vs 지방 경·공매 속출…부동산 PF ′극단적 양극화′ - 메가경제",
-          "publisher": "메가경제",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UdIBckFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UQ?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-10-12",
+          "title": "[2026-10-12] [더밸류 브리핑] 오늘의 운용사 소식...삼성자산운용·KB자산운용· 키움투자자산운용 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xandsNlFFamFsZXM0S25YOUxwa2FQdkhqeVFWOGlHRm5XdGI4QndObFptYmtmOGpDVHVES2d4Y2hqc2syZGw4bFRybHdBeFA2QWs4?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -431,24 +431,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] “60MW에 금리 5% 초반”…한투증권, 군산 데이터센터 본PF 조달 성공 - 마켓인",
+          "publisher": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VYzI2dlJEV21STEpHTm9iVlJ2TElMSHVNUTF2bko5WWdZc1ptRVpDLUV5UFlzYlo3TzRlbEtZUGN5ODUwcVdiZHBtUDlLemhvNWJqU3FaZnV5SlpNTWFPdnVXay1oMWFHcFR4V0dJejBUdw?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-12",
-          "title": "[2026-10-12] 신한저축銀 채수웅, 선제적 리스크 관리로 건전성 제고 [지주계 저축은행 하반기 건전성 전략 ②] - 한국금융신문",
-          "publisher": "한국금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB6VUswM3JSQmlaVmMwNnl6QlNuWENvang3eHJtd1R3em9GeEVUY1c0clFUa0E1UEpzQV91OXp5b2NhSVNWYU14UzYzT192U1hNTGxmb3BDbjl0NExuZmlvcFl0RlVTVjN0UUhLd0oyUlk3M0VQNXZDVkRHNDg?oc=5",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-11",
-          "title": "[2026-10-11] 수도권 1.3조 잭팟 vs 지방 경·공매 속출…부동산 PF ′극단적 양극화′ - 메가경제",
-          "publisher": "메가경제",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UdIBckFVX3lxTE94YXl5djFKUWp0TkRDWE40U0xOOXpaQ0Y0SDlPZFRuWjlfT0dyelpmOFg2dmZUak9JSEZNUktxc3VPczZuRVNpc05QNkFvNnNxT1VPN0lYQ2k0cE92b1ExeUdubkl5ZExmSm5WLVRwazd0UQ?oc=5",
+          "title": "[2026-10-11] 부동산 PF 다음은 ‘AI 데이터센터’…한투, 시장 27% 선점 - 쿠키뉴스",
+          "publisher": "쿠키뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE12SGl0bUk2cF9CcV9SamJXZHJUU2c1Wi0ybTl3WEp5cTVMNWNHU2pVQlJTVmswbVFLSW94M3d6b205OGF0REZycnVEbE9IY2tSS3AteFo4SlluQ29SRVV1RjAyNA?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -475,10 +475,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -505,10 +505,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-09",
-          "title": "[2026-10-09] 신협 부동산·건설업 대출 … 연체율 다시 두 자릿수로 - 매일경제",
-          "publisher": "매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iaU1hVzA4YVJxYVdwRE1KMk82cVAzR3Z5ZUF6Rm5BTWJIeHZmd2VPUXlyWktPam1kTWk3MHZWbV9UQVhJWXNzemZUY1oyQ042YnE1Qg?oc=5",
+          "date": "2026-10-12",
+          "title": "[2026-10-12] 부동산 PF 자기자본 20% 일률 규제 한계···“사업장별 위험 반영해야” - 이뉴스투데이",
+          "publisher": "이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2TFNJOC1Qbng3bGJFcXlTc3J4Q1RWekJiVkZjbUs3eTMxOFZwMjFFX2hXcjlGTk1jeWI2UDEtY2JycmoxWmdEVzRtQVRnNVN3Z29CVTFERG1KcXJCNm9rRHFPRDVsRnI0cldjREp2R3DSAXRBVV95cUxOUjFzZVllQjVYaDNTWnZCdUN5THhSTDh5dW5QYjlselBxd0IxaXg0YUY2LXFSU3E1dXlxTVhZMnBlUnRYZG5MbWFoT0kxcW1xbWhkV1JKOGpNNzlncFdGV1BoeUJYMHp4aXVQRzdabnk3SndPSQ?oc=5",
           "matchMode": "업권/시장"
         }
       ]
