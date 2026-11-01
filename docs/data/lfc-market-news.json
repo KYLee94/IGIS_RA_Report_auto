@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T10:28:37+09:00",
+  "generatedAt": "2026-11-01T09:54:10+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -40,10 +40,17 @@
       ],
       "articles": [
         {
-          "date": "2026-10-30",
-          "title": "[2026-10-30] NH투자증권, 영암지역에 냉장고 60대 전달 - 인더스트리뉴스",
-          "publisher": "인더스트리뉴스",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8wTGg4QXRPTWg0YXZ1Q2RkQk9uYmF0Y3NmT0tEVHhDUEVfak43M3RoZ1RWQTU0d2U2cDB1d3Z4MktNQ2hObzZfTFpaNWFYeFVJTXJqMHN4RmstT0dsNjZCUUxfREhoTnJMc3o4bHdSSGhodw?oc=5",
+          "date": "2026-11-01",
+          "title": "[2026-11-01] NH투자증권, 김장철 맞아 영암군 경로당에 냉장고 지원 - 라이센스뉴스",
+          "publisher": "라이센스뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hdWVWdGwzN0QtUHF0Sk13alhGWm1RWUo5WkxhcWRZSE01cFhZNG9DbGlPY1JUeUdLZTZMMGkzYW1BdFB0dll3RUNudktKZG9MbnFSRlo4VHJVcjZMOWR1d21HRjVhbjkyd1E4?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-01",
+          "title": "[2026-11-01] NH투자증권, 11월 12일 한미 이중거주자 세무 세미나 개최 - 비즈월드",
+          "publisher": "비즈월드",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oTTA1a3htYTZ1WlZSclBoZHl4MWp2UjBsdXJLY2xhZkRpa09CWFRrcjVnQ0RZRDJ4MURNaGdJUVNsWWwxc3phOUZ2ZzRWcXo3TTNlbHpEZHp4ZW9SdFR3T2ZEODI2THNBTFE?oc=5",
           "matchMode": "대주명"
         },
         {
@@ -51,13 +58,6 @@
           "title": "[2026-10-30] [게시판] NH투자증권, 전남 영암군 마을공동체에 냉장고 60대 지원 - 연합뉴스",
           "publisher": "연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HRngyQ2tVU0FkRXZqQndNT3dfMHp0a3FtTzdHMzVXSHpMM2hXYlpJcVQ2dlRSTWtzdDU5TVVqSy1EcGxRT3BYSlZJMzgxR3F6S3lNOXRxQzZSMDTSAWBBVV95cUxQMVlqS3VKcFFJWnloM2Q5VUREVnh6cV80TVU4aUVTVFdRR25McFctVDZqaEFmUzZrRzVWZFpyZnM1aHRHY29IQzFVWWc0U19Gcm4zNVpLS3dteEd3bkRocWg?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-30",
-          "title": "[2026-10-30] NH투자증권, 전남 영암군 마을공동체에 냉장고 60대 전달 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBpWWFpdjhzR2luaHRRd2E5X21XU0hnYjdrUjR6Q1NFcU9YX1F5NHk3Q21PT2Y4aDZNSnRTR2lVNlhOSHZxd19pWDVGalBLakZoYmxZeWpva2x4X2sy?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -77,17 +77,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 분양 소송가액 326억·건전성 개선 요구…김장섭 NH저축은행 대표 연임 여부는 - 뉴스워커",
-          "publisher": "뉴스워커",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ZdnBWRjJ2VW15RUF6bl8weWc4NE8zNDlzajRqTzlmWXNLc1FaVkUzbjBDYkJrdWUwa2Q4RkZLVEQ5dllGLUVmQkJubkV5akxJakpib0ZTNm81c0JjSG5UQXFKbE1zeVI0TGtieW0zSEvSAXRBVV95cUxPRV8xTmZqYl9BZHZyZzk5UldaNjJyRXZRVjBQdkVsS3plNE1vbUEtSEhFLVNHbDZaVnVQUmhiS3ozRUw0TFYzZW5GNHNMVUM4bFptcVNxU1JNY1BDbTN5d3gzMHdLUzZqZmpvbHpsVGZZVjhGQQ?oc=5",
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 채수웅 신한저축은행 대표, 기업여신 확대·대손비용 절감으로 순익 증가…건전성 관리 주력 [금융사 2026 3분기 실적] - 금융신문",
+          "publisher": "금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10Vmp5VzFoNE1idjh0eDJ2eXdlcUozbDcwTkJCb2x0SFM4dUZfOFJ4RUlkamRaMXVYQk4zR0daREZxSGc2RFVMS3ZTTFNlTzViZEFTVldGNUd6VEVkSW5fN01KWElJeFk5R1BGWmxRai14ZTd5WXBGT0YyTGM?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-30",
-          "title": "[2026-10-30] 양동원 하나저축은행 대표, 부동산 부실자산 감축에 흑자 전환…안전자산 중심 대출 확대 [금융사 2026 3분기 실적] - 금융신문",
-          "publisher": "금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zc1haWGthMEl4UmZ5U0xRRjlEQnFzWWRTRGtRS1IwNmNzUUhNVi0zQWxqUm1lYm94WWc3WTZmclhLUjdGUmhBVlRqWjhPTW1lbmVvNW5WM05Lb00wVjJDZlZ5S1doWWR1alNjWTJoWXFBUjdNU3d5M1NZR1k?oc=5",
+          "title": "[2026-10-30] 상호금융 예금 2.8조원 증발…5대 업권 동시 이탈, 건전성 부감 커져 [2026년 국감] - 조세일보",
+          "publisher": "조세일보",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Na21MbmZpdjM4ZGNGb3NiOWxIQlVBd2xvMk00d3ZMSEQ4UHVBajNtSlU1a0NGb3BuSG0wUkdGbjl1Y1pvOC1EcUZKclhUczd0UDRpa29FLTBsYkVoTWxn?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -100,25 +100,25 @@
       ],
       "articles": [
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 빗썸·대신증권·미래에셋운용 잇단 해킹…금융당국 현황 파악 중 - 비욘드포스트",
-          "publisher": "비욘드포스트",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJLWNyVWU2OWVoMHJwX2VLZC0tcWxJZ21GMGJKUkFLbGVCb01LTUZjSkhJLVpqQWk1RFhXclE0Z0xTWTE3Unp0b01sZXJKcWZSeEMwWE5SZ3JfdVRXSHBBd1B6b2tZcmhGTmNGck9SQlFkbHhfbFhoRWM2WQ?oc=5",
+          "date": "2026-10-29",
+          "title": "[2026-10-29] 빗썸 이어 대신증권·미래에셋운용도 해킹…금융당국 긴급 점검 - 한국아이닷컴",
+          "publisher": "한국아이닷컴",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE80bWp0YTV1Y2NwTW14WEV3cDdoeldtMVFFdXMwRG1jNHNrWF9jN2ZJMTA4TE1LTm12VGFseGhnZ3FUQnhmQm9RSHAyVlhxNUN5a29rYlpMMlhRWWFZc0FySWlRRUw5NWpDZE1F0gFvQVVfeXFMTTIxdnRncnpfa1g3N1RfbTFRZkdWRXRLWWV1UHFVVU1JYU9kbXZ6UWJraVlJQkxWS05ycGQ2V0UzUUJ6VFpSN1Y4MTZGUUlmZUFnalpZVDktaFhtSXVZalVGTU5yenJwTUxaZUZfanpB?oc=5",
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 빗썸 이어 대신증권·미래에셋운용도 해킹…금융당국 긴급 점검 - 주간한국",
-          "publisher": "주간한국",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uc0ttOWUtVjl2azl0ZFdmZ0tZamt4VFdiNXNRVlhaeUxCdG4wRDFRc3YtTnU4T0F6NXU2b0JXbFUzVlhEN1o5N2tUbUFpb01RNDdRVENpMndRZ1RXRXBfOGU3UFVCVjZSX1hqOVlIelXSAXRBVV95cUxQSWJfcnFHUU5zOEQ2Y2E2ejFlYnFFNDRpYkE0YWJqalNGMzdVcllRcVNHci1ZclZpSVhJdnRxY09lTGxTU192X1BiMXlqM2hHcENJNnROUGNUNXFfem9ta3BsckZ4eGRWTHVxdzdEWERLdENiYw?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-10-29",
+          "title": "[2026-10-29] 대신증권·미래에셋운용·빗썸 줄줄이 해킹...금융권 확산 - YTN 사이언스",
+          "publisher": "YTN 사이언스",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3pLdUwtaFVuelplOVpLczJ1VVR4WUx5T3JPcU5LdUE1allrTzRVQVM3UUw5dzNKS2d6SXdQMlI5QUtXZ1lPaHBNcGF2d3FXV2dmWUZPSl9BbE9ZMHpFY1JKMkc5b1cwMGhyOEliM29nR1dUYnJZYlk0cm0xZ21kcXdQcENEZnZWT2R3eQ?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 대신증권·미래에셋운용·빗썸 잇단 해킹 사고…금융당국 현황 파악 - 뉴스투데이",
-          "publisher": "뉴스투데이",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYR1hjcXdBYnJ5RTNOZ2huR0dqRERPOTVnQzBLNnNZRHZrTzFaOUhMVVd2eDV6OFk2aHhsTUw4eHdxcUx3Z014QjdTQi1QSVFfUzl4TXo4V1pfR3phT0E?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 대신증권, IRP 10년 수익률 6.12%...증권업계 1위 - 인더스트리뉴스",
+          "publisher": "인더스트리뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE12QXpfYWsyV0xBbXZ6YnhKMEJiYUF0M290NDVRNHFTWDNKWGVNUFZ1MzdhaExnQWR1VnpabTZpalRkSmNhNjhaWXlZNkxNSlVoZTd4WjdyVFJvZEtHSERqR0ZpcEFtSHpwSTVPU3NWRG9xdw?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -144,11 +144,11 @@
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] [국감] 보험사 최저보증이율 부채 445조원 육박… 메리츠화재 81.4% 최다 - 이코리아",
-          "publisher": "이코리아",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PVEJhNVJaeE1RY1ROWF9WRUt0SVdPQnNzMW00blJnYjhnN3IyenVDVXRZeU95UFROQVFLVU1WMmJQWmp5Zm5IMlBDUkhMbVA3a3h0OVVjY3R5SXdsamtRdk1ybGdGWXdKYjh2RUdodw?oc=5",
-          "matchMode": "대주명"
+          "date": "2026-10-30",
+          "title": "[2026-10-30] [PF 2막 ⑦] 강진두號 KB증권, 홈플러스 영등포점 개발 지분 투자…2500억 차환 부담도 - 디지털데일리",
+          "publisher": "디지털데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Oc2tzN0hldG1Valc5NVEzaHk5ZURDRVlGaFdyY0RfMHRBcWtPZzNGaC1WWko4c0QwTWxjUEZXZjF5MWd5ZzFtT2FGX19CbHg1UHU3TUFaemJ1QzA1ODA5ZEozX3k?oc=5",
+          "matchMode": "업권/시장"
         }
       ]
     },
@@ -160,24 +160,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 비씨카드, 대학생 서포터즈 중국 파견…QR결제 체험 확대 - 더팩트",
-          "publisher": "더팩트",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YWjRydE1YM2RNZnVtcjFOYmFSQ3gzQmNTWV90aDRQWmxqeHhtVG1hTU5JVHQxaDhFelFIMUNXcXUwVVBUQkIwVG1PX2hpS1p2Q1h4UVZpZTIzUdIBVEFVX3lxTE9MYkZha3R4enFURWNyQTdfb1RnRHpHLW5Lc2p0NWJyY1FwbW9DSVptaXNsZl90Vk8tenpLWHVpWmFnbXpwLVlVc3RTNDluRXdWazRNaA?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-29",
-          "title": "[2026-10-29] “올해 3분기 등록 ABS 발행 12.5조…부동산 PF 급감에 전년비 5.7%↓” - 이데일리",
-          "publisher": "이데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTHQ3aHdFQ1dhdUJMN2JBMllVWUNPRzYxMTZDZkhFaklnU3p4Q3FnQzZZbldnS0lwNWlKOGh5ajZmSGU5emNJU3h6NC03YUVIY3ozMVBROFpUSk1LLVhvTnhXMDE0VUlGdHlsS2NLVWtFWmkxbU5rS1lzV0NOa19PUQ?oc=5",
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 상가 공실에 직격탄…세종시 농협·신협도 건전성 ‘흔들’ - 서울경제",
+          "publisher": "서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BZDdxc2VRR0N5MkthQ0hDTlZvT3A5S202cEZJLTJYT0FXdFRsczRtNFMybEtCQ2NyZnVpd3JpczVKOFlRT1hrWXEtNmhfcVZoMXfSAVNBVV95cUxPaEhUNkdvTk5LR2pEdDUxT1ZzS3RvbjhSa3h2dWo3am1ISjdyODZzTGZnNXQtMHRwQW04YVlzblk0YVB6SGVrX3pTVThBZHFCTThtOA?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-29",
-          "title": "[2026-10-29] 부동산 PF 급감 여파 … 3분기 등록 ABS 발행 12.5조원, 전년 대비 5.7% 감소 - 뉴데일리",
-          "publisher": "뉴데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZkdfX0xLTTZEUzZETERlbVpSSi1rWmxnR0VXRlZ5SW54RzRxME54dkpSOURCWFlpZERpVHN6LWE1T1gtZDVHaFdpeW5sdWJCNDVzRHRYRmNRNE82QXZWaVlycWlVT1Y1Vzl2Q2stdnZCdFJIS1p6YkFzUVg5d2daMtIBgAFBVV95cUxOZkdfX0xLTTZEUzZETERlbVpSSi1rWmxnR0VXRlZ5SW54RzRxME54dkpSOURCWFlpZERpVHN6LWE1T1gtZDVHaFdpeW5sdWJCNDVzRHRYRmNRNE82QXZWaVlycWlVT1Y1Vzl2Q2stdnZCdFJIS1p6YkFzUVg5d2daMg?oc=5",
+          "title": "[2026-10-29] 자산건전성 개선했지만 위험관리위 심의 누락...채수웅 신한저축은행 대표 첫 연임은 - 뉴스워커",
+          "publisher": "뉴스워커",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IMHlaSEFHazZJcnV4eEJPTEZHTFBZWk41QUc0RnpPclJsd1VGNmhIZXJ3X1hONkhhNTYyWHZLMjFjV3E2QU5MamVuT3F4d0VRRTc0TjdVS3didGV6aDF6YmtXZjNTZEpKMm4xdC1KT3PSAXRBVV95cUxNd1ZOX2kzZlQ0VjVZbDM3czFacDRSQlFnYlIyR0otUy1sMXBpTlFvclltemd2b0xUSEl2d2VsN1lXSWxockhMRnJacEw5R2dfS191SWxhMk1rdHFlRWRxMUVVX3NfWFFFLUdqcFZVbXZWekYtVA?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 건전성 규제에 영업 위축…상호금융, 체질개선 앞두고 '전전긍긍' - 더팩트",
+          "publisher": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tdGNybDJCdlRVbElsREtyV1A2ZFp6b1BwamJFUXVTOXdMY01kcTdWSDhTVmh0OVhENGthaVIzT21mNXVUaWZhNVRydHk3X05MWkhZctIBVEFVX3lxTE1tdGNybDJCdlRVbElsREtyV1A2ZFp6b1BwamJFUXVTOXdMY01kcTdWSDhTVmh0OVhENGthaVIzT21mNXVUaWZhNVRydHk3X05MWkhZcg?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -204,10 +204,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-29",
-          "title": "[2026-10-29] 3분기 등록 ABS 발행액 13조원…부동산 PF 기초 ABS 발행 83%↓ - 파이낸셜신문",
-          "publisher": "파이낸셜신문",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8zblM3TGFSYUlxaDJYQWgxNklCS0NWV1VTZEtFVWNfMTVDZ2FpVlpGN1pfdXFRc0VaSkRlMjRqeEcxdHBCaEZXWEVoZ05jNW1UdllkbmJWRE1FRm03Q2NJZVpBNGpySEx4eWNR?oc=5",
+          "date": "2026-10-30",
+          "title": "[2026-10-30] PF 위험 노출 규모 8.6조 줄였는데···캐피탈 위험은 기업금융으로 - 뉴스프리존",
+          "publisher": "뉴스프리존",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Ec1pGVmViVU9Yb1g4MnRuZlF1SFR3c2R2MTJDam1CQ1lNN0ozVTN3b0FnS2xER2NFOVpMY043YkotQk1mbFRiWDZUd3VfeWtjSE1BNVBJMmpxaTRLbUs5cTZKWTBnU0pObUdXSE41bFZ3MVHSAXdBVV95cUxPdG1oTDRYR1JlcHhIUl9hbkhBZGRDbEhWVWhPVzgtODE3TTZKMVJZRzI5dHdxc0tZMnRoVU1ULXpLUTBOWmtTaGtLRWlQRkpQZW9DVUI1aEpRczRvTDVGNVZiMkJ1WmNvRXBNdTJTcXd0cG1iQ0o3dw?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -234,10 +234,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-29",
-          "title": "[2026-10-29] PF 유동화 발행 98% 급감…3분기 ABS 12.5조원 - 메트로신문",
-          "publisher": "메트로신문",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YVmdyVkNyamduWDR2WkhsWjBzNUhuSHR0ajhNWmhYZlBBM2huZ1ZtS0RIY0g2dWR1VW8tX0gwRzNQOWdpdldEdzBzV0hELWpYME9VVVdNcEJzS3didGMzcw?oc=5",
+          "date": "2026-10-31",
+          "title": "[2026-10-31] 국민성장펀드, 해남 400MW 태양광 6,846억원 사업 지원 승인…기금 PF대출 1,000억원 - https://www.thedailyeconomy.kr/",
+          "publisher": "https://www.thedailyeconomy.kr/",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjMWhYMGxPeHJPQ1R0X1M1WHk0NnRjaXVfaVhmdUVnSGI4dkZrNFF3dkNGckRySWVibW5BZGRzRV9wemtHLXlpV200VFUtbmI1N056dXgtQnpUX0hjN2hpcDNMNXBWQTJSOE1wSWhBUHE?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -257,17 +257,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-10-31",
-          "title": "[2026-10-31] [신한은행] 신한은행·신한카드·신한투자증권·신한라이프, 서울시와 함께 ‘2026 피노베이션 챌린지’ 우수기업 시상 - 신한금융그룹",
-          "publisher": "신한금융그룹",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdVQ4SFR0cVlIQkhJWklJNEM5RU1uQzhCSHlRMlk2MmdNeFBrZ1ZjZVZMVVdDWlhxRGhSUUFNbEhiV2xLeUR6d2dRYktMYTZtN0w4bEdjdzk4dXdvdTh5cDFNdDBEM2ha?oc=5",
+          "date": "2026-11-01",
+          "title": "[2026-11-01] 이자마진은 하락했지만 대손비용 안정…신한금융지주 실적 방어력 주목 - 핀포인트뉴스",
+          "publisher": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFdXN2Q1Z2Tnhlek51QmRvaFlkbE1nOGVkTTVPTmZ5MUNycl9NQjFrdGU1N1FXLTFxbFV6VjlKRWp0RXdJUmR0TjcyYjFYUU1kZ21wS2N3VU96S2Fwa2VoMFdwRVl1WEpKN3VBRWFjNU5LNEHSAXdBVV95cUxPVnhJWW43UTZGSWhRVGppdXR6YjFYWlkyelQyMlBqYm5TZy1nNFgtcTBFMGxTZWh6LUY4b3lnLWhkM1pmSnotMTBWU1d0aXNWak12RVkxbTg4cXA2VlYxYXFKdEh5c1J3TVZtZEQzQjdXeWpUUk1wOA?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-10-31",
-          "title": "[2026-10-31] [신한은행] 신한은행, ‘2026 Swith Global CSR 프로젝트'' 행사 개최 - 신한금융그룹",
+          "title": "[2026-10-31] [신한은행] 신한은행·신한카드·신한투자증권·신한라이프, 서울시와 함께 ‘2026 피노베이션 챌린지’ 우수기업 시상 - 신한금융그룹",
           "publisher": "신한금융그룹",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxOWlWSWxEYXVEcGVHZ0c2QklkSDgwM0hYVVpCeGZsaVFlTV9jZERXTFFpR0tOVTRqamM4WjRQRF92UXhLNEJ6TXlWcTkzeWtDLWdfMXJ5Y3dwQUQ4MDdEVVZ6VkxqYkdI?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdVQ4SFR0cVlIQkhJWklJNEM5RU1uQzhCSHlRMlk2MmdNeFBrZ1ZjZVZMVVdDWlhxRGhSUUFNbEhiV2xLeUR6d2dRYktMYTZtN0w4bEdjdzk4dXdvdTh5cDFNdDBEM2ha?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -297,7 +297,7 @@
           "date": "2026-10-29",
           "title": "[2026-10-29] 신한은행, 롯데와 주거안정 맞손…부동산 개발·투자 협력 - 아주경제",
           "publisher": "아주경제",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE81WGFYdVk0UG5aRVl1VlMxa0pNQ2FKTmZydi1Ua3llc1hkRjFhYTJBRml0VnVTN0JjQVBHZHpHOGhRMktUMUxFSFA1Zi1ES09ydXFOYzZHc0vSAVhBVV95cUxPNVhhWHVZNFBuWkVZdVZTMWtKTUNhSk5mcnYtVGt5ZXNYZEYxYWEyQUZpdFZ1UzdCY0FQR2R6RzhoUTJLVDFMRUhQNWYtREtPcnVxTmM2R3NL?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1BNm96c0tqMV9xWmJsZFVxMzR1YlRDVzY2NUtLaVZETm1EOWRwM0kzMkRxYzJLRldkcDM5bVc4Qmt4SVRfY1g5YjA4MG9jSE1MSUY4WkVZWEF6QdIBWEFVX3lxTE81WGFYdVk0UG5aRVl1VlMxa0pNQ2FKTmZydi1Ua3llc1hkRjFhYTJBRml0VnVTN0JjQVBHZHpHOGhRMktUMUxFSFA1Zi1ES09ydXFOYzZHc0s?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -317,17 +317,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 신한금융지주 신한은행장 제주은행장 후보군 압축, 12월 초 최종후보 추천 - 비즈니스포스트",
-          "publisher": "비즈니스포스트",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBmVmN5YXRrR2NNdjNQQ293WUZQWkpXTEVRUDF4MUZsXzJyQXFqN1psU0p0eDhLMFFzTmNINlZlM3ZiRXZLYkFEemtMZmF3bnBTS2N6VXg0UzE1dk02XzRsWmpfT2U5RE5CT3EtZTVqUG01YXc?oc=5",
+          "date": "2026-10-29",
+          "title": "[2026-10-29] KB금융, 신한금융 누르고 '리딩금융' 수성...3Q 누적 순익 5조7921억원으로 역대 최대 - 생생비즈플러스",
+          "publisher": "생생비즈플러스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KUGVlYjdyWTFCdlJxMi14UlVvYmhtMEZoLWFMNVdKQldyZUk4SDZianFTVGRPVHVVNXpGZDlaaldlWWFXRnpXcHJRZVBTYkhxLWxmbzR4V3YtYXhBdzNtS3RkdkpuOWtZM0k1Wg?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 신한금융, 신한은행장 1차 후보군 압축…은행 임추위 역할 강화 - 뉴시스",
-          "publisher": "뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tSVc4RXBvdm8zck1vS3pBTWp5R1lUNXhjZS03MmdieTZFSDNGYnp0S3dPM2NIRThtbWNENGVGS2NoZjZxZlVjeG54bHVjcFRsYl9NcEV6ZEV5Wm10cFpEQ9IBeEFVX3lxTE1Fd0tBS1oxRGhTOV9oYzV6c1lEU0R2NVpPMUJGVWlUb3BiM1c2cS14Z25xY1R4SDBJYWJjZ0RGa3RUS1dyMjBVQ1BjSEtVeG9kdGNrM1JkV2tQRjZycFhFQjBDd0tQeTIydHVvQWdhWndOVDlkYzAySA?oc=5",
+          "date": "2026-11-01",
+          "title": "[2026-11-01] 이자마진은 하락했지만 대손비용 안정…신한금융지주 실적 방어력 주목 - 핀포인트뉴스",
+          "publisher": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFdXN2Q1Z2Tnhlek51QmRvaFlkbE1nOGVkTTVPTmZ5MUNycl9NQjFrdGU1N1FXLTFxbFV6VjlKRWp0RXdJUmR0TjcyYjFYUU1kZ21wS2N3VU96S2Fwa2VoMFdwRVl1WEpKN3VBRWFjNU5LNEHSAXdBVV95cUxPVnhJWW43UTZGSWhRVGppdXR6YjFYWlkyelQyMlBqYm5TZy1nNFgtcTBFMGxTZWh6LUY4b3lnLWhkM1pmSnotMTBWU1d0aXNWak12RVkxbTg4cXA2VlYxYXFKdEh5c1J3TVZtZEQzQjdXeWpUUk1wOA?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -342,16 +342,16 @@
       "articles": [
         {
           "date": "2026-10-31",
-          "title": "[2026-10-31] [스몰캡 리서치 점검] [신한투자증권] 종투사 중 기업 발굴 '최다' - DealSite경제TV",
-          "publisher": "DealSite경제TV",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TZkZWampHVXppa0hMYzRjMk1nYjdyM1RSSFlzZUdmNTJ6Ry1YRmZmeXZURmQzSVhNVDBhWFQzNlBiaWpsRm93TE9DajVLQkp5a3BfRFRB?oc=5",
+          "title": "[2026-10-31] [신한은행] 신한은행·신한카드·신한투자증권·신한라이프, 서울시와 함께 ‘2026 피노베이션 챌린지’ 우수기업 시상 - 신한금융그룹",
+          "publisher": "신한금융그룹",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdVQ4SFR0cVlIQkhJWklJNEM5RU1uQzhCSHlRMlk2MmdNeFBrZ1ZjZVZMVVdDWlhxRGhSUUFNbEhiV2xLeUR6d2dRYktMYTZtN0w4bEdjdzk4dXdvdTh5cDFNdDBEM2ha?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-10-31",
-          "title": "[2026-10-31] [신한은행] 신한은행·신한카드·신한투자증권·신한라이프, 서울시와 함께 ‘2026 피노베이션 챌린지’ 우수기업 시상 - 신한금융그룹",
-          "publisher": "신한금융그룹",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdVQ4SFR0cVlIQkhJWklJNEM5RU1uQzhCSHlRMlk2MmdNeFBrZ1ZjZVZMVVdDWlhxRGhSUUFNbEhiV2xLeUR6d2dRYktMYTZtN0w4bEdjdzk4dXdvdTh5cDFNdDBEM2ha?oc=5",
+          "title": "[2026-10-31] [스몰캡 리서치 점검] [신한투자증권] 종투사 중 기업 발굴 '최다' - DealSite경제TV",
+          "publisher": "DealSite경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TZkZWampHVXppa0hMYzRjMk1nYjdyM1RSSFlzZUdmNTJ6Ry1YRmZmeXZURmQzSVhNVDBhWFQzNlBiaWpsRm93TE9DajVLQkp5a3BfRFRB?oc=5",
           "matchMode": "대주명"
         },
         {
@@ -385,10 +385,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-29",
-          "title": "[2026-10-29] PF 유동화 발행 98% 급감…3분기 ABS 12.5조원 - 메트로신문",
-          "publisher": "메트로신문",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YVmdyVkNyamduWDR2WkhsWjBzNUhuSHR0ajhNWmhYZlBBM2huZ1ZtS0RIY0g2dWR1VW8tX0gwRzNQOWdpdldEdzBzV0hELWpYME9VVVdNcEJzS3didGMzcw?oc=5",
+          "date": "2026-10-31",
+          "title": "[2026-10-31] 국민성장펀드, 해남 400MW 태양광 6,846억원 사업 지원 승인…기금 PF대출 1,000억원 - https://www.thedailyeconomy.kr/",
+          "publisher": "https://www.thedailyeconomy.kr/",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjMWhYMGxPeHJPQ1R0X1M1WHk0NnRjaXVfaVhmdUVnSGI4dkZrNFF3dkNGckRySWVibW5BZGRzRV9wemtHLXlpV200VFUtbmI1N056dXgtQnpUX0hjN2hpcDNMNXBWQTJSOE1wSWhBUHE?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -401,24 +401,24 @@
       ],
       "articles": [
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 키움투자자산운용, ‘코스닥150커버드콜액티브 ETF’, 순자산 1000억원 돌파 - 인더스트리뉴스",
-          "publisher": "인더스트리뉴스",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5qQS1IYVg2Skk3TjVySTI0dDA1ZHEtZ1VmWTRKbGdpeTlYbVhzeDRHbWcyTHp4N2xJVTA2akV4NXA1dVZ4aXI5TDRFVlZmV0t6dVNTYmZza25wU29ncGwxU2JHYzZLRjR3ZlB1dEZ6ekxZZw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 키움투자자산운용, 코스닥150커버드콜액티브 ETF 순자산 1000억 돌파 - 핀포인트뉴스",
-          "publisher": "핀포인트뉴스",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5wN3JTMWU0NHo0RDgzVjBUXzJLX3IyMFpBZFd0TDVpMlRjRlBid2thV19sX29FcERsWm5hVTc2elNON29XeG5WODQyb284a0pRdENBWXAyc21QYWZLVzFDSnZkZjVHRi1hVERqSFhOTnpsODjSAXdBVV95cUxNN3BDajJnTGxHejJMVmY1UW5ENXBscEhKUHNDRVdyNGpSdFR3R1VoNW5lUGN0YU4wcWFLVldmc0FtaE1BTHpDY0t5VjR1M20yRFl3VHdDZTlEV1dxdEtKV1NvbHJBdDc5LTBLRW5haXhfemxIbzNGYw?oc=5",
-          "matchMode": "대주명"
-        },
-        {
           "date": "2026-10-29",
           "title": "[2026-10-29] 3분기 자산유동화증권 발행 12조5107억원…부동산 PF 기초 발행 98% 급감에 5.7% 감소 - 녹색경제신문",
           "publisher": "녹색경제신문",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XbmlydWxNSkM1QmhubHBVeUVqR2hiZ2QtRk01TFNaN3pJSFRpaHY4cEVaZ1dTdExzQ1FRTTJjcUoycW5DNTh6bEV2WnpCQ3dyR202LS11UXZfMDFUWEtVeE8yOTdTZEp1?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-10-30",
+          "title": "[2026-10-30] [PF 2막 ⑦] 강진두號 KB증권, 홈플러스 영등포점 개발 지분 투자…2500억 차환 부담도 - 디지털데일리",
+          "publisher": "디지털데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Oc2tzN0hldG1Valc5NVEzaHk5ZURDRVlGaFdyY0RfMHRBcWtPZzNGaC1WWko4c0QwTWxjUEZXZjF5MWd5ZzFtT2FGX19CbHg1UHU3TUFaemJ1QzA1ODA5ZEozX3k?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-10-31",
+          "title": "[2026-10-31] 국민성장펀드, 해남 400MW 태양광 6,846억원 사업 지원 승인…기금 PF대출 1,000억원 - https://www.thedailyeconomy.kr/",
+          "publisher": "https://www.thedailyeconomy.kr/",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjMWhYMGxPeHJPQ1R0X1M1WHk0NnRjaXVfaVhmdUVnSGI4dkZrNFF3dkNGckRySWVibW5BZGRzRV9wemtHLXlpV200VFUtbmI1N056dXgtQnpUX0hjN2hpcDNMNXBWQTJSOE1wSWhBUHE?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -445,10 +445,10 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-29",
-          "title": "[2026-10-29] PF 유동화 발행 98% 급감…3분기 ABS 12.5조원 - 메트로신문",
-          "publisher": "메트로신문",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YVmdyVkNyamduWDR2WkhsWjBzNUhuSHR0ajhNWmhYZlBBM2huZ1ZtS0RIY0g2dWR1VW8tX0gwRzNQOWdpdldEdzBzV0hELWpYME9VVVdNcEJzS3didGMzcw?oc=5",
+          "date": "2026-10-31",
+          "title": "[2026-10-31] 국민성장펀드, 해남 400MW 태양광 6,846억원 사업 지원 승인…기금 PF대출 1,000억원 - https://www.thedailyeconomy.kr/",
+          "publisher": "https://www.thedailyeconomy.kr/",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjMWhYMGxPeHJPQ1R0X1M1WHk0NnRjaXVfaVhmdUVnSGI4dkZrNFF3dkNGckRySWVibW5BZGRzRV9wemtHLXlpV200VFUtbmI1N056dXgtQnpUX0hjN2hpcDNMNXBWQTJSOE1wSWhBUHE?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -468,17 +468,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 분양 소송가액 326억·건전성 개선 요구…김장섭 NH저축은행 대표 연임 여부는 - 뉴스워커",
-          "publisher": "뉴스워커",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ZdnBWRjJ2VW15RUF6bl8weWc4NE8zNDlzajRqTzlmWXNLc1FaVkUzbjBDYkJrdWUwa2Q4RkZLVEQ5dllGLUVmQkJubkV5akxJakpib0ZTNm81c0JjSG5UQXFKbE1zeVI0TGtieW0zSEvSAXRBVV95cUxPRV8xTmZqYl9BZHZyZzk5UldaNjJyRXZRVjBQdkVsS3plNE1vbUEtSEhFLVNHbDZaVnVQUmhiS3ozRUw0TFYzZW5GNHNMVUM4bFptcVNxU1JNY1BDbTN5d3gzMHdLUzZqZmpvbHpsVGZZVjhGQQ?oc=5",
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 채수웅 신한저축은행 대표, 기업여신 확대·대손비용 절감으로 순익 증가…건전성 관리 주력 [금융사 2026 3분기 실적] - 금융신문",
+          "publisher": "금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10Vmp5VzFoNE1idjh0eDJ2eXdlcUozbDcwTkJCb2x0SFM4dUZfOFJ4RUlkamRaMXVYQk4zR0daREZxSGc2RFVMS3ZTTFNlTzViZEFTVldGNUd6VEVkSW5fN01KWElJeFk5R1BGWmxRai14ZTd5WXBGT0YyTGM?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-30",
-          "title": "[2026-10-30] 양동원 하나저축은행 대표, 부동산 부실자산 감축에 흑자 전환…안전자산 중심 대출 확대 [금융사 2026 3분기 실적] - 금융신문",
-          "publisher": "금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zc1haWGthMEl4UmZ5U0xRRjlEQnFzWWRTRGtRS1IwNmNzUUhNVi0zQWxqUm1lYm94WWc3WTZmclhLUjdGUmhBVlRqWjhPTW1lbmVvNW5WM05Lb00wVjJDZlZ5S1doWWR1alNjWTJoWXFBUjdNU3d5M1NZR1k?oc=5",
+          "title": "[2026-10-30] 상호금융 예금 2.8조원 증발…5대 업권 동시 이탈, 건전성 부감 커져 [2026년 국감] - 조세일보",
+          "publisher": "조세일보",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Na21MbmZpdjM4ZGNGb3NiOWxIQlVBd2xvMk00d3ZMSEQ4UHVBajNtSlU1a0NGb3BuSG0wUkdGbjl1Y1pvOC1EcUZKclhUczd0UDRpa29FLTBsYkVoTWxn?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -498,17 +498,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-10-28",
-          "title": "[2026-10-28] 분양 소송가액 326억·건전성 개선 요구…김장섭 NH저축은행 대표 연임 여부는 - 뉴스워커",
-          "publisher": "뉴스워커",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ZdnBWRjJ2VW15RUF6bl8weWc4NE8zNDlzajRqTzlmWXNLc1FaVkUzbjBDYkJrdWUwa2Q4RkZLVEQ5dllGLUVmQkJubkV5akxJakpib0ZTNm81c0JjSG5UQXFKbE1zeVI0TGtieW0zSEvSAXRBVV95cUxPRV8xTmZqYl9BZHZyZzk5UldaNjJyRXZRVjBQdkVsS3plNE1vbUEtSEhFLVNHbDZaVnVQUmhiS3ozRUw0TFYzZW5GNHNMVUM4bFptcVNxU1JNY1BDbTN5d3gzMHdLUzZqZmpvbHpsVGZZVjhGQQ?oc=5",
+          "date": "2026-10-30",
+          "title": "[2026-10-30] 채수웅 신한저축은행 대표, 기업여신 확대·대손비용 절감으로 순익 증가…건전성 관리 주력 [금융사 2026 3분기 실적] - 금융신문",
+          "publisher": "금융신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10Vmp5VzFoNE1idjh0eDJ2eXdlcUozbDcwTkJCb2x0SFM4dUZfOFJ4RUlkamRaMXVYQk4zR0daREZxSGc2RFVMS3ZTTFNlTzViZEFTVldGNUd6VEVkSW5fN01KWElJeFk5R1BGWmxRai14ZTd5WXBGT0YyTGM?oc=5",
           "matchMode": "업권/시장"
         },
         {
           "date": "2026-10-30",
-          "title": "[2026-10-30] 양동원 하나저축은행 대표, 부동산 부실자산 감축에 흑자 전환…안전자산 중심 대출 확대 [금융사 2026 3분기 실적] - 금융신문",
-          "publisher": "금융신문",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zc1haWGthMEl4UmZ5U0xRRjlEQnFzWWRTRGtRS1IwNmNzUUhNVi0zQWxqUm1lYm94WWc3WTZmclhLUjdGUmhBVlRqWjhPTW1lbmVvNW5WM05Lb00wVjJDZlZ5S1doWWR1alNjWTJoWXFBUjdNU3d5M1NZR1k?oc=5",
+          "title": "[2026-10-30] 상호금융 예금 2.8조원 증발…5대 업권 동시 이탈, 건전성 부감 커져 [2026년 국감] - 조세일보",
+          "publisher": "조세일보",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Na21MbmZpdjM4ZGNGb3NiOWxIQlVBd2xvMk00d3ZMSEQ4UHVBajNtSlU1a0NGb3BuSG0wUkdGbjl1Y1pvOC1EcUZKclhUczd0UDRpa29FLTBsYkVoTWxn?oc=5",
           "matchMode": "업권/시장"
         }
       ]
