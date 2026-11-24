@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T11:25:59+09:00",
+  "generatedAt": "2026-11-24T14:51:10+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -8,7 +8,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] KB국민은행, 방산수출 돕는다...KAI 협력사에 2200억 대출지원 - 뉴스;트리",
+          "publisher": "뉴스;트리",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uZlRzbTBIenF1Y0FqQnVVZ3B4MlpuMF9DNkt5Si0zaTVPR2U1WEoySUYtODQtSXNmeDl3ejZkZERydERsUl9WVDBvczNrWUR0RGFGVWFkWjF0RFpa?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [은행가] KB국민은행, KAI 협력사 2200억원 대출 지원 外 - 싱글리스트",
+          "publisher": "싱글리스트",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9CemFCUk83cVpwdExxV1BKQUlGaVBfTGNkd29vWHc1Q2dJeUdPenNQQUptOEdDMWdMM25ucVg0MVUzLTZ5bTI4SU5jLXlua3h5RjFfYnYtVk5rWE9YWWM3UEpwa0VEZw?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] KB국민은행, KAI 방산 협력사에 2200억 보증부 대출 지원 - 스페셜경제",
+          "publisher": "스페셜경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jaHY1emJRODV0T1dJdGpweG9leW1PRDBiOUdLQ2tfMmMzMGExUGlXUFZmWjlXLXE4M1F3LTVfekVHSkVKSFJWb1JrNDBFek9CeE9IbldKelFIcW1Md2p3RU85QzBIWUJfRDNkag?oc=5",
+          "matchMode": "대주명+PF키워드"
+        }
+      ]
     },
     {
       "lender": "NH투자증권",
@@ -16,7 +38,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] NH투자증권, 설치 없이 주식 거래…'나무Max 웹트레이딩' 출시 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jY0hidU4yQ0VZRE9nOFR1QUxWTV8tT2I3a045Z3NnaVR4Umh5SzFFQ3MzSzV1YWJTNzlZS3g5b196R1Z1UXVCanQ2aUIxdjBmR3loVWdSS2FCZGxf?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] NH투자증권, AI 로보어드바이저 서비스 출시 - 농민신문",
+          "publisher": "농민신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WSkxuWXN6bEcxNDFJaGtVMGFQR3MzYlN4R0hmOEMtTXRrald4cnRwVThBd0tCemhUWUZPT3FsS04zZEp0Tjg1ZzhBTlhpQVVoQUpDTkYzNFo0Zw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] NH투자증권, 설치 없이 바로 투자 하세요! - 스트레이트뉴스",
+          "publisher": "스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA0SkVxdVJKTEx2aW14T0Z2N0MtNkRlSTU1akhIQW55YU9EQUVTcnJ2RUxqZEdzanlFUFJVNjFSRDEwWl82d0xEZGMyc212UWo0VGJIQ3F4UUVoLU5tODIyM3hrMWkxS1czMUVvRFd2ZlUxVlXSAXdBVV95cUxPWUlINnB4N2RkTkFEeEtHcjdiZFZOMVcxOEwtTjhOWUJlWjVVcXBCdDM2ZDVSUC04M2xDVGd0X2lSbGttcmFzeXBwRXZCb1dkQ05RQ21QWHZ4a2E5LVlSZlYxRjUxcFlqaHh0RUZJOS1XaGh3OUhQcw?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "대신저축은행",
@@ -24,7 +68,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [진단_저축은행 ⑨다올저축은행] 순이익 반등에도 수익성 회복은 미완... PF 부실·신용등급 하락 부담 여전 - 뉴스워커 인사이트",
+          "publisher": "뉴스워커 인사이트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00SGlLQzNGTVVTMjhYcW1vZkpXb2M0bzJPWVNOLTZrUWNXaWRwM2UwODdYVnNRb1VIU2NxeHg4R2xkUlZDSTNFQ1RESFZSTjBDTFoxblVrc1hFTlNkb0x4cThZVmdGYkwxc2dRQzBCTmg3YW16?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "대신증권",
@@ -32,7 +98,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 김치환, 삼기 주식 7.96% 대신증권에 담보대출 연장 - 데이터투자",
+          "publisher": "데이터투자",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PVi1ZdTFNV1pvUjVodFBqRlRGbm0wdDVQU01oMHhSaU55ZkN3clVLSmtwUFZBODlCeTluaGZOOEszV1BKaGw4eUwzcXlWX2VmTVo4U0hUZm9kTVU5LVBwZ1lMRDItd1R0RmRaRFc1cHV5UQ?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 대신증권 \"삼성E&A, 그룹사 투자 확대.. 목표가 12% 상향\" - 글로벌이코노믹",
+          "publisher": "글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSXBTRTBKd3QxWWc3eEhoVV9jUW1EWl81UUtja3JoWW1Sd0NCdDJKMUZYVlV1V2p1SEExT3ZKYU9WdFExR0RiMUtSU29GM0Y0YmY0UDNORVR5a2l0U2Z4ZDFXVFNhQjE1ZFlIV25UV2ZhdmZ5M25OLUVHQzhpMzExVzByMGpuODUt?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [리포트 브리핑]한전KPS, '점진적인 원전 정비 매출 회복 구간 진입' 목표가 49,000원 - 대신증권 - 뉴스핌",
+          "publisher": "뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KUVd1QXNjOTRQR0pvYTJUOXlCYmV0Qno4aWZ0ek53UWxNSGxZVzR1c3NSellKU21WdWtmXzdkSm1hT3V6M2Q4OU1JVWpkeFJXVjRtaUotbjFuVTZl?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "메리츠화재",
@@ -40,7 +128,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 메리츠화재 주춤한 사이 DB손보 추격…손보업계 2위 경쟁 격화 - 데일리한국",
+          "publisher": "데일리한국",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDZVM3bTBKcVJIYlREeE9oQ1Jwc2NUT0FQSzhJM1JfMHhFbnpQLS1tMnAzajd4TkNObTV0LVhpeVNBbmgzeE9nb3lJcWFKUXNCdTBEUThSenBVYzE1ajZoWDVCWmVfbzR4UUFlSW1mNNIBc0FVX3lxTE1jQU5XdWhfZkFjaEdwaGlKdkw2bUw0aXpYZUFyanVWT1lBYXllUGxGWEJ4eWdXTmxKa1FSRm5yVEJwRnVzdjNvazBpSDZhTFdPNE81aG9pdVNUcjI2VlgtS21QbndfdzVQUVpkX1E3NHJwWjQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [IB 중간성적표] 키움證, 발행어음으로 IB 확장…PF 의존도 과제 - www.ebn.co.kr",
+          "publisher": "www.ebn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tOEVySmNXOVdKME1Ib3NvTE5SU1BLVFV0elFtTWpsbmk5bVVqTmRCbU1HZTZSTF9wTDNneFM3R0NrMXdsUzN3ZVgzby04aGpaYWNqMVBwRVhXR1dKLURwNWVYMkV1TXN0?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 무디스, 일본 생명보험사 자본건전성 유지 전망 - 한국보험신문",
+          "publisher": "한국보험신문",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xZXIwa1JtSjBkODFvODdoVXVmMU1XQW8yOXBFdlQzOXI0enA3NFJFVlZHWXdFRmZhSE12TTVHLXJRM0RmWXJTdHhDaURkSFB6UUdncUpqY2txYkNZb1F2M25Uc3pSeUtaaEEw0gFvQVVfeXFMTVlrQ0RVMEpXUzdzWk1pekJsN1BSNjhUczRmd2RCZVdQMFI4UGdyVG1vYWhoUzJfZXJkRjJaT2RWSzZqSTB5eUdCNm9tS1BvQy12Y0ltRnhOSzJjMHpjYTVqUW9IajZnRllCcmFjZmdJ?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "비씨카드",
@@ -48,7 +158,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] [포토] 비씨카드, 자금세탁방지 표창 - 한국경제",
+          "publisher": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IbXVUMlBuYlNGS0lUTDVoWFVRY2FEUHdiXzR1Qk5fNi1wTmdsVUZIbFpNc3ZLZDV2TUtyRk1Jd3I3SkJJUkJyaDJPdjV5aE1MQTFONXZITERQdw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 비씨카드, 자금세탁방지의 날 금융위원장 표창 - 중소기업신문",
+          "publisher": "중소기업신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE50RE9sRXFFVlpsSjRVcUl1a0NjMk9fNEd2enl2TDFzRDhEMjZOcEtkYnpOcW5VRXpHZnRJZWQ2dUd1eWtSYlBrR1ozbkhIb0xwVFR1STdzUVplR3FJeDNHZnFmTjNuRmJFMC1aY3Fn?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] [카드 뉴스브리핑] 비씨카드, '자금세탁방지의 날' 금융위원장 표창 - 아시아타임즈",
+          "publisher": "아시아타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBjX2FzbDRDVDVNV3ZKT3REY2pIT0ZRTzEwUHAtdTEwa3NnZ2NzbWRoYUxHUS05TC1sa3JocHZ1QWVIM0ZmS2FKT09CdGYyOGM2SkE4YXBpN1RXSlVGdHc?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "소노인터내셔널",
@@ -56,7 +188,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 산 꼭대기 검은 곳간…소노인터내셔널, 비발디파크 정상휴게소 재단장 - 아주경제",
+          "publisher": "아주경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03ZHhZa2x2WjhBclJLSlVsbzJWbE1CM251YkhPOFY3SGVZa3U2dENmRXpKWW9IUXZlZ1ZIT3ZSQ01jMmlYalNEV1ZSdDJiZF9wa1UzdmZyZzE2QdIBWEFVX3lxTE1KRGJKbklHaVpteXVzcXh1TktnUTdfRUUxVk9QcWtxRU9kUUp4SnNOckFRQ3FnOTB3RF9yZk1FX250X3A5UHZicU1XUTNNcFd0Ui1hcUNlLVA?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 소노인터내셔널, 비발디파크 정상휴게소 리뉴얼…복합문화공간 '더블랙반' 오픈 - livesnews.com",
+          "publisher": "livesnews.com",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xbUxXX2VJT0dBUTFKY0N6blVLNHYtNmNDTnVFOVpGanBiZFg4NkhEdUFWa1pxQ0lhbWdDSEROUTM1NmhrRGdjWEpZYzBpWGRhQjdyM193cUhWQ3ZHcHZJYkJn?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 소노인터내셔널 비발디파크, 사계절 복합문화공간 '더블랙반' 선보여…곤돌라 대인 1만3000원 - 데일리팝",
+          "publisher": "데일리팝",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KN1lVM1cyRVB2aEt0b1ZDWjhsRlQ1S0tNamZDcXJoWGNobmFxT3NVdFRMQzN5b0JkYW9ydWNYZnAwWUpvUVdEOTEtcklxU3lzUVk5N09WMnF0SGZLYXQ2YzlidFRXRVRN?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "스틱얼터너티브자산운용",
@@ -64,7 +218,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] \"PF규제로 디벨로퍼 지형 흔들…주택공급 위축 우려\" - 매일경제",
+          "publisher": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWVElOUGtHMGVyUE1WWDQ0Mm00RmdvTkZ3WWduU3RXeFRFYzZ6dTZqaUtsMEdOVlhBeHVfLWYybldTVW9JMGdyOHRrMnNLd3pxaXBCRW5yR0g?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "신한GIB",
@@ -72,7 +248,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 롯데손보, 신한금융 편입 앞두고 자본건전성 개선 추진 - 이코리아",
+          "publisher": "이코리아",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1V0kzN0ZFd1AwblhQY05FNG9nWWExQjJIUkM0czRwSG4tc0R4eGktM0RfTkJkdU55UXNXM2RYR3RhOXpMNFBGbUJFcml0RFRfN1ZWbjBpTEhkZ0VZcXpjZ3NMcjMyeUFRWGxtOUZOYw?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한은행, 세계 어민의 날 맞아 WWF와 해양환경 보호·어촌 상생 실천-그룹사 뉴스 - 신한금융그룹",
+          "publisher": "신한금융그룹",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PbEdEOGVFdW9OdTZzc2QtblhOQ1ZaN1lCSGNUbnBqR3YzaTFoZnR1ZXhDZGcySHhoT21sM3pWMUE0TUhoUXB1eld1T0lPN1BHZkdtT0ZibU1HS1BYVkthbTRuR1lMMk1i?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [게시판] 신한금융, 2026 대한민국 지속가능성보고서상 11번째 수상 - 연합뉴스 한민족센터",
+          "publisher": "연합뉴스 한민족센터",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFZWVoeTZlNE1lcmVwQWlhNHRiY0xUeHp3UDdMbHRHTUxSMlZqM21tcUdjMjBFWE8wU3puMVozRmdQM3BWMzBOZXFFQUczenlOV09NR19uWURkUzJKekotU3hNYmJtZVdMWFpQZ0Q0VEJlc0hU?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한은행",
@@ -80,7 +278,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 롯데손보, 신한금융 편입 앞두고 자본건전성 개선 추진 - 이코리아",
+          "publisher": "이코리아",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1V0kzN0ZFd1AwblhQY05FNG9nWWExQjJIUkM0czRwSG4tc0R4eGktM0RfTkJkdU55UXNXM2RYR3RhOXpMNFBGbUJFcml0RFRfN1ZWbjBpTEhkZ0VZcXpjZ3NMcjMyeUFRWGxtOUZOYw?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [영상] 빛나는 사쿠라·최윤아 매직…신한은행 4연승 - KBS 뉴스",
+          "publisher": "KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nLVhYSGk0eW1ZQjlKcTJBLTdYU1JSTTRFSmVyMXlpa1hxMl9zel9fNjN3Q3NfNWR4cTYwd2lzZWxRbFJ5azIxOFdOT251MUhJdEE1eFhZYlFWTkpLYkh2NUhGS2ozUQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 계양구, 신한은행과 차기 구금고 운영 약정 체결 - LG헬로비전",
+          "publisher": "LG헬로비전",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1rN0JoMERkU2VEeUo5WHFkZHJuUUI3aG81a1RkakFqUzM4UUxuVXRMLTFNQmh5djNFNkNIc1hTZ2RjQ1pJakR5ZmhnaGo3VVBzWlFwdVdKcW9hQXlhMDlpZ1Y2TjFmcl9TSUc1cVI1V1pHMnfSAXZBVV95cUxQRkQ5UGRtSGNVU0RrdUNSNWwwcHRTOTFsVUZmcHp4REVCM1VlbVdlWGd4S05kOG5aZlFrMUtfUElUOUltV2FwVk0xSVlyM3ZSSjRqTk1adEhJczA3LTdjS3cxS0t4WlBkd0xJNi1EWW1ZMXlqWE9B?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한캐피탈",
@@ -88,7 +308,29 @@
       "projects": [
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-23",
+          "title": "[2026-11-23] 롯데손보, 신한금융 편입 앞두고 자본건전성 개선 추진 - 이코리아",
+          "publisher": "이코리아",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1V0kzN0ZFd1AwblhQY05FNG9nWWExQjJIUkM0czRwSG4tc0R4eGktM0RfTkJkdU55UXNXM2RYR3RhOXpMNFBGbUJFcml0RFRfN1ZWbjBpTEhkZ0VZcXpjZ3NMcjMyeUFRWGxtOUZOYw?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한금융, 수익성 중심 자본 재배치…신탁·캐피탈·저축은행 향방은 - 팝콘뉴스",
+          "publisher": "팝콘뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94SThKdks1RGdHVUNWa1RDNWlfLVkxREFyN1hTQVV5RFRwX29UZldiYUZ4cXdhbHF5MGFjVjIyblZNMjVzNm1IaDFHdklFdVJnVktfdGdDWDdmbU5HRnRzby12OEZxZ3dwWGs3dzFR0gFyQVVfeXFMTkFGWndqS1JKUTdQSnVkV0pfakJkNDNuQi1FS0Y5MmZjRnFTczM1dnliREVEWFJ2TTd6NjBiVWR6Y3VOQXFXS3gyVXUzT2V4ZUFxMFRqQ0V4YllFOEJqTWM0SnRGWUNCRXloOGxqS0UxaGlR?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한은행, 세계 어민의 날 맞아 WWF와 해양환경 보호·어촌 상생 실천-그룹사 뉴스 - 신한금융그룹",
+          "publisher": "신한금융그룹",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PbEdEOGVFdW9OdTZzc2QtblhOQ1ZaN1lCSGNUbnBqR3YzaTFoZnR1ZXhDZGcySHhoT21sM3pWMUE0TUhoUXB1eld1T0lPN1BHZkdtT0ZibU1HS1BYVkthbTRuR1lMMk1i?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "신한투자증권",
@@ -97,7 +339,29 @@
         "816",
         "427"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한투자증권, 롯데쇼핑과 주주우대 서비스 확대 - 매일경제 마켓",
+          "publisher": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NYXl1X0tNdl9xeTFRRk13WGlnTEF4eEp3WXg0a2JkNGQyTm92VFRmd0FfUy1pbUdCaXZhYVJTV3NvZ1d2cjlYRTVibXluRjE4UFE?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한투자증권, 롯데쇼핑과 주주우대 서비스 연계…투자 혜택 확대 - 인더스트리뉴스",
+          "publisher": "인더스트리뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHa2hpVzBXeWFJdl9NX3NTeXo4WThVTlV6WWg2YzB5ZFR0eUx1NXhVVUFKeFAyMnMyTXQxMXlTeV82SlNmR2p6cHFWZE85bWYxSTZyUlI5TkZhVGZuVGlXTDJVNlFKRmlqU1hjSFpQSDhLZw?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] 신한투자증권, 롯데쇼핑과 연계해 주주우대 혜택 확대 - 연합뉴스",
+          "publisher": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE42LWJ4d1VHQ2FROG02WUE1dWdOd0JfNUthVXRkY1ZhX3g0X0RBaXNHQzd5NThoT3c2bnRUUUExU19vWGtlT3hxLUZWNEZCZFh2V0NsS3k4Y3NDZGZMeGxoSNIBYEFVX3lxTE42LWJ4d1VHQ2FROG02WUE1dWdOd0JfNUthVXRkY1ZhX3g0X0RBaXNHQzd5NThoT3c2bnRUUUExU19vWGtlT3hxLUZWNEZCZFh2V0NsS3k4Y3NDZGZMeGxoSA?oc=5",
+          "matchMode": "대주명"
+        }
+      ]
     },
     {
       "lender": "코람코자산운용",
@@ -105,7 +369,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] 캐피탈사 11곳, 3분기 순익 21% 감소… 4분기도 조달금리·PF '이중 부담' - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5yamRxZkJ6enI2d0tDcE83ck9XOHBxVjBvMWh0RF9WUnJrRTEwTHZFZ1lIUGs4Ym51M3ZyM3Q0MlFSMjNNbFI2T0EySV9GZ0RzMy1MQ0h3dnNkVXZYa2lXUGxOMWlwZmx4S2tXMA?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "키움투자자산운용",
@@ -113,7 +399,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] 캐피탈사 11곳, 3분기 순익 21% 감소… 4분기도 조달금리·PF '이중 부담' - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5yamRxZkJ6enI2d0tDcE83ck9XOHBxVjBvMWh0RF9WUnJrRTEwTHZFZ1lIUGs4Ym51M3ZyM3Q0MlFSMjNNbFI2T0EySV9GZ0RzMy1MQ0h3dnNkVXZYa2lXUGxOMWlwZmx4S2tXMA?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한국투자리얼에셋운용",
@@ -121,7 +429,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] 캐피탈사 11곳, 3분기 순익 21% 감소… 4분기도 조달금리·PF '이중 부담' - 뉴스락",
+          "publisher": "뉴스락",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5yamRxZkJ6enI2d0tDcE83ck9XOHBxVjBvMWh0RF9WUnJrRTEwTHZFZ1lIUGs4Ym51M3ZyM3Q0MlFSMjNNbFI2T0EySV9GZ0RzMy1MQ0h3dnNkVXZYa2lXUGxOMWlwZmx4S2tXMA?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "한화저축은행",
@@ -129,7 +459,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [진단_저축은행 ⑨다올저축은행] 순이익 반등에도 수익성 회복은 미완... PF 부실·신용등급 하락 부담 여전 - 뉴스워커 인사이트",
+          "publisher": "뉴스워커 인사이트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00SGlLQzNGTVVTMjhYcW1vZkpXb2M0bzJPWVNOLTZrUWNXaWRwM2UwODdYVnNRb1VIU2NxeHg4R2xkUlZDSTNFQ1RESFZSTjBDTFoxblVrc1hFTlNkb0x4cThZVmdGYkwxc2dRQzBCTmg3YW16?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     },
     {
       "lender": "흥국저축은행",
@@ -137,7 +489,29 @@
       "projects": [
         "816"
       ],
-      "articles": []
+      "articles": [
+        {
+          "date": "2026-11-22",
+          "title": "[2026-11-22] '착한 대출'이 돈이 됐다… 지주계 저축은행의 반전 성적표 - 매일일보",
+          "publisher": "매일일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwOTJiMl9jdVA2bUtmbkdsS0VrcGFGeXllemZvUTlibzJ2MGdpZ1VWRGFCdnJBVXFLdG1aRXhCTWtUSGJsTTdCYzdzaTV4eGxpemJFZUg4Y1NjS1dWdnp1c2UzNUs?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] [진단_저축은행 ⑨다올저축은행] 순이익 반등에도 수익성 회복은 미완... PF 부실·신용등급 하락 부담 여전 - 뉴스워커 인사이트",
+          "publisher": "뉴스워커 인사이트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00SGlLQzNGTVVTMjhYcW1vZkpXb2M0bzJPWVNOLTZrUWNXaWRwM2UwODdYVnNRb1VIU2NxeHg4R2xkUlZDSTNFQ1RESFZSTjBDTFoxblVrc1hFTlNkb0x4cThZVmdGYkwxc2dRQzBCTmg3YW16?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-24",
+          "title": "[2026-11-24] PF 줄이고 가계대출도 관리…새마을금고, 지역금융 유지 과제 - 뉴스저널리즘",
+          "publisher": "뉴스저널리즘",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81Qkt2NHdvWWFrWndDZDQ0NUNlSi0wT0Y5NjlRa1RUODU0b3NSOWRNd3MwbVByUUphTkdyVWR2SWxzWTRNQk5kNEszV3FBdWRiMnJXTk9hdXA5VUVpQU1kTXk2enBXSEpROGZZ?oc=5",
+          "matchMode": "업권/시장"
+        }
+      ]
     }
   ]
 }
