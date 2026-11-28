@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T13:01:07+09:00",
+  "generatedAt": "2026-11-28T12:48:14+09:00",
   "windowDays": 3,
   "items": [
     {
@@ -17,17 +17,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-11-25",
-          "title": "[2026-11-25] [이슈] '우대금리 꼼수' 점검…KB국민은행 대출 할인 0.82%p 줄여 - 자본시장뉴스",
-          "publisher": "자본시장뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0xOEJSWnVBMFJCMkxZTjNONjU5cjJvX1JVa1RLRUV6REtSaF9fZUNmMnNvbnRhRnZnSV9xRDRKNk1TWldVMWpxOS1OZmR0ZmVMcDBkUE03dThXTDF0c3Y5MGVzNHlQdm8?oc=5",
-          "matchMode": "대주명+PF키워드"
-        },
-        {
           "date": "2026-11-26",
           "title": "[2026-11-26] KB금융 \"어려울수록 금융사 역할 더 중요\"…중금리대출, 은행·카드만으로 올해 계획 3분의 2 수준 - 녹색경제신문",
           "publisher": "녹색경제신문",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9oVWlxcEI3aGExM0VqcDBwdjUwLUg4NHhOTm5McFI3QVdiakh6MlBITDUteHFTVENuQ0xSWGtORW5oUjYwRjhXVjFSSXR3QUFsVUJ5U01YSnczUjRjUk1TMlpuRHJ6a00?oc=5",
+          "matchMode": "대주명+PF키워드"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "[2026-11-25] [금융 소식] 현대캐피탈 중고차 납입금 낮추고...KB국민은행, 퇴직연금 수수료 인하·청년 라이더 대출 外 - 데일리팝",
+          "publisher": "데일리팝",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tdmtsVFRlTkZ5OFVTZWRLY3FRdTAwRktrQ1FqZlZBVGFFeloxNnZYbFNZZjJ2djRKaE9tSmszM1ZhMFRqbTFNU05fMmhxTEoyMG5kcWdvRjJKb2p5WllzZzJ2YUNiVndT?oc=5",
           "matchMode": "대주명+PF키워드"
         }
       ]
@@ -40,24 +40,24 @@
       ],
       "articles": [
         {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] NH투자증권, ETF 자산배분 전략 다룬 'THE100리포트 138호' 발간 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1JQnJpWllMd2tXZTNIdmt2Z2otRVZ0NVNibV9oTXJpOU9idFhSQ3JNcVVQeGNYYzRYaTlqeW5PYUxKSVMyazdGZXJfZzJsSXd2NkNsZXl1ZXVOcVVF?oc=5",
+          "date": "2026-11-28",
+          "title": "[2026-11-28] NH투자증권 THE100리포트 138호 발간 - FETV",
+          "publisher": "FETV",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YSEczcmtZM0hiUDFfLUxxYVlkanRWNkhxMllid09nVjBnalYzTHFWcTF1OE1XeG9KMGUxQWdLanBWNWFWUHcxcGpFemVXOEVKNnlsWFlXTmQ4bVc0TjNhVzhwNGU3cG5D?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-11-27",
-          "title": "[2026-11-27] NH투자증권 “베트남 증시 관세 우려 과도…무역협상 진전 시 반등 기대” - 이투데이",
-          "publisher": "이투데이",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZdlA0aUVsZ3B0RGRrdzVPOC1XcHBfZEhCMldYOFlLUm9LRzhaY3FocFhmU2Z6ckhpYzhCOGgtdUdkcG0tcGdXUE9RVHFvM2VldXJfWQ?oc=5",
+          "title": "[2026-11-27] NH투자증권, ETF로 하는 연금 자산배분 설명한 THE100리포트 발간 - 한국경제",
+          "publisher": "한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZDQ5OXlubGUzeFVHd1BhVHZ5NFdSbi1FSGhEeWhYRWtqSjh4VldmWlBmZ2N1M2tNZXhZYVFHVmNzanBvQ2JOblY3bk9WY3daVUNQR09mNXROZw?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-11-27",
-          "title": "[2026-11-27] NH투자증권 \"연금은 종목보다 자산 비중…ETF로 배분하라\" - 주간한국",
-          "publisher": "주간한국",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zTFhKbkdpNTVyTnhyVVhrNzFoMFFDcHVxQ3Z6NlRmQ3JnLXNhWGhJS3FzNV9YcVd2SXRueGJzOGROaDlXaWV6cnVuX1FEWFFxcG95MGJHRDIwMDQzMXU4RDBSMGpQNjZqWG5vX3BQcjXSAXRBVV95cUxQLS1KalptTW4zTGNrXzJEa0VXbVVNaXplZHdOajJaU0ItWnkwbnF3TENNcVdvemF2SDFKUU5tNFJXVDF1S2NZQzVobWo0R2JBemtMNm9wMDB3R2tMcFpVQmVlcWl2aFM4N29WUERSZEtNV3p4Sw?oc=5",
+          "title": "[2026-11-27] [더밸류 브리핑] 오늘의 증권사 소식...한국투자증권·NH 투자증권 - 더밸류뉴스",
+          "publisher": "더밸류뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1lQVBlTGtxMVlJRUdYOHRocFZsMzVyODNsY001aGxoWFUxLTdOcVg4LXpwaVEyRjI0eGpueWczQ1NnUEN6bHA5aGUxekN6akF1c3ZCTQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -100,6 +100,13 @@
       ],
       "articles": [
         {
+          "date": "2026-11-28",
+          "title": "[2026-11-28] 대신증권 \"중국 화웨이까지 HBM 개발 속도전…한국 반도체 투톱에 드리운 그림자\" - 핀포인트뉴스",
+          "publisher": "핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBrbV9MNXBObElUZGtzWXF5WGotcFAtZXRndGtjcmE0cWtiTEpwMGp1TW5ycFNJZ2trVEJDVVItTEtlTjRmOWpLdUF1cjZWNFZ2MW5zbnFOUW1RTTh3Q0NFVlpvblItZ3huUGVLYXkzdUZuWWs?oc=5",
+          "matchMode": "대주명"
+        },
+        {
           "date": "2026-11-27",
           "title": "[2026-11-27] 대신증권 \"코스피 언더슈팅\"…美 고용·젠슨황 청문회 주목 - 연합뉴스",
           "publisher": "연합뉴스",
@@ -112,13 +119,6 @@
           "publisher": "뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ndmlkb1VSQ0hHT0JDQzJuYk90YkhJY2I5OS1Wa2NDbWlLTTB1eUlRZDZNT05EV2dBckZpWno2cDVERmNFcmJ6MGVuMGRjbS1XYXlnWG1XVnBZOHVJ?oc=5",
           "matchMode": "대주명"
-        },
-        {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] 대신증권 \"다음주 젠슨 황 청문회·美 고용지표 반전 분기점 될 것\" - 브레이크뉴스",
-          "publisher": "브레이크뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9tR1dEWjNvQmwwSGI5VkRlcVJydTV1MkxRb05lYkYtOGJOb3R2YkdVMHB1Y24zcGdCWjFKSzRkMkxqZw?oc=5",
-          "matchMode": "대주명"
         }
       ]
     },
@@ -130,25 +130,25 @@
       ],
       "articles": [
         {
-          "date": "2026-11-26",
-          "title": "[2026-11-26] 부동산 '늪' 겨우 빠져나오나 했더니 … 증권사 발목 잡는 자본잠식 PF·펀드 - 뉴데일리 경제",
-          "publisher": "뉴데일리 경제",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBCNmt0ZDFwNU4xUEpQc0MySVRyMTd4Ul9lREFDTzJhVDJXQ1ZMaFNzaGdMenU5YTJiWFB4MkJPeGpVdHBDdkthcy05TWNVM09jbHViZU9WRDdsTndRN1F3LUxTUWw3SXB5QjZCUmlVMmJ4bURJTml6TnJtb9IBgAFBVV95cUxNaW91ZW9vaFZTeHRfYVpGeXZtc1F2cjI0ekYtN0tCV2NYSDFqN0gyZXFqSXJwWUtKUW1CcU1ZNjg0SDN2TTR2OE8zSFAyeUJGTkpfb3RNWWw4eHpGZGp2R2xjT2huXzZIbXY2VXdxNlNXMC1NMlJBeTJJdU95N0pNMA?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-11-25",
+          "title": "[2026-11-25] 메리츠화재, 보험 손익 개선…내년 실적 반등 주목 - 이코리아",
+          "publisher": "이코리아",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBTSjNjTzNOVTU3SHhNUENfUzd4OFBZc2xLRERXS2xQNks3S2NZMHk0bEpQQmtreHJJM2Jja0NIYnpKVVN4SHl4TlVJWHhlTjNxSXBrcmlfYVdGWFhTazNDTEhxMkFVTUJMaE9pR3pkdw?oc=5",
+          "matchMode": "대주명"
         },
         {
           "date": "2026-11-25",
-          "title": "[2026-11-25] 우리투자증권, EOD 반포 사업장에 PF 승부수…600억 신용보강 부담 - SR타임스",
-          "publisher": "SR타임스",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85WmpRaFhqSzlaYlR4R0N6SlA5N2d6Z0VycENZOGhiQ1dOc1F1TnZWdF9BeGRVQW5JV2FmdlpKbWc3RElDbVNBZDJFLXVqRWZGdndBTEk4TGNEdVN0b2QwNDQzUndNaXpZ0gFrQVVfeXFMTWZVQ1FLbnJUOEU4cEJnXzFyNWhkT01xV2JHdFBMak56LVlJbGhrdWdIWFp5R3Fwb1lNekkwYWw1RVByQ1I5cUZMUEJtamRNcEo1RS00ZFhsM1dDVGpQR09zMTh3dllOdXZLb3c?oc=5",
-          "matchMode": "업권/시장"
+          "title": "[2026-11-25] DB손보 '풀고' 메리츠화재 '조이고'…간병보험 온도차 - PRESS9",
+          "publisher": "PRESS9",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05Y1dhQ3pwQ2V3UlE4UXNtWkpWWl9XeXRCbjFPbUhVYzhRSWJsMmJRQXFvNkpOdktsbEtHa2RDck5ZczVUTkJGQ3JRQW1tZVN6dWlXb0NLUHE0OGJGZnMtTDJ5cGxnQQ?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-11-24",
-          "title": "[2026-11-24] [PF 2막 ⑩] “부동산금융 익스포저 줄였지만”…이선훈號 신한투자, 브릿지론·중후순위 비중 ‘숙제’ - 디지털데일리",
-          "publisher": "디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GX19TOG8xY292NGh2T1pKQW1aWVlBSV9rZG1yU2NEY003SjBHWmFubjd3c1ppQ2pNbmdwZUQ5dFlIMUltdnRldEJoQTJIYzJJR2N3LVl5TVhJLW44TURyS0NUX0U?oc=5",
-          "matchMode": "업권/시장"
+          "date": "2026-11-27",
+          "title": "[2026-11-27] 메리츠화재, 상반기 사상 최대 실적 - TradingView",
+          "publisher": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9aRlVsc1lnRWI4bW5BZXB6bDNlbUtLZThEMGlTcThrWFJsM3d0Mlc3cV9sblhWNFhtMFRTV0YxRnRxTUhmWEFnemVHRVRPNW82RktDWUYwemd6dmJIR2ZBZi1zS2xIWUtU?oc=5",
+          "matchMode": "대주명"
         }
       ]
     },
@@ -161,6 +161,13 @@
       "articles": [
         {
           "date": "2026-11-26",
+          "title": "[2026-11-26] 비씨카드, 페이북서 디지털자산 지갑 기술 검증 완료 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWbWh5TnJsOG0xeEt1dXhrQktKSVVEaTdpNEJDMDN5WFAtb21xelFuLTFZdDU1OWw3VXNwWGwtbTd1RmltM0dqQ2JmaVdLUQ?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-26",
           "title": "[2026-11-26] 비씨카드, 페이북에 스테이블코인 지갑 구축…QR 결제 검증 - 더팩트",
           "publisher": "더팩트",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE11TmtLZzMxMk5QZ0hBY0dTV0loN3BwMHUzMGZRYTI4SldocGJLQkZNNlNVdlMtcXNtVURIWGRRVllISk01YnJGOC1GZ1VuWFVrbEtXWtIBVEFVX3lxTE11TmtLZzMxMk5QZ0hBY0dTV0loN3BwMHUzMGZRYTI4SldocGJLQkZNNlNVdlMtcXNtVURIWGRRVllISk01YnJGOC1GZ1VuWFVrbEtXWg?oc=5",
@@ -171,13 +178,6 @@
           "title": "[2026-11-26] 비씨카드 '페이북'서 스테이블코인 결제 가능해진다 - 중소기업신문",
           "publisher": "중소기업신문",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85d1R0LTJaWW5LVTRzMzZaaVQydXRNTTdsS01hc2VNMEtUdm5Oei03Q2pLVkRfN3ptT0hJa2Q4TGdfcWpiWTJUNEpCdnlGUG9fY0owbUJELVNlMnhySEozek16MVk0cE43cXMtWnRR?oc=5",
-          "matchMode": "대주명"
-        },
-        {
-          "date": "2026-11-26",
-          "title": "[2026-11-26] 비씨카드, 페이북서 디지털자산 지갑 기술 검증 완료 - 전자신문",
-          "publisher": "전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBWbWh5TnJsOG0xeEt1dXhrQktKSVVEaTdpNEJDMDN5WFAtb21xelFuLTFZdDU1OWw3VXNwWGwtbTd1RmltM0dqQ2JmaVdLUQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -198,16 +198,16 @@
         },
         {
           "date": "2026-11-26",
-          "title": "[2026-11-26] 소노인터내셔널 비발디파크, 27일 스키 시즌 개막…스노위랜드 동시 오픈 - www.ebn.co.kr",
-          "publisher": "www.ebn.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Ya3dWZGlkS1pXb3I5QXJQUnZQd3FEUEIyM1J4RUxzRjZHb1hqRTQyZ3AxSFRLaGhHVTVGVE9WSkVyWEhhYnpBTHBWZVpxT19laDhIdnh4T3ByY1BnQ0c1SHloNkRVdXVD?oc=5",
+          "title": "[2026-11-26] 소노인터내셔널, 비발디파크 정상에 '더블랙반' 오픈 - MTN 머니투데이방송",
+          "publisher": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TbExlZE1zTjFLTlNiQmI3UGFDWVd1bHhPWkJ1eU8tOG5yX3pnem1JNi1VQzh2SDZ1TC03dzhwV2xtVEl4cWx4RFptckt3aC1KcHhuYmFfQUlJX01MQjg4?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-11-25",
-          "title": "[2026-11-25] 소노인터내셔널, 27일 비발디파크 스키장·스노위랜드 개장 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Xc2VSREJweF9DWjA3WkNJZmtPcVNGX0FwVS12a3Bvc2pHVWdYNDk1cERmZERmZnpDSUlZZVlpdlFsOXg2OUJDam5pRm9VQVBxV2JkTlZSdkdia0d4?oc=5",
+          "title": "[2026-11-25] 소노인터내셔널 비발디파크, 27일 스키장·스노위랜드 개장 - 더팩트",
+          "publisher": "더팩트",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mNzBQMWgwSHpOV0xKbzdoV2JlekFTbEo1NnNCUTRSMm8wTHB1NzQ4N3Zzd0IzWEM1TXZXcFpqWVFJVWYyc1FNY29INjZMcGg0TTNXRNIBVEFVX3lxTE9mNzBQMWgwSHpOV0xKbzdoV2JlekFTbEo1NnNCUTRSMm8wTHB1NzQ4N3Zzd0IzWEM1TXZXcFpqWVFJVWYyc1FNY29INjZMcGg0TTNXRA?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -220,13 +220,6 @@
       ],
       "articles": [
         {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
-          "publisher": "MTN 머니투데이방송",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
           "date": "2026-11-25",
           "title": "[2026-11-25] \"부동산PF 한파에도 코람코는 따뜻했다\"…신탁업계 '나 홀로 흑자' - 마켓인",
           "publisher": "마켓인",
@@ -234,10 +227,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-11-25",
-          "title": "[2026-11-25] [부동산신탁 진단⑥] PF 한파 비껴간 코람코자산신탁…3분기 누적 순이익 490억 ‘업계 1위’ - 경인방송 뉴스",
-          "publisher": "경인방송 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00X0pqNnl6c1cwYkNNQXVVcjZCT2lwV0lrek42RXVaNUh6MFZVV0pjUm1Wd05rRXl4WGJoQmVwQ3psUFJhRUZwb1JVejdwS3hlVUw3U0FJTkZiMHBvQ1hlMUlsZk3SAWhBVV95cUxPQ0JxTkpUaENnb2cyeWR5cTRjcUN1Q09mQXUyeE5LVFV6WU9DZ0V4UE5wYjdGUkJlWnc3UXY1TmVZSzZ3US1ISC14SFFwQXYxZGxFZzJhZXZSUFJ6MHdOQXc2ZHpCa2NRRA?oc=5",
+          "date": "2026-11-27",
+          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
+          "publisher": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-27",
+          "title": "[2026-11-27] 힐튼호텔 재개발, 3.7조 본PF 완료했다…6개월 앞당긴 '속도전' - 이데일리",
+          "publisher": "이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcjhJcXY5bEt2WEdQd1JYaWJqQmlSbXdvWTJvUEVDTE16SVlzUXpUaXhoMnJEVTlpM1poWG9pbEdzSUJiaHN5QzgzOF9XbXlJYWFJUi01MVJBZXdseHhOWllGTzlZcl9mSC1GVlZsN3dLS0FYd1NOdm85ZUUzcXpBVw?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -257,17 +257,17 @@
           "matchMode": "대주명+PF키워드"
         },
         {
-          "date": "2026-11-24",
-          "title": "[2026-11-24] [금융] KB미소금융재단, 청년 배달라이더에 최대 500만원 대출 / NH농협캐피탈, 여의도 신본사 이전 / 신한은행, 슈퍼SOL 연말 감사 행사…신한금융, 지속가능성보고서상 통산 11번째 수상 - 웹이코노미",
-          "publisher": "웹이코노미",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PeUVFb2RzVnRnNFVGenZzbjBXcmM4THNZX3FaSC1yT0lxRlpKWVp1YW1JcUlfTlRXdHY3dlptZ1dXV2otcG9yS0hESFA4aWdpTGxreGFRekxiMG5EQVpkcW5WY2xyR2pfYWgycDhVYU1tUQ?oc=5",
-          "matchMode": "대주명+PF키워드"
+          "date": "2026-11-27",
+          "title": "[2026-11-27] '역대 실적·글로벌 구축 이끈' 정상혁 신한은행장...신한금융 '안정적 성장' 선택하나 - 포인트경제",
+          "publisher": "포인트경제",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UNEpKelBFY3llamNjM0FqYkVubXVBTUR0NUdLMWZrT2planNaMGRIRDNXQnRqaVVST1JIQnAtY0kwVDRjalIzMFQ2TnkzVkZTblgxUHdIOHBGX182UWJqUkdHZ1hXX3lpcnc?oc=5",
+          "matchMode": "대주명"
         },
         {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] 국고채 과징금 결산 시점 갈린 KB·신한금융 [이슈 더보기] - 뉴스저널리즘",
-          "publisher": "뉴스저널리즘",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBpTjc0SGdkQzI0Yk16cXpTZzRRaDRqTkVSeGlBb016V3hrMjNFWF9wZV9jRS05SVVEeWY3SDlNb3dxNjVNelliN1hacU1QcFFtekc1ZkZoZVByX2NNMWRIdmVGcm5CRV9wQ1ZV?oc=5",
+          "date": "2026-11-26",
+          "title": "[2026-11-26] 박종복 은행연합회장 내정자, 신한금융 사외이사 중도 사임 - 연합인포맥스",
+          "publisher": "연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DcVJ0dWJNUkxrcERkQ2dnZjd2T2loZzk2SE9HZHVNZENqZF9laU9tZGJXX05BUVl6MS1nclJqMF9mSjBMalhCU1RMd3puY2RrUzliMVY3NnVwNk1fYXFHREF0QWNhRHdKeGxucFN1Z08?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -310,13 +310,6 @@
       ],
       "articles": [
         {
-          "date": "2026-11-24",
-          "title": "[2026-11-24] [금융] KB미소금융재단, 청년 배달라이더에 최대 500만원 대출 / NH농협캐피탈, 여의도 신본사 이전 / 신한은행, 슈퍼SOL 연말 감사 행사…신한금융, 지속가능성보고서상 통산 11번째 수상 - 웹이코노미",
-          "publisher": "웹이코노미",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PeUVFb2RzVnRnNFVGenZzbjBXcmM4THNZX3FaSC1yT0lxRlpKWVp1YW1JcUlfTlRXdHY3dlptZ1dXV2otcG9yS0hESFA4aWdpTGxreGFRekxiMG5EQVpkcW5WY2xyR2pfYWgycDhVYU1tUQ?oc=5",
-          "matchMode": "대주명+PF키워드"
-        },
-        {
           "date": "2026-11-26",
           "title": "[2026-11-26] 채수웅 신한저축은행 대표, 부실채권 정리로 건전성 개선…세대교체 기로 [진옥동 2기 신한금융 인사] - 한국금융신문",
           "publisher": "한국금융신문",
@@ -328,6 +321,13 @@
           "title": "[2026-11-26] 전필환 신한캐피탈 대표, 부실 정리·투자 기반 수익성 성과…'안정 vs 변화' 이사회 선택은 [진옥동 2기 신한금융 인사] - 한국금융신문",
           "publisher": "한국금융신문",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Xa3JqcHJjcDZRSXBQYnJ0NUlTbmJqOTB0WFRMQXJyMFRFOW5MY2l4M0tuS25RRW5oV1NaaC1PS3d4Njgya0dQNjUxZ3VESTh3OFY3SHY0YXJEVXpjbUszdUpQNFFoRThaUk5WcThKc0xUb1o1dzZVeUxQSGM?oc=5",
+          "matchMode": "대주명"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "[2026-11-26] [진단_캐피탈업계 ⑩신한캐피탈] 부실자산 정리로 순이익 확대... 기초 수익성과 위험관리 역량 주목 - 뉴스워커 인사이트",
+          "publisher": "뉴스워커 인사이트",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9STGxpZUlCM2RWM1QtNXF6d055VFE5cmF0VEEyeGM3VnB6QXBNRVVsY0EwS3BlZUtSN2pkVkpyeEJGWTgtNG9vb29VdGZISnVGOW5vQVZGU2VPMGU0dGs5Zi01MWl2Nk9iazdVT1pDM29HZnpo?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -342,23 +342,23 @@
       "articles": [
         {
           "date": "2026-11-27",
-          "title": "[2026-11-27] 신한투자증권, 연 5.00% 발행어음 특판 출시…100억원 한도 - 매일일보",
-          "publisher": "매일일보",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53by05dXVnS2wwbUVCVlZtVHNEQWQ4czNCWklMSVVsTEc0d190R2VwX0VNVmlVNExWVVdUWHFxR0Vua2NvQk5GRWZlRHVfUnd0YlNpOWRENUtValBTSDBudnJvbGs?oc=5",
+          "title": "[2026-11-27] “100만원부터 가입 가능”…신한투자증권, 연 5% 발행어음 출시 - 매일경제 마켓",
+          "publisher": "매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hb2hFclkxWElHcXJhc056Q2JiajJ6WXhjY1I2MUNJdk95enFPVFp5c2I5UnRfUzhjWE0zQVA1RG5OYWRzM2syRnpKYV85NjZRLXc?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-11-27",
-          "title": "[2026-11-27] 신한투자증권, 연 5% 발행어음 특판…100억 한도 - 뉴시스",
-          "publisher": "뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB2MkVXOWFrbjZnT0E5Ujd6UlV2VlBpNlNLNkFfZnc4czlDTzFOelJzY2V5U0ZteWhpaHI3U0NqbWlxNWIyY2xndkdKdGF3RDN5TkxHVnhWX1VBbGlZd3NLWNIBeEFVX3lxTFBQZnJTMkxBd0RsWFdlbmNCdzNBMnhnUkVhRTg1enFaZUdnRVZnN1dEM3dYS1lrUERQbmtKdFF3b0Q3Rmx3THNLM2JvZ0RLcEhfZVpKRWVsckdNZzZ3anljQXo4Smh0NDZKZFZLc3RtQU1JU3AwbnVDcw?oc=5",
+          "title": "[2026-11-27] 신한투자증권, 연 5% 발행어음 특판 출시…100억원 규모 - 인더스트리뉴스",
+          "publisher": "인더스트리뉴스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jbXFVRzNDNlNyTU1ydGlJb3ZtaklxWUpwXzBmOGtfb3RrYmpxNnU1NXNKWEhadmhZSXRHc0h4ajlZMlE1MUs1V2lQZWRKekQzTGgycTM2VUF4MUVQUU1USm51cmdHNWNpTW9CemVJSDZRUQ?oc=5",
           "matchMode": "대주명"
         },
         {
           "date": "2026-11-27",
-          "title": "[2026-11-27] 신한투자증권, 신한 슈퍼SOL 고객 대상 세전 연 5.00% 발행어음 특판 - 뉴스핌",
-          "publisher": "뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1DQTRoc2E1a21ldU1CMnZqaC15Wk1lUEVwNVBhSURWTjNBS2ZpWmlmVlI2S1FabTI1eU5qTFNpSThvWWlJenY4a2l1bU9OYk9LZGlfWkQ5dmROci1W?oc=5",
+          "title": "[2026-11-27] 신한투자증권, SOL LINK 고객에 연 5% 발행어음 특판 - 코리아리포트",
+          "publisher": "코리아리포트",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16UjhET0p0UkZXS0hnZ0VyQXUxV29JNGlLdkRBNVVlaG9ma2ZRVUVBMzJLTnItRTdzTWNuWG5vMWh5SzNEV1NEVTJpSHhfNC1WQl9lREl2NFBQU0RkMFZfRWlvR21fYXgtUzA1ejRXLVY?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -371,13 +371,6 @@
       ],
       "articles": [
         {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
-          "publisher": "MTN 머니투데이방송",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
           "date": "2026-11-25",
           "title": "[2026-11-25] \"부동산PF 한파에도 코람코는 따뜻했다\"…신탁업계 '나 홀로 흑자' - 마켓인",
           "publisher": "마켓인",
@@ -385,10 +378,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-11-25",
-          "title": "[2026-11-25] [부동산신탁 진단⑥] PF 한파 비껴간 코람코자산신탁…3분기 누적 순이익 490억 ‘업계 1위’ - 경인방송 뉴스",
-          "publisher": "경인방송 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00X0pqNnl6c1cwYkNNQXVVcjZCT2lwV0lrek42RXVaNUh6MFZVV0pjUm1Wd05rRXl4WGJoQmVwQ3psUFJhRUZwb1JVejdwS3hlVUw3U0FJTkZiMHBvQ1hlMUlsZk3SAWhBVV95cUxPQ0JxTkpUaENnb2cyeWR5cTRjcUN1Q09mQXUyeE5LVFV6WU9DZ0V4UE5wYjdGUkJlWnc3UXY1TmVZSzZ3US1ISC14SFFwQXYxZGxFZzJhZXZSUFJ6MHdOQXc2ZHpCa2NRRA?oc=5",
+          "date": "2026-11-27",
+          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
+          "publisher": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-27",
+          "title": "[2026-11-27] 힐튼호텔 재개발, 3.7조 본PF 완료했다…6개월 앞당긴 '속도전' - 이데일리",
+          "publisher": "이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcjhJcXY5bEt2WEdQd1JYaWJqQmlSbXdvWTJvUEVDTE16SVlzUXpUaXhoMnJEVTlpM1poWG9pbEdzSUJiaHN5QzgzOF9XbXlJYWFJUi01MVJBZXdseHhOWllGTzlZcl9mSC1GVlZsN3dLS0FYd1NOdm85ZUUzcXpBVw?oc=5",
           "matchMode": "업권/시장"
         }
       ]
@@ -408,17 +408,17 @@
           "matchMode": "대주명"
         },
         {
-          "date": "2026-11-26",
-          "title": "[2026-11-26] 키움투자자산운용, 전주사무소 개소해 국민연금과 접점 확대 - FETV",
-          "publisher": "FETV",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SYzlaMmpzSV90QXRFQ3dfcGpYS201NHctbVpKODZaWW1lNnFIMWZ6TW9vWEV0ZWQ0WTRtUW9lR2xiTUZZdXBILXk5aTBrT28yUHNpaWdqYjdlbTdBNlZDajUwbC11TW9F?oc=5",
+          "date": "2026-11-25",
+          "title": "[2026-11-25] 키움투자자산운용 전주사무소 개소…전북 금융생태계 역동성 더해 - 전자신문",
+          "publisher": "전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkODFuMFh5RzJIaVpwRUZydWEtcEdmd3R0TC1DVlR1eUtoQzRCek13WHhCazBpdUdzSkc2eGh5Tzk2QU1xVWpuTDJubU82Zw?oc=5",
           "matchMode": "대주명"
         },
         {
-          "date": "2026-11-26",
-          "title": "[2026-11-26] 키움투자자산운용, 국민연금 기금운용본부 인근 전주사무소 개소 - 글로벌이코노믹",
-          "publisher": "글로벌이코노믹",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVkFTSmRxNmVpWWllZlU2SGhFczl2T1YtcWlJUldtNkV5QWM5U0hNUzFFRXhTakRXQk1ybnV5M0w5MXY4eE5CVGxsNnhjRjNYZzNTT3RtamdqdlJJcVBKOGppOGVZS1VTbXZzTGZHb0lDN0N6THo3dERjZDYtRXBiTVF3TXd0QV9H?oc=5",
+          "date": "2026-11-25",
+          "title": "[2026-11-25] 키움투자자산운용 전주사무소 개소…전북 금융중심지 기반 확대 - 세계일보",
+          "publisher": "세계일보",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xcDlWTEtZOGNOWEFWUGZhVHJKTDhreTk3ZlpKcmpVdExSWThJcnVaQjFycExqbUZBTVZIOUU1UFdUX3djUnJyUHNZa0ZfV2g3cjZuedIBVEFVX3lxTE9xcDlWTEtZOGNOWEFWUGZhVHJKTDhreTk3ZlpKcmpVdExSWThJcnVaQjFycExqbUZBTVZIOUU1UFdUX3djUnJyUHNZa0ZfV2g3cjZueQ?oc=5",
           "matchMode": "대주명"
         }
       ]
@@ -431,13 +431,6 @@
       ],
       "articles": [
         {
-          "date": "2026-11-27",
-          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
-          "publisher": "MTN 머니투데이방송",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
-          "matchMode": "업권/시장"
-        },
-        {
           "date": "2026-11-25",
           "title": "[2026-11-25] \"부동산PF 한파에도 코람코는 따뜻했다\"…신탁업계 '나 홀로 흑자' - 마켓인",
           "publisher": "마켓인",
@@ -445,10 +438,17 @@
           "matchMode": "업권/시장"
         },
         {
-          "date": "2026-11-25",
-          "title": "[2026-11-25] [부동산신탁 진단⑥] PF 한파 비껴간 코람코자산신탁…3분기 누적 순이익 490억 ‘업계 1위’ - 경인방송 뉴스",
-          "publisher": "경인방송 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00X0pqNnl6c1cwYkNNQXVVcjZCT2lwV0lrek42RXVaNUh6MFZVV0pjUm1Wd05rRXl4WGJoQmVwQ3psUFJhRUZwb1JVejdwS3hlVUw3U0FJTkZiMHBvQ1hlMUlsZk3SAWhBVV95cUxPQ0JxTkpUaENnb2cyeWR5cTRjcUN1Q09mQXUyeE5LVFV6WU9DZ0V4UE5wYjdGUkJlWnc3UXY1TmVZSzZ3US1ISC14SFFwQXYxZGxFZzJhZXZSUFJ6MHdOQXc2ZHpCa2NRRA?oc=5",
+          "date": "2026-11-27",
+          "title": "[2026-11-27] [단독] BNK투자증권 차기 대표에 PF·트레이딩 전문가 등 각축 - MTN 머니투데이방송",
+          "publisher": "MTN 머니투데이방송",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE05RzMxZ1ZjaVJWY25CcDJnREtPaWZaZHlKMWtyci1EY0kzU1dlQ25nU2l3blpjRlJCMm5MMEgxa25DR3pJOE5lM2JEamZXM2RxR2hFdEtzV3lScTdDY3BN?oc=5",
+          "matchMode": "업권/시장"
+        },
+        {
+          "date": "2026-11-27",
+          "title": "[2026-11-27] 힐튼호텔 재개발, 3.7조 본PF 완료했다…6개월 앞당긴 '속도전' - 이데일리",
+          "publisher": "이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcjhJcXY5bEt2WEdQd1JYaWJqQmlSbXdvWTJvUEVDTE16SVlzUXpUaXhoMnJEVTlpM1poWG9pbEdzSUJiaHN5QzgzOF9XbXlJYWFJUi01MVJBZXdseHhOWllGTzlZcl9mSC1GVlZsN3dLS0FYd1NOdm85ZUUzcXpBVw?oc=5",
           "matchMode": "업권/시장"
         }
       ]
